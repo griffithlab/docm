@@ -24,6 +24,7 @@ group :test, :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'database_cleaner'
+  gem 'sqlite3'
   gem 'coveralls', require: false
 end
 

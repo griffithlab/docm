@@ -1,0 +1,10 @@
+language: ruby
+script:
+  - bundle exec rake spec
+rvm:
+  - "1.9.3"
+  - "2.1.0"
+env:
+  - RAILS_ENV=test
+notifications:
+  email: false
