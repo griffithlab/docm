@@ -10,7 +10,7 @@ class InitialSchema < ActiveRecord::Migration
     end
 
     create_table :variant_types do |t|
-      t.string :name
+      t.string :type
     end
 
     create_table :amino_acids do |t|
@@ -43,7 +43,7 @@ class InitialSchema < ActiveRecord::Migration
       t.string :transcript_name
       t.string :cdna_change
       t.string :variant
-      t.string :strng
+      t.string :strand
       t.integer :location_id
       t.integer :variant_type_id
       t.integer :amino_acid_id
