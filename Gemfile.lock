@@ -62,6 +62,8 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     fabrication (2.9.8)
+    foreigner (1.6.1)
+      activerecord (>= 3.0.0)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -200,6 +202,7 @@ DEPENDENCIES
   coveralls
   database_cleaner
   fabrication
+  foreigner
   haml
   jbuilder (~> 1.2)
   jquery-rails

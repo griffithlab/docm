@@ -14,7 +14,7 @@ gem "twitter-bootstrap-rails"
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-
+gem 'foreigner'
 
 group :test, :development do
   gem 'rspec-rails'
