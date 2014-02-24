@@ -11,6 +11,66 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140224185736) do
+
+  create_table "amino_acids", force: true do |t|
+    t.string "name"
+  end
+
+  create_table "diseases", force: true do |t|
+    t.string "name"
+  end
+
+  create_table "diseases_variants", id: false, force: true do |t|
+    t.integer "disease_id", null: false
+    t.integer "variant_id", null: false
+  end
+
+  create_table "genes", force: true do |t|
+    t.string "name"
+    t.string "ensembl_id"
+  end
+
+  create_table "locations", force: true do |t|
+    t.string  "chromosome"
+    t.string  "reference_build"
+    t.string  "reference_read"
+    t.integer "start",           limit: 8
+    t.integer "stop",            limit: 8
+  end
+
+  create_table "mutation_types", force: true do |t|
+    t.string "type"
+  end
+
+  create_table "sources", force: true do |t|
+    t.string  "name"
+    t.integer "pmid_id"
+  end
+
+  create_table "sources_variants", id: false, force: true do |t|
+    t.integer "source_id",  null: false
+    t.integer "variant_id", null: false
+  end
+
+  create_table "transcripts", force: true do |t|
+    t.string "name"
+  end
+
+  create_table "variant_types", force: true do |t|
+    t.string "name"
+  end
+
+  create_table "variants", force: true do |t|
+    t.string  "transcript_name"
+    t.string  "cdna_change"
+    t.string  "variant"
+    t.string  "strng"
+    t.integer "location_id"
+    t.integer "variant_type_id"
+    t.integer "amino_acid_id"
+    t.integer "gene_id"
+    t.integer "mutation_type_id"
+  end
 
 end
