@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140224185736) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "amino_acids", force: true do |t|
     t.string "name"
   end
@@ -72,5 +75,17 @@ ActiveRecord::Schema.define(version: 20140224185736) do
     t.integer "gene_id"
     t.integer "mutation_type_id"
   end
+
+  add_foreign_key "diseases_variants", "diseases", name: "diseases_variants_disease_id_fk"
+  add_foreign_key "diseases_variants", "variants", name: "diseases_variants_variant_id_fk"
+
+  add_foreign_key "sources_variants", "sources", name: "sources_variants_source_id_fk"
+  add_foreign_key "sources_variants", "variants", name: "sources_variants_variant_id_fk"
+
+  add_foreign_key "variants", "amino_acids", name: "variants_amino_acid_id_fk"
+  add_foreign_key "variants", "genes", name: "variants_gene_id_fk"
+  add_foreign_key "variants", "locations", name: "variants_location_id_fk"
+  add_foreign_key "variants", "mutation_types", name: "variants_mutation_type_id_fk"
+  add_foreign_key "variants", "variant_types", name: "variants_variant_type_id_fk"
 
 end
