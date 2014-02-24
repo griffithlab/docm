@@ -10,7 +10,7 @@ class InitialSchema < ActiveRecord::Migration
     end
 
     create_table :variant_types do |t|
-      t.string :type
+      t.string :name
     end
 
     create_table :amino_acids do |t|
@@ -36,7 +36,7 @@ class InitialSchema < ActiveRecord::Migration
     end
 
     create_table :mutation_types do |t|
-      t.string :type
+      t.string :name
     end
 
     create_table :variants do |t|

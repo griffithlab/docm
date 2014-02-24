@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20140224185736) do
   end
 
   create_table "mutation_types", force: true do |t|
-    t.string "type"
+    t.string "name"
   end
 
   create_table "sources", force: true do |t|
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20140224185736) do
   end
 
   create_table "variant_types", force: true do |t|
-    t.string "type"
+    t.string "name"
   end
 
   create_table "variants", force: true do |t|
