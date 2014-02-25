@@ -15,6 +15,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'foreigner'
+gem 'will_paginate'
+gem 'jquery-ui-rails'
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 
 group :test, :development do
   gem 'rspec-rails'
