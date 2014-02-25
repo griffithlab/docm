@@ -6,4 +6,9 @@ class Variant < ActiveRecord::Base
   belongs_to :mutation_type, inverse_of: :variants
   has_and_belongs_to_many :sources
   has_and_belongs_to_many :diseases
+
+  def self.index_view_scope
+    eager_load(:location, :gene, :amino_acid, :diseases)
+  end
+
 end
