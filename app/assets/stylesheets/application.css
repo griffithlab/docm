@@ -9,6 +9,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require bootstrap_and_overrides
  *= require dataTables/jquery.dataTables.bootstrap3
+ *= require custom
  *= require_tree .
  */
