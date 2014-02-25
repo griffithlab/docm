@@ -1,0 +1,35 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{charset: 'utf-8'}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title DoCM - Database of Canonical Mutations
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top{role: 'navigation'}
+      .container
+        .navbar-header
+          %a.navbar-brand{href: '/'} DoCM - The Database of Canonical Mutations
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{href: '/'} About
+            %li
+              %a{href: '/'} FAQ
+            %li
+              %a{href: '/'} API
+    .container-fluid
+      .row
+        .col-sm-3.col-md-2.sidebar
+          %ul.nav.nav-sidebar
+            %li.active
+              %a{href: '#'}All Variants
+            %li
+              %a{href: '#'}Something Else
+            %li
+              %a{href: '#'}Another Thing
+        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+          %h1.page-header Variants
+          = yield
+
