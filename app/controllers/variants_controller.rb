@@ -3,7 +3,7 @@ class VariantsController < ApplicationController
     @filters = Filter.registered_filters.map do |filter_class|
       {
         id: filter_class.param_name,
-        label_text: filter_class.param_name.to_s.capitalize,
+        label_text: filter_class.param_name.to_s.titleize,
         collection: filter_class.valid_values
       }
     end
