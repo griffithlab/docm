@@ -54,7 +54,7 @@ class VariantsDatatable
   end
 
   def sort_direction
-    params[:iSortDir_0] == 'desc' ? 'desc' : 'asc'
+    params[:sSortDir_0] == 'desc' ? 'desc' : 'asc'
   end
 
   def page
