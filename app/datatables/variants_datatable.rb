@@ -40,6 +40,8 @@ class VariantsDatatable
       .page(page)
       .per_page(per_page)
 
+      variants = Filter.filter_query(variants, params)
+
       if params[:sSearch].present?
         search_conditions = @@searchable_columns.join(' like :search or ')
         search_conditions.concat(' like :search')

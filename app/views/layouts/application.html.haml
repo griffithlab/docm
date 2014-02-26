@@ -19,17 +19,4 @@
               %a{href: '/'} FAQ
             %li
               %a{href: '/'} API
-    .container-fluid
-      .row
-        .col-sm-3.col-md-2.sidebar
-          %ul.nav.nav-sidebar
-            %li.active
-              %a{href: '#'}All Variants
-            %li
-              %a{href: '#'}Something Else
-            %li
-              %a{href: '#'}Another Thing
-        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
-          %h1.page-header Variants
-          = yield
-
+    = yield
