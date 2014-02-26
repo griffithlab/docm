@@ -2,7 +2,7 @@ class ChromosomeFilter
   include Filter
 
   def self.filter(relation, params)
-    param_val = (params[param_name] || '').split(',')
+    param_val = (params[param_name] || []).split(',')
     if param_val.blank?
       relation
     else
