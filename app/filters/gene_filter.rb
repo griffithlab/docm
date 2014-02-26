@@ -1,8 +1,8 @@
 class GeneFilter
   include Filter
 
-  def self.filter_condition(relation, values)
-    param_val = (params[param_name] || []).split(',')
+  def self.filter(relation, params)
+    param_val = (params[param_name] || '').split(',')
     if param_val.blank?
       relation
     else
