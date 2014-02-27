@@ -8,7 +8,7 @@ class Variant < ActiveRecord::Base
   has_and_belongs_to_many :diseases
 
   def self.index_view_scope
-    eager_load(:location, :gene, :amino_acid, :diseases)
+    eager_load(:location, :gene, :amino_acid, :diseases, :sources, :mutation_type)
   end
 
 end
