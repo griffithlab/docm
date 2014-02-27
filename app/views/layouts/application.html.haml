@@ -13,10 +13,10 @@
           %a.navbar-brand{href: '/'} DoCM - The Database of Canonical Mutations
         .navbar-collapse.collapse
           %ul.nav.navbar-nav.navbar-right
-            %li
-              %a{href: '/'} About
-            %li
-              %a{href: '/'} FAQ
-            %li
-              %a{href: '/'} API
+            %li{class: @about_active}
+              %a{href: '/about'} About
+            %li{class: @faq_active}
+              %a{href: '/faq'} FAQ
+            %li{class: @api_active}
+              %a{href: '/api'} API
     = yield
