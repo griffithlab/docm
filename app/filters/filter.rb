@@ -5,12 +5,21 @@ module Filter
 
   def self.filter_query(relation, params)
     registered_filters.inject(relation) do |rel, filter|
-      filter.filter(rel, params)
+      values = clean_param(params, filter.param_name)
+      if values.blank?
+        rel
+      else
+        filter.filter(rel, values)
+      end
     end
   end
 
   def self.registered_filters
     @@filters
+  end
+
+  def self.clean_param(params, param_name)
+    (params[param_name] || '').split(',')
   end
 end
 
