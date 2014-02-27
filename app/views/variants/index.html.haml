@@ -5,7 +5,7 @@
         - @filters.each do |filter_hash|
           = render partial: 'multiselect', locals: filter_hash
         .submit-group
-          %button#update-grid-button{type: 'button'} Update
+          %button.btn.btn-default#update-grid-button{type: 'button'} Update
     .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
       %h1.page-header Variants
 
@@ -20,5 +20,7 @@
               %th Variant
               %th Gene
               %th Amino Acid
+              %th Mutation Type
               %th Diseases
+              %th Sources
             %tbody

@@ -25,7 +25,9 @@ class VariantsDatatable
         variant.variant,
         variant.gene.name,
         variant.amino_acid.name,
-        variant.diseases.map(&:name).join(',')
+        variant.mutation_type.name,
+        variant.diseases.map(&:name).join(','),
+        variant.sources.map(&:pmid_id).join(',')
       ]
     end
   end
@@ -76,8 +78,10 @@ class VariantsDatatable
     variants.variant
     genes.name
     amino_acids.name
+    mutation_types.name
     diseases.name
+    sources.pmid_id
   ].freeze
 
-  @@searchable_columns = @@columns.reject { |c| c =~ /start|stop/ }
+  @@searchable_columns = @@columns.reject { |c| c =~ /start|stop|pmid_id/ }
 end
