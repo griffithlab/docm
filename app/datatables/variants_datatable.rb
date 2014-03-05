@@ -45,8 +45,7 @@ class VariantsDatatable
       variants = Filter.filter_query(variants, params)
 
       if params[:sSearch].present?
-        search_conditions = @@searchable_columns.join(' like :search or ')
-        search_conditions.concat(' like :search')
+        search_conditions = @@searchable_columns.map { |col| "#{col} LIKE :search" }.join(' OR ')
         variants = variants.where(search_conditions, search: "%#{params[:sSearch]}%")
       end
       variants
