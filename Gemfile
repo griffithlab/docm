@@ -17,6 +17,8 @@ gem 'foreigner'
 gem 'will_paginate'
 gem 'jquery-ui-rails'
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+gem 'yajl-ruby', require: 'yajl'
+gem 'multi_json'
 
 group :test, :development do
   gem 'rspec-rails'
