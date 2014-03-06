@@ -2,7 +2,7 @@ require 'csv'
 
 module Importers
   class TSV
-    def initialize(file_path, delimiter: "\t", headers: true)
+    def initialize(file_path, delimiter = "\t", headers = true)
       raise "File #{file_path} doesn't exist!" unless File.exists?(file_path)
       file = File.open(file_path, 'r')
       @csv = CSV.new(file, col_sep: delimiter, headers: headers)
