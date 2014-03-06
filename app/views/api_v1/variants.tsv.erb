@@ -1,0 +1,17 @@
+<%= %w[chromosome start stop read variant gene mutation_type amino_acid diseases pubmed_sources].join("\t") %>
+<% @variants.each do |variant| %>
+  <%=
+    [
+      variant.location.chromosome,
+      variant.location.start,
+      variant.location.stop,
+      variant.location.reference_read,
+      variant.variant,
+      variant.gene.name,
+      variant.mutation_type.name,
+      variant.amino_acid.name,
+      variant.diseases.map(&:name),
+      variant.sources.map(&:pmid_id)
+    ].join("\t")
+  %>
+<% end %>

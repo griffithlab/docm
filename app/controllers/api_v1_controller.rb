@@ -4,7 +4,7 @@ class ApiV1Controller < ApplicationController
 
     respond_to do |format|
       format.json
+      format.tsv
     end
-
   end
 end
