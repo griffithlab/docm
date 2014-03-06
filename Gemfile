@@ -29,10 +29,6 @@ group :test, :development do
   gem 'coveralls', require: false
 end
 
-group :test do
-  gem 'sqlite3'
-end
-
 group :development do
   gem 'pry'
   gem 'pry-remote'
