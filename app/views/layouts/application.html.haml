@@ -19,4 +19,11 @@
               %a{href: '/faq'} FAQ
             %li{class: @api_active}
               %a{href: '/api'} API
+      %noscript
+        .alert.alert-warning
+          %h3 Sorry, the DoCM website requires Javascript to function properly.
+          %p
+            You may be interested in using the
+            %a{href: '/api'}API
+            for programatic access.
     = yield
