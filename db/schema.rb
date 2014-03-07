@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140224185736) do
+ActiveRecord::Schema.define(version: 20140307221921) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,9 +20,13 @@ ActiveRecord::Schema.define(version: 20140224185736) do
     t.string "name"
   end
 
+  add_index "amino_acids", ["name"], name: "index_amino_acids_on_name", using: :btree
+
   create_table "diseases", force: true do |t|
     t.string "name"
   end
+
+  add_index "diseases", ["name"], name: "index_diseases_on_name", using: :btree
 
   create_table "diseases_variants", id: false, force: true do |t|
     t.integer "disease_id", null: false
@@ -34,6 +38,8 @@ ActiveRecord::Schema.define(version: 20140224185736) do
     t.string "ensembl_id"
   end
 
+  add_index "genes", ["name"], name: "index_genes_on_name", using: :btree
+
   create_table "locations", force: true do |t|
     t.string  "chromosome"
     t.string  "reference_build"
@@ -42,14 +48,23 @@ ActiveRecord::Schema.define(version: 20140224185736) do
     t.integer "stop",            limit: 8
   end
 
+  add_index "locations", ["chromosome"], name: "index_locations_on_chromosome", using: :btree
+  add_index "locations", ["reference_read"], name: "index_locations_on_reference_read", using: :btree
+  add_index "locations", ["start"], name: "index_locations_on_start", using: :btree
+  add_index "locations", ["stop"], name: "index_locations_on_stop", using: :btree
+
   create_table "mutation_types", force: true do |t|
     t.string "name"
   end
+
+  add_index "mutation_types", ["name"], name: "index_mutation_types_on_name", using: :btree
 
   create_table "sources", force: true do |t|
     t.string  "name"
     t.integer "pmid_id"
   end
+
+  add_index "sources", ["pmid_id"], name: "index_sources_on_pmid_id", using: :btree
 
   create_table "sources_variants", id: false, force: true do |t|
     t.integer "source_id",  null: false
@@ -75,6 +90,8 @@ ActiveRecord::Schema.define(version: 20140224185736) do
     t.integer "gene_id"
     t.integer "mutation_type_id"
   end
+
+  add_index "variants", ["variant"], name: "index_variants_on_variant", using: :btree
 
   add_foreign_key "diseases_variants", "diseases", name: "diseases_variants_disease_id_fk"
   add_foreign_key "diseases_variants", "variants", name: "diseases_variants_variant_id_fk"
