@@ -1,0 +1,18 @@
+##fileformat=VCFv4.1
+##source=DoCM
+##fileDate=<%= DateTime.now.strftime("%Y%m%d") %>
+#<%= %w[CHROM POS ID REF ALT QUAL FILTER INFO].join("\t") %>
+<% @variants.each do |variant| %>
+<%=
+  [
+    variant.location.chromosome,
+    variant.location.start,
+    '.',
+    variant.location.reference_read,
+    variant.variant,
+    '.',
+    '.',
+    '.',
+  ].join("\t")
+%>
+<% end %>
