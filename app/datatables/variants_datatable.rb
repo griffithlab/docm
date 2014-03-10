@@ -16,20 +16,7 @@ class VariantsDatatable
 
   private
   def data
-    variants.map do |variant|
-      [
-        variant.location.chromosome,
-        variant.location.start,
-        variant.location.stop,
-        variant.location.reference_read,
-        variant.variant,
-        variant.gene.name,
-        variant.amino_acid.name,
-        variant.mutation_type.name,
-        variant.diseases.map(&:name).join(','),
-        variant.sources.map(&:pmid_id).join(',')
-      ]
-    end
+    variants.map { |v| VariantDatatableRowPresenter.new(v, @view_context) }
   end
 
   def variants
