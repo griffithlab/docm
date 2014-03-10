@@ -12,7 +12,7 @@ Once Ruby is installed, make sure Bundler is also installed. `gem install bundle
 
 Installation
 ----
-#note that you may want to use the ssh url for the clone if you're a TGI employee
+note that you may want to use the ssh url for the clone if you're a TGI employee
 
     git clone https://github.com/genome/docm.git
     cd docm
