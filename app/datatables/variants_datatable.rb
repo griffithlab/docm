@@ -20,22 +20,24 @@ class VariantsDatatable
   end
 
   def variants
-    @variants ||= get_variants
+    @variants ||= filter_variants(get_variants)
   end
 
   def get_variants
-    variants = Variant.index_view_scope
+    Variant.index_view_scope
       .order("#{sort_column}  #{sort_direction}")
       .page(page)
       .per_page(per_page)
+  end
 
-      variants = Filter.filter_query(variants, params)
+  def filter_variants(variants)
+    variants = Filter.filter_query(variants, params)
 
-      if params[:sSearch].present?
-        search_conditions = @@searchable_columns.map { |col| "lower(#{col}) LIKE :search" }.join(' OR ')
-        variants = variants.where(search_conditions, search: "#{params[:sSearch]}%".downcase)
-      end
-      variants
+    if params[:sSearch].present?
+      search_conditions = @@searchable_columns.map { |col| "lower(#{col}) LIKE :search" }.join(' OR ')
+      variants = variants.where(search_conditions, search: "#{params[:sSearch]}%".downcase)
+    end
+    variants
   end
 
   #still need sources and druggability
