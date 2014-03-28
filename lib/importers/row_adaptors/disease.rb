@@ -7,7 +7,7 @@ module Importers
 
       def self.column_map
         {
-          'disease' => 'name'
+          'disease' => 'doid'
         }
       end
     end
