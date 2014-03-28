@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140328160937) do
+ActiveRecord::Schema.define(version: 20140328183844) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -91,6 +91,8 @@ ActiveRecord::Schema.define(version: 20140328160937) do
     t.integer "amino_acid_id"
     t.integer "gene_id"
     t.integer "mutation_type_id"
+    t.boolean "is_primary"
+    t.integer "primary_variant_id"
   end
 
   add_index "variants", ["variant"], name: "index_variants_on_variant", using: :btree
@@ -106,5 +108,6 @@ ActiveRecord::Schema.define(version: 20140328160937) do
   add_foreign_key "variants", "locations", name: "variants_location_id_fk"
   add_foreign_key "variants", "mutation_types", name: "variants_mutation_type_id_fk"
   add_foreign_key "variants", "variant_types", name: "variants_variant_type_id_fk"
+  add_foreign_key "variants", "variants", name: "variants_primary_variant_id_fk", column: "primary_variant_id"
 
 end
