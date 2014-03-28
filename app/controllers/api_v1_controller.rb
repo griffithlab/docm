@@ -8,4 +8,7 @@ class ApiV1Controller < ApplicationController
       format.vcf
     end
   end
+
+  def variant
+  end
 end
