@@ -10,6 +10,7 @@ module Importers
           'transcript_name' => 'transcript_name',
           'variant' => 'variant',
           'strand' => 'strand',
+          'c_position' => 'cdna_change',
         }
       end
     end
