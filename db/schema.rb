@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140307221921) do
+ActiveRecord::Schema.define(version: 20140328160937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,9 +23,11 @@ ActiveRecord::Schema.define(version: 20140307221921) do
   add_index "amino_acids", ["name"], name: "index_amino_acids_on_name", using: :btree
 
   create_table "diseases", force: true do |t|
-    t.string "name"
+    t.string  "name"
+    t.integer "doid"
   end
 
+  add_index "diseases", ["doid"], name: "index_diseases_on_doid", using: :btree
   add_index "diseases", ["name"], name: "index_diseases_on_name", using: :btree
 
   create_table "diseases_variants", id: false, force: true do |t|
