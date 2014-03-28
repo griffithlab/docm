@@ -14,4 +14,8 @@ class Variant < ActiveRecord::Base
   def self.show_scope
   end
 
+  def is_permutation?
+    !is_primary?
+  end
+
 end
