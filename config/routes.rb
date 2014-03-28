@@ -7,8 +7,9 @@ Docm::Application.routes.draw do
 
   root 'variants#index'
   get 'variants' => 'variants#index', as: :variants
-  get 'variants/:id' => 'variants#show', as: :variant
+  get 'variants/:hgvs' => 'variants#show', as: :variant
   get 'api/v1/variants' => 'api_v1#variants'
+  get 'api/v1/variant/:hgvs' => 'api_v1#variant'
   get ':action' => 'static#:action'
 
   # Example of regular route:
