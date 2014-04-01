@@ -17,7 +17,6 @@ class VariantDatatableRowPresenter < SimpleDelegator
       location.reference_read,
       variant,
       gene.name,
-      amino_acid.name,
       mutation_type.name,
       disease_list,
       source_list
