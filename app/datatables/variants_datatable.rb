@@ -60,13 +60,13 @@ class VariantsDatatable
   end
 
   @@columns = %w[
+    hgvs
     locations.chromosome
     locations.start
     locations.stop
     locations.reference_read
     variants.variant
     genes.name
-    amino_acids.name
     mutation_types.name
     diseases.name
     sources.pmid_id
