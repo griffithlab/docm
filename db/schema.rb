@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140328183844) do
+ActiveRecord::Schema.define(version: 20140401211108) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -93,8 +93,10 @@ ActiveRecord::Schema.define(version: 20140328183844) do
     t.integer "mutation_type_id"
     t.boolean "is_primary"
     t.integer "primary_variant_id"
+    t.string  "hgvs"
   end
 
+  add_index "variants", ["hgvs"], name: "index_variants_on_hgvs", using: :btree
   add_index "variants", ["variant"], name: "index_variants_on_variant", using: :btree
 
   add_foreign_key "diseases_variants", "diseases", name: "diseases_variants_disease_id_fk"
