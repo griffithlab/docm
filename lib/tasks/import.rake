@@ -6,7 +6,11 @@ namespace :docm do
     Importers::TSV.new(file_path).import!
   end
 
-  task :get_disease_names do
+  task get_disease_names: :environment do
     DataFetchers::Disease.run
+  end
+
+  task generate_hgvs: :environment do
+    DataFetchers::HGVS.run
   end
 end
