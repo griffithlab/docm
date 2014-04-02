@@ -17,11 +17,17 @@ module Importers
           property_hash = RowAdaptors::Variant.get_property_hash_from_row(row)
           variant = Variant.find_or_create_by(entity_hash.merge(property_hash))
 
-          source = RowAdaptors::Source.create_from_row(row)
-          disease = RowAdaptors::Disease.create_from_row(row)
+          if variant.is_primary?
+            source = RowAdaptors::Source.create_from_row(row)
+            disease = RowAdaptors::Disease.create_from_row(row)
 
-          variant.sources << source
-          variant.diseases << disease
+            DiseaseSourceVariant.create(
+              variant: variant,
+              disease: disease,
+              source: source,
+            )
+          end
+
         end
       end
     end
@@ -37,7 +43,7 @@ module Importers
     end
 
     def valid_row?(row)
-      return false if row['pubmed_id'].blank?
+      return false if row['pubmed_id'].blank? && row['primary'] == '1'
       true
     end
   end
