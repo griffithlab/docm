@@ -13,6 +13,7 @@ class Variant < ActiveRecord::Base
   end
 
   def self.show_scope
+    index_scope
   end
 
   def is_permutation?

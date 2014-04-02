@@ -6,6 +6,11 @@ class VariantsController < ApplicationController
     end
   end
 
+  def show
+    variant = Variant.show_scope.where(hgvs: params[:hgvs]).first!
+    @variant = VariantOverviewPresenter.new(variant, view_context)
+  end
+
   private
   def get_filters
     Filter.registered_filters.map do |filter_class|
