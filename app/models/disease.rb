@@ -1,3 +1,4 @@
 class Disease < ActiveRecord::Base
-  has_and_belongs_to_many :variants
+  has_many :disease_source_variants
+  has_many :variants, through: :disease_source_variants
 end
