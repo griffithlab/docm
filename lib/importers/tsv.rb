@@ -16,18 +16,7 @@ module Importers
           entity_hash = get_or_create_primary_entities(row)
           property_hash = RowAdaptors::Variant.get_property_hash_from_row(row)
           variant = Variant.find_or_create_by(entity_hash.merge(property_hash))
-
-          if variant.is_primary?
-            source = RowAdaptors::Source.create_from_row(row)
-            disease = RowAdaptors::Disease.create_from_row(row)
-
-            DiseaseSourceVariant.create(
-              variant: variant,
-              disease: disease,
-              source: source,
-            )
-          end
-
+          create_disease_source_variant_links(variant, row)
         end
       end
     end
@@ -40,6 +29,19 @@ module Importers
         variant_type:  RowAdaptors::VariantType.create_from_row(row),
         mutation_type: RowAdaptors::MutationType.create_from_row(row)
       }
+    end
+
+    def create_disease_source_variant_links(variant, row)
+      if variant.is_primary?
+        source = RowAdaptors::Source.create_from_row(row)
+        disease = RowAdaptors::Disease.create_from_row(row)
+
+        DiseaseSourceVariant.create(
+          variant: variant,
+          disease: disease,
+          source: source,
+        )
+      end
     end
 
     def valid_row?(row)
