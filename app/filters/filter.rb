@@ -4,8 +4,8 @@ module Filter
   end
 
   def self.filter_query(relation, params)
-    registered_filters.inject(relation) do |rel, filter|
-      values = clean_param(params, filter.param_name)
+    @@filters.inject(relation) do |rel, filter|
+      values = send("handle_#{filter.filter_type}_params", filter, params)
       if values.blank?
         rel
       else
@@ -14,8 +14,20 @@ module Filter
     end
   end
 
-  def self.registered_filters
-    @@filters
+  def self.registered_filters(type)
+    (@@filters_by_type ||= @@filters.group_by(&:filter_type))[type]
+  end
+
+  private
+  def self.handle_range_params(filter, params)
+    {
+      start: params["#{filter.param_name}_start"] || '',
+      stop: params["#{filter.param_name}_stop"] || '',
+    }
+  end
+
+  def self.handle_multiselect_params(filter, params)
+    clean_param(params, filter.param_name)
   end
 
   def self.clean_param(params, param_name)

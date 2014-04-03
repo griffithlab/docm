@@ -14,4 +14,8 @@ class SourceFilter
   def self.param_name
     :sources
   end
+
+  def self.filter_type
+    :multiselect
+  end
 end

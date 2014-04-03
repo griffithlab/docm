@@ -14,4 +14,8 @@ class DiseaseFilter
   def self.param_name
     :diseases
   end
+
+  def self.filter_type
+    :multiselect
+  end
 end

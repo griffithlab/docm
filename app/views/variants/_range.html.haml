@@ -1,0 +1,5 @@
+.form-group
+  = label_tag(id, label_text)
+  .range-group{id: id}
+    %input{id: "#{id}_start", placeholder: "Start >= #{min}"}
+    %input{id: "#{id}_stop", placeholder: "Stop <= #{max}"}

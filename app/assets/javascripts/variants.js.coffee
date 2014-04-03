@@ -13,6 +13,14 @@ jQuery ->
         val = $(this).val()
         aoData.push { name: name , value: val  }
         params[name] = val
+
+      $(".range-group").each (index) ->
+        $(this).children("input").each (index) ->
+          name = $(this).attr("id")
+          val = $(this).val()
+          aoData.push { name: name , value: val  }
+          params[name] = val
+
       queryString = $.param(params)
       $("#vcf-export-button").attr("href", "/api/v1/variants.vcf?" + queryString)
       $("#tsv-export-button").attr("href", "/api/v1/variants.tsv?" + queryString)

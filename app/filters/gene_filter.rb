@@ -14,4 +14,8 @@ class GeneFilter
   def self.param_name
     :genes
   end
+
+  def self.filter_type
+    :multiselect
+  end
 end

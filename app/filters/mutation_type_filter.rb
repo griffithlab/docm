@@ -14,4 +14,8 @@ class MutationTypeFilter
   def self.param_name
     :mutation_types
   end
+
+  def self.filter_type
+    :multiselect
+  end
 end

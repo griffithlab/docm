@@ -14,4 +14,8 @@ class ChromosomeFilter
   def self.param_name
     :chromosomes
   end
+
+  def self.filter_type
+    :multiselect
+  end
 end
