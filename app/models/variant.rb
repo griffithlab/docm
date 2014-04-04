@@ -20,10 +20,6 @@ class Variant < ActiveRecord::Base
     eager_load(:location)
   end
 
-  def is_permutation?
-    !is_primary?
-  end
-
   def related_variants
     Variant.permutation_scope
       .where(amino_acid: self.amino_acid)
