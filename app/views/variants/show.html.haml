@@ -1,5 +1,93 @@
 .container-fluid
   .row
-    %h1.page-header
-      Variant:
-      .small=@variant.hgvs
+    .col-md-10.col-md-offset-1
+      %h1.page-header
+        =@variant.hgvs
+  .row
+    .col-md-10.col-md-offset-1
+      %h4 Variant Data
+      .well.col-md-12
+        .col-md-6
+          %h4
+            .small
+              %strong Location
+          %ul.list-unstyled
+            %li
+              %strong Chromosome:
+              = @variant.location.chromosome
+            %li
+              %strong Start:
+              = @variant.location.start
+            %li
+              %strong Stop:
+              = @variant.location.stop
+            %li
+              %strong Strand:
+              = @variant.strand
+            %li
+              %strong Transcript:
+              = @variant.transcript_name
+            %li
+              %strong Gene:
+              = @variant.gene_name
+        .col-md-6
+          %h4
+            .small
+              %strong Information
+          %ul.list-unstyled
+            %li
+              %strong Reference:
+              = @variant.location.reference_read
+            %li
+              %strong Variant:
+              = @variant.variant
+            %li
+              %strong Amino Acid:
+              = @variant.amino_acid.name
+            %li
+              %strong Mutation Type:
+              = @variant.mutation_type.name
+            %li
+              %strong Variant Type:
+              = @variant.variant_type.name
+            %li
+              %strong cDNA Change:
+              = @variant.cdna_change
+
+    .row
+      .col-md-10.col-md-offset-1
+        .col-md-6
+          %h4 Disease Data
+          .well
+            %table.table.table-striped
+              %thead
+                %th Disease
+                %th DOID
+                %th Source
+              %tbody
+                - @variant.disease_rows.each do |row|
+                  %tr
+                    %td= row.disease
+                    %td= row.doid
+                    %td= row.source
+        .col-md-6
+          %h4 Variant Permutations
+          .well
+            %table.table.table-striped
+              %thead
+                %th HSVS
+                %th Chr
+                %th Start
+                %th Stop
+                %th Ref
+                %th Variant
+              %tbody
+                - @variant.permutation_rows.each do |variant|
+                  %tr
+                    %td= variant.hgvs
+                    %td= variant.chromosome
+                    %td= variant.start
+                    %td= variant.stop
+                    %td= variant.reference
+                    %td= variant.variant
+

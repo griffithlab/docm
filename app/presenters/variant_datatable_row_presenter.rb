@@ -1,6 +1,5 @@
 class VariantDatatableRowPresenter < SimpleDelegator
-  delegate :link_to, to: :@view_context
-  delegate :variant_path, to: :@view_context
+  include LinkHelpers
 
   def initialize(variant, view_context)
     @variant = variant
@@ -10,13 +9,13 @@ class VariantDatatableRowPresenter < SimpleDelegator
 
   def as_json
     [
-      hgvs_link,
+      variant_link(@variant),
       location.chromosome,
       location.start,
       location.stop,
       location.reference_read,
       variant,
-      gene_link,
+      gene_link(gene),
       amino_acid.name,
       mutation_type.name,
       disease_list,
@@ -25,22 +24,12 @@ class VariantDatatableRowPresenter < SimpleDelegator
   end
 
   private
-  def hgvs_link
-    link_to(hgvs, variant_path(hgvs))
-  end
-
   def disease_list
     diseases.map(&:name).join(', ')
   end
 
   def source_list
-    sources.map do |s|
-      link_to(s.pmid_id, "http://www.ncbi.nlm.nih.gov/pubmed/#{s.pmid_id}")
-    end.join(', ')
-  end
-
-  def gene_link
-    link_to(gene.name, "http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=#{gene.ensembl_id}")
+    sources.map { |s| source_link(s) }.join(', ')
   end
 
 end
