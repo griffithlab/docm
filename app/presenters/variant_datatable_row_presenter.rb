@@ -16,7 +16,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
       location.stop,
       location.reference_read,
       variant,
-      gene.name,
+      gene_link,
       amino_acid.name,
       mutation_type.name,
       disease_list,
@@ -37,6 +37,10 @@ class VariantDatatableRowPresenter < SimpleDelegator
     sources.map do |s|
       link_to(s.pmid_id, "http://www.ncbi.nlm.nih.gov/pubmed/#{s.pmid_id}")
     end.join(', ')
+  end
+
+  def gene_link
+    link_to(gene.name, "http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=#{gene.ensembl_id}")
   end
 
 end
