@@ -6,7 +6,7 @@ class VariantSubmissionsController < ApplicationController
   def create
     @submission = VariantSubmission.new(submission_params)
 
-    if @submission.deliver && params[:not_a_bot].blank?
+    if params[:not_a_bot].blank? && @submission.deliver
       flash[:success] = 'Your variant has been submitted and we will review it shortly!'
       redirect_to root_url
     else
