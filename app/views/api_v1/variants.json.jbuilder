@@ -1,4 +1,5 @@
 json.array! @variants do |variant|
+  json.hgvs variant.hgvs
   json.chr variant.location.chromosome
   json.start variant.location.start
   json.stop variant.location.stop
