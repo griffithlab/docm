@@ -67,6 +67,7 @@ class VariantsDatatable
     locations.reference_read
     variants.variant
     genes.name
+    amino_acid.name
     mutation_types.name
     diseases.name
     sources.pmid_id
