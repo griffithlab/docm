@@ -22,5 +22,13 @@ module Docm
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    ActionMailer::Base.delivery_method = :smtp
+    ActionMailer::Base.smtp_settings = {
+      :from => 'docm-submissions@genome.wustl.edu',
+      :address => 'gscsmtp.wustl.edu',
+      :port => 25,
+      :domain => 'genome.wustl.edu',
+      :enable_starttls_auto => false
+    }
   end
 end

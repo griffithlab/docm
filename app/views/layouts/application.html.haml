@@ -26,4 +26,7 @@
             You may be interested in using the
             %a{href: '/api'}API
             for programatic access.
+      .col-md-9.col-md-offset-1
+        -flash.each do |name, msg|
+          =content_tag :div, msg, class: ['alert', "alert-#{name}"]
     = yield
