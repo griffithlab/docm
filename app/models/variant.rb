@@ -13,7 +13,7 @@ class Variant < ActiveRecord::Base
   end
 
   def self.show_scope
-    eager_load(:location, :gene, :amino_acid, :mutation_type, disease_source_variants: [:disease, :source])
+    eager_load(:location, :gene, :variant_type, :amino_acid, :mutation_type, disease_source_variants: [:disease, :source])
   end
 
   def self.permutation_scope

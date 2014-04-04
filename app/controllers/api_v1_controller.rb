@@ -10,5 +10,6 @@ class ApiV1Controller < ApplicationController
   end
 
   def variant
+    @variant = Variant.show_scope.where(hgvs: params[:hgvs]).first!
   end
 end
