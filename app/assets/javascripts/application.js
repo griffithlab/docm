@@ -15,5 +15,4 @@
 //= require twitter/bootstrap
 //= require dataTables/jquery.dataTables
 //= require dataTables/jquery.dataTables.bootstrap3
-//= require dataTables/jquery.dataTables.api.fnReloadAjax
 //= require_tree .
