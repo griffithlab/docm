@@ -7,6 +7,7 @@ Docm::Application.routes.draw do
 
   root 'variants#index'
   get 'variants' => 'variants#index', as: :variants
+  post 'variants' => 'variants#index'
   get 'variants/:hgvs' => 'variants#show', as: :variant, hgvs: /[^\/]+/
   get 'api/v1/variants' => 'api_v1#variants'
   get 'api/v1/variants/:hgvs' => 'api_v1#variant', hgvs: /[^\/\.]+\.{1}[^\/\.]+/
