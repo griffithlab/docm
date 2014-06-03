@@ -7,10 +7,10 @@ class VariantsDatatable
 
   def as_json(options = {})
     {
-      sEcho: params[:sEcho].to_i,
-      iTotalRecords: Variant.count,
-      iTotalDisplayRecords: variants.total_entries,
-      aaData: data
+      draw: params[:draw].to_i,
+      recordsTotal: Variant.count,
+      recordsFiltered: variants.total_entries,
+      data: data
     }
   end
 
@@ -34,28 +34,28 @@ class VariantsDatatable
   def filter_variants(variants)
     variants = Filter.filter_query(variants, params)
 
-    if params[:sSearch].present?
+    unless params[:search][:value].blank?
       search_conditions = @@searchable_columns.map { |col| "lower(#{col}) LIKE :search" }.join(' OR ')
-      variants = variants.where(search_conditions, search: "#{params[:sSearch]}%".downcase)
+      variants = variants.where(search_conditions, search: "#{params[:search][:value]}%".downcase)
     end
     variants
   end
 
   #still need sources and druggability
   def sort_column
-    @@columns[params[:iSortCol_0].to_i]
+    @@columns[params['order']['0']['column'].to_i]
   end
 
   def sort_direction
-    params[:sSortDir_0] == 'desc' ? 'desc' : 'asc'
+    params['order']['0']['dir'] == 'desc' ? 'desc' : 'asc'
   end
 
   def page
-    params[:iDisplayStart].to_i/per_page + 1
+    params[:start].to_i/per_page + 1
   end
 
   def per_page
-    display_length = params[:iDisplayLength].to_i
+    display_length = params[:length].to_i
     display_length > 0 ? display_length : 50
   end
 
@@ -67,7 +67,7 @@ class VariantsDatatable
     locations.reference_read
     variants.variant
     genes.name
-    amino_acid.name
+    amino_acids.name
     mutation_types.name
     diseases.name
     sources.pmid_id

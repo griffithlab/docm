@@ -1,4 +1,6 @@
 class VariantsController < ApplicationController
+  skip_before_action :verify_authenticity_token, only: [:index]
+
   def index
     respond_to do |format|
       format.html do
