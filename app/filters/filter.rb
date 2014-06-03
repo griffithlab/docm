@@ -31,7 +31,12 @@ module Filter
   end
 
   def self.clean_param(params, param_name)
-    params[param_name].blank? ? [] : params[param_name]
+    val = params[param_name]
+    if val.is_a?(String)
+      val.split(',')
+    else
+      val
+    end
   end
 end
 
