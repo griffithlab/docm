@@ -15,7 +15,7 @@ json.cdna_change @variant.cdna_change
 json.diseases @variant.disease_source_variants do |dsv|
   json.disease dsv.disease.name
   json.doid dsv.disease.doid
-  json.source_pubmed_id dsv.source.pmid_id
+  json.source_pubmed_id dsv.source.pubmed_id
 end
 
 json.permutations @variant.related_variants do |v|

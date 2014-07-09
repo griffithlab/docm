@@ -12,7 +12,7 @@
     variant.mutation_type.name,
     variant.amino_acid.name,
     variant.diseases.map(&:name),
-    variant.sources.map(&:pmid_id)
+    variant.sources.map(&:pubmed_id)
   ].join("\t")
 %>
 <% end %>

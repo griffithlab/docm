@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140402163345) do
+ActiveRecord::Schema.define(version: 20140709150748) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,10 +64,11 @@ ActiveRecord::Schema.define(version: 20140402163345) do
 
   create_table "sources", force: true do |t|
     t.string  "name"
-    t.integer "pmid_id"
+    t.integer "pubmed_id"
+    t.text    "citation"
   end
 
-  add_index "sources", ["pmid_id"], name: "index_sources_on_pmid_id", using: :btree
+  add_index "sources", ["pubmed_id"], name: "index_sources_on_pubmed_id", using: :btree
 
   create_table "transcripts", force: true do |t|
     t.string "name"

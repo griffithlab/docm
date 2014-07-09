@@ -16,7 +16,7 @@ class VariantOverviewPresenter < SimpleDelegator
       DiseaseRow.new(
         dsv.disease.name,
         dsv.disease.doid,
-        source_link(dsv.source)
+        full_source_link(dsv.source)
       )
     end
   end

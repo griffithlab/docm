@@ -1,12 +1,16 @@
 require 'net/http'
 
 module DataFetchers
-  class Disease
+  class DiseaseOntology
     def self.run
       ActiveRecord::Base.transaction do
-        ::Disease.all.each do |disease|
-          disease.name = get_name_from_doid(disease.doid)
-          disease.save
+        Disease.all.each do |disease|
+          begin
+            disease.name = get_name_from_doid(disease.doid)
+            disease.save
+          rescue => e
+            puts e.message
+          end
         end
       end
     end
@@ -20,7 +24,7 @@ module DataFetchers
       url = url_for_doid(doid)
       req = Net::HTTP::Get.new(url.path)
       res = Net::HTTP.start(url.host, url.port) { |http| http.request(req) }
-      raise res unless res.code == "200"
+      raise "Request failed! No disease found for DOID: #{doid}" unless res.code == "200"
       JSON.parse(res.body)
     end
 

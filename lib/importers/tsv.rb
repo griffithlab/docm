@@ -45,6 +45,7 @@ module Importers
     end
 
     def valid_row?(row)
+      return false if row['DOID'].blank?
       return false if row['pubmed_id'].blank? && row['primary'] == '1'
       true
     end

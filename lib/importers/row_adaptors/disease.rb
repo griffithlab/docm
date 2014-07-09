@@ -7,8 +7,16 @@ module Importers
 
       def self.column_map
         {
-          'disease' => 'doid'
+          'DOID' => 'doid'
         }
+      end
+
+      def self.transform_column(property_name, value)
+        if property_name == 'doid'
+          value.sub('DOID:','')
+        else
+          value
+        end
       end
     end
   end

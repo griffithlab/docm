@@ -7,8 +7,8 @@ module Importers
 
       def self.column_map
         {
-          'source' => 'name',
-          'pubmed_id' => 'pmid_id'
+#          'source' => 'name',
+          'pubmed_id' => 'pubmed_id'
         }
       end
     end

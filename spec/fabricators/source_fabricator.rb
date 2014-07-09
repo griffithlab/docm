@@ -1,4 +1,4 @@
 Fabricator(:source) do
   name { sequence(:name) { |i| "Source ##{i}" } }
-  pmid_id { sequence(:pmid_id) }
+  pubmed_id { sequence(:pubmed_id) }
 end
