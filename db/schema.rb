@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 20140709150748) do
   end
 
   create_table "diseases", force: true do |t|
-    t.string  "name"
-    t.integer "doid"
+    t.string "name"
+    t.string "doid"
   end
 
   add_index "diseases", ["doid"], name: "index_diseases_on_doid", using: :btree
