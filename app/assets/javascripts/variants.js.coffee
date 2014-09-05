@@ -31,5 +31,6 @@ jQuery ->
 
   $(".chosen-select").chosen
     no_results_text: 'Sorry, nothing matches your query.'
+    width: '100%'
   $("#update-grid-button").click (e) ->
     variantsTable.ajax.reload()
