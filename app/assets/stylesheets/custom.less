@@ -67,11 +67,13 @@ body {
 .sidebar {
   .clearfix();
   margin-top: -@pagePadding;
-  margin-bottom: -@pagePadding;
+  margin-bottom: @pagePadding*2;
   padding-top: @pagePadding;
   padding-bottom: @pagePadding*2;
-  background-color: darken(@pageBackground, 3%);
-  border-right: 1px solid darken(@pageBackground, 10%);
+  background-color: darken(@pageBackground, 4%);
+//  border-right: 1px solid darken(@pageBackground, 10%);
+//  border-bottom: 1px solid darken(@pageBackground, 10%);
+  border-bottom-right-radius: 10px;
 }
 
 /**
@@ -81,5 +83,16 @@ body {
 .sidebar {
   select {
     border: 1px solid #F00 !important;
+  }
+}
+
+/**
+* MAIN
+*/
+
+.main {
+  margin-top: 0;
+  h1 {
+    margin-top: 0;
   }
 }
