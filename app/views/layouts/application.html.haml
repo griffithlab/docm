@@ -10,22 +10,33 @@
     .container-fluid
       .row
         .header
-          .col-xs-4
-            %a.navbar-brand{href: '/'} DoCM - The Database of Canonical Mutations
-          .col-xs-8
-            %ul.nav.navbar-nav.navbar-right
-              %li{class: @about_active}
-                %a{href: '/about'} About
-              %li{class: @api_active}
-                %a{href: '/api'} API Documentation
-    %noscript
-      .alert.alert-warning
-        %h3 Sorry, the DoCM website requires Javascript to function properly.
-        %p
-          You may be interested in using the
-          %a{href: '/api'}API
-          for programatic access.
-    .col-md-9.col-md-offset-1
-      -flash.each do |name, msg|
-        =content_tag :div, msg, class: ['alert', "alert-#{name}"]
+          .col-xs-12.col-sm-6.col-md-4
+            %a{href: '/'}
+              = image_tag("header_logo.png", :class => 'img-responsive')
+          .col-xs-12.col-sm-6.col-md-8
+            %div.hidden-xs.lg-menu-container
+              %ul.pull-right.menu-main.lg
+                %li{class: @about_active}
+                  %a{href: '/about'} About
+                %li{class: @api_active}
+                  %a{href: '/api'} API Documentation
+            %div.visible-xs.xs-menu-container
+              %ul.menu-main.sm
+                %li{class: @about_active}
+                  %a{href: '/about'} About
+                %li{class: @api_active}
+                  %a{href: '/api'} API Documentation
+
+
+      %noscript
+        .alert.alert-warning
+          %h3 Sorry, the DoCM website requires Javascript to function properly.
+          %p
+            You may be interested in using the
+            %a{href: '/api'}API
+            for programatic access.
+      .col-md-9.col-md-offset-1
+        -flash.each do |name, msg|
+          =content_tag :div, msg, class: ['alert', "alert-#{name}"]
+
     = yield
