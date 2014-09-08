@@ -1,0 +1,141 @@
+@import "twitter/bootstrap/variables.less";
+@import "twitter/bootstrap/mixins.less";
+
+@docmPurple: #4b2065;
+@docmDarkPurple: darken(@docmPurple, 19%);
+@docmYellow: #ffdd22;
+@docmGreen: #2f7d22;
+@docmRed: #942830;
+
+@pageBackground: #EFEFEF;
+
+@header-height: 106px;
+
+@pagePadding: 15px;
+
+@outer-border-radius: 15px;
+@inner-border-radius: 8px;
+
+body {
+  background-color: @docmDarkPurple;
+}
+
+.header {
+  .clearfix();
+  margin: 0 15px;
+  background-image: image-url('header_bg.png');
+  background-repeat: no-repeat;
+  .menu-main {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        margin: 0 @padding-large-horizontal;
+        color: #CCC;
+      }
+    }
+  }
+  .menu-main.lg {
+    a {
+      line-height: @header-height;
+      font-size: 140%;
+    }
+  }
+  .menu-main.sm {
+    margin: .5em auto;
+    a {
+      line-height: @line-height-computed*1.5;
+      font-size: 120%;
+    }
+  }
+
+  .xs-menu-container {
+    text-align: center;
+    margin: 0 -15px;
+    background-color: rgba(0,0,0,.2) !important;
+    border-top: 1px solid #333;
+  }
+}
+
+.page-background {
+  .clearfix();
+  padding: @pagePadding;
+  background-color: @pageBackground;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid darken(@pageBackground, 70%);
+  border-bottom-left-radius: @outer-border-radius;
+  border-bottom-right-radius: @outer-border-radius;
+  margin-bottom: 2em;
+}
+
+.sidebar {
+  .clearfix();
+  margin-top: -@pagePadding;
+  margin-bottom: @pagePadding*2;
+  padding-top: @pagePadding;
+  padding-bottom: @pagePadding*2;
+  background-color: darken(@pageBackground, 4%);
+//  border-right: 1px solid darken(@pageBackground, 10%);
+//  border-bottom: 1px solid darken(@pageBackground, 10%);
+  border-bottom-right-radius: @inner-border-radius;
+}
+
+/**
+*  SIDEBAR
+**/
+
+.sidebar {
+  select {
+    border: 1px solid #F00 !important;
+  }
+}
+
+/**
+* MAIN
+*/
+
+.main {
+  margin-top: 0;
+  h1 {
+    margin-top: 0;
+  }
+}
+
+/**
+*  VARIANT TABLE
+*/
+
+.table-bg {
+  .clearfix();
+  background-color: #FFF;
+  border-radius: @inner-border-radius;
+  padding: 1em 1em;
+  .dataTables_filter {
+    .clearfix();
+    input {
+      margin-left: .5em;
+      border: 1px solid #DDD;
+      border-radius: 5px;
+      padding: .2em .5em;
+    }
+  }
+
+  #variants {
+    width: 100%;
+    td.child {
+      ul {
+        li {
+          border-bottom: none;
+          padding: .15em 0;
+        }
+      }
+    }
+
+
+  }
+
+}
+
+

@@ -10,12 +10,13 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'therubyracer', platforms: :ruby
 gem "less-rails"
 gem "twitter-bootstrap-rails", github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 3.1.2'
 gem 'jbuilder', '~> 1.2'
 gem 'foreigner'
 gem 'will_paginate'
 gem 'jquery-ui-rails'
-gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+gem 'jquery-datatables-rails', '~> 2.2.3'
+gem 'lodash-rails'
 gem 'yajl-ruby', require: 'yajl'
 gem 'multi_json'
 

@@ -1,39 +1,42 @@
 .container-fluid
-  .row
-    .col-sm-3.col-md-2.sidebar
-      %form#filters
-        - @multiselect_filters.each do |filter_hash|
-          = render partial: 'multiselect', locals: filter_hash
-        - @range_filters.each do |filter_hash|
-          = render partial: 'range', locals: filter_hash
-        .submit-group
-          %button.btn.btn-default.btn-xs#update-grid-button{type: 'button'}
-            %span.glyphicon.glyphicon-refresh
-            Update
-          %a#tsv-export-button.btn.btn-default.btn-xs{href: '#'}
-            %span.glyphicon.glyphicon-download-alt
-            TSV
-          %a#vcf-export-button.btn.btn-default.btn-xs{href: '#'}
-            %span.glyphicon.glyphicon-download-alt
-            VCF
-      %hr
-      %a{href: '/variant_submission'} Are we missing a variant? Please submit it!
-    .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
-      %h1.page-header Variants
+  .page-background
+    .row
+      .col-sm-3.col-lg-2.sidebar
+        %form#filters
+          - @multiselect_filters.each do |filter_hash|
+            = render partial: 'multiselect', locals: filter_hash
+          - @range_filters.each do |filter_hash|
+            = render partial: 'range', locals: filter_hash
+          .submit-group
+            %button.btn.btn-default.btn-xs#update-grid-button{type: 'button'}
+              %span.glyphicon.glyphicon-refresh
+              Update
+            %a#tsv-export-button.btn.btn-default.btn-xs{href: '#'}
+              %span.glyphicon.glyphicon-download-alt
+              TSV
+            %a#vcf-export-button.btn.btn-default.btn-xs{href: '#'}
+              %span.glyphicon.glyphicon-download-alt
+              VCF
 
-      .table-responsive
-        %table.display.table.table-striped.table-bordered{ id: 'variants', data: { source: variants_url(format: 'json') }}
-          %thead
-            %tr
-              %th HGVS
-              %th CHR
-              %th Start
-              %th Stop
-              %th Reference
-              %th Variant
-              %th Gene
-              %th Amino Acid
-              %th Mutation Type
-              %th Diseases
-              %th Sources
-            %tbody
+      .col-sm-9.col-lg-10.main
+        %h1.page-header Variants
+
+        .table-bg
+          .table-responsive
+            %table.display.table.table-striped{ id: 'variants', data: { source: variants_url(format: 'json') }}
+              %thead
+                %tr
+                  %th.all HGVS
+                  %th.all CHR
+                  %th.none Start
+                  %th.none Stop
+                  %th.none Reference
+                  %th.none Variant
+                  %th Gene
+                  %th Amino Acid
+                  %th Mutation Type
+                  %th.desktop Diseases
+                  %th.desktop Sources
+              %tbody
+
+        %a.btn{href: '/variant_submission'} Are we missing a variant? Please submit it!

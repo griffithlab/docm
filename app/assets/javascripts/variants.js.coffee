@@ -1,9 +1,14 @@
 jQuery ->
   variantsTable = $('#variants').DataTable
-    pagingType: "bootstrap"
+    pagingType: "full_numbers"
     jQueryUI: true
     processing: true
     serverSide: true
+    pageLength: 25
+
+    autoWidth: false
+    responsive: true
+
     ajax:
       url: $('#variants').data('source')
       type: 'POST'
@@ -27,9 +32,10 @@ jQuery ->
         $("#tsv-export-button").attr("href", "/api/v1/variants.tsv?" + queryString)
 
         data
-    pageLength: 50
+
 
   $(".chosen-select").chosen
     no_results_text: 'Sorry, nothing matches your query.'
+    width: '100%'
   $("#update-grid-button").click (e) ->
     variantsTable.ajax.reload()

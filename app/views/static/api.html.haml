@@ -1,175 +1,176 @@
 .container-fluid
-  .row
-    .col-md-8.main.col-md-offset-2
-      .col-md-12
-        %h1.page-header
-          API Documentation
-        %p.lead
-          The DoCM API allows you to access variant data in a programatic fashion.
-          The DoCM API can be used with simple HTTP requests from any tool or programming language of your choice.
-        %hr
-        %h4
-          %span.label.label-default GET
-          Variants List Endpoint
-        %pre /api/v1/variants.{format}?{parameters}
-        %p
-          This endpoint allows you to retrieve filtered lists of variants in 
-          %strong tsv, json, or vcf
-          format. Filter parameters can be added to the query string of the request to filter the returned list.
-          You can combine as many filter paramters as you'd like to narrow your query down more effectively.
-        %table.table.table-striped.table-bordered
-          %thead
-            %th Parameter
-            %th Description
-            %th Example
-          %tbody
-            %tr
-              %td amino_acids
-              %td This parameter should contain a comma separated list of amino acids you would like to see variants for
-              %td
-                %code amino_acids=p.Q228P,p.Q61L
-            %tr
-              %td chromosomes
-              %td This parameter should contain a comma separated list of chromosomes you would like to see variants for
-              %td
-                %code chromosomes=1,7
-            %tr
-              %td diseases
-              %td This parameter should contain a comma separated list of diseases you would like to see variants for
-              %td
-                %code diseases=AML,BRC
-            %tr
-              %td genes
-              %td This parameter should contain a comma separated list of genes you would like to see variants for
-              %td
-                %code genes=FLT3
-            %tr
-              %td mutation_types
-              %td This parameter should contain a comma separated list of mutation types you would like to see variants for
-              %td
-                %code mutation_types=missense,silent
-            %tr
-              %td sources
-              %td This parameter should contain a comma separated list of pubmed ids you would like to see variants for
-              %td
-                %code sources=21234,53124
-            %tr
-              %td position_start
-              %td
-                This parameter should contain a single value for a starting position you would like to see variants for. It can be combined with
-                %code position_stop
-                to create a range query
-              %td
-                %code position_start=178936091
-            %tr
-              %td position_stop
-              %td
-                This parameter should contain a single value for an ending position you would like to see variants for. It can be combined with
-                %code position_start
-                to create a range query
-              %td
-                %code position_stop=178936093
-        %strong Example Request
-        %p.small Returns all variants on the gene KRAS between positions 25398284 and 25398285 in JSON.
-        %pre /api/v1/variants.json?genes=KRAS&position_start=25398284&position_stop=25398285
-        %strong Example Response
-        %pre
-          :preserve
-            [
-              {
-                "hgvs":"ENST00000256078:c.35G>A",
-                "chr":"12",
-                "start":25398284,
-                "stop":25398284,
-                "read":"G",
-                "variant":"A",
-                "gene":"KRAS",
-                "mutation_type":"missense",
-                "amino_acid":"p.G12V",
-                "dieases":[
-                  "NSCLC",
-                  "CC"
-                ],
-                "pubmed_sources":[
-                  18316791,
-                  12460918
-                ]
-              },
-              {
-                "hgvs":"ENST00000256078:c.35G>C",
-                "chr":"12",
-                "start":25398284,
-                "stop":25398284,
-                "read":"G",
-                "variant":"C",
-                "gene":"KRAS",
-                "mutation_type":"silent",
-                "amino_acid":"p.G12",
-                "dieases":[
-                  "NSCLC",
-                  "CC"
-                ],
-                "pubmed_sources":[
-                  18316791,
-                  12460918
-                ]
-              },
-              ...]
-        %hr
-        %h4
-          %span.label.label-default GET
-          Variant Detail Endpont
-        %pre /api/v1/variants/{hgvs}.json
-        %p
-          This endpoint allows you to retrieve detailed information about a single variant in DoCM.
-          it is queried using
-          =link_to('HGVS identifiers', 'http://www.ncbi.nlm.nih.gov/variation/hgvs/')
-          which are provided in the list API output. The variant detail endpoint only supports JSON output.
-        %br
-        %strong Example Request
-        %p.small
-          Returns all all the information DoCM has about the variant
-          %code ENST00000263967:c.1633G>C
-        %pre /api/v1/variants/ENST00000263967:c.1633G>C.json
-        %strong Example Response
-        %pre
-          :preserve
-            {
-              "hgvs":"ENST00000263967:c.1633G>C",
-              "chromosome":"3",
-              "start":178936091,
-              "stop":178936091,
-              "strand":"1",
-              "transcript":"ENST00000263967",
-              "gene":"PIK3CA",
-              "reference":"G",
-              "variant":"C",
-              "amino_acid":"p.E545Q",
-              "variant_type":"SNP",
-              "mutation_type":"missense",
-              "cdna_change":"c.1633",
-              "diseases":[
+  .page-background
+    .row
+      .col-md-8.main.col-md-offset-2
+        .col-md-12
+          %h1.page-header
+            API Documentation
+          %p.lead
+            The DoCM API allows you to access variant data in a programatic fashion.
+            The DoCM API can be used with simple HTTP requests from any tool or programming language of your choice.
+          %hr
+          %h4
+            %span.label.label-default GET
+            Variants List Endpoint
+          %pre /api/v1/variants.{format}?{parameters}
+          %p
+            This endpoint allows you to retrieve filtered lists of variants in
+            %strong tsv, json, or vcf
+            format. Filter parameters can be added to the query string of the request to filter the returned list.
+            You can combine as many filter paramters as you'd like to narrow your query down more effectively.
+          %table.table.table-striped.table-bordered
+            %thead
+              %th Parameter
+              %th Description
+              %th Example
+            %tbody
+              %tr
+                %td amino_acids
+                %td This parameter should contain a comma separated list of amino acids you would like to see variants for
+                %td
+                  %code amino_acids=p.Q228P,p.Q61L
+              %tr
+                %td chromosomes
+                %td This parameter should contain a comma separated list of chromosomes you would like to see variants for
+                %td
+                  %code chromosomes=1,7
+              %tr
+                %td diseases
+                %td This parameter should contain a comma separated list of diseases you would like to see variants for
+                %td
+                  %code diseases=AML,BRC
+              %tr
+                %td genes
+                %td This parameter should contain a comma separated list of genes you would like to see variants for
+                %td
+                  %code genes=FLT3
+              %tr
+                %td mutation_types
+                %td This parameter should contain a comma separated list of mutation types you would like to see variants for
+                %td
+                  %code mutation_types=missense,silent
+              %tr
+                %td sources
+                %td This parameter should contain a comma separated list of pubmed ids you would like to see variants for
+                %td
+                  %code sources=21234,53124
+              %tr
+                %td position_start
+                %td
+                  This parameter should contain a single value for a starting position you would like to see variants for. It can be combined with
+                  %code position_stop
+                  to create a range query
+                %td
+                  %code position_start=178936091
+              %tr
+                %td position_stop
+                %td
+                  This parameter should contain a single value for an ending position you would like to see variants for. It can be combined with
+                  %code position_start
+                  to create a range query
+                %td
+                  %code position_stop=178936093
+          %strong Example Request
+          %p.small Returns all variants on the gene KRAS between positions 25398284 and 25398285 in JSON.
+          %pre /api/v1/variants.json?genes=KRAS&position_start=25398284&position_stop=25398285
+          %strong Example Response
+          %pre
+            :preserve
+              [
                 {
-                  "disease":"BRC",
-                  "doid":1612,
-                  "source_pubmed_id":20453058
+                  "hgvs":"ENST00000256078:c.35G>A",
+                  "chr":"12",
+                  "start":25398284,
+                  "stop":25398284,
+                  "read":"G",
+                  "variant":"A",
+                  "gene":"KRAS",
+                  "mutation_type":"missense",
+                  "amino_acid":"p.G12V",
+                  "dieases":[
+                    "NSCLC",
+                    "CC"
+                  ],
+                  "pubmed_sources":[
+                    18316791,
+                    12460918
+                  ]
                 },
                 {
-                  "disease":"CC",
-                  "doid":9256,
-                  "source_pubmed_id":15016963
-                }
-              ],
-              "permutations":[
-                {
-                  "hgvs":"ENST00000263967:c.1633G>C",
-                  "chromosome":"3",
-                  "start":178936091,
-                  "stop":178936091,
-                  "reference_read":"G",
-                  "variant":"C"
-                }
-              ]
-            }
+                  "hgvs":"ENST00000256078:c.35G>C",
+                  "chr":"12",
+                  "start":25398284,
+                  "stop":25398284,
+                  "read":"G",
+                  "variant":"C",
+                  "gene":"KRAS",
+                  "mutation_type":"silent",
+                  "amino_acid":"p.G12",
+                  "dieases":[
+                    "NSCLC",
+                    "CC"
+                  ],
+                  "pubmed_sources":[
+                    18316791,
+                    12460918
+                  ]
+                },
+                ...]
+          %hr
+          %h4
+            %span.label.label-default GET
+            Variant Detail Endpont
+          %pre /api/v1/variants/{hgvs}.json
+          %p
+            This endpoint allows you to retrieve detailed information about a single variant in DoCM.
+            it is queried using
+            =link_to('HGVS identifiers', 'http://www.ncbi.nlm.nih.gov/variation/hgvs/')
+            which are provided in the list API output. The variant detail endpoint only supports JSON output.
+          %br
+          %strong Example Request
+          %p.small
+            Returns all all the information DoCM has about the variant
+            %code ENST00000263967:c.1633G>C
+          %pre /api/v1/variants/ENST00000263967:c.1633G>C.json
+          %strong Example Response
+          %pre
+            :preserve
+              {
+                "hgvs":"ENST00000263967:c.1633G>C",
+                "chromosome":"3",
+                "start":178936091,
+                "stop":178936091,
+                "strand":"1",
+                "transcript":"ENST00000263967",
+                "gene":"PIK3CA",
+                "reference":"G",
+                "variant":"C",
+                "amino_acid":"p.E545Q",
+                "variant_type":"SNP",
+                "mutation_type":"missense",
+                "cdna_change":"c.1633",
+                "diseases":[
+                  {
+                    "disease":"BRC",
+                    "doid":1612,
+                    "source_pubmed_id":20453058
+                  },
+                  {
+                    "disease":"CC",
+                    "doid":9256,
+                    "source_pubmed_id":15016963
+                  }
+                ],
+                "permutations":[
+                  {
+                    "hgvs":"ENST00000263967:c.1633G>C",
+                    "chromosome":"3",
+                    "start":178936091,
+                    "stop":178936091,
+                    "reference_read":"G",
+                    "variant":"C"
+                  }
+                ]
+              }
 
 
