@@ -21,20 +21,20 @@
       .col-sm-9.main
         %h1.page-header Variants
 
-        .table-responsive
-          %table.display.table.table-striped.table-bordered{ id: 'variants', data: { source: variants_url(format: 'json') }}
-            %thead
-              %tr
-                %th HGVS
-                %th CHR
-                %th{'data-hide' => 'xs,sm,md', 'data-class' => 'expand'} Start
-                %th{'data-hide' => 'xs,sm,md', 'data-class' => 'expand'} Stop
-                %th{'data-hide' => 'xs,sm,md', 'data-class' => 'expand'} Reference
-                %th{'data-hide' => 'always', 'data-class' => 'expand'} Variant
-                %th Gene
-                %th{'data-hide' => 'always', 'data-class' => 'expand'} Amino Acid
-                %th Mutation Type
-                %th Diseases
-                %th{'data-hide' => 'always', 'data-class' => 'expand'} Sources
-            %tbody
+        %table.display.table.table-striped.table-bordered{ id: 'variants', data: { source: variants_url(format: 'json') }}
+          %thead
+            %tr
+              %th.all HGVS
+              %th.all CHR
+              %th.none Start
+              %th.none Stop
+              %th.none Reference
+              %th.none Variant
+              %th Gene
+              %th Amino Acid
+              %th Mutation Type
+              %th.desktop Diseases
+              %th.desktop Sources
+          %tbody
+        %hr
         %a{href: '/variant_submission'} Are we missing a variant? Please submit it!
