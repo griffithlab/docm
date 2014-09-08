@@ -17,14 +17,3 @@ json.diseases @variant.disease_source_variants do |dsv|
   json.doid dsv.disease.doid
   json.source_pubmed_id dsv.source.pubmed_id
 end
-
-json.permutations @variant.related_variants do |v|
-  json.hgvs v.hgvs
-  json.chromosome v.location.chromosome
-  json.start v.location.start
-  json.stop v.location.stop
-  json.reference_read v.location.reference_read
-  json.variant v.variant
-end
-
-
