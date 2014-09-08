@@ -3,10 +3,11 @@
     .row
       .col-sm-3.col-lg-2.sidebar
         %form#filters
-          - @multiselect_filters.each do |filter_hash|
-            = render partial: 'multiselect', locals: filter_hash
-          - @range_filters.each do |filter_hash|
-            = render partial: 'range', locals: filter_hash
+          .filter-group
+            - @multiselect_filters.each do |filter_hash|
+              = render partial: 'multiselect', locals: filter_hash
+            - @range_filters.each do |filter_hash|
+              = render partial: 'range', locals: filter_hash
           .submit-group
             %button.btn.btn-default.btn-xs#update-grid-button{type: 'button'}
               %span.glyphicon.glyphicon-refresh
