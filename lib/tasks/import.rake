@@ -7,6 +7,7 @@ namespace :docm do
     DataFetchers::HGVS.run
     DataFetchers::DiseaseOntology.run
     DataFetchers::PubMed.run
+    DataFetchers::PreviousBase.run
   end
 
   task get_disease_names: :environment do
@@ -19,5 +20,9 @@ namespace :docm do
 
   task generate_hgvs: :environment do
     DataFetchers::HGVS.run
+  end
+
+  task populate_previous_bases: :environment do
+    DataFetchers::PreviousBase.run
   end
 end
