@@ -10,6 +10,7 @@
 @pageBackground: #EFEFEF;
 
 @header-height: 106px;
+@header-height-xs: 152px;
 
 @pagePadding: 15px;
 
@@ -63,11 +64,25 @@ body {
   .clearfix();
   padding: @pagePadding;
   background-color: @pageBackground;
+  background-image: image-url('subpage_bg.png');
+  background-repeat: no-repeat;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid darken(@pageBackground, 70%);
   border-bottom-left-radius: @outer-border-radius;
   border-bottom-right-radius: @outer-border-radius;
   margin-bottom: 2em;
+}
+
+@media (min-width: @screen-sm) {
+  .page-background {
+    background-position: 0 (-@header-height)-2;
+  }
+}
+
+@media (max-width: @screen-sm) {
+  .page-background {
+    background-position: 0 (-@header-height-xs)-2;
+  }
 }
 
 .sidebar {
@@ -76,7 +91,7 @@ body {
   margin-bottom: @pagePadding*2;
   padding-top: @pagePadding;
   padding-bottom: @pagePadding*2;
-  background-color: darken(@pageBackground, 4%);
+  background-color: rgba(0,0,0,.05);
 //  border-right: 1px solid darken(@pageBackground, 10%);
 //  border-bottom: 1px solid darken(@pageBackground, 10%);
   border-bottom-right-radius: @inner-border-radius;
