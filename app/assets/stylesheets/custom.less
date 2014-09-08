@@ -13,6 +13,9 @@
 
 @pagePadding: 15px;
 
+@outer-border-radius: 15px;
+@inner-border-radius: 8px;
+
 body {
   background-color: @docmDarkPurple;
 }
@@ -62,6 +65,9 @@ body {
   background-color: @pageBackground;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid darken(@pageBackground, 70%);
+  border-bottom-left-radius: @outer-border-radius;
+  border-bottom-right-radius: @outer-border-radius;
+  margin-bottom: 2em;
 }
 
 .sidebar {
@@ -73,7 +79,7 @@ body {
   background-color: darken(@pageBackground, 4%);
 //  border-right: 1px solid darken(@pageBackground, 10%);
 //  border-bottom: 1px solid darken(@pageBackground, 10%);
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: @inner-border-radius;
 }
 
 /**
@@ -104,8 +110,18 @@ body {
 .table-bg {
   .clearfix();
   background-color: #FFF;
-  border-radius: 10px;
-  padding: 1em .5em;
+  border-radius: @inner-border-radius;
+  padding: 1em 1em;
+  .dataTables_filter {
+    .clearfix();
+    input {
+      margin-left: .5em;
+      border: 1px solid #DDD;
+      border-radius: 5px;
+      padding: .2em .5em;
+    }
+  }
+
   #variants {
     width: 100%;
     td.child {
@@ -116,6 +132,8 @@ body {
         }
       }
     }
+
+
   }
 
 }
