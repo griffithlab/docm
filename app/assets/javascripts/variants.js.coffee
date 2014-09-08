@@ -1,6 +1,6 @@
 jQuery ->
   variantsTable = $('#variants').DataTable
-    pagingType: "bootstrap"
+    pagingType: "full_numbers"
     jQueryUI: true
     processing: true
     serverSide: true

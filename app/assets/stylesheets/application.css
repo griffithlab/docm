@@ -10,7 +10,8 @@
  *
  *= require_self
  *= require bootstrap_and_overrides
- *= require dataTables/jquery.dataTables.bootstrap3
+ *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+ *= require dataTables/extras/dataTables.responsive
  *= require custom
  *= require_tree .
  */
