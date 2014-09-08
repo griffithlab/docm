@@ -1,9 +1,19 @@
+responsiveHelper = undefined
+breakpointDefinition =
+  xs: 480
+  sm: 768
+  md: 992
+  lg: 1200
+
+
 jQuery ->
   variantsTable = $('#variants').DataTable
     pagingType: "full_numbers"
     jQueryUI: true
     processing: true
     serverSide: true
+    pageLength: 20
+
     ajax:
       url: $('#variants').data('source')
       type: 'POST'
@@ -27,7 +37,21 @@ jQuery ->
         $("#tsv-export-button").attr("href", "/api/v1/variants.tsv?" + queryString)
 
         data
-    pageLength: 50
+    autoWidth: false
+    preDrawCallback: ->
+      # Initialize the responsive datatables helper once.
+      responsiveHelper = new ResponsiveDatatablesHelper($(this), breakpointDefinition)  unless responsiveHelper
+      return
+
+    rowCallback: (nRow) ->
+      console.log('rowCallback called.');
+      responsiveHelper.createExpandIcon nRow
+      return
+
+    drawCallback: (oSettings) ->
+      console.log('drawCallback called.');
+      responsiveHelper.respond()
+      return
 
   $(".chosen-select").chosen
     no_results_text: 'Sorry, nothing matches your query.'
