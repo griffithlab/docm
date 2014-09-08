@@ -26,4 +26,8 @@ class Variant < ActiveRecord::Base
       .where('variants.id != ?', self.id)
   end
 
+  def is_indel?
+    ['INS', 'DEL'].include?(variant_type.name)
+  end
+
 end
