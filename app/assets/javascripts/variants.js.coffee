@@ -5,7 +5,6 @@ breakpointDefinition =
   md: 992
   lg: 1200
 
-
 jQuery ->
   variantsTable = $('#variants').DataTable
     pagingType: "full_numbers"
@@ -38,6 +37,7 @@ jQuery ->
 
         data
     autoWidth: false
+    responsive: true
     preDrawCallback: ->
       # Initialize the responsive datatables helper once.
       responsiveHelper = new ResponsiveDatatablesHelper($(this), breakpointDefinition)  unless responsiveHelper
