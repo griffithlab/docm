@@ -1,15 +1,10 @@
 module Importers
   module RowAdaptors
     class Source < Base
-      def self.model_class
-        ::Source
-      end
-
-      def self.column_map
-        {
-#          'source' => 'name',
-          'pubmed_id' => 'pubmed_id'
-        }
+      def self.create_from_row(row)
+        row['pubmed_id'].split(',').map(&:strip).map do |pubmed_id|
+          ::Source.where(pubmed_id: pubmed_id).first_or_create
+        end
       end
     end
   end

@@ -33,14 +33,16 @@ module Importers
 
     def create_disease_source_variant_links(variant, row)
       if variant.is_primary?
-        source = RowAdaptors::Source.create_from_row(row)
+        sources = RowAdaptors::Source.create_from_row(row)
         disease = RowAdaptors::Disease.create_from_row(row)
 
-        DiseaseSourceVariant.create(
-          variant: variant,
-          disease: disease,
-          source: source,
-        )
+        sources.each do |source|
+          DiseaseSourceVariant.create(
+            variant: variant,
+            disease: disease,
+            source: source,
+          )
+        end
       end
     end
 
