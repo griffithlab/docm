@@ -1,58 +1,59 @@
 .container-fluid
-  .row
-    .col-md-10.col-md-offset-1
-      %h1.page-header
-        =@variant.hgvs
-  .row
-    .col-md-10.col-md-offset-1
-      %h4 Variant Data
-      .well.col-md-12
-        .col-md-6
-          %h4
-            .small
-              %strong Location
-          %ul.list-unstyled
-            %li
-              %strong Chromosome:
-              = @variant.location.chromosome
-            %li
-              %strong Start:
-              = @variant.location.start
-            %li
-              %strong Stop:
-              = @variant.location.stop
-            %li
-              %strong Strand:
-              = @variant.strand
-            %li
-              %strong Transcript:
-              = @variant.transcript_name
-            %li
-              %strong Gene:
-              = @variant.gene_name
-        .col-md-6
-          %h4
-            .small
-              %strong Information
-          %ul.list-unstyled
-            %li
-              %strong Reference:
-              = @variant.location.reference_read
-            %li
-              %strong Variant:
-              = @variant.variant
-            %li
-              %strong Amino Acid:
-              = @variant.amino_acid.name
-            %li
-              %strong Mutation Type:
-              = @variant.mutation_type.name
-            %li
-              %strong Variant Type:
-              = @variant.variant_type.name
-            %li
-              %strong cDNA Change:
-              = @variant.cdna_change
+  .page-background
+    .row
+      .col-md-10.col-md-offset-1
+        %h1.page-header
+          =@variant.hgvs
+    .row
+      .col-md-10.col-md-offset-1
+        %h4 Variant Data
+        .well.col-md-12
+          .col-md-6
+            %h4
+              .small
+                %strong Location
+            %ul.list-unstyled
+              %li
+                %strong Chromosome:
+                = @variant.location.chromosome
+              %li
+                %strong Start:
+                = @variant.location.start
+              %li
+                %strong Stop:
+                = @variant.location.stop
+              %li
+                %strong Strand:
+                = @variant.strand
+              %li
+                %strong Transcript:
+                = @variant.transcript_name
+              %li
+                %strong Gene:
+                = @variant.gene_name
+          .col-md-6
+            %h4
+              .small
+                %strong Information
+            %ul.list-unstyled
+              %li
+                %strong Reference:
+                = @variant.location.reference_read
+              %li
+                %strong Variant:
+                = @variant.variant
+              %li
+                %strong Amino Acid:
+                = @variant.amino_acid.name
+              %li
+                %strong Mutation Type:
+                = @variant.mutation_type.name
+              %li
+                %strong Variant Type:
+                = @variant.variant_type.name
+              %li
+                %strong cDNA Change:
+                = @variant.cdna_change
 
     .row
       .col-md-10.col-md-offset-1
