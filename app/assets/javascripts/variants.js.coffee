@@ -4,7 +4,7 @@ jQuery ->
     jQueryUI: true
     processing: true
     serverSide: true
-    pageLength: 20
+    pageLength: 25
 
     autoWidth: false
     responsive: true

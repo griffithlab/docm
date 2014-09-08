@@ -1,7 +1,7 @@
 .container-fluid
   .page-background
     .row
-      .col-sm-3.sidebar
+      .col-sm-3.col-lg-2.sidebar
         %form#filters
           - @multiselect_filters.each do |filter_hash|
             = render partial: 'multiselect', locals: filter_hash
@@ -18,23 +18,25 @@
               %span.glyphicon.glyphicon-download-alt
               VCF
 
-      .col-sm-9.main
+      .col-sm-9.col-lg-10.main
         %h1.page-header Variants
 
-        %table.display.table.table-striped.table-bordered{ id: 'variants', data: { source: variants_url(format: 'json') }}
-          %thead
-            %tr
-              %th.all HGVS
-              %th.all CHR
-              %th.none Start
-              %th.none Stop
-              %th.none Reference
-              %th.none Variant
-              %th Gene
-              %th Amino Acid
-              %th Mutation Type
-              %th.desktop Diseases
-              %th.desktop Sources
-          %tbody
-        %hr
-        %a{href: '/variant_submission'} Are we missing a variant? Please submit it!
+        .table-bg
+          .table-responsive
+            %table.display.table.table-striped{ id: 'variants', data: { source: variants_url(format: 'json') }}
+              %thead
+                %tr
+                  %th.all HGVS
+                  %th.all CHR
+                  %th.none Start
+                  %th.none Stop
+                  %th.none Reference
+                  %th.none Variant
+                  %th Gene
+                  %th Amino Acid
+                  %th Mutation Type
+                  %th.desktop Diseases
+                  %th.desktop Sources
+              %tbody
+
+        %a.btn{href: '/variant_submission'} Are we missing a variant? Please submit it!

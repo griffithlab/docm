@@ -101,7 +101,23 @@ body {
 *  VARIANT TABLE
 */
 
-#variants {
-  width: 100%;
+.table-bg {
+  .clearfix();
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 1em .5em;
+  #variants {
+    width: 100%;
+    td.child {
+      ul {
+        li {
+          border-bottom: none;
+          padding: .15em 0;
+        }
+      }
+    }
+  }
+
 }
+
 
