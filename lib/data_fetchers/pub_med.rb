@@ -5,7 +5,7 @@ module DataFetchers
     def self.run
       ActiveRecord::Base.transaction do
         [::Source.all, ::DrugInteraction.all].flatten.each do |item|
-          item.citation = get_citation_from_pubmed_id(source.pubmed_id)
+          item.citation = get_citation_from_pubmed_id(item.pubmed_id)
           item.save
         end
       end
@@ -32,6 +32,8 @@ module DataFetchers
         .sub(/\d:\s/, '')
         .gsub(/\s+/, ' ')
         .strip
+    rescue
+      ''
     end
   end
 end
