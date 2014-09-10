@@ -7,11 +7,11 @@ namespace :docm do
     Importers::TSV.new(file_path).import!
     puts 'Generating HGVS strings.'
     DataFetchers::HGVS.run
-    puts 'Fetching disease information from DiseaseOntology'
+    puts 'Fetching disease information from DiseaseOntology.'
     DataFetchers::DiseaseOntology.run
-    puts 'Fetching citations from PubMed'
+    puts 'Fetching citations from PubMed.'
     DataFetchers::PubMed.run
-    puts 'Looking up previous reference bases in Ensembl'
+    puts 'Looking up previous reference bases in Ensembl.'
     DataFetchers::PreviousBase.run
   end
 
