@@ -3,7 +3,7 @@ class AddDrugInteractions < ActiveRecord::Migration
     create_table :drug_interactions do |t|
       t.string :effect
       t.string :pathway
-      t.string :association
+      t.string :effect
       t.string :therapeutic_context
       t.string :status
       t.string :evidence

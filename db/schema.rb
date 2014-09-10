@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(version: 20140910203359) do
   create_table "drug_interactions", force: true do |t|
     t.string  "effect"
     t.string  "pathway"
-    t.string  "association"
     t.string  "therapeutic_context"
     t.string  "status"
     t.string  "evidence"
