@@ -54,6 +54,9 @@
               %li
                 %strong cDNA Change:
                 = @variant.cdna_change
+              - if @variant.from_my_cancer_genome?
+                %li
+                  = @variant.my_cancer_genome_link
 
     .row
       .col-md-10.col-md-offset-1

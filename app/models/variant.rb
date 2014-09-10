@@ -30,4 +30,12 @@ class Variant < ActiveRecord::Base
     ['INS', 'DEL'].include?(variant_type.name)
   end
 
+  def from_tim_ley?
+    !tim_ley_annotation.blank?
+  end
+
+  def from_my_cancer_genome?
+    !my_cancer_genome_link.blank?
+  end
+
 end
