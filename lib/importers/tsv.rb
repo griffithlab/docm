@@ -5,7 +5,7 @@ module Importers
     def initialize(file_path, delimiter = "\t", headers = true)
       raise "File #{file_path} doesn't exist!" unless File.exists?(file_path)
       file = File.open(file_path, 'r')
-      @csv = CSV.new(file, col_sep: delimiter, headers: headers)
+      @csv = CSV.new(file, col_sep: delimiter, headers: headers, quote_char: "\'")
     end
 
     def import!
@@ -17,6 +17,7 @@ module Importers
           property_hash = RowAdaptors::Variant.get_property_hash_from_row(row)
           variant = Variant.find_or_create_by(entity_hash.merge(property_hash))
           create_disease_source_variant_links(variant, row)
+          create_drug_interactions(variant, row)
         end
       end
     end
@@ -44,6 +45,15 @@ module Importers
           )
         end
       end
+    end
+
+    def create_drug_interactions(variant, row)
+        drug_interactions = RowAdaptors::DrugInteraction.create_from_row(row)
+
+        drug_interactions.each do |drug_interaction|
+          drug_interaction.variant = variant
+          drug_interaction.save
+        end
     end
 
     def valid_row?(row)
