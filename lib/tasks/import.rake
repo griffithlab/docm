@@ -3,10 +3,15 @@ namespace :docm do
   task :import, [:tsv_path] => :environment do |_, args|
     file_path = args[:tsv_path]
     raise "File #{file_path} not found!" unless File.exists? file_path
+    puts 'Importing TSV.'
     Importers::TSV.new(file_path).import!
+    puts 'Generating HGVS strings.'
     DataFetchers::HGVS.run
+    puts 'Fetching disease information from DiseaseOntology'
     DataFetchers::DiseaseOntology.run
+    puts 'Fetching citations from PubMed'
     DataFetchers::PubMed.run
+    puts 'Looking up previous reference bases in Ensembl'
     DataFetchers::PreviousBase.run
   end
 
