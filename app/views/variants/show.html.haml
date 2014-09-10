@@ -55,8 +55,7 @@
                 %strong cDNA Change:
                 = @variant.cdna_change
               - if @variant.from_my_cancer_genome?
-                %li
-                  = @variant.my_cancer_genome_link
+                = @variant.my_cancer_genome_row
 
     .row
       .col-md-10.col-md-offset-1
@@ -73,25 +72,29 @@
                   %td= row.disease
                   %td= row.doid
                   %td= row.source
-      -#.col-md-6
-        -#%h4 Variant Permutations
-        -#.well
-          -#%table.table.table-striped
-            -#%thead
-              -#%th HGVS
-              -#%th Chr
-              -#%th Start
-              -#%th Stop
-              -#%th Ref
-              -#%th Variant
-            -#%tbody
-              -#- @variant.permutation_rows.each do |variant|
-                -#%tr
-                  -#%td= variant.hgvs
-                  -#%td= variant.chromosome
-                  -#%td= variant.start
-                  -#%td= variant.stop
-                  -#%td= variant.reference
-                  -#%td= variant.variant
-
-        -#%p= link_to('Missing a permutaion? Please submit it to us!', '/variant_submission')
+    - if @variant.drug_interactions.any?
+      .row
+        .col-md-10.col-md-offset-1
+          %h4
+            Drug Interaction Data
+            %small
+              supplied by the
+              = link_to 'Dienstman Knowledge Database', 'https://www.synapse.org/#!Synapse:syn2370773'
+          .well.col-md-12
+            %table.table.table-striped
+              %thead
+                %th Drug
+                %th Pathway
+                %th Effect
+                %th Status
+                %th Evidence
+                %th Source
+              %tbody
+                - @variant.interaction_rows.each do |row|
+                  %tr
+                    %td= row.drug
+                    %td= row.pathway
+                    %td= row.effect
+                    %td= row.status
+                    %td= row.evidence_type
+                    %td= row.source
