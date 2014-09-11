@@ -5,6 +5,13 @@ class VariantVcfRowPresenter < SimpleDelegator
     super(variant)
   end
 
+  def self.annotation_headers
+    [
+      '##INFO=<ID=DISEASE,Number=A,Type=String,Description="DiseaseOntology Disease Name(s)">',
+      '##INFO=<ID=PMID,Number=A,Type=Integer,Description="Pubmed ID(s)">',
+    ].join("\n").html_safe
+  end
+
   def as_vcf_row
     [
       location.chromosome,
@@ -36,6 +43,9 @@ class VariantVcfRowPresenter < SimpleDelegator
   end
 
   def annotation_data
-    '.'
+    [
+      "DISEASE=#{diseases.map(&:name).join('/')}",
+      "PMID=#{sources.map(&:pubmed_id).join('/')}"
+    ].join(';')
   end
 end

@@ -10,7 +10,7 @@ class Variant < ActiveRecord::Base
   has_many :drug_interactions
 
   def self.index_scope
-    eager_load(:location, :gene, :amino_acid, :diseases, :sources, :mutation_type)
+    eager_load(:location, :gene, :amino_acid, :diseases, :sources, :mutation_type, :variant_type)
   end
 
   def self.show_scope
