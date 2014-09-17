@@ -64,13 +64,11 @@
           %table.table.table-striped
             %thead
               %th Disease
-              %th DOID
               %th Source
             %tbody
               - @variant.disease_rows.each do |row|
                 %tr
                   %td= row.disease
-                  %td= row.doid
                   %td= row.source
     - if @variant.drug_interactions.any?
       .row

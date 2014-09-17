@@ -19,7 +19,6 @@ class VariantOverviewPresenter < SimpleDelegator
     disease_source_variants.map do |dsv|
       DiseaseRow.new(
         dsv.disease.name,
-        dsv.disease.doid,
         full_source_link(dsv.source)
       )
     end
@@ -52,6 +51,6 @@ class VariantOverviewPresenter < SimpleDelegator
   end
 end
 
-DiseaseRow = Struct.new(:disease, :doid, :source)
+DiseaseRow = Struct.new(:disease, :source)
 PermutationRow = Struct.new(:hgvs, :chromosome, :start, :stop, :reference, :variant)
 InteractionRow = Struct.new(:effect, :pathway, :drug, :status, :evidence_type, :source)
