@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140917193015) do
+ActiveRecord::Schema.define(version: 20140917201703) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,9 +58,10 @@ ActiveRecord::Schema.define(version: 20140917193015) do
     t.string  "chromosome"
     t.string  "reference_build"
     t.string  "reference_read"
-    t.integer "start",                   limit: 8
-    t.integer "stop",                    limit: 8
+    t.integer "start",                      limit: 8
+    t.integer "stop",                       limit: 8
     t.string  "previous_reference_base"
+    t.string  "reference_sequence_version",           default: "GRCh37"
   end
 
   add_index "locations", ["chromosome"], name: "index_locations_on_chromosome", using: :btree
