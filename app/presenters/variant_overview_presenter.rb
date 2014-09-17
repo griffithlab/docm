@@ -19,6 +19,14 @@ class VariantOverviewPresenter < SimpleDelegator
     @view_context.content_tag(:span, dgidb_link(gene))
   end
 
+  def transcript_name
+    transcript.name
+  end
+
+  def transcript_information
+    "(#{transcript.source} - #{transcript.version})"
+  end
+
   def disease_rows
     disease_source_variants.map do |dsv|
       DiseaseRow.new(
