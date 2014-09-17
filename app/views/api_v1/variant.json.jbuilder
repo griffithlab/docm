@@ -3,7 +3,11 @@ json.chromosome @variant.location.chromosome
 json.start @variant.location.start
 json.stop @variant.location.stop
 json.strand @variant.strand
-json.transcript @variant.transcript_name
+json.transcript do
+  json.name @variant.transcript.name
+  json.source @variant.transcript.source
+  json.version @variant.transcript.version
+end
 json.gene @variant.gene.name
 json.reference @variant.location.reference_read
 json.variant @variant.variant
