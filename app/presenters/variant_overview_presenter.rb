@@ -15,6 +15,10 @@ class VariantOverviewPresenter < SimpleDelegator
     @view_context.content_tag(:li, my_cancer_genome_link(@variant))
   end
 
+  def dgidb_row
+    @view_context.content_tag(:span, dgidb_link(gene))
+  end
+
   def disease_rows
     disease_source_variants.map do |dsv|
       DiseaseRow.new(

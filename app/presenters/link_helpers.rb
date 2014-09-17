@@ -26,4 +26,11 @@ module LinkHelpers
     end
   end
 
+  def dgidb_link(gene)
+    link_to(
+      'View drug interactions on DGIdb',
+      "http://dgidb.genome.wustl.edu/interaction_search_results?genes=#{gene.name}"
+    )
+  end
+
 end
