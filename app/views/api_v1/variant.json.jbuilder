@@ -8,6 +8,7 @@ json.transcript do
   json.source @variant.transcript.source
   json.version @variant.transcript.version
 end
+json.reference_version @variant.location.reference_sequence_version
 json.gene @variant.gene.name
 json.reference @variant.location.reference_read
 json.variant @variant.variant

@@ -1,4 +1,4 @@
-<%= %w[hgvs chromosome start stop read variant gene mutation_type amino_acid diseases pubmed_sources].join("\t") %>
+<%= %w[hgvs chromosome start stop read variant reference_version gene mutation_type amino_acid diseases pubmed_sources].join("\t") %>
 <% @variants.each do |variant| %>
 <%=
   [
@@ -8,6 +8,7 @@
     variant.location.stop,
     variant.location.reference_read,
     variant.variant,
+    variant.location.reference_sequence_version,
     variant.gene.name,
     variant.mutation_type.name,
     variant.amino_acid.name,

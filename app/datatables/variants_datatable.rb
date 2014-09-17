@@ -66,6 +66,7 @@ class VariantsDatatable
     locations.stop
     locations.reference_read
     variants.variant
+    locations.reference_sequence_version
     genes.name
     amino_acids.name
     mutation_types.name
