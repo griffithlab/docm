@@ -22,3 +22,15 @@ json.diseases @variant.disease_source_variants do |dsv|
   json.doid dsv.disease.doid
   json.source_pubmed_id dsv.source.pubmed_id
 end
+
+if @variant.drug_interactions.any?
+  json.drug_interactions @variant.drug_interactions do |di|
+    json.drug di.therapeutic_context
+    json.pathway di.pathway
+    json.effect di.effect
+    json.status di.status
+    json.evidence_type di.evidence
+    json.source_pubmed_id di.pubmed_id
+    json.aggregated_by 'Dienstman Knowledge Database - https://www.synapse.org/#!Synapse:syn2370773'
+  end
+end
