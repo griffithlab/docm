@@ -1,46 +1,47 @@
 .container-fluid
-  .row
-    .col-md-8.main.col-md-offset-2
-      .col-md-12
-        %h1.page-header Submit a new variant
-        - if @submission.errors.any?
-          .alert.alert-danger
-            %h4
-              = pluralize(@submission.errors.count, 'error')
-              kept this from being submitted
-            %ul
-              -@submission.errors.full_messages.each do |error|
-                %li= error
-        %p All fields are required in order to submit a variant to DoCM
-        .well
-          = form_for @submission, url: {action: 'create'}, html: {role: 'form'} do |f|
-            %h4
-              %small Contact Information:
-            .form-group
-              = f.label :name
-              = f.text_field :name, placeholder: 'Name', class: ['form-control']
-            .form-group
-              = f.label :email
-              = f.text_field :email, placeholder: 'Email', class: ['form-control']
-            %h4
-              %small Variant Information:
-            .form-group
-              = f.label :chromosome
-              = f.text_field :chromosome, width: 5, placeholder: 'Chromosome', class: ['form-control']
-            .form-group
-              = f.label :start
-              = f.text_field :start, placeholder: 'Start Position', class: ['form-control']
-            .form-group
-              = f.label :start
-              = f.text_field :stop, placeholder: 'Stop Position', class: ['form-control']
-            .form-group
-              = f.label :reference_read
-              = f.text_field :reference_read, placeholder: "Reference Read(s) (use '-' to signify none)", class: ['form-control']
-            .form-group
-              = f.label :variant
-              = f.text_field :variant, placeholder: "Variant (use '-' to signify none)", class: ['form-control']
-            .form-group
-              = f.label :source
-              = f.text_field :source, placeholder: "Links or Pubmed IDs for your source(s)", class: ['form-control']
-            = text_field_tag :not_a_bot, nil, class: 'bot-form-field'
-            = f.submit 'Submit', class: ['btn', 'btn-primary']
+  .page-background
+    .row
+      .col-md-8.main.col-md-offset-2
+        .col-md-12
+          %h1.page-header Submit a new variant
+          - if @submission.errors.any?
+            .alert.alert-danger
+              %h4
+                = pluralize(@submission.errors.count, 'error')
+                kept this from being submitted
+              %ul
+                -@submission.errors.full_messages.each do |error|
+                  %li= error
+          %p All fields are required in order to submit a variant to DoCM
+          .well
+            = form_for @submission, url: {action: 'create'}, html: {role: 'form'} do |f|
+              %h4
+                %small Contact Information:
+              .form-group
+                = f.label :name
+                = f.text_field :name, placeholder: 'Name', class: ['form-control']
+              .form-group
+                = f.label :email
+                = f.text_field :email, placeholder: 'Email', class: ['form-control']
+              %h4
+                %small Variant Information:
+              .form-group
+                = f.label :chromosome
+                = f.text_field :chromosome, width: 5, placeholder: 'Chromosome', class: ['form-control']
+              .form-group
+                = f.label :start
+                = f.text_field :start, placeholder: 'Start Position', class: ['form-control']
+              .form-group
+                = f.label :start
+                = f.text_field :stop, placeholder: 'Stop Position', class: ['form-control']
+              .form-group
+                = f.label :reference_read
+                = f.text_field :reference_read, placeholder: "Reference Read(s) (use '-' to signify none)", class: ['form-control']
+              .form-group
+                = f.label :variant
+                = f.text_field :variant, placeholder: "Variant (use '-' to signify none)", class: ['form-control']
+              .form-group
+                = f.label :source
+                = f.text_field :source, placeholder: "Links or Pubmed IDs for your source(s)", class: ['form-control']
+              = text_field_tag :not_a_bot, nil, class: 'bot-form-field'
+              = f.submit 'Submit', class: ['btn', 'btn-primary']
