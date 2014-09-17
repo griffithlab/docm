@@ -8,6 +8,8 @@ module Importers
       def self.column_map
         {
           'transcript_name' => 'name',
+          'transcript_source' => 'source',
+          'transcript_version' => 'version',
         }
       end
     end

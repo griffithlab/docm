@@ -7,7 +7,6 @@ module Importers
 
       def self.column_map
         {
-          'transcript_name' => 'transcript_name',
           'variant' => 'variant',
           'strand' => 'strand',
           'c_position' => 'cdna_change',

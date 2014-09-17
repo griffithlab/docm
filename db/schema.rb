@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140910203359) do
+ActiveRecord::Schema.define(version: 20140917182544) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -84,6 +84,8 @@ ActiveRecord::Schema.define(version: 20140910203359) do
 
   create_table "transcripts", force: true do |t|
     t.string "name"
+    t.string "source"
+    t.string "version"
   end
 
   create_table "variant_types", force: true do |t|
@@ -105,6 +107,7 @@ ActiveRecord::Schema.define(version: 20140910203359) do
     t.string  "hgvs"
     t.string  "tim_ley_annotation"
     t.string  "my_cancer_genome_link"
+    t.integer "transcript_id"
   end
 
   add_index "variants", ["hgvs"], name: "index_variants_on_hgvs", using: :btree
@@ -120,6 +123,7 @@ ActiveRecord::Schema.define(version: 20140910203359) do
   add_foreign_key "variants", "genes", name: "variants_gene_id_fk"
   add_foreign_key "variants", "locations", name: "variants_location_id_fk"
   add_foreign_key "variants", "mutation_types", name: "variants_mutation_type_id_fk"
+  add_foreign_key "variants", "transcripts", name: "variants_transcript_id_fk"
   add_foreign_key "variants", "variant_types", name: "variants_variant_type_id_fk"
   add_foreign_key "variants", "variants", name: "variants_primary_variant_id_fk", column: "primary_variant_id"
 

@@ -26,6 +26,7 @@ module Importers
       {
         gene:          RowAdaptors::Gene.create_from_row(row),
         location:      RowAdaptors::Location.create_from_row(row),
+        transcript:    RowAdaptors::Transcript.create_from_row(row),
         amino_acid:    RowAdaptors::AminoAcid.create_from_row(row),
         variant_type:  RowAdaptors::VariantType.create_from_row(row),
         mutation_type: RowAdaptors::MutationType.create_from_row(row)
