@@ -1,4 +1,8 @@
 namespace :docm do
+  desc 'load a sql data dump into docm'
+  task :load, [] => :environment do |_, args|
+  end
+
   desc 'import a TSV spreadsheet to your local database'
   task :import, [:tsv_path] => :environment do |_, args|
     file_path = args[:tsv_path]
