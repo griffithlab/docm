@@ -10,6 +10,12 @@ If you're on a Mac and do not have Postgres installed you can use [homebrew](htt
 
 Once Ruby is installed, make sure Bundler is also installed. `gem install bundler && rbenv rehash`
 
+Also make sure that Postgres is installed and started, on mac you can use:
+http://www.postgresql.org/download/macosx/
+
+Download latest version of import file for DOCM data. See:
+https://confluence.gsc.wustl.edu/display/MWL/DOCM+-+Database+of+Canonical+Mutations
+
 Installation
 ----
 note that you may want to use the ssh url for the clone if you're a TGI employee
