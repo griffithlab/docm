@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140917201703) do
+ActiveRecord::Schema.define(version: 20140924205020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,9 +42,8 @@ ActiveRecord::Schema.define(version: 20140917201703) do
     t.string  "therapeutic_context"
     t.string  "status"
     t.string  "evidence"
-    t.integer "pubmed_id"
-    t.text    "citation"
     t.integer "variant_id"
+    t.integer "source_id"
   end
 
   create_table "genes", force: true do |t|
@@ -117,6 +116,7 @@ ActiveRecord::Schema.define(version: 20140917201703) do
   add_foreign_key "disease_source_variants", "sources", name: "disease_source_variants_source_id_fk"
   add_foreign_key "disease_source_variants", "variants", name: "disease_source_variants_variant_id_fk"
 
+  add_foreign_key "drug_interactions", "sources", name: "drug_interactions_source_id_fk"
   add_foreign_key "drug_interactions", "variants", name: "drug_interactions_variant_id_fk"
 
   add_foreign_key "variants", "amino_acids", name: "variants_amino_acid_id_fk"
