@@ -6,6 +6,9 @@ Prerequisites
 
 If you don't have Ruby installed, I recomend using [rbenv](https://github.com/sstephenson/rbenv) with [ruby-build](https://github.com/sstephenson/ruby-build)
 
+If you decide to use [rbenv](https://github.com/sstephenson/rbenv) to manage your Ruby versions, but you have RVM installed already, 
+you should [remove RVM](http://stackoverflow.com/questions/3950260/howto-uninstall-rvm).
+
 If you're on a Mac and do not have Postgres installed you can use [homebrew](http://brew.sh/) or [Postgres.app](http://postgresapp.com/)
 
 Once Ruby is installed, make sure Bundler is also installed. `gem install bundler && rbenv rehash`
