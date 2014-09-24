@@ -30,7 +30,7 @@ if @variant.drug_interactions.any?
     json.effect di.effect
     json.status di.status
     json.evidence_type di.evidence
-    json.source_pubmed_id di.pubmed_id
+    json.source_pubmed_id di.source.pubmed_id
     json.aggregated_by 'Dienstman Knowledge Database - https://www.synapse.org/#!Synapse:syn2370773'
   end
 end

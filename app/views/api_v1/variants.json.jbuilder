@@ -10,5 +10,5 @@ json.array! @variants do |variant|
   json.mutation_type variant.mutation_type.name
   json.amino_acid variant.amino_acid.name
   json.dieases variant.diseases.map(&:name)
-  json.pubmed_sources variant.sources.map(&:pubmed_id)
+  json.pubmed_sources variant.disease_sources.map(&:pubmed_id)
 end

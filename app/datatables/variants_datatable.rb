@@ -71,7 +71,7 @@ class VariantsDatatable
     amino_acids.name
     mutation_types.name
     diseases.name
-    sources.pubmed_id
+    disease_sources.pubmed_id
   ].freeze
 
   @@searchable_columns = @@columns.reject { |c| c =~ /start|stop|pubmed_id/ }

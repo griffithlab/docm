@@ -45,7 +45,7 @@ class VariantVcfRowPresenter < SimpleDelegator
   def annotation_data
     [
       "DISEASE=#{diseases.map(&:name).join('/')}",
-      "PMID=#{sources.map(&:pubmed_id).join('/')}"
+      "PMID=#{disease_sources.map(&:pubmed_id).join('/')}"
     ].join(';')
   end
 end

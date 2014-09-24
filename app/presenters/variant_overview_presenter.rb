@@ -57,7 +57,7 @@ class VariantOverviewPresenter < SimpleDelegator
         di.therapeutic_context,
         di.status,
         di.evidence,
-        full_source_link(di)
+        full_source_link(di.source)
       )
     end
   end
