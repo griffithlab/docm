@@ -1,7 +1,7 @@
 #! /usr/bin/make -f
 
 build:
-	bundle exec rake assets:clean
+	bundle exec rake assets:clobber
 	bundle exec rake assets:precompile
 	dh $@
 	dh_install
