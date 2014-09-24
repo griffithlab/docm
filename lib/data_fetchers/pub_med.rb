@@ -4,7 +4,7 @@ module DataFetchers
   class PubMed
     def self.run
       ActiveRecord::Base.transaction do
-        [::Source.all, ::DrugInteraction.all].flatten.each do |item|
+        ::Source.all.each do |item|
           item.citation = get_citation_from_pubmed_id(item.pubmed_id)
           item.save
         end
