@@ -1,6 +1,12 @@
 namespace :docm do
-  desc 'load a sql data dump into docm'
+  desc 'if the current data dump is newer than the contents of the database, this loads the newer data dump'
   task :load, [] => :environment do |_, args|
+    Database::Upgrade.upgrade_if_needed
+  end
+
+  desc 'dump the contents of your current docm database'
+  task :dump, [] => :environment do |_, args|
+    Database::Dump.run
   end
 
   desc 'import a TSV spreadsheet to your local database'
