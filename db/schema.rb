@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140924205020) do
+ActiveRecord::Schema.define(version: 20140925154732) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,10 @@ ActiveRecord::Schema.define(version: 20140924205020) do
   end
 
   add_index "amino_acids", ["name"], name: "index_amino_acids_on_name", using: :btree
+
+  create_table "data_versions", force: true do |t|
+    t.integer "version", default: 0
+  end
 
   create_table "disease_source_variants", force: true do |t|
     t.integer "disease_id"
