@@ -30,3 +30,6 @@ note that you may want to use the ssh url for the clone if you're a TGI employee
 
 
 The application will be reachable at `http://localhost:3000`
+
+If you want to have multiple rails apps running concurrently you can specify which ports to use for each as follows
+    rails s -p 3001
