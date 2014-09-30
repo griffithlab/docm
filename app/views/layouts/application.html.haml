@@ -51,3 +51,24 @@
           =content_tag :div, msg, class: ['alert', "alert-#{name}"]
 
     = yield
+    .container-fluid
+      .row
+        .footer
+          .identity.col-sm-4.hidden-xs
+            %p
+              %a{href: 'http://genome.wustl.edu/'}
+              = image_tag("produced-by.png", :alt => 'Produced by The Genome Institute at Washington University')
+          .menu.col-xs-12.col-sm-8
+            %ul.pull-right.menu-footer
+              %li{class: @contact_active}
+                %a{href: '/contact'} Contact
+              %li{class: @terms_active}
+                %a{href: '/terms'} Terms of Service
+              %li{class: @downloads_active}
+                %a{href: '/downloads'} Downloads
+              %li{class: @api_active}
+                %a{href: '/api'} API Documentation
+      .row.visible-xs
+        .col-sm-12.identity-xs
+          %a{href: 'http://genome.wustl.edu/'}
+            = image_tag("produced-by.png", :alt => 'Produced by The Genome Institute at Washington University')
