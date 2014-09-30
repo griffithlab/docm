@@ -10,23 +10,34 @@
     .container-fluid
       .row
         .header
-          .col-xs-12.col-sm-6.col-md-4
+          .col-xs-12.col-sm-5.col-md-4
             %a{href: '/'}
               = image_tag("header_logo.png", :class => 'img-responsive')
-          .col-xs-12.col-sm-6.col-md-8
+          .col-xs-12.col-sm-7.col-md-8
             %div.hidden-xs.lg-menu-container
               %ul.pull-right.menu-main.lg
                 %li{class: @about_active}
                   %a{href: '/about'} About
-                %li{class: @api_active}
-                  %a{href: '/api'} API Documentation
+                %li{class: @start_active}
+                  %a{href: '/start'} Getting Started
+                %li{class: @faq_active}
+                  %a{href: '/faq'} FAQ
+                %li{class: @news_active}
+                  %a{href: '/news'} News
+                %li{class: @sources_active}
+                  %a{href: '/sources'} Sources
             %div.visible-xs.xs-menu-container
               %ul.menu-main.sm
                 %li{class: @about_active}
                   %a{href: '/about'} About
-                %li{class: @api_active}
-                  %a{href: '/api'} API Documentation
-
+                %li{class: @start_active}
+                  %a{href: '/start'} Getting Started
+                %li{class: @faq_active}
+                  %a{href: '/faq'} FAQ
+                %li{class: @news_active}
+                  %a{href: '/news'} News
+                %li{class: @sources_active}
+                  %a{href: '/sources'} Sources
 
       %noscript
         .alert.alert-warning

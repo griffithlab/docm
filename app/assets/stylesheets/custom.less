@@ -33,7 +33,7 @@ body {
     li {
       display: inline-block;
       a {
-        margin: 0 @padding-large-horizontal;
+        margin: 0;
         color: #CCC;
       }
     }
@@ -41,14 +41,16 @@ body {
   .menu-main.lg {
     a {
       line-height: @header-height;
-      font-size: 140%;
+      padding: 0  @padding-small-horizontal;
+      font-size: 100%;
     }
   }
   .menu-main.sm {
     margin: .5em auto;
     a {
       line-height: @line-height-computed*1.5;
-      font-size: 120%;
+      padding: 0 @padding-small-horizontal;
+      font-size: 100%;
     }
   }
 
