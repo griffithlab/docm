@@ -34,7 +34,7 @@ class VariantVcfRowPresenter < SimpleDelegator
       start_position,
       '.',
       reference_bases,
-      variant,
+      variant_base,
       '.',
       '.',
       annotation_data,
@@ -44,7 +44,7 @@ class VariantVcfRowPresenter < SimpleDelegator
   private
   def reference_bases
     if is_indel?
-      location.previous_reference_base + location.reference_read
+      (location.previous_reference_base + location.reference_read).gsub('-','')
     else
       location.reference_read
     end
@@ -55,6 +55,15 @@ class VariantVcfRowPresenter < SimpleDelegator
       location.start.to_i - 1
     else
       location.start
+    end
+  end
+
+  def variant_base
+    v = variant.gsub('-', '')
+    if v.empty?
+      location.previous_reference_base
+    else
+      v
     end
   end
 
