@@ -23,6 +23,7 @@ note that you may want to use the ssh url for the clone if you're a TGI employee
     git clone https://github.com/genome/docm.git
     cd docm
     bundle install
+    bundle exec rake db:drop
     bundle exec rake db:create
     bundle exec rake db:migrate
     bundle exec rake docm:import['/path/to/data.tsv']
