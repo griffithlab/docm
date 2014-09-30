@@ -20,7 +20,12 @@
               VCF
 
       .col-sm-9.col-lg-10.main
-        %h1.page-header Variants
+        .row
+          .col-xs-6
+            %h1.page-header Variants
+          .col-xs-6
+            %p.pull-right
+              = variant_submission_link
         .table-bg
           .table-responsive
             %table.display.table.table-striped{ id: 'variants', data: { source: variants_url(format: 'json') }}
@@ -40,4 +45,4 @@
                   %th.desktop Sources
               %tbody
 
-        = variant_submission_link
+
