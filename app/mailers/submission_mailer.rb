@@ -3,7 +3,7 @@ class SubmissionMailer < ActionMailer::Base
     @submission = message
 
     mail(
-      to: 'acoffman@genome.wustl.edu',
+      to: 'docm-alerts@genome.wustl.edu',
       subject: 'New variant submitted on DoCM',
       from: 'docm-submissions@genome.wustl.edu',
     )
