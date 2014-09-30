@@ -12,6 +12,22 @@ class VariantVcfRowPresenter < SimpleDelegator
     ].join("\n").html_safe
   end
 
+  def self.sort_variants(variants)
+    variants.sort do |a, b|
+      chr1 = Integer(a.location.chromosome) rescue a.location.chromosome
+      chr2 = Integer(b.location.chromosome) rescue a.location.chromosome
+
+      cmp = if chr1.class == chr2.class
+        chr1 <=> chr2
+      elsif chr1.class.is_a?(String)
+        1
+      else
+        -1
+      end
+      cmp.zero? ? a.location.start <=> b.location.start : cmp
+    end
+  end
+
   def as_vcf_row
     [
       location.chromosome,
