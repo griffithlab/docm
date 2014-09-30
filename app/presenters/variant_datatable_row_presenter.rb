@@ -15,6 +15,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
       location.stop,
       location.reference_read,
       variant,
+      location.reference_sequence_version,
       gene_link(gene),
       amino_acid.name,
       mutation_type.name,
@@ -29,7 +30,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
   end
 
   def source_list
-    sources.map { |s| source_link(s) }.join(', ')
+    disease_sources.map { |s| source_link(s) }.join(', ')
   end
 
 end

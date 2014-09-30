@@ -2,7 +2,7 @@ module DataFetchers
   class HGVS
     def self.run
       ActiveRecord::Base.transaction do
-        ::Variant.all.each do |variant|
+        ::Variant.eager_load(:transcript).all.each do |variant|
           variant.hgvs = get_hgvs_from_variant(variant)
           variant.save
         end
@@ -16,7 +16,7 @@ module DataFetchers
 
     def self.snp_template(variant)
       sprintf("%s:%s%s>%s",
-              variant.transcript_name,
+              variant.transcript.name,
               variant.cdna_change,
               variant.location.reference_read,
               variant.variant)
@@ -28,14 +28,14 @@ module DataFetchers
 
     def self.del_template(variant)
       sprintf("%s:%sdel%s",
-              variant.transcript_name,
+              variant.transcript.name,
               variant.cdna_change,
               variant.location.reference_read)
     end
 
     def self.ins_template(variant)
       sprintf("%s:%sins%s",
-              variant.transcript_name,
+              variant.transcript.name,
               variant.cdna_change,
               variant.variant)
     end

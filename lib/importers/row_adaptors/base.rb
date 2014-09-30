@@ -6,9 +6,9 @@ module Importers
           .first_or_create
       end
 
-      def self.get_property_hash_from_row(row)
-        column_map.inject({}) do |object_hash, (column_name, object_property)|
-          value = row[column_name].strip
+      def self.get_property_hash_from_row(row, existing_map = nil)
+        (existing_map || column_map).inject({}) do |object_hash, (column_name, object_property)|
+          value = row[column_name].strip rescue nil
           object_hash.tap { |h| h[object_property] = value.blank? ? nil : transform_column(object_property, value) }
         end
       end

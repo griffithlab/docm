@@ -11,7 +11,7 @@ Docm::Application.routes.draw do
   get 'variants/:hgvs' => 'variants#show', as: :variant, hgvs: /[^\/]+/
   get 'api/v1/variants' => 'api_v1#variants'
   get 'api/v1/variants/:hgvs' => 'api_v1#variant', hgvs: /[^\/\.]+\.{1}[^\/\.]+/
-  get 'variant_submission' => 'variant_submissions#new'
+  get 'variant_submission' => 'variant_submissions#new', as: :variant_submission
   post 'variant_submission' => 'variant_submissions#create'
   get ':action' => 'static#:action'
 

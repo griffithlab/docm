@@ -22,8 +22,8 @@
 @chosen-focus-transition: ~"border linear .2s, box-shadow linear .2s";
 @chosen-height: @input-height-base;
 @chosen-multi-height: @input-height-base + 6px;
-@chosen-sprite-path: "chosen-sprite.png";
-@chosen-sprite-retina-path: "chosen-sprite@2x.png";
+@chosen-sprite-path: 'chosen-sprite.png';
+@chosen-sprite-retina-path: 'chosen-sprite@2x.png';
 
 .chosen-select { width: 100%; }
 .chosen-select-deselect { width: 100%; }
@@ -114,12 +114,12 @@
   .chosen-results-scroll-down {
     bottom: 0;
     span {
-      background: url("@{chosen-sprite-path}") no-repeat -4px -3px;
+      background: image-url("@{chosen-sprite-path}") no-repeat -4px -3px;
     }
   }
   .chosen-results-scroll-up {
     span {
-      background: url("@{chosen-sprite-path}") no-repeat -22px -3px;
+      background: image-url("@{chosen-sprite-path}") no-repeat -22px -3px;
     }
   }
 }
@@ -148,7 +148,7 @@
       .text-overflow();
     }
     abbr {
-      background: url("@{chosen-sprite-path}") right top no-repeat;
+      background: image-url("@{chosen-sprite-path}") right top no-repeat;
       display: block;
       font-size: 1px;
       height: 10px;
@@ -171,7 +171,7 @@
       right: 0;
       width: 18px;
       b {
-        background: url("@{chosen-sprite-path}") no-repeat 0 7px;
+        background: image-url("@{chosen-sprite-path}") no-repeat 0 7px;
         display: block;
         height: 100%;
         width: 100%;
@@ -188,7 +188,7 @@
     white-space: nowrap;
     z-index: @zindex-dropdown;
     input[type="text"] {
-      background: url("@{chosen-sprite-path}") no-repeat 100% -20px, @chosen-background;
+      background: image-url("@{chosen-sprite-path}") no-repeat 100% -20px, @chosen-background;
       border: 1px solid @chosen-border;
       .border-top-radius(@chosen-border-radius);
       .border-bottom-radius(@chosen-border-radius);
@@ -267,7 +267,7 @@
       padding: 3px 20px 3px 5px;
       position: relative;
       .search-choice-close {
-        background: url("@{chosen-sprite-path}") right top no-repeat;
+        background: image-url("@{chosen-sprite-path}") right top no-repeat;
         display: block;
         font-size: 1px;
         height: 10px;
@@ -389,7 +389,7 @@
     border-right: none;
   }
   .chosen-search input[type="text"] {
-    background: url("@{chosen-sprite-path}") no-repeat -28px -20px, @chosen-background;
+    background: image-url("@{chosen-sprite-path}") no-repeat -28px -20px, @chosen-background;
     direction: rtl;
     padding: 4px 5px 4px 20px;
   }
@@ -402,7 +402,7 @@
   .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
   .chosen-container .chosen-results-scroll-down span,
   .chosen-container .chosen-results-scroll-up span {
-    background-image: url("@{chosen-sprite-retina-path}") !important;
+    background-image: image-url("@{chosen-sprite-retina-path}") !important;
     background-size: 52px 37px !important;
     background-repeat: no-repeat !important;
   }

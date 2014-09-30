@@ -18,4 +18,19 @@ module LinkHelpers
     link_to(variant.hgvs, variant_path(variant.hgvs))
   end
 
+  def my_cancer_genome_link(variant)
+    if variant.from_my_cancer_genome?
+      link_to('View on My Cancer Genome', variant.my_cancer_genome_link)
+    else
+      ''
+    end
+  end
+
+  def dgidb_link(gene)
+    link_to(
+      'View drug interactions on DGIdb',
+      "http://dgidb.genome.wustl.edu/interaction_search_results?genes=#{gene.name}"
+    )
+  end
+
 end

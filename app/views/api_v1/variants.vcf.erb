@@ -1,18 +1,9 @@
-##fileformat=VCFv4.1
-##source=DoCM
+##fileformat=VCFv4.2
+##source=DoCM - The Database of Curated Mutations
 ##fileDate=<%= DateTime.now.strftime("%Y%m%d") %>
+##reference=GRCh37
+<%= VariantVcfRowPresenter.annotation_headers %>
 #<%= %w[CHROM POS ID REF ALT QUAL FILTER INFO].join("\t") %>
-<% @variants.each do |variant| %>
-<%=
-  [
-    variant.location.chromosome,
-    variant.location.start,
-    '.',
-    variant.location.reference_read,
-    variant.variant,
-    '.',
-    '.',
-    '.',
-  ].join("\t")
-%>
+<% @variants.map { |v| VariantVcfRowPresenter.new(v, self) }.each do |variant| %>
+<%= variant.as_vcf_row() %>
 <% end %>

@@ -3,7 +3,12 @@ json.chromosome @variant.location.chromosome
 json.start @variant.location.start
 json.stop @variant.location.stop
 json.strand @variant.strand
-json.transcript @variant.transcript_name
+json.transcript do
+  json.name @variant.transcript.name
+  json.source @variant.transcript.source
+  json.version @variant.transcript.version
+end
+json.reference_version @variant.location.reference_sequence_version
 json.gene @variant.gene.name
 json.reference @variant.location.reference_read
 json.variant @variant.variant
@@ -18,13 +23,14 @@ json.diseases @variant.disease_source_variants do |dsv|
   json.source_pubmed_id dsv.source.pubmed_id
 end
 
-json.permutations @variant.related_variants do |v|
-  json.hgvs v.hgvs
-  json.chromosome v.location.chromosome
-  json.start v.location.start
-  json.stop v.location.stop
-  json.reference_read v.location.reference_read
-  json.variant v.variant
+if @variant.drug_interactions.any?
+  json.drug_interactions @variant.drug_interactions do |di|
+    json.drug di.therapeutic_context
+    json.pathway di.pathway
+    json.effect di.effect
+    json.status di.status
+    json.evidence_type di.evidence
+    json.source_pubmed_id di.source.pubmed_id
+    json.aggregated_by 'Dienstman Knowledge Database - https://www.synapse.org/#!Synapse:syn2370773'
+  end
 end
-
-

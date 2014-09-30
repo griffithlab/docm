@@ -7,11 +7,12 @@ module Importers
 
       def self.column_map
         {
-          'transcript_name' => 'transcript_name',
           'variant' => 'variant',
           'strand' => 'strand',
           'c_position' => 'cdna_change',
           'primary' => 'is_primary',
+          'url' => 'my_cancer_genome_link',
+          'source2' => 'tim_ley_annotation',
         }
       end
     end

@@ -66,11 +66,12 @@ class VariantsDatatable
     locations.stop
     locations.reference_read
     variants.variant
+    locations.reference_sequence_version
     genes.name
     amino_acids.name
     mutation_types.name
     diseases.name
-    sources.pubmed_id
+    disease_sources.pubmed_id
   ].freeze
 
   @@searchable_columns = @@columns.reject { |c| c =~ /start|stop|pubmed_id/ }
