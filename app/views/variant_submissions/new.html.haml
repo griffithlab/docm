@@ -45,6 +45,6 @@
                 = f.text_field :source, placeholder: "Links or Pubmed IDs for your source(s)", class: ['form-control']
               .form-group
                 = f.label :comments
-                = f.text_field :comments, placeholder: "Enter any comments or rational for variants inclusion in DoCM", class: ['form-control']
+                = f.text_area :comments, placeholder: "Enter any comments or rational for variants inclusion in DoCM", class: ['form-control']
               = text_field_tag :not_a_bot, nil, class: 'bot-form-field'
               = f.submit 'Submit', class: ['btn', 'btn-primary']
