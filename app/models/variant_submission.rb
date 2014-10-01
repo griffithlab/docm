@@ -3,7 +3,7 @@ class VariantSubmission
   include ActiveModel::Validations
 
   def self.params
-    [:name, :email, :chromosome, :start, :stop, :reference_read, :variant, :source]
+    [:name, :email, :chromosome, :start, :stop, :reference_read, :variant, :source, :comments]
   end
 
   params.each do |attr|
