@@ -16,6 +16,8 @@
           .col-xs-12.col-sm-7.col-md-8
             %div.hidden-xs.lg-menu-container
               %ul.pull-right.menu-main.lg
+                %li{class: @about_active}
+                  %a{href: '/about'} About
                 %li{class: @news_active}
                   %a{href: '/news'} News
                 %li{class: @contact_active}
@@ -62,10 +64,6 @@
             %ul.pull-right.menu-footer
               %li{class: @downloads_active}
                 %a{href: '/downloads'} Downloads
-              %li{class: @about_active}
-                %a{href: '/about'} About
-              %li{class: @start_active}
-                %a{href: '/start'} Getting Started
               %li{class: @terms_active}
                 %a{href: '/terms'} Terms of Service
       .row.visible-xs

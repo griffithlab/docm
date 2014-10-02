@@ -7,6 +7,11 @@
             FAQ
             %small Frequently Asked Questions
           %dl
+            %dt How do I cite DoCM?
+            %dd 
+              A manuscript for DoCM is currently in preparation. In the mean time please 
+              cite http://docm.genome.wustl.edu
+            %br
             %dt How do I use the DoCM API?
             %dd 
               The API can be queried using HTTP requests. More information can be 
@@ -17,4 +22,11 @@
               DoCM is updated monthly as new curated lists and variants are brought
               to our attention. If you think we are missing a variant or need to 
               update a record, #{link_to 'please submit your query', '/variant_submission'}.
-               
+            %br
+            %dt How do I download DoCM variants?
+            %dd 
+              You can download variants via the #{link_to 'API', '/api'}, or you can
+              use the TSV or VCF buttons on the main page. These will be filtered 
+              according to the criteria that you specify (i.e. chromosome, disease, etc).
+              The TSV button will download a tab separated values file. The VCF button will
+              download a variant call format file.
