@@ -20,6 +20,10 @@ Installation
 ----
 note that you may want to use the ssh url for the clone if you're a TGI employee
 
+Note: if nokogiri fails to build, after "cd docm", run this command:
+    bundle config build.nokogiri --use-system-libraries
+        then continue to "bundle install"
+
     git clone https://github.com/genome/docm.git
     cd docm
     bundle install
