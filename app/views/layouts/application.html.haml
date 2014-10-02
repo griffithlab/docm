@@ -16,16 +16,16 @@
           .col-xs-12.col-sm-7.col-md-8
             %div.hidden-xs.lg-menu-container
               %ul.pull-right.menu-main.lg
-                %li{class: @about_active}
-                  %a{href: '/about'} About
-                %li{class: @start_active}
-                  %a{href: '/start'} Getting Started
-                %li{class: @faq_active}
-                  %a{href: '/faq'} FAQ
                 %li{class: @news_active}
                   %a{href: '/news'} News
+                %li{class: @contact_active}
+                  %a{href: '/contact'} Contact
                 %li{class: @sources_active}
                   %a{href: '/sources'} Sources
+                %li{class: @api_active}
+                  %a{href: '/api'} API Documentation
+                %li{class: @faq_active}
+                  %a{href: '/faq'} FAQ
             %div.visible-xs.xs-menu-container
               %ul.menu-main.sm
                 %li{class: @about_active}
@@ -60,14 +60,14 @@
               = image_tag("produced-by.png", :alt => 'Produced by The Genome Institute at Washington University')
           .menu.col-xs-12.col-sm-8
             %ul.pull-right.menu-footer
-              %li{class: @contact_active}
-                %a{href: '/contact'} Contact
-              %li{class: @terms_active}
-                %a{href: '/terms'} Terms of Service
               %li{class: @downloads_active}
                 %a{href: '/downloads'} Downloads
-              %li{class: @api_active}
-                %a{href: '/api'} API Documentation
+              %li{class: @about_active}
+                %a{href: '/about'} About
+              %li{class: @start_active}
+                %a{href: '/start'} Getting Started
+              %li{class: @terms_active}
+                %a{href: '/terms'} Terms of Service
       .row.visible-xs
         .col-sm-12.identity-xs
           %a{href: 'http://genome.wustl.edu/'}

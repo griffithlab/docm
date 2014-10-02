@@ -6,12 +6,25 @@
           %h1.page-header
             Sources
           %p.lead
-            The initial release of the Database of Curated Mutations was created by
-            integrating cancer driving mutations from the literature and 
-            publicly available resources. 
+            DoCM, the Database of Curated Mutations, is a highly curated database of known,
+            disease-causing mutations that provides easily explorable variant lists with direct links to source
+            citations for easy verification.
           %hr
           %h3
-            Resources integrated into DoCM
-          %dl
-            %dt My Cancer Genome
-            %dt Dienstman et al Knowledge Database
+            Criteria for inclusion into DoCM
+          %p Mutations that are added into DoCM are evaluated individually or as a set.
+          %p Clinical evidence
+          %ul
+            %li Drug targets associated with a mutation
+            %li Diagnostic or prognostic markers associated with a mutation
+          %p Functional evidence
+          %ul
+            %li Disease function described in cell lines
+            %li Disease function described in animal models
+          %hr
+          %h3 Datasets currently included in DoCM
+          %ul
+            %li #{link_to 'My Cancer Genome', 'http://www.mycancergenome.org'}
+            %li #{link_to 'Knowledge database', 'http://www.ncbi.nlm.nih.gov/pubmed/24768039'}
+
+ 
