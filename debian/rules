@@ -1,8 +1,8 @@
 #! /usr/bin/make -f
 
 build:
-	bundle exec rake assets:clobber
-	bundle exec rake assets:precompile
+	RAILS_ENV=production bundle exec rake assets:clobber
+	RAILS_ENV=production bundle exec rake assets:precompile
 	dh $@
 	dh_install
 
