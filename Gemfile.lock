@@ -74,7 +74,7 @@ GEM
     erubis (2.7.0)
     execjs (2.1.0)
     fabrication (2.11.2)
-    foreigner (1.6.1)
+    foreigner (1.7.2)
       activerecord (>= 3.0.0)
     haml (4.0.5)
       tilt
