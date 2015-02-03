@@ -116,6 +116,7 @@ ActiveRecord::Schema.define(version: 20140925154732) do
   add_index "variants", ["hgvs"], name: "index_variants_on_hgvs", using: :btree
   add_index "variants", ["variant"], name: "index_variants_on_variant", using: :btree
 
+  Foreigner.load
   add_foreign_key "disease_source_variants", "diseases", name: "disease_source_variants_disease_id_fk"
   add_foreign_key "disease_source_variants", "sources", name: "disease_source_variants_source_id_fk"
   add_foreign_key "disease_source_variants", "variants", name: "disease_source_variants_variant_id_fk"
