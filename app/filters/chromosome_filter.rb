@@ -7,8 +7,8 @@ class ChromosomeFilter
 
   def self.valid_values
     Location.uniq
-      .order(chromosome: :asc)
       .pluck(:chromosome)
+      .sort { |a,b| Location.chromosome_sort_val(a,b) }
   end
 
   def self.param_name

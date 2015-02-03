@@ -4,6 +4,6 @@
 ##reference=GRCh37
 <%= VariantVcfRowPresenter.annotation_headers %>
 #<%= %w[CHROM POS ID REF ALT QUAL FILTER INFO].join("\t") %>
-<% VariantVcfRowPresenter.sort_variants(@variants).map { |v| VariantVcfRowPresenter.new(v, self) }.each do |variant| %>
+<% @variants.map { |v| VariantVcfRowPresenter.new(v, self) }.each do |variant| %>
 <%= variant.as_vcf_row() %>
 <% end %>
