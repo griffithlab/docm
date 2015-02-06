@@ -18,9 +18,9 @@ module LinkHelpers
     link_to(variant.hgvs, variant_path(variant.hgvs))
   end
 
-  def my_cancer_genome_link(variant)
-    if variant.from_my_cancer_genome?
-      link_to('View on My Cancer Genome', variant.my_cancer_genome_link)
+  def my_cancer_genome_link(dsv)
+    if dsv.my_cancer_genome_url
+      link_to('My Cancer Genome', dsv.my_cancer_genome_url)
     else
       ''
     end

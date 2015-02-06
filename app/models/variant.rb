@@ -37,8 +37,4 @@ class Variant < ActiveRecord::Base
     !tim_ley_annotation.blank?
   end
 
-  def from_my_cancer_genome?
-    !my_cancer_genome_link.blank?
-  end
-
 end

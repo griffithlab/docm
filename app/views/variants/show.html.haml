@@ -62,8 +62,6 @@
               %li
                 %strong cDNA Change:
                 = @variant.cdna_change
-              - if @variant.from_my_cancer_genome?
-                = @variant.my_cancer_genome_row
 
     .row
       .col-md-10.col-md-offset-1
@@ -73,11 +71,13 @@
             %thead
               %th Disease
               %th Source
+              %th External Links
             %tbody
               - @variant.disease_rows.each do |row|
                 %tr
                   %td= row.disease
                   %td= row.source
+                  %td= row.my_cancer_genome_link
     - if @variant.drug_interactions.any?
       .row
         .col-md-10.col-md-offset-1
