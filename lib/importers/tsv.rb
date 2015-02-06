@@ -37,12 +37,14 @@ module Importers
       if variant.is_primary?
         sources = RowAdaptors::Source.create_from_row(row)
         disease = RowAdaptors::Disease.create_from_row(row)
+        my_cancer_genome_url = row['url']
 
         sources.each do |source|
           DiseaseSourceVariant.create(
             variant: variant,
             disease: disease,
             source: source,
+            my_cancer_genome_url: my_cancer_genome_url
           )
         end
       end
