@@ -8,7 +8,7 @@ class VariantVcfRowPresenter < SimpleDelegator
   def self.annotation_headers
     [
       '##INFO=<ID=DISEASE,Number=A,Type=String,Description="DiseaseOntology Disease Name(s)">',
-      '##INFO=<ID=PMID,Number=A,Type=Integer,Description="Pubmed ID(s)">',
+      '##INFO=<ID=PMID,Number=A,Type=String,Description="Pubmed ID(s)">',
     ].join("\n").html_safe
   end
 
