@@ -12,7 +12,6 @@ gem "less-rails"
 gem "twitter-bootstrap-rails", github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
 gem 'jquery-rails', '~> 3.1.2'
 gem 'jbuilder', '~> 1.2'
-gem 'foreigner'
 gem 'will_paginate'
 gem 'jquery-ui-rails'
 gem 'jquery-datatables-rails', '~> 2.2.3'
