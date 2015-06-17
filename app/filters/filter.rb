@@ -5,7 +5,7 @@ module Filter
 
   def self.filter_query(relation, params)
     @@filters.inject(relation) do |rel, filter|
-      values = send("handle_#{filter.filter_type}_params", filter, params)
+      values = get_values_from_params(params, filter)
       if values.blank?
         rel
       else
@@ -16,6 +16,10 @@ module Filter
 
   def self.registered_filters(type)
     (@@filters_by_type ||= @@filters.group_by(&:filter_type))[type]
+  end
+
+  def self.get_values_from_params(params, filter)
+    send("handle_#{filter.filter_type}_params", filter, params)
   end
 
   private
