@@ -13,6 +13,7 @@ Docm::Application.routes.draw do
   get 'api/v1/variants/:hgvs' => 'api_v1#variant', hgvs: /[^\/\.]+\.{1}[^\/\.]+/
   get 'variant_submission' => 'variant_submissions#new', as: :variant_submission
   post 'variant_submission' => 'variant_submissions#create'
+  get 'genes/:name' => 'genes#variant_index'
   get ':action' => 'static#:action'
 
   # Example of regular route:
