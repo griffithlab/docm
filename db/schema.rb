@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20150617174045) do
   enable_extension "plpgsql"
 
   create_table "amino_acids", force: :cascade do |t|
-    t.string "name", limit: 255
+    t.string "name"
   end
 
   add_index "amino_acids", ["name"], name: "index_amino_acids_on_name", using: :btree
@@ -34,38 +34,38 @@ ActiveRecord::Schema.define(version: 20150617174045) do
   end
 
   create_table "diseases", force: :cascade do |t|
-    t.string "name", limit: 255
-    t.string "doid", limit: 255
+    t.string "name"
+    t.string "doid"
   end
 
   add_index "diseases", ["doid"], name: "index_diseases_on_doid", using: :btree
   add_index "diseases", ["name"], name: "index_diseases_on_name", using: :btree
 
   create_table "drug_interactions", force: :cascade do |t|
-    t.string  "effect",              limit: 255
-    t.string  "pathway",             limit: 255
-    t.string  "therapeutic_context", limit: 255
-    t.string  "status",              limit: 255
-    t.string  "evidence",            limit: 255
+    t.string  "effect"
+    t.string  "pathway"
+    t.string  "therapeutic_context"
+    t.string  "status"
+    t.string  "evidence"
     t.integer "variant_id"
     t.integer "source_id"
   end
 
   create_table "genes", force: :cascade do |t|
-    t.string "name",       limit: 255
-    t.string "ensembl_id", limit: 255
+    t.string "name"
+    t.string "ensembl_id"
   end
 
   add_index "genes", ["name"], name: "index_genes_on_name", using: :btree
 
   create_table "locations", force: :cascade do |t|
-    t.string  "chromosome",                 limit: 255
-    t.string  "reference_build",            limit: 255
-    t.string  "reference_read",             limit: 255
+    t.string  "chromosome"
+    t.string  "reference_build"
+    t.string  "reference_read"
     t.integer "start",                      limit: 8
     t.integer "stop",                       limit: 8
-    t.string  "previous_reference_base",    limit: 255
-    t.string  "reference_sequence_version", limit: 255, default: "GRCh37"
+    t.string  "previous_reference_base"
+    t.string  "reference_sequence_version",           default: "GRCh37"
   end
 
   add_index "locations", ["chromosome"], name: "index_locations_on_chromosome", using: :btree
@@ -74,13 +74,13 @@ ActiveRecord::Schema.define(version: 20150617174045) do
   add_index "locations", ["stop"], name: "index_locations_on_stop", using: :btree
 
   create_table "mutation_types", force: :cascade do |t|
-    t.string "name", limit: 255
+    t.string "name"
   end
 
   add_index "mutation_types", ["name"], name: "index_mutation_types_on_name", using: :btree
 
   create_table "sources", force: :cascade do |t|
-    t.string  "name",      limit: 255
+    t.string  "name"
     t.integer "pubmed_id"
     t.text    "citation"
   end
@@ -88,19 +88,19 @@ ActiveRecord::Schema.define(version: 20150617174045) do
   add_index "sources", ["pubmed_id"], name: "index_sources_on_pubmed_id", using: :btree
 
   create_table "transcripts", force: :cascade do |t|
-    t.string "name",    limit: 255
-    t.string "source",  limit: 255
-    t.string "version", limit: 255
+    t.string "name"
+    t.string "source"
+    t.string "version"
   end
 
   create_table "variant_types", force: :cascade do |t|
-    t.string "name", limit: 255
+    t.string "name"
   end
 
   create_table "variants", force: :cascade do |t|
-    t.string  "cdna_change",        limit: 255
-    t.string  "variant",            limit: 255
-    t.string  "strand",             limit: 255
+    t.string  "cdna_change"
+    t.string  "variant"
+    t.string  "strand"
     t.integer "location_id"
     t.integer "variant_type_id"
     t.integer "amino_acid_id"
@@ -108,24 +108,24 @@ ActiveRecord::Schema.define(version: 20150617174045) do
     t.integer "mutation_type_id"
     t.boolean "is_primary"
     t.integer "primary_variant_id"
-    t.string  "hgvs",               limit: 255
-    t.string  "tim_ley_annotation", limit: 255
+    t.string  "hgvs"
+    t.string  "tim_ley_annotation"
     t.integer "transcript_id"
   end
 
   add_index "variants", ["hgvs"], name: "index_variants_on_hgvs", using: :btree
   add_index "variants", ["variant"], name: "index_variants_on_variant", using: :btree
 
-  add_foreign_key "disease_source_variants", "diseases", name: "disease_source_variants_disease_id_fk"
-  add_foreign_key "disease_source_variants", "sources", name: "disease_source_variants_source_id_fk"
-  add_foreign_key "disease_source_variants", "variants", name: "disease_source_variants_variant_id_fk"
-  add_foreign_key "drug_interactions", "sources", name: "drug_interactions_source_id_fk"
-  add_foreign_key "drug_interactions", "variants", name: "drug_interactions_variant_id_fk"
-  add_foreign_key "variants", "amino_acids", name: "variants_amino_acid_id_fk"
-  add_foreign_key "variants", "genes", name: "variants_gene_id_fk"
-  add_foreign_key "variants", "locations", name: "variants_location_id_fk"
-  add_foreign_key "variants", "mutation_types", name: "variants_mutation_type_id_fk"
-  add_foreign_key "variants", "transcripts", name: "variants_transcript_id_fk"
-  add_foreign_key "variants", "variant_types", name: "variants_variant_type_id_fk"
-  add_foreign_key "variants", "variants", column: "primary_variant_id", name: "variants_primary_variant_id_fk"
+  add_foreign_key "disease_source_variants", "diseases"
+  add_foreign_key "disease_source_variants", "sources"
+  add_foreign_key "disease_source_variants", "variants"
+  add_foreign_key "drug_interactions", "sources"
+  add_foreign_key "drug_interactions", "variants"
+  add_foreign_key "variants", "amino_acids"
+  add_foreign_key "variants", "genes"
+  add_foreign_key "variants", "locations"
+  add_foreign_key "variants", "mutation_types"
+  add_foreign_key "variants", "transcripts"
+  add_foreign_key "variants", "variant_types"
+  add_foreign_key "variants", "variants", column: "primary_variant_id"
 end
