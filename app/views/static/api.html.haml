@@ -70,6 +70,12 @@
                   to create a range query
                 %td
                   %code position_stop=178936093
+              %tr
+                %td detailed_view
+                %td
+                  This parameter should be specified if you would like additional information returned about each variant in the response (at the cost of a slower query)
+                %td
+                  %code detailed_view=true
           %strong Example Request
           %p.small Returns all variants on the gene KRAS between positions 25398284 and 25398285 in JSON.
           %pre /api/v1/variants.json?genes=KRAS&position_start=25398284&position_stop=25398285
