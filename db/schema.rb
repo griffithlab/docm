@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150617174045) do
+ActiveRecord::Schema.define(version: 20150715153937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,8 +52,9 @@ ActiveRecord::Schema.define(version: 20150617174045) do
   end
 
   create_table "genes", force: :cascade do |t|
-    t.string "name"
-    t.string "ensembl_id"
+    t.string  "name"
+    t.string  "ensembl_id"
+    t.integer "entrez_id"
   end
 
   add_index "genes", ["name"], name: "index_genes_on_name", using: :btree
