@@ -1,6 +1,12 @@
 class ApiV1Controller < ApplicationController
   def variants
-    @variants = Filter.filter_query(Variant.index_scope.where(is_primary: true), params)
+    scoped_variants = if params[:detailed_view]
+                        @display_detailed_view = true
+                        Variant.show_scope
+                      else
+                        Variant.index_scope
+                      end
+    @variants = Filter.filter_query(scoped_variants.where(is_primary: true), params)
 
     respond_to do |format|
       format.json
