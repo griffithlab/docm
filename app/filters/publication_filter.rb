@@ -21,7 +21,7 @@ class PublicationFilter
   end
 
   def self.param_name
-    :sources
+    :publications
   end
 
   def self.filter_type
