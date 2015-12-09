@@ -6,6 +6,8 @@ class PublicationFilter
     pubmed_ids = values.map do |v|
       if match_data = pubmed_extractor.match(v)
         match_data[:pubmed_id].to_i
+      elsif v.to_i != 0
+        v.to_i
       else
         nil
       end
