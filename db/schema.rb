@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150715153937) do
+ActiveRecord::Schema.define(version: 20151209194223) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -112,10 +112,18 @@ ActiveRecord::Schema.define(version: 20150715153937) do
     t.string  "hgvs"
     t.string  "tim_ley_annotation"
     t.integer "transcript_id"
+    t.integer "version_id"
   end
 
   add_index "variants", ["hgvs"], name: "index_variants_on_hgvs", using: :btree
   add_index "variants", ["variant"], name: "index_variants_on_variant", using: :btree
+
+  create_table "versions", force: :cascade do |t|
+    t.string  "name"
+    t.string  "sort_order"
+    t.boolean "is_current",  default: false
+    t.string  "import_date"
+  end
 
   add_foreign_key "disease_source_variants", "diseases"
   add_foreign_key "disease_source_variants", "sources"
@@ -129,4 +137,5 @@ ActiveRecord::Schema.define(version: 20150715153937) do
   add_foreign_key "variants", "transcripts"
   add_foreign_key "variants", "variant_types"
   add_foreign_key "variants", "variants", column: "primary_variant_id"
+  add_foreign_key "variants", "versions"
 end
