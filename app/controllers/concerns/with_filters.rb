@@ -25,4 +25,15 @@ module WithFilters
       }
     end
   end
+
+  def get_select_filters
+    Filter.registered_filters(:select).map do |filter_class|
+      {
+        id: filter_class.param_name,
+        label_text: filter_class.param_name.to_s.titleize,
+        collection: filter_class.valid_values,
+        selected: Filter.get_values_from_params(params, filter_class)
+      }
+    end
+  end
 end

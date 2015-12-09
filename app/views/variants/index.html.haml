@@ -8,6 +8,8 @@
               = render partial: 'variants/multiselect', locals: filter_hash
             - @range_filters.each do |filter_hash|
               = render partial: 'variants/range', locals: filter_hash
+            - @select_filters.each do |filter_hash|
+              = render partial: 'variants/select', locals: filter_hash
           .submit-group
             %button.btn.btn-default.btn-xs#update-grid-button{type: 'button'}
               %span.glyphicon.glyphicon-refresh

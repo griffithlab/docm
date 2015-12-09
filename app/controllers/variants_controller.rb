@@ -7,6 +7,7 @@ class VariantsController < ApplicationController
       format.html do
         @multiselect_filters = get_multiselect_filters
         @range_filters = get_range_filters
+        @select_filters = get_select_filters
       end
       format.json { render json: VariantsDatatable.new(view_context) }
     end

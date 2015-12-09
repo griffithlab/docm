@@ -34,6 +34,14 @@ module Filter
     clean_param(params, filter.param_name)
   end
 
+  def self.handle_select_params(filter, params)
+    if requested_version = params[filter.param_name]
+      requested_version.strip
+    else
+      'Current'
+    end
+  end
+
   def self.clean_param(params, param_name)
     val = params[param_name]
     if val.is_a?(String)

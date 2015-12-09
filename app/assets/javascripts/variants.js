@@ -45,6 +45,9 @@
     }).change(function(e) {
       return variantsTable.ajax.reload();
     });
+    $("#version").change(function(e) {
+      return variantsTable.ajax.reload();
+    });
     return $("#update-grid-button").click(function(e) {
       return variantsTable.ajax.reload();
     });
