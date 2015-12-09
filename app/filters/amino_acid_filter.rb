@@ -18,5 +18,4 @@ class AminoAcidFilter
   def self.filter_type
     :multiselect
   end
-
 end
