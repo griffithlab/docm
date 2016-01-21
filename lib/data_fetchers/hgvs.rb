@@ -73,7 +73,7 @@ module DataFetchers
     end
 
     def self.reverse_complement(seq)
-      return seq.reverse().tr!('ATCGatcg','TAGCtagc')
+      seq.reverse().tr('ATCGatcg','TAGCtagc')
     end
 
   end
