@@ -9,10 +9,33 @@
             DoCM, the Database of Curated Mutations, is a highly curated database of known,
             disease-causing mutations that provides easily explorable variant lists with direct links to source
             citations for easy verification.
+            %br
+          %h2
+            DoCM currently captures variants from
+            = @source_count
+            unique publications.
+          %hr
+          %h3 How is the literature curated to produce DoCM?
+          %p
+            Publications are identified for curation by disease experts and through review of published lists and resources
+            that outline important cancer mutations. Mutations outlined in the literature are included in DoCM if they
+            satisfy the criteria listed below. Using context clues of the citing literature, useful metadata is obtained
+            from public datasets to uniquely identify a mutation (such as genomic position and cDNA position), map the mutation to a
+            disease (using the #{link_to 'disease ontology', 'http://disease-ontology.org'}), and catalogue other useful information.
+          %p
+            The following is an anecdotal example of the curation involved for the variant BRAF V600E. Typically the
+            literature only lists the gene and amino acid change, requiring extensive curation to uniquely identify
+            the variant. Correct genomic coordinates on a consistent genome build need to be identified, with
+            accompanying nucleotide and strand information. Occassionaly there are multiple nucleotide changes
+            that are synonymous with a particular amino acid change. A representative transcript that correctly models
+            the mutation described in the literature also needs to be specified. Cancer subtypes are specified using the
+            disease ontology nomenclature.
+          %p
+            = image_tag("curation.png")
+
           %hr
           %h3
             Criteria for inclusion into DoCM
-          %p Mutations that are added into DoCM are evaluated individually or as a set.
           %p Clinical evidence
           %ul
             %li Drug targets associated with a mutation
@@ -21,14 +44,17 @@
           %ul
             %li Disease function described in cell lines
             %li Disease function described in animal models
+            %li Extremely recurrent mutation coupled with expert opinion of the significance of the mutation
           %hr
-          %h3 Datasets currently included in DoCM
+          %h3 Datasets that were curated and included in DoCM
           %ul
             %li #{link_to 'My Cancer Genome', 'http://www.mycancergenome.org'}
             %li #{link_to 'Knowledge database', 'http://www.ncbi.nlm.nih.gov/pubmed/24768039'}
             %li #{link_to 'OncoMap', 'http://www.ncbi.nlm.nih.gov/pubmed/25157968'}
           %hr
-          %h3 Individual variant curation
-          %p
-            Mutations were identified through our own literature review and communication
-            with disease experts.
+          %h3 Papers citing http://docm.info
+          %ul
+            %li #{link_to 'McGranahan, N. et al. Clonal status of actionable driver events and the timing of mutational processes in cancer evolution. Sci Transl Med 7, 283ra254, doi:10.1126/scitranslmed.aaa1408 (2015).', 'http://www.ncbi.nlm.nih.gov/pubmed/25877892'}
+            %li #{link_to 'Leiserson, M. D. et al. MAGI: visualization and collaborative annotation of genomic aberrations. Nat Methods 12, 483-484, doi:10.1038/nmeth.3412 (2015).', 'http://www.ncbi.nlm.nih.gov/pubmed/26020500'}
+            %li #{link_to 'Krogan, N. J., Lippman, S., Agard, D. A., Ashworth, A. & Ideker, T. The cancer cell map initiative: defining the hallmark networks of cancer. Mol Cell 58, 690-698, doi:10.1016/j.molcel.2015.05.008 (2015).', 'http://www.ncbi.nlm.nih.gov/pubmed/26000852'}
+            %li #{link_to 'Wagner, A. H. et al. DGIdb 2.0: mining clinically relevant drug-gene interactions. Nucleic Acids Res 44, D1036-1044, doi:10.1093/nar/gkv1165 (2016).', 'http://www.ncbi.nlm.nih.gov/pubmed/26531824'}

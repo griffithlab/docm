@@ -5,4 +5,7 @@ class StaticController < ApplicationController
     instance_variable_set("@#{params[:action]}_active", 'active')
   end
 
+  def sources
+    @source_count = Source.count
+  end
 end

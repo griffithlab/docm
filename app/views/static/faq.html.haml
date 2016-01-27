@@ -12,9 +12,28 @@
               A manuscript for DoCM is currently in preparation. In the meantime please 
               cite http://docm.genome.wustl.edu.
             %br
+            %dt How do I contribute a variant to DoCM?
+            %dd
+              We welcome candidate variant submissions which will allow this resource to be more comprehensive and
+              useful to the community at large. If you have a submission please fill out a #{link_to 'variant submission form', '/varian_submission'}.
+              If you would like to contribute your curation efforts to DoCM please #{link_to 'contact us', '/contact'}.
+            %br
+            %dt How is DoCM different from COSMIC, TCGA, ICGC and ClinVar?
+            %dd
+              DoCM captures variants with known biological or clinical relevance, supported by the literature, requiring
+              more than simply an observation or occurance in a cancer sample as with COSMIC, TCGA and ICGC. While
+              ClinVar's scope is focused on linking variation to phenotype with supporting evidence, DoCM focuses on
+              linking variants to biologically functional or clinically relevant variation as outlined in the literature.
+            %br
+            %dt Is the DoCM web client open source?
+            %dd
+              Yes! DoCM is released under the #{link_to 'MIT License','http://opensource.org/licenses/MIT'}
+              and you can find the code on #{link_to 'GitHub', 'https://github.com/genome/docm'}. Send us a pull request,
+              we would love to review your code and incorporate features from the community.
+            %br
             %dt How do I use the DoCM API?
-            %dd 
-              The API can be queried using HTTP requests. More information can be 
+            %dd
+              The API can be queried using HTTP requests. More information can be
               found at our #{link_to 'API Documentation', '/api'} page.
             %br
             %dt How often is DoCM updated?
@@ -27,6 +46,17 @@
             %dd 
               You can download variants via the #{link_to 'API', '/api'}, or you can
               use the TSV or VCF buttons on the main page. These will be filtered 
-              according to the criteria that you specify (i.e. chromosome, disease, etc).
+              according to the criteria that you specify (i.e. chromosome, disease, etc) in the left sidebar.
               The TSV button will download a tab separated values file. The VCF button will
               download a variant call format file.
+            %br
+            %dt How is versioning handled in DoCM?
+            %dd
+              The DoCM web interface API features a comprehensive versioning system that allows users view and download
+              previous versions of the database. By default the web client displays the current version of the database;
+              to access a prior version of the database with the web client select your desired version from the 'version'
+              field on the left sidebar. To download a prior version using the API use version parameter.
+              #{link_to 'See the API documentation for more information', '\api'}.
+
+
+
