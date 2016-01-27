@@ -16,7 +16,18 @@
             that outline important cancer mutations. Mutations outlined in the literature are included in DoCM if they
             satisfy the criteria listed below. Using context clues of the citing literature, useful metadata is obtained
             from public datasets to uniquely identify a mutation (such as genomic position and cDNA position), map the mutation to a
-            disease (using the #{link_to 'disease ontology', 'http://disease-ontology.org'}), and other useful information.
+            disease (using the #{link_to 'disease ontology', 'http://disease-ontology.org'}), and catalogue other useful information.
+          %p
+            The following is an anecdotal example of the curation involved for the variant BRAF V600E. Typically the
+            literature only lists the gene and amino acid change, requiring extensive curation to uniquely identify
+            the variant. Correct genomic coordinates on a consistent genome build need to be identified, with
+            accompanying nucleotide and strand information. Occassionaly there are multiple nucleotide changes
+            that are synonymous with a particular amino acid change. A representative transcript that correctly models
+            the mutation described in the literature also needs to be specified. Cancer subtypes are specified using the
+            disease ontology nomenclature.
+          %p
+            = image_tag("curation.png")
+
           %hr
           %h3
             Criteria for inclusion into DoCM
