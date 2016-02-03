@@ -30,7 +30,9 @@ class VariantDatatableRowPresenter < SimpleDelegator
   end
 
   def source_list
-    disease_sources.map { |s| source_link(s) }.join(', ')
+    disease_sources
+      .sort_by { |s| s.pubmed_id }
+      .map { |s| source_link(s) }.join(', ')
   end
 
 end

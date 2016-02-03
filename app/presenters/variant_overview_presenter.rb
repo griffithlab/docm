@@ -31,7 +31,7 @@ class VariantOverviewPresenter < SimpleDelegator
     disease_source_variants.map do |dsv|
       DiseaseRow.new(
         dsv.disease.name,
-        full_source_link(dsv.source),
+        source_link(dsv.source),
         my_cancer_genome_link(dsv)
       )
     end
@@ -58,7 +58,7 @@ class VariantOverviewPresenter < SimpleDelegator
         di.therapeutic_context,
         di.status,
         di.evidence,
-        full_source_link(di.source)
+        source_link(di.source)
       )
     end
   end
