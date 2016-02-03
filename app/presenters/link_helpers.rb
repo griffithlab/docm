@@ -11,7 +11,7 @@ module LinkHelpers
   end
 
   def variant_link(variant)
-    link_to(variant.hgvs, variant_path(variant.hgvs))
+    link_to(variant.hgvs, variant_path(variant.hgvs, version: variant.version.name))
   end
 
   def my_cancer_genome_link(dsv)

@@ -14,7 +14,12 @@ class VariantsController < ApplicationController
   end
 
   def show
-    variant = Variant.show_scope.where(hgvs: params[:hgvs]).first!
+    version = if params[:version].present?
+                Version.where(name: params[:version].strip).first!
+              else
+                Version.current_version
+              end
+    variant = Variant.show_scope.where(hgvs: params[:hgvs], version: version ).first!
     @variant = VariantOverviewPresenter.new(variant, view_context)
   end
 end
