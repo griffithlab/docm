@@ -85,6 +85,11 @@
           %strong Example Request
           %p.small Returns all variants on the gene KRAS between positions 25398284 and 25398285 in JSON.
           %pre /api/v1/variants.json?genes=KRAS&position_start=25398284&position_stop=25398285
+          %p.small
+            By default, the latest version of the DoCM database will be used. If you wish to use a previous version, you can specify it via the
+            %code version
+            parameter.
+          %pre /api/v1/variants.json?genes=KRAS&version=1.0
           %strong Example Response
           %pre
             :preserve
