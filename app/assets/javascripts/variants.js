@@ -2,6 +2,20 @@
 (function() {
   jQuery(function() {
     var variantsTable;
+    var position_inputs = $("#position > input");
+    var chromosomes_blank = function () {
+      return $("#chromosomes").val() == null;
+    }
+    var handle_position_inputs = function () {
+      if (chromosomes_blank()) {
+        position_inputs.prop('disabled', true);
+        position_inputs.addClass('disabled');
+        position_inputs.prop('value', '');
+      } else {
+        position_inputs.prop('disabled', false);
+        position_inputs.removeClass('disabled');
+      }
+    }
     variantsTable = $('#variants').DataTable({
       pagingType: "full_numbers",
       jQueryUI: true,
@@ -43,14 +57,15 @@
       no_results_text: 'Sorry, nothing matches your query.',
       width: '100%'
     }).change(function(e) {
+      handle_position_inputs();
       return variantsTable.ajax.reload();
     });
     $("#version").change(function(e) {
       return variantsTable.ajax.reload();
     });
-    return $("#update-grid-button").click(function(e) {
+    $("#update-grid-button").click(function(e) {
       return variantsTable.ajax.reload();
     });
+    handle_position_inputs();
   });
-
 }).call(this);

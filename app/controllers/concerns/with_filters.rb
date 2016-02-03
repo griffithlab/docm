@@ -3,14 +3,14 @@ module WithFilters
 
   private
   def get_multiselect_filters
-    Filter.registered_filters(:multiselect).map do |filter_class|
+   Filter.registered_filters(:multiselect).map do |filter_class|
       {
         id: filter_class.param_name,
         label_text: filter_class.param_name.to_s.titleize,
         collection: filter_class.valid_values,
         selected: Filter.get_values_from_params(params, filter_class)
       }
-    end
+    end.sort_by { |f| f[:id] == :chromosomes ? 99 : 0 }
   end
 
   def get_range_filters
