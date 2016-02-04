@@ -12,6 +12,8 @@ class Variant < ActiveRecord::Base
   has_many :drug_interactions
   has_many :drug_sources, through: :drug_interactions, source: :source
 
+  serialize :meta, JSON
+
   def self.index_scope
     eager_load(:location, :gene, :amino_acid, :diseases, :disease_sources, :mutation_type, :variant_type, :version)
   end

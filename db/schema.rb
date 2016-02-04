@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151209194223) do
+ActiveRecord::Schema.define(version: 20160203214847) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -107,12 +107,12 @@ ActiveRecord::Schema.define(version: 20151209194223) do
     t.integer "amino_acid_id"
     t.integer "gene_id"
     t.integer "mutation_type_id"
-    t.boolean "is_primary"
     t.integer "primary_variant_id"
     t.string  "hgvs"
     t.string  "tim_ley_annotation"
     t.integer "transcript_id"
     t.integer "version_id"
+    t.text    "meta"
   end
 
   add_index "variants", ["hgvs"], name: "index_variants_on_hgvs", using: :btree

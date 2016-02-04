@@ -6,7 +6,7 @@ class ApiV1Controller < ApplicationController
                       else
                         Variant.index_scope
                       end
-    @variants = Filter.filter_query(scoped_variants.where(is_primary: true), params)
+    @variants = Filter.filter_query(scoped_variants, params)
 
     respond_to do |format|
       format.json

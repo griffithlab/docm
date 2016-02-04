@@ -10,11 +10,13 @@ namespace :docm do
   end
 
   desc 'import a TSV spreadsheet to your local database'
-  task :import, [:tsv_path] => :environment do |_, args|
+  task :import, [:tsv_path,:version] => :environment do |_, args|
     file_path = args[:tsv_path]
+    version = args[:version]
     raise "File #{file_path} not found!" unless File.exists? file_path
+    raise "Must specify a version to import!" unless version.present?
     puts 'Importing TSV.'
-    Importers::TSV.new(file_path).import!
+    Importers::TSV.new(file_path, version).import!
     puts 'Generating HGVS strings.'
     DataFetchers::HGVS.run
     puts 'Fetching disease information from DiseaseOntology.'

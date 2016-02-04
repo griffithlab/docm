@@ -10,7 +10,7 @@ class VersionFilter
   end
 
   def self.valid_values
-    Version.order(sort_order: :desc)
+    Version.order(name: :asc)
       .pluck(:name) + ['Current']
   end
 

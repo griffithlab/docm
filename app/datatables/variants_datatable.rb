@@ -26,7 +26,6 @@ class VariantsDatatable
   def get_variants
     Variant.index_scope
       .order("#{sort_column}  #{sort_direction}")
-      .where(is_primary: true)
       .page(page)
       .per_page(per_page)
   end

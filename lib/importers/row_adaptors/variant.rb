@@ -10,7 +10,6 @@ module Importers
           'variant' => 'variant',
           'strand' => 'strand',
           'c_position' => 'cdna_change',
-          'primary' => 'is_primary',
         }
       end
     end
