@@ -1,6 +1,7 @@
 module LinkHelpers
   delegate :link_to, to: :@view_context
   delegate :variant_path, to: :@view_context
+  delegate :truncate, to: :@view_context
 
   def source_link(source)
     link_to(source.citation, "http://www.ncbi.nlm.nih.gov/pubmed/#{source.pubmed_id}")
@@ -10,8 +11,14 @@ module LinkHelpers
     link_to(gene.name, "http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=#{gene.ensembl_id}")
   end
 
-  def variant_link(variant)
-    link_to(variant.hgvs, variant_path(variant.hgvs, version: variant.version.name))
+  def variant_link(variant, opts = {})
+    link_text = if opts[:truncate]
+                  truncate(variant.hgvs, length: 30)
+                else
+                  variant.hgvs
+                end
+
+    link_to(link_text, variant_path(variant.hgvs, version: variant.version.name))
   end
 
   def my_cancer_genome_link(dsv)

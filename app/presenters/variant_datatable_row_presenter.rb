@@ -9,7 +9,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
 
   def as_json
     [
-      variant_link(@variant),
+      variant_link(@variant, truncate: true),
       location.chromosome,
       location.start,
       location.stop,
