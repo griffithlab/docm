@@ -11,12 +11,10 @@ module DataFetchers
 
     #{transcript_name}:{c_position}{reference}>{variant}
     def self.get_hgvs_from_variant(variant)
-      if variant.strand == "+1"
-        puts "+ strand"
-        send("#{variant.variant_type.name.downcase}_plus_strand_template", variant)
-      else
-        puts "- strand"
+      if variant.strand == "-1"
         send("#{variant.variant_type.name.downcase}_minus_strand_template", variant)
+      else
+        send("#{variant.variant_type.name.downcase}_plus_strand_template", variant)
       end
     end
 
