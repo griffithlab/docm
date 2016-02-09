@@ -55,6 +55,7 @@ class VariantOverviewPresenter < SimpleDelegator
       InteractionRow.new(
         di.effect,
         di.pathway,
+        di.clinical_association,
         di.therapeutic_context,
         di.status,
         di.evidence,
@@ -66,4 +67,4 @@ end
 
 DiseaseRow = Struct.new(:disease, :source, :my_cancer_genome_link)
 PermutationRow = Struct.new(:hgvs, :chromosome, :start, :stop, :reference, :variant)
-InteractionRow = Struct.new(:effect, :pathway, :drug, :status, :evidence_type, :source)
+InteractionRow = Struct.new(:effect, :pathway, :association, :drug, :status, :evidence_type, :source)

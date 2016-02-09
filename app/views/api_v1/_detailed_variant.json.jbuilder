@@ -10,7 +10,6 @@ json.transcript do
 end
 json.reference_version variant.location.reference_sequence_version
 json.gene variant.gene.name
-json.entrez_id variant.gene.entrez_id
 json.reference variant.location.reference_read
 json.variant variant.variant
 json.amino_acid variant.amino_acid.name
@@ -29,6 +28,7 @@ if variant.drug_interactions.any?
     json.drug di.therapeutic_context
     json.pathway di.pathway
     json.effect di.effect
+    json.association di.clinical_association
     json.status di.status
     json.evidence_type di.evidence
     json.source_pubmed_id di.source.pubmed_id

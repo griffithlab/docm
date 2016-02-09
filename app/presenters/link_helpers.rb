@@ -8,7 +8,7 @@ module LinkHelpers
   end
 
   def gene_link(gene)
-    link_to(gene.name, "http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=#{gene.ensembl_id}")
+    link_to(gene.name, "http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=#{gene.name}")
   end
 
   def variant_link(variant, opts = {})

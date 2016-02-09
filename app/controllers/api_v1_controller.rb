@@ -16,6 +16,25 @@ class ApiV1Controller < ApplicationController
   end
 
   def variant
-    @variant = Variant.show_scope.where(hgvs: params[:hgvs]).first!
+    hgvs = params[:hgvs]
+    version = if params[:version].present?
+                Version.find_by(name: params[:version])
+              else
+                Version.current_version
+              end
+
+    unless hgvs.present? && version.present?
+      render json: { errors: [ "Missing HGVS or incorrect version specified" ] }, status: :bad_request
+      return
+    end
+
+    @variant = Variant.show_scope
+      .where(hgvs: hgvs, version: version)
+      .first
+
+    unless @variant
+      render json: { errors: [ "No variant with HGVS #{hgvs} found in DoCM" ] }, status: :not_found
+      return
+    end
   end
 end

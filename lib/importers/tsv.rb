@@ -21,11 +21,11 @@ module Importers
           property_hash = RowAdaptors::Variant.get_property_hash_from_row(row)
           variant = Variant.find_or_create_by(entity_hash.merge(property_hash))
           create_disease_source_variant_links(variant, row)
-          create_drug_interactions(variant, row)
           if meta = row['meta']
             variant.meta = JSON.parse(meta.gsub(/(\A"|"\z)/, ''))
             variant.save
           end
+          RowAdaptors::DrugInteraction.create_from_variant(variant)
         end
       end
     end
@@ -55,15 +55,6 @@ module Importers
           my_cancer_genome_url: my_cancer_genome_url
         )
       end
-    end
-
-    def create_drug_interactions(variant, row)
-        drug_interactions = RowAdaptors::DrugInteraction.create_from_row(row)
-
-        drug_interactions.each do |drug_interaction|
-          drug_interaction.variant = variant
-          drug_interaction.save
-        end
     end
 
     def valid_row?(row)

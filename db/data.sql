@@ -1449,58 +1449,60 @@ COPY mutation_types (id, name) FROM stdin;
 --
 
 COPY sources (id, name, pubmed_id, citation) FROM stdin;
-465	\N	21159146	McDonnell et al., 2011, Pigment Cell Melanoma Res
-466	\N	24755198	Xia et al., 2014, Mol. Cancer Ther.
-467	\N	16624552	Debiec-Rychter et al., 2006, Eur. J. Cancer
-468	\N	16397263	Schittenhelm et al., 2006, Cancer Res.
-469	\N	19737976	Bougherara et al., 2009, Mol. Cancer Res.
-470	\N	19996579	Satzger et al., 2010, Dermatology (Basel)
-471	\N	11526490	Tuveson et al., 2001, Oncogene
-472	\N	17824795	Graham et al., 2007, Arch. Pathol. Lab. Med.
-473	\N	20545949	Yamaguchi et al., 2011, Clin. Exp. Dermatol.
-474	\N	22932406	Hong et al., 2012, Zhonghua Bing Li Xue Za Zhi
-475	\N	17363509	Roberts et al., 2007, Mol. Cancer Ther.
-476	\N	22355224	Tutone et al., 2011, Bioinformation
-477	\N	21569090	Yun et al., 2011, APMIS
-478	\N	15236194	Tamborini et al., 2004, Gastroenterology
-479	\N	18955458	Heinrich et al., 2008, J. Clin. Oncol.
-480	\N	20147452	DiNitto et al., 2010, J. Biochem.
-481	\N	16741525	Willmore-Payne et al., 2006, Mod. Pathol.
-482	\N	15972446	Gotlib et al., 2005, Blood
-483	\N	16912224	Pan et al., 2007, Blood
-484	\N	18024392	Gleixner et al., 2007, Haematologica
-485	\N	20088873	Handolias et al., 2010, Pigment Cell Melanoma Res
-486	\N	23775962	Hodi et al., 2013, J. Clin. Oncol.
-487	\N	19962457	Gabelli et al., 2010, Biochim. Biophys. Acta
-488	\N	24459181	Liu et al., 2014, Cancer Res.
-489	\N	24185510	Robinson et al., 2013, Nat. Genet.
-490	\N	24185512	Toy et al., 2013, Nat. Genet.
-491	\N	24398047	Jeselsohn et al., 2014, Clin. Cancer Res.
-492	\N	24217577	Merenbakh-Lamin et al., 2013, Cancer Res.
-493	\N	25656898	Dienstmann et al., 2015, Cancer Discov
-494	\N	17177598	Lee et al., 2006, PLoS Med.
-495	\N	23578570	Bahassi et al., 2013, Eur. J. Cancer
-496	\N	16187797	Greulich et al., 2005, PLoS Med.
-497	\N	16204070	Jiang et al., 2005, Cancer Res.
-498	\N	18199554	Gilmer et al., 2008, Cancer Res.
-499	\N	19671738	Tam et al., 2009, Mol. Cancer Ther.
-500	\N	23945392	Berge et al., 2013, J Thorac Oncol
-501	\N	2302402	Schick et al., 1990, Biochim. Biophys. Acta
-502	\N	18458038	Sequist et al., 2008, J. Clin. Oncol.
-503	\N	23242437	Kobayashi et al., 2013, J Thorac Oncol
-504	\N	23485129	Massarelli et al., 2013, Lung Cancer
-505	\N	19455431	Rajasekaran et al., 2010, Appl. Biochem. Biotechnol.
-506	\N	19147750	Kancha et al., 2009, Clin. Cancer Res.
-507	\N	20415598	Cassell et al., 2010, Expert Opin Investig Drugs
-508	\N	21531084	Uribe et al., 2011, Pathol. Res. Pract.
-509	\N	22622260	Lee et al., 2012, Lung Cancer
-510	\N	18089823	Engelman et al., 2007, Cancer Res.
-511	\N	24934779	Ganesan et al., 2016, J. Clin. Oncol.
-512	\N	23800712	Wheler et al., 2013, Oncotarget
-513	\N	16730855	Tokumo et al., 2006, Lung Cancer
-514	\N	17545553	Toyooka et al., 2007, Clin. Cancer Res.
-515	\N	16707764	Guo et al., 2006, N. Engl. J. Med.
-516	\N	17653080	Fu et al., 2008, Oncogene
+386	\N	2674680	van 't Veer et al., 1989, Mol. Cell. Biol.
+387	\N	23414587	Ascierto et al., 2013, Lancet Oncol.
+388	\N	18390968	Adjei et al., 2008, J. Clin. Oncol.
+389	\N	23538902	Haarberg et al., 2013, Mol. Cancer Ther.
+390	\N	23569304	Trunzer et al., 2013, J. Clin. Oncol.
+391	\N	8120410	Ball et al., 1994, J. Invest. Dermatol.
+392	\N	16291983	Curtin et al., 2005, N. Engl. J. Med.
+393	\N	20130576	Hatzivassiliou et al., 2010, Nature
+394	\N	20179705	Poulikakos et al., 2010, Nature
+395	\N	22761467	Martinez-Garcia et al., 2012, Clin. Cancer Res.
+396	\N	23076151	Kaplan et al., 2012, J. Biol. Chem.
+397	\N	20149136	Halaban et al., 2010, Pigment Cell Melanoma Res
+398	\N	20406486	Søndergaard et al., 2010, J Transl Med
+399	\N	17384584	Schubbert et al., 2007, Nat. Rev. Cancer
+400	\N	19255327	Kloos et al., 2009, J. Clin. Oncol.
+401	\N	19773371	Hoftijzer et al., 2009, Eur. J. Endocrinol.
+402	\N	21107323	Nazarian et al., 2010, Nature
+403	\N	23406027	Ho et al., 2013, N. Engl. J. Med.
+404	\N	24918823	Carlino et al., 2014, Br. J. Cancer
+405	\N	23431193	Posch et al., 2013, Proc. Natl. Acad. Sci. U.S.A.
+406	\N	22962325	Wilmott et al., 2012, Mol. Cancer Ther.
+407	\N	22144181	Xu et al., 2012, Blood
+408	\N	24553387	Misale et al., 2014, Sci Transl Med
+409	\N	23134356	Callahan et al., 2012, N. Engl. J. Med.
+410	\N	18938156	Day et al., 2008, Eur. J. Pharmacol.
+411	\N	23932362	Pitini et al., 2013, Lung Cancer
+412	\N	19798509	Capper et al., 2009, Acta Neuropathol.
+413	\N	19818334	Kato et al., 2009, Biochem. Biophys. Res. Commun.
+414	\N	23558169	Rohle et al., 2013, Science
+415	\N	21352804	Kaneko et al., 2011, Biochem. Biophys. Res. Commun.
+416	\N	19718025	Prickett et al., 2009, Nat. Genet.
+417	\N	11921283	Kondo et al., 2002, Genes Chromosomes Cancer
+418	\N	7660122	Duan et al., 1995, Science
+419	\N	23737487	Antony et al., 2013, Cancer Res.
+420	\N	25823662	Chiu et al., 2015, Oncotarget
+421	\N	21179087	Ngo et al., 2011, Nature
+422	\N	19234609	Halaban et al., 2009, PLoS ONE
+423	\N	9065403	Rubinfeld et al., 1997, Science
+424	\N	10027390	Rimm et al., 1999, Am. J. Pathol.
+425	\N	11351304	Omholt et al., 2001, Int. J. Cancer
+426	\N	11930117	Pollock et al., 2002, Melanoma Res.
+427	\N	11950921	Demunter et al., 2002, Mod. Pathol.
+428	\N	12124804	Reifenberger et al., 2002, Int. J. Cancer
+429	\N	15133491	Worm et al., 2004, Oncogene
+430	\N	24788118	Hamada et al., 2014, PLoS ONE
+431	\N	15805248	Saal et al., 2005, Cancer Res.
+432	\N	18676830	Stemke-Hale et al., 2008, Cancer Res.
+433	\N	23066039	Janku et al., 2013, Cancer Res.
+434	\N	23408298	Fury et al., 2013, Cancer
+435	\N	24265155	Shi et al., 2014, Cancer Discov
+436	\N	15930273	Ikenoue et al., 2005, Cancer Res.
+437	\N	21824802	Cohen et al., 2011, Oral Oncol.
+438	\N	19381019	Qing et al., 2009, J. Clin. Invest.
+439	\N	19331127	Guan et al., 2009, Anticancer Res.
 1	\N	18615627	Jones et al., 2008, Cancer
 2	\N	11853795	von Bubnoff et al., 2002, Lancet
 3	\N	25157968	MacConaill et al., 2014, J Mol Diagn
@@ -1534,7 +1536,6 @@ COPY sources (id, name, pubmed_id, citation) FROM stdin;
 31	\N	24518971	Hasanpour et al., 2014, Cell J
 32	\N	17704924	Jeon et al., 2008, Int J Colorectal Dis
 33	\N	18992635	Bougatef et al., 2008, Cancer Genet. Cytogenet.
-316	\N	10555148	Lee et al., 1999, Cell
 34	\N	22848674	Voorham et al., 2012, PLoS ONE
 35	\N	12374230	De Filippo et al., 2002, Scand. J. Gastroenterol.
 36	\N	20233444	Fumagalli et al., 2010, BMC Cancer
@@ -1817,6 +1818,7 @@ COPY sources (id, name, pubmed_id, citation) FROM stdin;
 313	\N	20018398	Jin et al., 2010, Lung Cancer
 314	\N	9598803	Kohno et al., 1998, Genes Chromosomes Cancer
 315	\N	20881644	Lee et al., 2010, J Thorac Oncol
+316	\N	10555148	Lee et al., 1999, Cell
 317	\N	20085938	Courtney et al., 2010, J. Clin. Oncol.
 318	\N	11504908	Neshat et al., 2001, Proc. Natl. Acad. Sci. U.S.A.
 319	\N	19351834	Sos et al., 2009, Cancer Res.
@@ -1885,218 +1887,217 @@ COPY sources (id, name, pubmed_id, citation) FROM stdin;
 382	\N	22997239	Jalili et al., 2012, J. Natl. Cancer Inst.
 383	\N	23614898	Morris et al., 2013, Cancer Discov
 384	\N	23237741	Klein et al., 2013, Eur. J. Cancer
-385	\N	2674680	van 't Veer et al., 1989, Mol. Cell. Biol.
-386	\N	8120410	Ball et al., 1994, J. Invest. Dermatol.
-387	\N	16291983	Curtin et al., 2005, N. Engl. J. Med.
-388	\N	18390968	Adjei et al., 2008, J. Clin. Oncol.
-389	\N	20130576	Hatzivassiliou et al., 2010, Nature
-390	\N	20179705	Poulikakos et al., 2010, Nature
-391	\N	22761467	Martinez-Garcia et al., 2012, Clin. Cancer Res.
-392	\N	23076151	Kaplan et al., 2012, J. Biol. Chem.
-393	\N	23414587	Ascierto et al., 2013, Lancet Oncol.
-394	\N	23538902	Haarberg et al., 2013, Mol. Cancer Ther.
-395	\N	23569304	Trunzer et al., 2013, J. Clin. Oncol.
-396	\N	20149136	Halaban et al., 2010, Pigment Cell Melanoma Res
-397	\N	20406486	Søndergaard et al., 2010, J Transl Med
-398	\N	17384584	Schubbert et al., 2007, Nat. Rev. Cancer
-399	\N	19255327	Kloos et al., 2009, J. Clin. Oncol.
-400	\N	19773371	Hoftijzer et al., 2009, Eur. J. Endocrinol.
-401	\N	21107323	Nazarian et al., 2010, Nature
-402	\N	23406027	Ho et al., 2013, N. Engl. J. Med.
-403	\N	24918823	Carlino et al., 2014, Br. J. Cancer
-404	\N	23431193	Posch et al., 2013, Proc. Natl. Acad. Sci. U.S.A.
-405	\N	22962325	Wilmott et al., 2012, Mol. Cancer Ther.
-406	\N	22144181	Xu et al., 2012, Blood
-407	\N	24553387	Misale et al., 2014, Sci Transl Med
-408	\N	23134356	Callahan et al., 2012, N. Engl. J. Med.
-409	\N	18938156	Day et al., 2008, Eur. J. Pharmacol.
-410	\N	23932362	Pitini et al., 2013, Lung Cancer
-411	\N	19798509	Capper et al., 2009, Acta Neuropathol.
-412	\N	19818334	Kato et al., 2009, Biochem. Biophys. Res. Commun.
-413	\N	23558169	Rohle et al., 2013, Science
-414	\N	21352804	Kaneko et al., 2011, Biochem. Biophys. Res. Commun.
-415	\N	19718025	Prickett et al., 2009, Nat. Genet.
-416	\N	11921283	Kondo et al., 2002, Genes Chromosomes Cancer
-417	\N	7660122	Duan et al., 1995, Science
-418	\N	23737487	Antony et al., 2013, Cancer Res.
-419	\N	25823662	Chiu et al., 2015, Oncotarget
-420	\N	21179087	Ngo et al., 2011, Nature
-421	\N	19234609	Halaban et al., 2009, PLoS ONE
-422	\N	9065403	Rubinfeld et al., 1997, Science
-423	\N	10027390	Rimm et al., 1999, Am. J. Pathol.
-424	\N	11351304	Omholt et al., 2001, Int. J. Cancer
-425	\N	11930117	Pollock et al., 2002, Melanoma Res.
-426	\N	11950921	Demunter et al., 2002, Mod. Pathol.
-427	\N	12124804	Reifenberger et al., 2002, Int. J. Cancer
-428	\N	15133491	Worm et al., 2004, Oncogene
-429	\N	24788118	Hamada et al., 2014, PLoS ONE
-430	\N	15805248	Saal et al., 2005, Cancer Res.
-431	\N	18676830	Stemke-Hale et al., 2008, Cancer Res.
-432	\N	23066039	Janku et al., 2013, Cancer Res.
-433	\N	23408298	Fury et al., 2013, Cancer
-434	\N	24265155	Shi et al., 2014, Cancer Discov
-435	\N	15930273	Ikenoue et al., 2005, Cancer Res.
-436	\N	21824802	Cohen et al., 2011, Oral Oncol.
-437	\N	19381019	Qing et al., 2009, J. Clin. Invest.
-438	\N	19331127	Guan et al., 2009, Anticancer Res.
-439	\N	21273588	Otsuka et al., 2011, Anticancer Res.
+385	\N	0	
 440	\N	22869148	Chell et al., 2013, Oncogene
-441	\N	16954519	Heinrich et al., 2006, J. Clin. Oncol.
-442	\N	17087936	Weisberg et al., 2006, Gastroenterology
-443	\N	24132921	Dai et al., 2013, Clin. Cancer Res.
-444	\N	15685537	Debiec-Rychter et al., 2005, Gastroenterology
-445	\N	21131919	Langer et al., 2011, Mod. Pathol.
-446	\N	24531699	Bello et al., 2014, Ann. Surg. Oncol.
-447	\N	24661573	de Jel et al., 2014, Pigment Cell Melanoma Res
-448	\N	7530509	Kitayama et al., 1995, Blood
-449	\N	9438854	Hirota et al., 1998, Science
-450	\N	11276010	Hirota et al., 2001, J. Pathol.
-451	\N	15790786	Growney et al., 2005, Blood
-452	\N	18421059	Hodi et al., 2008, J. Clin. Oncol.
-453	\N	18510589	Lutzky et al., 2008, Pigment Cell Melanoma Res
-454	\N	18936790	Quintás-Cardama et al., 2008, Nat Clin Pract Oncol
-455	\N	18980976	Beadling et al., 2008, Clin. Cancer Res.
-456	\N	19671763	Woodman et al., 2009, Mol. Cancer Ther.
-457	\N	19812602	Terheyden et al., 2010, J. Invest. Dermatol.
-458	\N	21642685	Carvajal et al., 2011, JAMA
-459	\N	21690468	Guo et al., 2011, J. Clin. Oncol.
-460	\N	22261812	Minor et al., 2012, Clin. Cancer Res.
-461	\N	22160160	Knösel et al., 2012, J. Cancer Res. Clin. Oncol.
-462	\N	19175693	Tefferi, 2009, J. Cell. Mol. Med.
-463	\N	16046538	Carter et al., 2005, Proc. Natl. Acad. Sci. U.S.A.
-464	\N	16908931	Curtin et al., 2006, J. Clin. Oncol.
-517	\N	18628075	González Manzano et al., 2008, Clin Transl Oncol
-518	\N	20033049	Zhou et al., 2009, Nature
-519	\N	21233402	Rosell et al., 2011, Clin. Cancer Res.
-520	\N	22215752	Su et al., 2012, J. Clin. Oncol.
-521	\N	21274259	Murray et al., 2010, J Oncol
-522	\N	21718596	Chen et al., 2011, Chin J Cancer
-523	\N	17483355	Zou et al., 2007, Cancer Res.
-524	\N	18829470	Toschi et al., 2008, Clin. Cancer Res.
-525	\N	11750879	Maulik et al., 2002, Cytokine Growth Factor Rev.
-526	\N	24121490	Miyajima et al., 2013, Cancer Res.
-527	\N	23317446	Gentilcore et al., 2013, BMC Cancer
-528	\N	23031422	Ponti et al., 2012, J Hematol Oncol
-529	\N	23918947	Ascierto et al., 2013, J. Clin. Oncol.
-530	\N	24508103	McArthur et al., 2014, Lancet Oncol.
-531	\N	12460919	Naoki et al., 2002, Cancer Res.
-532	\N	18541894	Gupta-Abramson et al., 2008, J. Clin. Oncol.
-533	\N	19010912	Pratilas et al., 2008, Cancer Res.
-534	\N	19238210	Gandhi et al., 2009, PLoS ONE
-535	\N	20368568	Lam et al., 2010, J. Clin. Oncol.
-536	\N	21483012	Paik et al., 2011, J. Clin. Oncol.
-537	\N	22038996	Nicolaides et al., 2011, Clin. Cancer Res.
-538	\N	22241789	Hayes et al., 2012, Clin. Cancer Res.
-539	\N	22586120	Huillard et al., 2012, Proc. Natl. Acad. Sci. U.S.A.
-540	\N	22649091	Sen et al., 2012, Sci Transl Med
-541	\N	22743296	Gautschi et al., 2012, J Thorac Oncol
-542	\N	23489023	Kim et al., 2013, Thyroid
-543	\N	23524406	Rudin et al., 2013, J Thorac Oncol
-544	\N	23612012	Andrulis et al., 2013, Cancer Discov
-545	\N	23833300	Cardarella et al., 2013, Clin. Cancer Res.
-546	\N	21750866	Buery et al., 2011, Oncol. Rep.
-547	\N	23715574	Bahadoran et al., 2013, J. Clin. Oncol.
-548	\N	2493360	Müller-Gärtner et al., 1989, Chirurg
-549	\N	24345920	Hutchinson et al., 2013, Clin. Cancer Res.
-550	\N	18794803	Smalley et al., 2009, Oncogene
-551	\N	2872605	Rees et al., Neurobehav Toxicol Teratol
-552	\N	20141835	Heidorn et al., 2010, Cell
-553	\N	24710085	Chiappetta et al., 2015, Appl. Immunohistochem. Mol. Morphol.
-554	\N	24926260	Shackelford et al., 2014, Case Rep Oncol
-555	\N	24446311	Zhang et al., 2014, Am. J. Hematol.
-556	\N	24035431	Gautschi et al., 2013, Lung Cancer
-557	\N	16096377	Libra et al., 2005, Cell Cycle
-558	\N	23273605	Greaves et al., 2013, J Mol Diagn
-559	\N	22538770	Santarpia et al., 2012, Breast Cancer Res. Treat.
-560	\N	23023262	Knutson et al., 2012, Nat. Chem. Biol.
-561	\N	24563539	Knutson et al., 2014, Mol. Cancer Ther.
-562	\N	16293597	Campbell et al., 2006, Blood
-563	\N	21609436	Niehr et al., 2011, J Transl Med
-564	\N	1328859	Kalinec et al., 1992, Mol. Cell. Biol.
-565	\N	2549426	Landis et al., 1989, Nature
-566	\N	18719078	Onken et al., 2008, Invest. Ophthalmol. Vis. Sci.
-567	\N	19078957	Van Raamsdonk et al., 2009, Nature
-568	\N	21083380	Van Raamsdonk et al., 2010, N. Engl. J. Med.
-569	\N	22253748	Wu et al., 2012, PLoS ONE
-570	\N	22653968	Wu et al., 2012, Mol. Cancer Ther.
-571	\N	22733540	Khalili et al., 2012, Clin. Cancer Res.
-572	\N	22808163	Ho et al., 2012, PLoS ONE
-573	\N	15184865	Carlomagno et al., 2004, Oncogene
-574	\N	20065189	Wells et al., 2010, J. Clin. Oncol.
-575	\N	20943719	Vitagliano et al., 2011, Endocr. Relat. Cancer
+441	\N	21273588	Otsuka et al., 2011, Anticancer Res.
+442	\N	16954519	Heinrich et al., 2006, J. Clin. Oncol.
+443	\N	17087936	Weisberg et al., 2006, Gastroenterology
+444	\N	24132921	Dai et al., 2013, Clin. Cancer Res.
+445	\N	15685537	Debiec-Rychter et al., 2005, Gastroenterology
+446	\N	21131919	Langer et al., 2011, Mod. Pathol.
+447	\N	24531699	Bello et al., 2014, Ann. Surg. Oncol.
+448	\N	24661573	de Jel et al., 2014, Pigment Cell Melanoma Res
+449	\N	7530509	Kitayama et al., 1995, Blood
+450	\N	9438854	Hirota et al., 1998, Science
+451	\N	11276010	Hirota et al., 2001, J. Pathol.
+452	\N	15790786	Growney et al., 2005, Blood
+453	\N	18421059	Hodi et al., 2008, J. Clin. Oncol.
+454	\N	18510589	Lutzky et al., 2008, Pigment Cell Melanoma Res
+455	\N	18936790	Quintás-Cardama et al., 2008, Nat Clin Pract Oncol
+456	\N	18980976	Beadling et al., 2008, Clin. Cancer Res.
+457	\N	19671763	Woodman et al., 2009, Mol. Cancer Ther.
+458	\N	19812602	Terheyden et al., 2010, J. Invest. Dermatol.
+459	\N	21642685	Carvajal et al., 2011, JAMA
+460	\N	21690468	Guo et al., 2011, J. Clin. Oncol.
+461	\N	22261812	Minor et al., 2012, Clin. Cancer Res.
+462	\N	22160160	Knösel et al., 2012, J. Cancer Res. Clin. Oncol.
+463	\N	19175693	Tefferi, 2009, J. Cell. Mol. Med.
+464	\N	16046538	Carter et al., 2005, Proc. Natl. Acad. Sci. U.S.A.
+465	\N	16908931	Curtin et al., 2006, J. Clin. Oncol.
+466	\N	21159146	McDonnell et al., 2011, Pigment Cell Melanoma Res
+467	\N	24755198	Xia et al., 2014, Mol. Cancer Ther.
+468	\N	16624552	Debiec-Rychter et al., 2006, Eur. J. Cancer
+469	\N	16397263	Schittenhelm et al., 2006, Cancer Res.
+470	\N	19737976	Bougherara et al., 2009, Mol. Cancer Res.
+471	\N	19996579	Satzger et al., 2010, Dermatology (Basel)
+472	\N	11526490	Tuveson et al., 2001, Oncogene
+473	\N	17824795	Graham et al., 2007, Arch. Pathol. Lab. Med.
+474	\N	20545949	Yamaguchi et al., 2011, Clin. Exp. Dermatol.
+475	\N	22932406	Hong et al., 2012, Zhonghua Bing Li Xue Za Zhi
+476	\N	17363509	Roberts et al., 2007, Mol. Cancer Ther.
+477	\N	22355224	Tutone et al., 2011, Bioinformation
+478	\N	21569090	Yun et al., 2011, APMIS
+479	\N	15236194	Tamborini et al., 2004, Gastroenterology
+480	\N	18955458	Heinrich et al., 2008, J. Clin. Oncol.
+481	\N	20147452	DiNitto et al., 2010, J. Biochem.
+482	\N	16741525	Willmore-Payne et al., 2006, Mod. Pathol.
+483	\N	15972446	Gotlib et al., 2005, Blood
+484	\N	16912224	Pan et al., 2007, Blood
+485	\N	18024392	Gleixner et al., 2007, Haematologica
+486	\N	20088873	Handolias et al., 2010, Pigment Cell Melanoma Res
+487	\N	23775962	Hodi et al., 2013, J. Clin. Oncol.
+488	\N	19962457	Gabelli et al., 2010, Biochim. Biophys. Acta
+489	\N	24459181	Liu et al., 2014, Cancer Res.
+490	\N	24185510	Robinson et al., 2013, Nat. Genet.
+491	\N	24185512	Toy et al., 2013, Nat. Genet.
+492	\N	24398047	Jeselsohn et al., 2014, Clin. Cancer Res.
+493	\N	24217577	Merenbakh-Lamin et al., 2013, Cancer Res.
+494	\N	25656898	Dienstmann et al., 2015, Cancer Discov
+495	\N	17177598	Lee et al., 2006, PLoS Med.
+496	\N	23578570	Bahassi et al., 2013, Eur. J. Cancer
+497	\N	16187797	Greulich et al., 2005, PLoS Med.
+498	\N	16204070	Jiang et al., 2005, Cancer Res.
+499	\N	18199554	Gilmer et al., 2008, Cancer Res.
+500	\N	19671738	Tam et al., 2009, Mol. Cancer Ther.
+501	\N	23945392	Berge et al., 2013, J Thorac Oncol
+502	\N	2302402	Schick et al., 1990, Biochim. Biophys. Acta
+503	\N	18458038	Sequist et al., 2008, J. Clin. Oncol.
+504	\N	23242437	Kobayashi et al., 2013, J Thorac Oncol
+505	\N	23485129	Massarelli et al., 2013, Lung Cancer
+506	\N	19455431	Rajasekaran et al., 2010, Appl. Biochem. Biotechnol.
+507	\N	19147750	Kancha et al., 2009, Clin. Cancer Res.
+508	\N	20415598	Cassell et al., 2010, Expert Opin Investig Drugs
+509	\N	21531084	Uribe et al., 2011, Pathol. Res. Pract.
+510	\N	22622260	Lee et al., 2012, Lung Cancer
+511	\N	18089823	Engelman et al., 2007, Cancer Res.
+512	\N	24934779	Ganesan et al., 2016, J. Clin. Oncol.
+513	\N	23800712	Wheler et al., 2013, Oncotarget
+514	\N	16730855	Tokumo et al., 2006, Lung Cancer
+515	\N	17545553	Toyooka et al., 2007, Clin. Cancer Res.
+516	\N	16707764	Guo et al., 2006, N. Engl. J. Med.
+517	\N	17653080	Fu et al., 2008, Oncogene
+518	\N	18628075	González Manzano et al., 2008, Clin Transl Oncol
+519	\N	20033049	Zhou et al., 2009, Nature
+520	\N	21233402	Rosell et al., 2011, Clin. Cancer Res.
+521	\N	22215752	Su et al., 2012, J. Clin. Oncol.
+522	\N	21274259	Murray et al., 2010, J Oncol
+523	\N	21718596	Chen et al., 2011, Chin J Cancer
+524	\N	17483355	Zou et al., 2007, Cancer Res.
+525	\N	18829470	Toschi et al., 2008, Clin. Cancer Res.
+526	\N	11750879	Maulik et al., 2002, Cytokine Growth Factor Rev.
+527	\N	24121490	Miyajima et al., 2013, Cancer Res.
+528	\N	23317446	Gentilcore et al., 2013, BMC Cancer
+529	\N	23031422	Ponti et al., 2012, J Hematol Oncol
+530	\N	23918947	Ascierto et al., 2013, J. Clin. Oncol.
+531	\N	24508103	McArthur et al., 2014, Lancet Oncol.
+532	\N	22241789	Hayes et al., 2012, Clin. Cancer Res.
+533	\N	23524406	Rudin et al., 2013, J Thorac Oncol
+534	\N	22743296	Gautschi et al., 2012, J Thorac Oncol
+535	\N	19010912	Pratilas et al., 2008, Cancer Res.
+536	\N	12460919	Naoki et al., 2002, Cancer Res.
+537	\N	18541894	Gupta-Abramson et al., 2008, J. Clin. Oncol.
+538	\N	19238210	Gandhi et al., 2009, PLoS ONE
+539	\N	20368568	Lam et al., 2010, J. Clin. Oncol.
+540	\N	21483012	Paik et al., 2011, J. Clin. Oncol.
+541	\N	22038996	Nicolaides et al., 2011, Clin. Cancer Res.
+542	\N	22586120	Huillard et al., 2012, Proc. Natl. Acad. Sci. U.S.A.
+543	\N	22649091	Sen et al., 2012, Sci Transl Med
+544	\N	23489023	Kim et al., 2013, Thyroid
+545	\N	23612012	Andrulis et al., 2013, Cancer Discov
+546	\N	23833300	Cardarella et al., 2013, Clin. Cancer Res.
+547	\N	21750866	Buery et al., 2011, Oncol. Rep.
+548	\N	23715574	Bahadoran et al., 2013, J. Clin. Oncol.
+549	\N	2493360	Müller-Gärtner et al., 1989, Chirurg
+550	\N	24345920	Hutchinson et al., 2013, Clin. Cancer Res.
+551	\N	18794803	Smalley et al., 2009, Oncogene
+552	\N	2872605	Rees et al., Neurobehav Toxicol Teratol
+553	\N	20141835	Heidorn et al., 2010, Cell
+554	\N	24710085	Chiappetta et al., 2015, Appl. Immunohistochem. Mol. Morphol.
+555	\N	24926260	Shackelford et al., 2014, Case Rep Oncol
+556	\N	24446311	Zhang et al., 2014, Am. J. Hematol.
+557	\N	24035431	Gautschi et al., 2013, Lung Cancer
+558	\N	16096377	Libra et al., 2005, Cell Cycle
+559	\N	23273605	Greaves et al., 2013, J Mol Diagn
+560	\N	22538770	Santarpia et al., 2012, Breast Cancer Res. Treat.
+561	\N	23023262	Knutson et al., 2012, Nat. Chem. Biol.
+562	\N	24563539	Knutson et al., 2014, Mol. Cancer Ther.
+563	\N	16293597	Campbell et al., 2006, Blood
+564	\N	21609436	Niehr et al., 2011, J Transl Med
+565	\N	1328859	Kalinec et al., 1992, Mol. Cell. Biol.
+566	\N	22733540	Khalili et al., 2012, Clin. Cancer Res.
+567	\N	22653968	Wu et al., 2012, Mol. Cancer Ther.
+568	\N	2549426	Landis et al., 1989, Nature
+569	\N	18719078	Onken et al., 2008, Invest. Ophthalmol. Vis. Sci.
+570	\N	19078957	Van Raamsdonk et al., 2009, Nature
+571	\N	21083380	Van Raamsdonk et al., 2010, N. Engl. J. Med.
+572	\N	22253748	Wu et al., 2012, PLoS ONE
+573	\N	22808163	Ho et al., 2012, PLoS ONE
+574	\N	15184865	Carlomagno et al., 2004, Oncogene
+575	\N	20065189	Wells et al., 2010, J. Clin. Oncol.
 576	\N	21470995	Verbeek et al., 2011, J. Clin. Endocrinol. Metab.
-577	\N	22025146	Wells et al., 2012, J. Clin. Oncol.
-578	\N	23056499	Couto et al., 2012, PLoS ONE
-579	\N	9681850	Santoro et al., 1998, J. Intern. Med.
-580	\N	11351254	Frisk et al., 2001, Int. J. Oncol.
-581	\N	20847059	Carr et al., 2010, Clin. Cancer Res.
-582	\N	21455200	Sherman, 2011, Mod. Pathol.
-583	\N	11274365	Wen et al., 2001, Proc. Natl. Acad. Sci. U.S.A.
-584	\N	24721394	Xu et al., 2014, Transl Oncol
-585	\N	21367659	Greulich et al., 2011, Trends Mol Med
-586	\N	22256804	Su et al., 2012, N. Engl. J. Med.
-587	\N	22726224	Anforth et al., 2012, Pigment Cell Melanoma Res
-588	\N	20859122	Girard, 2010, J Thorac Oncol
-589	\N	16478791	Park et al., 2006, J. Cell. Sci.
-590	\N	21398618	Lee et al., 2011, J. Natl. Cancer Inst.
-591	\N	22722830	Misale et al., 2012, Nature
-592	\N	24740626	Jeng et al., 2014, Pediatr Blood Cancer
-593	\N	24628546	Isham et al., 2014, J. Clin. Endocrinol. Metab.
-594	\N	23182985	Peeters et al., 2013, J. Clin. Oncol.
-595	\N	24558511	Kumar et al., 2014, Gastrointest Cancer Res
-596	\N	19881948	Oikonomou et al., 2009, Neoplasia
-597	\N	22235099	Doebele et al., 2012, Clin. Cancer Res.
-598	\N	22897852	Maraver et al., 2012, Cancer Cell
-599	\N	22282465	Miranda et al., 2012, Clin. Cancer Res.
-600	\N	25044103	Chaft et al., 2014, Clin Lung Cancer
-601	\N	18594010	Koivunen et al., 2008, Clin. Cancer Res.
-602	\N	15374878	Brown et al., 2005, Blood
-603	\N	14604974	Bagrintseva et al., 2004, Blood
-604	\N	17606455	Mathews et al., 2007, Haematologica
-605	\N	24046014	Zimmerman et al., 2013, Blood
-606	\N	17889720	Kancha et al., 2007, Exp. Hematol.
-607	\N	17047150	Piloto et al., 2007, Blood
-608	\N	25754945	Sagi et al., 2015, Fam. Cancer
-609	\N	19418217	Dunlap et al., 2010, Breast Cancer Res. Treat.
-610	\N	19487299	Ricarte-Filho et al., 2009, Cancer Res.
-611	\N	21464312	Jo et al., 2011, Proc. Natl. Acad. Sci. U.S.A.
-612	\N	21512767	Boyault et al., 2012, Breast Cancer Res. Treat.
-613	\N	22610119	Barbieri et al., 2012, Nat. Genet.
-614	\N	22722201	Stephens et al., 2012, Nature
-615	\N	22722839	Grasso et al., 2012, Nature
-616	\N	23237847	Yi et al., 2013, Oncotarget
-617	\N	16397024	Lee et al., 2006, Clin. Cancer Res.
-618	\N	23220880	Bose et al., 2013, Cancer Discov
-619	\N	22197931	Nikolaev et al., 2012, Nat. Genet.
-620	\N	19915144	Emery et al., 2009, Proc. Natl. Acad. Sci. U.S.A.
-621	\N	23444215	Catalanotti et al., 2013, Clin. Cancer Res.
-622	\N	22588879	Shi et al., 2012, Cancer Discov
-623	\N	21383288	Wagle et al., 2011, J. Clin. Oncol.
-624	\N	24448821	Narita et al., 2014, Mol. Cancer Ther.
-625	\N	21107320	Johannessen et al., 2010, Nature
-626	\N	22622578	Berger et al., 2012, Nature
-627	\N	21250968	Pichler et al., 2011, Br. J. Haematol.
-628	\N	23558173	Wang et al., 2013, Science
-629	\N	24869598	Woyach et al., 2014, N. Engl. J. Med.
-630	\N	15004724	Chan et al., 2004, Cancer Chemother. Pharmacol.
-631	\N	24651012	Muller et al., 2014, Cancer Cell
-632	\N	20013323	Ikezoe et al., 2010, Int. J. Hematol.
-633	\N	17015838	Joerger et al., 2006, Proc. Natl. Acad. Sci. U.S.A.
-634	\N	11101847	Stiewe et al., 2000, Nat. Genet.
-635	\N	18391940	Kawauchi et al., 2008, Nat. Cell Biol.
-636	\N	18413839	Trowe et al., 2008, Clin. Cancer Res.
-637	\N	22046346	Kancha et al., 2011, PLoS ONE
-638	\N	24516025	Ali et al., 2014, J. Clin. Oncol.
-639	\N	21189378	Klümpen et al., 2011, J. Clin. Oncol.
-640	\N	21444680	Patel et al., 2011, Clin. Cancer Res.
-641	\N	24141786	Chen et al., 2014, Oncogene
-642	\N	24265153	Van Allen et al., 2014, Cancer Discov
-643	\N	24265154	Wagle et al., 2014, Cancer Discov
-644	\N	20372971	Quintás-Cardama et al., 2011, Invest New Drugs
-645	\N	20385788	Tyner et al., 2010, Blood
-646	\N	22271575	Weigert et al., 2012, J. Exp. Med.
-647	\N	16094359	Parsons et al., 2005, Nature
-648	\N	21835143	Nault et al., 2012, J. Hepatol.
+577	\N	23056499	Couto et al., 2012, PLoS ONE
+578	\N	20943719	Vitagliano et al., 2011, Endocr. Relat. Cancer
+579	\N	22025146	Wells et al., 2012, J. Clin. Oncol.
+580	\N	9681850	Santoro et al., 1998, J. Intern. Med.
+581	\N	11351254	Frisk et al., 2001, Int. J. Oncol.
+582	\N	20847059	Carr et al., 2010, Clin. Cancer Res.
+583	\N	21455200	Sherman, 2011, Mod. Pathol.
+584	\N	11274365	Wen et al., 2001, Proc. Natl. Acad. Sci. U.S.A.
+585	\N	24721394	Xu et al., 2014, Transl Oncol
+586	\N	21367659	Greulich et al., 2011, Trends Mol Med
+587	\N	22256804	Su et al., 2012, N. Engl. J. Med.
+588	\N	22726224	Anforth et al., 2012, Pigment Cell Melanoma Res
+589	\N	20859122	Girard, 2010, J Thorac Oncol
+590	\N	16478791	Park et al., 2006, J. Cell. Sci.
+591	\N	21398618	Lee et al., 2011, J. Natl. Cancer Inst.
+592	\N	22722830	Misale et al., 2012, Nature
+593	\N	24740626	Jeng et al., 2014, Pediatr Blood Cancer
+594	\N	24628546	Isham et al., 2014, J. Clin. Endocrinol. Metab.
+595	\N	23182985	Peeters et al., 2013, J. Clin. Oncol.
+596	\N	24558511	Kumar et al., 2014, Gastrointest Cancer Res
+597	\N	19881948	Oikonomou et al., 2009, Neoplasia
+598	\N	22235099	Doebele et al., 2012, Clin. Cancer Res.
+599	\N	22897852	Maraver et al., 2012, Cancer Cell
+600	\N	22282465	Miranda et al., 2012, Clin. Cancer Res.
+601	\N	25044103	Chaft et al., 2014, Clin Lung Cancer
+602	\N	18594010	Koivunen et al., 2008, Clin. Cancer Res.
+603	\N	15374878	Brown et al., 2005, Blood
+604	\N	14604974	Bagrintseva et al., 2004, Blood
+605	\N	17606455	Mathews et al., 2007, Haematologica
+606	\N	24046014	Zimmerman et al., 2013, Blood
+607	\N	17889720	Kancha et al., 2007, Exp. Hematol.
+608	\N	17047150	Piloto et al., 2007, Blood
+609	\N	25754945	Sagi et al., 2015, Fam. Cancer
+610	\N	21464312	Jo et al., 2011, Proc. Natl. Acad. Sci. U.S.A.
+611	\N	19418217	Dunlap et al., 2010, Breast Cancer Res. Treat.
+612	\N	19487299	Ricarte-Filho et al., 2009, Cancer Res.
+613	\N	21512767	Boyault et al., 2012, Breast Cancer Res. Treat.
+614	\N	22610119	Barbieri et al., 2012, Nat. Genet.
+615	\N	22722201	Stephens et al., 2012, Nature
+616	\N	22722839	Grasso et al., 2012, Nature
+617	\N	23237847	Yi et al., 2013, Oncotarget
+618	\N	16397024	Lee et al., 2006, Clin. Cancer Res.
+619	\N	23220880	Bose et al., 2013, Cancer Discov
+620	\N	22197931	Nikolaev et al., 2012, Nat. Genet.
+621	\N	19915144	Emery et al., 2009, Proc. Natl. Acad. Sci. U.S.A.
+622	\N	23444215	Catalanotti et al., 2013, Clin. Cancer Res.
+623	\N	22588879	Shi et al., 2012, Cancer Discov
+624	\N	21383288	Wagle et al., 2011, J. Clin. Oncol.
+625	\N	24448821	Narita et al., 2014, Mol. Cancer Ther.
+626	\N	21107320	Johannessen et al., 2010, Nature
+627	\N	22622578	Berger et al., 2012, Nature
+628	\N	21250968	Pichler et al., 2011, Br. J. Haematol.
+629	\N	23558173	Wang et al., 2013, Science
+630	\N	24869598	Woyach et al., 2014, N. Engl. J. Med.
+631	\N	15004724	Chan et al., 2004, Cancer Chemother. Pharmacol.
+632	\N	24651012	Muller et al., 2014, Cancer Cell
+633	\N	20013323	Ikezoe et al., 2010, Int. J. Hematol.
+634	\N	17015838	Joerger et al., 2006, Proc. Natl. Acad. Sci. U.S.A.
+635	\N	11101847	Stiewe et al., 2000, Nat. Genet.
+636	\N	18391940	Kawauchi et al., 2008, Nat. Cell Biol.
+637	\N	18413839	Trowe et al., 2008, Clin. Cancer Res.
+638	\N	22046346	Kancha et al., 2011, PLoS ONE
+639	\N	24516025	Ali et al., 2014, J. Clin. Oncol.
+640	\N	21189378	Klümpen et al., 2011, J. Clin. Oncol.
+641	\N	21444680	Patel et al., 2011, Clin. Cancer Res.
+642	\N	24141786	Chen et al., 2014, Oncogene
+643	\N	24265153	Van Allen et al., 2014, Cancer Discov
+644	\N	24265154	Wagle et al., 2014, Cancer Discov
+645	\N	20372971	Quintás-Cardama et al., 2011, Invest New Drugs
+646	\N	20385788	Tyner et al., 2010, Blood
+647	\N	22271575	Weigert et al., 2012, J. Exp. Med.
+648	\N	16094359	Parsons et al., 2005, Nature
+649	\N	21835143	Nault et al., 2012, J. Hepatol.
 \.
 
 
@@ -4439,7 +4440,7 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 1199	8	243	172	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
 1200	8	244	172	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
 1201	8	243	173	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
-2205	29	3	433	\N
+2087	31	258	369	\N
 1202	8	244	173	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
 1203	5	245	173	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
 1204	5	3	173	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
@@ -4513,7 +4514,7 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 1272	1	273	196	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 1273	1	274	196	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 1274	1	275	196	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2206	39	3	434	\N
+2088	31	257	369	\N
 1275	1	276	196	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 1276	1	277	196	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 1277	1	268	197	http://www.mycancergenome.org/content/disease/melanoma/kit/132
@@ -4758,8 +4759,8 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 1516	1	344	273	http://www.mycancergenome.org/content/disease/melanoma/braf/114
 1517	1	344	274	http://www.mycancergenome.org/content/disease/melanoma/braf/115
 1518	16	344	275	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-2891	11	444	546	\N
-2892	11	339	546	\N
+2089	30	243	370	\N
+2090	31	256	371	\N
 1519	4	345	275	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
 1520	4	346	275	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
 1521	4	347	275	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
@@ -4917,1018 +4918,1014 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 1673	17	370	307	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
 1674	17	372	307	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
 1675	17	371	307	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
-1676	17	368	307	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
-1677	18	251	308	\N
-1678	19	253	309	\N
-1679	18	252	310	\N
-1680	18	251	311	\N
-1681	19	253	312	\N
-1682	18	251	313	\N
-1683	20	321	314	\N
-1684	20	321	315	\N
-1685	2	111	316	\N
-1686	21	242	316	\N
-1687	21	242	317	\N
-1688	22	362	318	\N
-1689	22	360	319	\N
-1690	23	360	319	\N
-1691	24	248	319	\N
-1692	22	248	319	\N
-1693	23	248	319	\N
-1694	23	363	319	\N
-1695	24	247	319	\N
-1696	23	247	319	\N
-1697	22	361	319	\N
-1698	25	351	320	\N
-1699	26	181	321	\N
-1700	27	15	321	\N
-1701	27	13	321	\N
-1702	27	14	321	\N
-1703	2	145	321	\N
-1704	27	12	321	\N
-1705	2	12	321	\N
-1706	27	11	322	\N
-1707	1	385	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1676	17	385	307	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
+1677	17	368	307	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
+1678	18	251	308	\N
+1679	19	253	309	\N
+1680	18	252	310	\N
+1681	18	251	311	\N
+1682	19	253	312	\N
+1683	18	251	313	\N
+1684	20	321	314	\N
+1685	20	321	315	\N
+1686	2	111	316	\N
+1687	21	242	316	\N
+1688	21	242	317	\N
+1689	22	362	318	\N
+1690	22	360	319	\N
+1691	23	360	319	\N
+1692	24	248	319	\N
+1693	22	248	319	\N
+1694	23	248	319	\N
+1695	23	363	319	\N
+1696	24	247	319	\N
+1697	23	247	319	\N
+1698	22	361	319	\N
+1699	25	351	320	\N
+1700	26	181	321	\N
+1701	27	15	321	\N
+1702	27	13	321	\N
+1703	27	14	321	\N
+1704	2	145	321	\N
+1705	27	12	321	\N
+1706	2	12	321	\N
+1707	27	11	322	\N
 1708	1	386	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1709	1	387	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1710	1	388	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1711	2	133	323	\N
-1712	1	389	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1713	1	390	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1714	1	391	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1715	1	392	323	\N
-1716	1	393	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1717	1	394	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1718	1	395	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1719	1	383	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
-1720	1	3	323	\N
-1721	1	385	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1709	1	391	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1710	1	392	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1711	1	388	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1712	2	133	323	\N
+1713	1	393	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1714	1	394	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1715	1	395	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1716	1	396	323	\N
+1717	1	387	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1718	1	389	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1719	1	390	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1720	1	383	323	http://www.mycancergenome.org/content/disease/melanoma/nras/81
+1721	1	3	323	\N
 1722	1	386	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1723	3	302	324	http://www.mycancergenome.org/content/disease/lung-cancer/nras/80
-1724	1	387	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1725	1	388	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1726	3	255	324	http://www.mycancergenome.org/content/disease/lung-cancer/nras/80
-1727	2	133	324	\N
-1728	1	389	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1729	1	390	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1730	1	391	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1731	1	392	324	\N
-1732	1	393	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1733	3	307	324	http://www.mycancergenome.org/content/disease/lung-cancer/nras/80
-1734	1	394	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1735	1	395	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1736	1	383	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
-1737	1	3	324	\N
-1738	1	385	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1723	1	391	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1724	3	302	324	http://www.mycancergenome.org/content/disease/lung-cancer/nras/80
+1725	1	392	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1726	1	388	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1727	3	255	324	http://www.mycancergenome.org/content/disease/lung-cancer/nras/80
+1728	2	133	324	\N
+1729	1	393	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1730	1	394	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1731	1	395	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1732	1	396	324	\N
+1733	1	387	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1734	3	307	324	http://www.mycancergenome.org/content/disease/lung-cancer/nras/80
+1735	1	389	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1736	1	390	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1737	1	383	324	http://www.mycancergenome.org/content/disease/melanoma/nras/80
+1738	1	3	324	\N
 1739	1	386	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1740	1	387	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1741	1	388	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1742	1	389	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1743	1	396	325	\N
-1744	1	390	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1745	1	397	325	\N
-1746	1	391	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1747	1	393	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1748	1	394	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1749	1	395	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1750	1	383	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
-1751	1	3	325	\N
-1752	1	385	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+1740	1	391	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1741	1	392	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1742	1	388	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1743	1	393	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1744	1	397	325	\N
+1745	1	394	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1746	1	398	325	\N
+1747	1	395	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1748	1	387	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1749	1	389	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1750	1	390	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1751	1	383	325	http://www.mycancergenome.org/content/disease/melanoma/nras/83
+1752	1	3	325	\N
 1753	1	386	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1754	1	387	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1755	1	388	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1756	1	389	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1757	1	390	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1758	1	391	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1759	1	393	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1760	1	394	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1761	1	395	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1762	1	383	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
-1763	1	385	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1754	1	391	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+1755	1	392	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+2091	31	258	371	\N
+1756	1	388	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+1757	1	393	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+1758	1	394	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+1759	1	395	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+1760	1	387	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+1761	1	389	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+1762	1	390	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
+1763	1	383	326	http://www.mycancergenome.org/content/disease/melanoma/nras/82
 1764	1	386	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1765	3	302	327	http://www.mycancergenome.org/content/disease/lung-cancer/nras/76
-1766	1	387	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1767	1	388	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1768	3	255	327	http://www.mycancergenome.org/content/disease/lung-cancer/nras/76
-1769	1	389	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1770	1	396	327	\N
-1771	1	390	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1772	1	397	327	\N
-1773	1	391	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1774	1	393	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1775	3	307	327	http://www.mycancergenome.org/content/disease/lung-cancer/nras/76
-1776	1	394	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1777	1	395	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1778	1	383	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
-1779	1	3	327	\N
-1780	2	163	328	\N
-1781	1	385	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1782	2	164	328	\N
-1783	1	386	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1784	3	302	328	http://www.mycancergenome.org/content/disease/lung-cancer/nras/77
-1785	5	78	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
-1786	1	387	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1787	2	162	328	\N
-1788	4	398	328	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/77
-1789	5	77	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
-1790	1	388	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1791	3	255	328	http://www.mycancergenome.org/content/disease/lung-cancer/nras/77
-1792	2	161	328	\N
-1793	4	399	328	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/77
+1765	1	391	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1766	3	302	327	http://www.mycancergenome.org/content/disease/lung-cancer/nras/76
+1767	1	392	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1768	1	388	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1769	3	255	327	http://www.mycancergenome.org/content/disease/lung-cancer/nras/76
+1770	1	393	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1771	1	397	327	\N
+1772	1	394	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1773	1	398	327	\N
+1774	1	395	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1775	1	387	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1776	3	307	327	http://www.mycancergenome.org/content/disease/lung-cancer/nras/76
+1777	1	389	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1778	1	390	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1779	1	383	327	http://www.mycancergenome.org/content/disease/melanoma/nras/76
+1780	1	3	327	\N
+1781	2	163	328	\N
+1782	1	386	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1783	2	164	328	\N
+1784	1	391	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1785	3	302	328	http://www.mycancergenome.org/content/disease/lung-cancer/nras/77
+1786	5	78	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
+1787	1	392	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1788	2	162	328	\N
+1789	4	399	328	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/77
+1790	5	77	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
+1791	1	388	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1792	3	255	328	http://www.mycancergenome.org/content/disease/lung-cancer/nras/77
+1793	2	161	328	\N
 1794	4	400	328	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/77
-1795	1	389	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1796	1	390	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1797	5	49	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
-1798	5	73	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
-1799	1	401	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1800	5	75	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
-1801	5	76	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
-1802	5	74	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
-1803	2	160	328	\N
-1804	1	391	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1805	4	402	328	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/77
-1806	1	393	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1807	3	307	328	http://www.mycancergenome.org/content/disease/lung-cancer/nras/77
-1808	1	394	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1809	1	395	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1810	1	383	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
-1811	1	3	328	\N
-1812	1	385	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1795	4	401	328	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/77
+1796	1	393	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1797	1	394	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1798	5	49	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
+1799	5	73	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
+1800	1	402	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1801	5	75	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
+1802	5	76	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
+1803	5	74	328	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/77
+1804	2	160	328	\N
+1805	1	395	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1806	4	403	328	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/77
+1807	1	387	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1808	3	307	328	http://www.mycancergenome.org/content/disease/lung-cancer/nras/77
+1809	1	389	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1810	1	390	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1811	1	383	328	http://www.mycancergenome.org/content/disease/melanoma/nras/77
+1812	1	3	328	\N
 1813	1	386	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1814	1	387	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1815	1	388	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1816	1	389	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1817	1	390	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1818	1	391	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1819	1	393	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1820	3	307	329	\N
-1821	1	394	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1822	1	395	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1823	1	383	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
-1824	3	308	329	\N
-1825	1	3	329	\N
-1826	1	3	330	\N
-1827	1	392	331	\N
-1828	3	307	331	\N
-1829	1	3	331	\N
-1830	1	385	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1814	1	391	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1815	1	392	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1816	1	388	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1817	1	393	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1818	1	394	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1819	1	395	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1820	1	387	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1821	3	307	329	\N
+1822	1	389	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1823	1	390	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1824	1	383	329	http://www.mycancergenome.org/content/disease/melanoma/nras/98
+1825	3	308	329	\N
+1826	1	3	329	\N
+1827	1	3	330	\N
+1828	1	396	331	\N
+1829	3	307	331	\N
+1830	1	3	331	\N
 1831	1	386	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1832	1	387	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1833	1	388	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1834	1	389	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1835	1	390	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1836	1	391	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1837	1	393	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1838	1	394	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1839	1	395	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1840	1	395	332	\N
-1841	1	383	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
-1842	1	3	332	\N
-1843	1	385	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1832	1	391	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1833	1	392	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1834	1	388	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1835	1	393	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1836	1	394	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1837	1	395	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1838	1	387	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+2203	7	3	431	\N
+2204	1	3	432	\N
+1839	1	389	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1840	1	390	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1841	1	390	332	\N
+1842	1	383	332	http://www.mycancergenome.org/content/disease/melanoma/nras/97
+1843	1	3	332	\N
 1844	1	386	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1845	3	302	333	http://www.mycancergenome.org/content/disease/lung-cancer/nras/75
-1846	5	78	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
-1847	1	387	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1848	4	398	333	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/75
-1849	5	77	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
-1850	1	388	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1851	3	255	333	http://www.mycancergenome.org/content/disease/lung-cancer/nras/75
-1852	4	399	333	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/75
-1853	2	133	333	\N
-1854	4	400	333	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/75
-1855	1	389	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1856	1	390	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1857	5	49	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
-1858	5	73	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
-1859	1	401	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1860	5	75	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
-1861	5	76	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
-1862	5	74	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
-1863	1	391	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1864	4	402	333	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/75
-1865	1	393	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1866	3	307	333	http://www.mycancergenome.org/content/disease/lung-cancer/nras/75
-1867	1	394	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1868	1	395	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1869	1	383	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
-1870	1	403	334	\N
-1871	1	3	334	\N
-1872	1	385	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
+1845	1	391	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1846	3	302	333	http://www.mycancergenome.org/content/disease/lung-cancer/nras/75
+1847	5	78	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
+1848	1	392	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1849	4	399	333	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/75
+1850	5	77	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
+1851	1	388	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1852	3	255	333	http://www.mycancergenome.org/content/disease/lung-cancer/nras/75
+1853	4	400	333	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/75
+1854	2	133	333	\N
+1855	4	401	333	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/75
+1856	1	393	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1857	1	394	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1858	5	49	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
+1859	5	73	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
+1860	1	402	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1861	5	75	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
+1862	5	76	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
+1863	5	74	333	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/75
+1864	1	395	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1865	4	403	333	http://www.mycancergenome.org/content/disease/thyroid-cancer/nras/75
+1866	1	387	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1867	3	307	333	http://www.mycancergenome.org/content/disease/lung-cancer/nras/75
+1868	1	389	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1869	1	390	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1870	1	383	333	http://www.mycancergenome.org/content/disease/melanoma/nras/75
+1871	1	404	334	\N
+1872	1	3	334	\N
 1873	1	386	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
-1874	1	387	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
-1875	1	388	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
-1876	2	133	335	\N
-1877	1	389	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
-1878	1	390	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
-1879	1	393	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
-1880	28	3	335	\N
-1881	1	385	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
+1874	1	391	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
+1875	1	392	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
+1876	1	388	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
+1877	2	133	335	\N
+1878	1	393	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
+1879	1	394	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
+1880	1	387	335	http://www.mycancergenome.org/content/disease/melanoma/nras/94
+1881	28	3	335	\N
 1882	1	386	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
-1883	1	387	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
-1884	1	388	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
-1885	1	389	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
-1886	1	390	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
-1887	1	393	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
-1888	1	3	336	\N
-1889	1	385	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
+1883	1	391	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
+1884	1	392	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
+1885	1	388	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
+1886	1	393	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
+1887	1	394	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
+1888	1	387	336	http://www.mycancergenome.org/content/disease/melanoma/nras/91
+1889	1	3	336	\N
 1890	1	386	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
-1891	1	387	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
-1892	1	388	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
-1893	2	133	337	\N
-1894	1	389	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
-1895	1	390	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
-1896	1	393	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
-1897	1	404	337	\N
-1898	1	3	337	\N
-1899	1	385	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
+1891	1	391	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
+1892	1	392	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
+1893	1	388	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
+1894	2	133	337	\N
+1895	1	393	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
+1896	1	394	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
+1897	1	387	337	http://www.mycancergenome.org/content/disease/melanoma/nras/92
+1898	1	405	337	\N
+1899	1	3	337	\N
 1900	1	386	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
-1901	1	387	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
-1902	1	388	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
-1903	1	389	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
-1904	1	390	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
-1905	1	393	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
-1906	1	3	338	\N
-1907	1	385	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
+1901	1	391	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
+1902	1	392	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
+1903	1	388	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
+1904	1	393	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
+1905	1	394	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
+1906	1	387	338	http://www.mycancergenome.org/content/disease/melanoma/nras/297
+1907	1	3	338	\N
 1908	1	386	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
-1909	1	387	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
-1910	1	388	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
-1911	1	389	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
-1912	1	390	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
-1913	1	405	339	\N
-1914	1	393	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
-1915	1	3	339	\N
-1916	29	3	340	\N
-1917	1	385	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
+1909	1	391	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
+1910	1	392	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
+1911	1	388	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
+1912	1	393	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
+1913	1	394	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
+1914	1	406	339	\N
+1915	1	387	339	http://www.mycancergenome.org/content/disease/melanoma/nras/93
+1916	1	3	339	\N
+1917	29	3	340	\N
 1918	1	386	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
-1919	5	78	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
-1920	1	387	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
-1921	5	77	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
-1922	1	388	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
-1923	2	133	341	\N
-1924	1	389	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
-1925	1	390	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
-1926	5	49	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
-1927	5	73	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
-1928	5	75	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
-1929	5	76	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
-1930	5	74	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
-1931	1	393	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
-1932	2	3	341	\N
-1933	1	385	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
+1919	1	391	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
+1920	5	78	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
+1921	1	392	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
+1922	5	77	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
+1923	1	388	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
+1924	2	133	341	\N
+1925	1	393	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
+1926	1	394	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
+1927	5	49	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
+1928	5	73	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
+1929	5	75	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
+1930	5	76	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
+1931	5	74	341	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/90
+1932	1	387	341	http://www.mycancergenome.org/content/disease/melanoma/nras/90
+1933	2	3	341	\N
 1934	1	386	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
-1935	3	302	342	http://www.mycancergenome.org/content/disease/lung-cancer/nras/85
-1936	5	78	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
-1937	1	387	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
-1938	5	77	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
-1939	1	388	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
-1940	3	255	342	http://www.mycancergenome.org/content/disease/lung-cancer/nras/85
-1941	1	389	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
-1942	1	390	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
-1943	5	49	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
-1944	5	73	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
-1945	5	75	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
-1946	5	76	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
-1947	5	74	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
-1948	1	393	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
-1949	3	307	342	http://www.mycancergenome.org/content/disease/lung-cancer/nras/85
-1950	5	3	342	\N
-1951	2	163	343	\N
-1952	1	385	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
-1953	2	164	343	\N
-1954	1	386	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
-1955	3	302	343	http://www.mycancergenome.org/content/disease/lung-cancer/nras/87
-1956	5	78	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
-1957	1	387	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
-1958	2	162	343	\N
-1959	5	77	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
-1960	1	388	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
-1961	3	255	343	http://www.mycancergenome.org/content/disease/lung-cancer/nras/87
-1962	2	161	343	\N
-1963	2	133	343	\N
-1964	1	389	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
-1965	1	390	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
-1966	5	49	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
-1967	5	73	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
-1968	5	75	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
-1969	5	76	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
-1970	5	74	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
-1971	2	406	343	\N
-1972	2	160	343	\N
-1973	1	393	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
-1974	3	307	343	http://www.mycancergenome.org/content/disease/lung-cancer/nras/87
-1975	2	3	343	\N
-1976	2	163	344	\N
-1977	1	385	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
-1978	2	164	344	\N
-1979	1	386	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
-1980	3	302	344	http://www.mycancergenome.org/content/disease/lung-cancer/nras/86
-1981	5	78	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
-1982	1	387	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
-1983	2	162	344	\N
-1984	5	77	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
-1985	1	388	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
-1986	3	255	344	http://www.mycancergenome.org/content/disease/lung-cancer/nras/86
-1987	2	161	344	\N
-1988	2	133	344	\N
-1989	1	389	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
-1990	1	390	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
-1991	5	49	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
-1992	5	73	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
-1993	5	75	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
-1994	5	76	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
-1995	5	74	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
-1996	2	160	344	\N
-1997	1	393	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
-1998	3	307	344	http://www.mycancergenome.org/content/disease/lung-cancer/nras/86
-1999	1	383	344	\N
-2000	5	407	344	\N
-2001	5	3	344	\N
-2002	1	385	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
+1935	1	391	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
+1936	3	302	342	http://www.mycancergenome.org/content/disease/lung-cancer/nras/85
+1937	5	78	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
+1938	1	392	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
+1939	5	77	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
+1940	1	388	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
+1941	3	255	342	http://www.mycancergenome.org/content/disease/lung-cancer/nras/85
+1942	1	393	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
+1943	1	394	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
+1944	5	49	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
+1945	5	73	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
+1946	5	75	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
+1947	5	76	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
+1948	5	74	342	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/85
+1949	1	387	342	http://www.mycancergenome.org/content/disease/melanoma/nras/85
+1950	3	307	342	http://www.mycancergenome.org/content/disease/lung-cancer/nras/85
+1951	5	3	342	\N
+1952	2	163	343	\N
+1953	1	386	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
+1954	2	164	343	\N
+1955	1	391	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
+1956	3	302	343	http://www.mycancergenome.org/content/disease/lung-cancer/nras/87
+1957	5	78	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
+1958	1	392	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
+1959	2	162	343	\N
+1960	5	77	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
+1961	1	388	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
+1962	3	255	343	http://www.mycancergenome.org/content/disease/lung-cancer/nras/87
+1963	2	161	343	\N
+1964	2	133	343	\N
+1965	1	393	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
+1966	1	394	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
+1967	5	49	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
+1968	5	73	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
+1969	5	75	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
+1970	5	76	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
+1971	5	74	343	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/87
+1972	2	407	343	\N
+1973	2	160	343	\N
+1974	1	387	343	http://www.mycancergenome.org/content/disease/melanoma/nras/87
+1975	3	307	343	http://www.mycancergenome.org/content/disease/lung-cancer/nras/87
+1976	2	3	343	\N
+1977	2	163	344	\N
+1978	1	386	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
+1979	2	164	344	\N
+1980	1	391	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
+1981	3	302	344	http://www.mycancergenome.org/content/disease/lung-cancer/nras/86
+1982	5	78	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
+1983	1	392	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
+1984	2	162	344	\N
+1985	5	77	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
+1986	1	388	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
+1987	3	255	344	http://www.mycancergenome.org/content/disease/lung-cancer/nras/86
+1988	2	161	344	\N
+1989	2	133	344	\N
+1990	1	393	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
+1991	1	394	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
+1992	5	49	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
+1993	5	73	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
+1994	5	75	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
+1995	5	76	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
+1996	5	74	344	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/86
+1997	2	160	344	\N
+1998	1	387	344	http://www.mycancergenome.org/content/disease/melanoma/nras/86
+1999	3	307	344	http://www.mycancergenome.org/content/disease/lung-cancer/nras/86
+2000	1	383	344	\N
+2001	5	408	344	\N
+2002	5	3	344	\N
 2003	1	386	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
-2004	3	302	345	http://www.mycancergenome.org/content/disease/lung-cancer/nras/88
-2005	1	387	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
-2006	1	388	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
-2007	3	255	345	http://www.mycancergenome.org/content/disease/lung-cancer/nras/88
-2008	1	389	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
-2009	1	390	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
-2010	21	408	345	\N
-2011	1	393	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
-2012	3	307	345	http://www.mycancergenome.org/content/disease/lung-cancer/nras/88
-2013	21	3	345	\N
-2014	5	3	345	\N
-2015	1	385	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
+2004	1	391	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
+2005	3	302	345	http://www.mycancergenome.org/content/disease/lung-cancer/nras/88
+2205	38	3	432	\N
+2006	1	392	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
+2007	1	388	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
+2008	3	255	345	http://www.mycancergenome.org/content/disease/lung-cancer/nras/88
+2009	1	393	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
+2010	1	394	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
+2011	21	409	345	\N
+2012	1	387	345	http://www.mycancergenome.org/content/disease/melanoma/nras/88
+2013	3	307	345	http://www.mycancergenome.org/content/disease/lung-cancer/nras/88
+2014	21	3	345	\N
+2015	5	3	345	\N
 2016	1	386	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
-2017	3	302	346	http://www.mycancergenome.org/content/disease/lung-cancer/kras/41
-2018	5	78	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
-2019	1	387	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
-2020	5	77	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
-2021	1	388	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
-2022	3	303	346	http://www.mycancergenome.org/content/disease/lung-cancer/kras/41
-2023	2	133	346	\N
-2024	1	389	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
-2025	1	390	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
-2026	5	49	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
-2027	5	49	346	\N
-2028	5	73	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
-2029	5	75	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
-2030	5	76	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
-2031	5	74	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
-2032	1	393	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
-2033	5	3	346	\N
-2034	20	320	347	\N
-2035	20	320	348	\N
-2036	20	320	349	\N
-2037	20	320	350	\N
-2038	20	320	351	\N
-2039	6	409	352	http://www.mycancergenome.org/content/disease/lung-cancer/ddr2/78
-2040	6	320	352	http://www.mycancergenome.org/content/disease/lung-cancer/ddr2/78
-2041	6	410	352	http://www.mycancergenome.org/content/disease/lung-cancer/ddr2/78
-2042	20	320	353	\N
-2043	2	112	354	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/296
-2044	2	113	354	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/296
-2045	2	114	355	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/294
-2046	2	112	355	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/294
-2047	2	115	355	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/294
-2048	2	114	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
-2049	2	120	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
-2050	2	112	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
-2051	2	119	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
-2052	2	116	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
-2053	2	118	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
-2054	2	117	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
-2055	2	114	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
-2056	2	120	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
-2057	2	112	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
-2058	2	119	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
-2059	2	116	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
-2060	2	118	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
-2061	2	112	358	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/295
-2062	2	116	358	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/295
-2063	2	114	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
-2064	2	120	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
-2065	2	112	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
-2066	2	119	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
-2067	2	113	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
-2068	9	244	360	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/184
-2069	9	243	360	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/184
-2070	9	244	361	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/183
-2071	9	243	361	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/183
-2072	30	243	361	\N
-2073	31	256	362	\N
-2074	31	257	362	\N
-2075	9	244	363	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/181
-2076	9	243	363	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/181
-2077	9	244	364	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/180
-2078	9	243	364	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/180
-2079	9	244	365	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/182
-2080	9	243	365	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/182
-2081	10	340	366	http://www.mycancergenome.org/content/disease/rhabdomyosarcoma/alk/187
-2082	31	256	367	\N
-2083	31	257	367	\N
-2084	31	256	368	\N
-2085	31	256	369	\N
-2086	31	258	369	\N
-2087	31	257	369	\N
-2088	30	243	370	\N
-2089	31	256	371	\N
-2090	31	258	371	\N
-2091	9	244	372	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/178
-2092	9	243	372	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/178
-2093	31	256	372	\N
-2094	31	258	372	\N
-2095	9	244	373	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/176
-2096	9	243	373	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/176
-2097	9	244	374	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/179
-2098	9	243	374	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/179
-2099	9	244	375	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/177
-2100	9	243	375	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/177
-2101	9	244	376	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/175
-2102	9	243	376	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/175
-2103	31	256	377	\N
-2104	9	244	378	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/174
-2105	9	243	378	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/174
-2106	30	243	379	\N
-2107	9	244	380	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/173
-2108	9	243	380	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/173
-2109	2	170	381	\N
-2110	2	170	382	\N
-2111	2	170	383	\N
-2112	2	170	384	\N
-2113	2	170	385	\N
-2114	2	170	386	\N
-2115	2	170	387	\N
-2116	2	170	388	\N
-2117	2	170	389	\N
-2118	2	170	390	\N
-2119	2	111	391	\N
-2120	2	111	392	\N
-2121	2	111	393	\N
-2122	2	112	394	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/264
-2123	2	141	394	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/264
-2124	2	140	394	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/264
-2125	2	116	394	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/264
-2126	2	112	395	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/265
-2127	2	140	395	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/265
-2128	2	116	395	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/265
-2129	2	133	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
-2130	32	411	396	\N
+2017	1	391	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
+2018	3	302	346	http://www.mycancergenome.org/content/disease/lung-cancer/kras/41
+2019	5	78	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
+2020	1	392	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
+2021	5	77	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
+2022	1	388	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
+2023	3	303	346	http://www.mycancergenome.org/content/disease/lung-cancer/kras/41
+2024	2	133	346	\N
+2025	1	393	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
+2026	1	394	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
+2027	5	49	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
+2028	5	49	346	\N
+2029	5	73	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
+2030	5	75	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
+2031	5	76	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
+2032	5	74	346	http://www.mycancergenome.org/content/disease/colorectal-cancer/nras/89
+2033	1	387	346	http://www.mycancergenome.org/content/disease/melanoma/nras/89
+2034	5	3	346	\N
+2035	20	320	347	\N
+2036	20	320	348	\N
+2037	20	320	349	\N
+2038	20	320	350	\N
+2039	20	320	351	\N
+2040	6	410	352	http://www.mycancergenome.org/content/disease/lung-cancer/ddr2/78
+2041	6	320	352	http://www.mycancergenome.org/content/disease/lung-cancer/ddr2/78
+2042	6	411	352	http://www.mycancergenome.org/content/disease/lung-cancer/ddr2/78
+2043	20	320	353	\N
+2044	2	112	354	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/296
+2045	2	113	354	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/296
+2046	2	114	355	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/294
+2047	2	112	355	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/294
+2048	2	115	355	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/294
+2049	2	114	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
+2050	2	120	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
+2051	2	112	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
+2052	2	119	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
+2053	2	116	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
+2054	2	118	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
+2055	2	117	356	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/293
+2056	2	114	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
+2057	2	120	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
+2058	2	112	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
+2059	2	119	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
+2060	2	116	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
+2061	2	118	357	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/291
+2062	2	112	358	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/295
+2063	2	116	358	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/295
+2064	2	114	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
+2065	2	120	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
+2066	2	112	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
+2067	2	119	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
+2068	2	113	359	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/dnmt3a/292
+2069	9	244	360	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/184
+2070	9	243	360	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/184
+2071	9	244	361	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/183
+2072	9	243	361	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/183
+2073	30	243	361	\N
+2074	31	256	362	\N
+2075	31	257	362	\N
+2076	9	244	363	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/181
+2077	9	243	363	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/181
+2078	9	244	364	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/180
+2079	9	243	364	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/180
+2080	9	244	365	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/182
+2081	9	243	365	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/182
+2082	10	340	366	http://www.mycancergenome.org/content/disease/rhabdomyosarcoma/alk/187
+2083	31	256	367	\N
+2084	31	257	367	\N
+2085	31	256	368	\N
+2086	31	256	369	\N
+2092	9	244	372	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/178
+2093	9	243	372	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/178
+2094	31	256	372	\N
+2095	31	258	372	\N
+2096	9	244	373	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/176
+2097	9	243	373	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/176
+2098	9	244	374	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/179
+2099	9	243	374	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/179
+2100	9	244	375	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/177
+2101	9	243	375	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/177
+2102	9	244	376	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/175
+2103	9	243	376	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/175
+2104	31	256	377	\N
+2105	9	244	378	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/174
+2106	9	243	378	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/174
+2107	30	243	379	\N
+2108	9	244	380	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/173
+2109	9	243	380	http://www.mycancergenome.org/content/disease/neuroblastoma/alk/173
+2110	2	170	381	\N
+2111	2	170	382	\N
+2112	2	170	383	\N
+2113	2	170	384	\N
+2114	2	170	385	\N
+2115	2	170	386	\N
+2116	2	170	387	\N
+2117	2	170	388	\N
+2118	2	170	389	\N
+2119	2	170	390	\N
+2120	2	111	391	\N
+2121	2	111	392	\N
+2122	2	111	393	\N
+2123	2	112	394	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/264
+2124	2	141	394	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/264
+2125	2	140	394	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/264
+2126	2	116	394	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/264
+2127	2	112	395	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/265
+2128	2	140	395	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/265
+2129	2	116	395	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/265
+2130	2	133	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
 2131	32	412	396	\N
-2132	2	112	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
-2133	2	141	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
-2134	2	140	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
-2135	2	116	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
-2136	30	413	396	\N
-2137	2	118	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
-2138	32	3	396	\N
-2139	2	133	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
-2140	2	142	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
-2141	2	112	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
-2142	2	141	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
-2143	2	140	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
-2144	2	116	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
-2145	32	3	397	\N
-2146	2	142	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
-2147	2	112	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
-2148	2	141	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
-2149	2	140	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
-2150	2	116	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
-2151	2	133	399	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/262
-2152	32	414	399	\N
-2153	2	112	399	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/262
-2154	2	140	399	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/262
-2155	2	116	399	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/262
-2156	32	3	399	\N
-2157	1	415	400	\N
-2158	1	415	401	\N
-2159	1	415	402	\N
-2160	1	415	403	\N
-2161	1	415	404	\N
-2162	1	415	405	\N
-2163	28	3	406	\N
-2164	28	3	407	\N
-2165	33	416	408	\N
-2166	33	3	408	\N
-2167	33	416	409	\N
-2168	33	3	409	\N
-2169	33	3	410	\N
-2170	33	417	411	\N
-2171	33	3	411	\N
-2172	1	418	412	\N
-2173	1	418	413	\N
-2174	34	3	414	\N
-2175	31	3	414	\N
-2176	31	419	414	\N
-2177	35	420	415	\N
-2178	1	3	416	\N
-2179	1	3	417	\N
-2180	1	3	418	\N
-2181	1	3	419	\N
-2182	1	3	420	\N
-2183	36	3	421	\N
-2184	37	3	421	\N
-2185	1	421	422	\N
-2186	1	3	422	\N
-2187	15	3	423	\N
-2188	38	3	423	\N
-2189	1	3	424	\N
-2190	1	3	425	\N
-2191	37	3	426	\N
-2192	15	3	427	\N
-2193	37	3	427	\N
-2194	7	3	428	\N
-2195	30	3	428	\N
-2196	39	3	428	\N
-2197	38	3	429	\N
-2198	40	3	429	\N
-2199	38	3	430	\N
-2200	40	3	430	\N
-2201	41	3	431	\N
-2202	7	3	431	\N
-2203	1	3	432	\N
-2204	38	3	432	\N
-2207	1	422	435	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/105
+2132	32	413	396	\N
+2133	2	112	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
+2134	2	141	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
+2135	2	140	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
+2136	2	116	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
+2137	30	414	396	\N
+2138	2	118	396	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/263
+2139	32	3	396	\N
+2140	2	133	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
+2141	2	142	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
+2142	2	112	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
+2143	2	141	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
+2144	2	140	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
+2145	2	116	397	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/260
+2146	32	3	397	\N
+2147	2	142	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
+2148	2	112	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
+2149	2	141	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
+2150	2	140	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
+2151	2	116	398	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/261
+2152	2	133	399	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/262
+2153	32	415	399	\N
+2154	2	112	399	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/262
+2155	2	140	399	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/262
+2156	2	116	399	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh1/262
+2157	32	3	399	\N
+2158	1	416	400	\N
+2159	1	416	401	\N
+2160	1	416	402	\N
+2161	1	416	403	\N
+2162	1	416	404	\N
+2163	1	416	405	\N
+2164	28	3	406	\N
+2165	28	3	407	\N
+2166	33	417	408	\N
+2167	33	3	408	\N
+2168	33	417	409	\N
+2169	33	3	409	\N
+2170	33	3	410	\N
+2171	33	418	411	\N
+2172	33	3	411	\N
+2173	1	419	412	\N
+2174	1	419	413	\N
+2175	34	3	414	\N
+2176	31	3	414	\N
+2177	31	420	414	\N
+2178	35	421	415	\N
+2179	1	3	416	\N
+2180	1	3	417	\N
+2181	1	3	418	\N
+2182	1	3	419	\N
+2183	1	3	420	\N
+2184	36	3	421	\N
+2185	37	3	421	\N
+2186	1	422	422	\N
+2187	1	3	422	\N
+2188	15	3	423	\N
+2189	38	3	423	\N
+2190	1	3	424	\N
+2191	1	3	425	\N
+2192	37	3	426	\N
+2193	15	3	427	\N
+2194	37	3	427	\N
+2195	7	3	428	\N
+2196	30	3	428	\N
+2197	39	3	428	\N
+2198	38	3	429	\N
+2199	40	3	429	\N
+2200	38	3	430	\N
+2201	40	3	430	\N
+2202	41	3	431	\N
+2206	29	3	433	\N
+2207	39	3	434	\N
 2208	1	423	435	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/105
 2209	1	424	435	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/105
 2210	1	425	435	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/105
 2211	1	426	435	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/105
 2212	1	427	435	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/105
 2213	1	428	435	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/105
-2214	29	3	435	\N
-2215	7	3	436	\N
-2216	31	3	436	\N
-2217	1	422	437	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/104
+2214	1	429	435	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/105
+2215	29	3	435	\N
+2216	7	3	436	\N
+2217	31	3	436	\N
 2218	1	423	437	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/104
 2219	1	424	437	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/104
 2220	1	425	437	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/104
 2221	1	426	437	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/104
 2222	1	427	437	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/104
 2223	1	428	437	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/104
-2224	7	3	437	\N
-2225	28	3	438	\N
-2226	29	3	439	\N
-2227	28	3	440	\N
-2228	28	3	441	\N
-2229	1	3	442	\N
-2230	1	422	443	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/107
+2224	1	429	437	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/104
+2225	7	3	437	\N
+2226	28	3	438	\N
+2227	29	3	439	\N
+2228	28	3	440	\N
+2229	28	3	441	\N
+2230	1	3	442	\N
 2231	1	423	443	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/107
 2232	1	424	443	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/107
 2233	1	425	443	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/107
 2234	1	426	443	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/107
 2235	1	427	443	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/107
 2236	1	428	443	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/107
-2237	42	429	443	\N
-2238	42	3	443	\N
-2239	30	3	444	\N
-2240	42	3	444	\N
-2241	1	422	445	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/108
+2237	1	429	443	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/107
+2238	42	430	443	\N
+2239	42	3	443	\N
+2240	30	3	444	\N
+2241	42	3	444	\N
 2242	1	423	445	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/108
 2243	1	424	445	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/108
 2244	1	425	445	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/108
 2245	1	426	445	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/108
 2246	1	427	445	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/108
 2247	1	428	445	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/108
-2248	1	395	445	\N
-2249	1	3	445	\N
-2250	42	3	446	\N
-2251	1	422	447	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/106
+2248	1	429	445	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/108
+2249	1	390	445	\N
+2250	1	3	445	\N
+2251	42	3	446	\N
 2252	1	423	447	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/106
 2253	1	424	447	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/106
 2254	1	425	447	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/106
 2255	1	426	447	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/106
 2256	1	427	447	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/106
 2257	1	428	447	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/106
-2258	42	429	447	\N
-2259	42	3	447	\N
-2260	2	139	448	\N
-2261	2	138	448	\N
-2262	2	139	449	\N
-2263	2	138	449	\N
-2264	5	87	450	\N
-2265	8	3	450	\N
-2266	5	3	450	\N
-2267	5	87	451	\N
-2268	8	3	451	\N
-2269	5	3	451	\N
-2270	5	87	452	\N
-2271	8	3	452	\N
-2272	5	3	452	\N
-2273	8	3	453	\N
-2274	5	3	453	\N
-2275	8	3	454	\N
-2276	5	79	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2277	3	79	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2278	5	81	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2279	3	81	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2280	8	81	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
-2281	5	80	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2282	3	80	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2283	7	80	455	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/7
-2284	8	80	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
-2285	8	430	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
-2286	3	312	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2287	3	309	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2288	8	431	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
-2289	5	83	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2290	3	83	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2291	8	83	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
-2292	3	311	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2293	5	87	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2294	3	310	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2295	5	86	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2296	5	82	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2297	3	82	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2298	8	82	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
-2299	5	49	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2300	3	281	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2301	5	85	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2302	8	85	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
-2303	5	84	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
-2304	3	84	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
-2305	8	84	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
-2306	7	358	455	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/7
-2307	8	432	455	\N
-2308	8	3	455	\N
-2309	3	3	456	\N
-2310	5	79	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2311	3	79	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2312	5	81	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2313	3	81	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2314	8	81	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
-2315	5	80	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2316	3	80	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2317	7	80	457	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/8
-2318	8	80	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
-2319	8	430	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
-2320	3	312	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2321	3	309	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2322	8	431	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
-2323	5	83	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2324	3	83	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2325	8	83	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
-2326	3	311	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2327	5	87	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2328	3	310	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2329	5	86	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2330	5	82	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2331	3	82	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2332	8	82	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
-2333	5	49	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2334	3	281	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2335	5	85	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2336	8	85	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
-2337	5	84	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
-2338	3	84	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
-2339	8	84	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
-2340	7	358	457	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/8
-2341	8	432	457	\N
-2342	8	3	457	\N
-2343	5	79	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2344	3	79	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2345	5	81	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2346	3	81	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2347	8	81	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
-2348	5	80	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2349	3	80	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2350	8	80	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
-2351	8	430	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
-2352	3	312	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2353	3	309	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2354	8	431	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
-2355	5	83	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2356	3	83	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2357	8	83	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
-2358	3	311	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2359	5	87	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2360	3	310	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2361	5	86	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2362	5	82	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2363	3	82	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2364	8	82	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
-2365	5	49	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2366	3	281	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2367	5	85	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2368	8	85	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
-3038	3	496	609	\N
-3039	3	497	609	\N
-2369	5	84	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
-2370	3	84	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
-2371	8	84	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
-2372	43	433	458	\N
-2373	43	3	458	\N
-2374	5	79	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2375	5	81	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2376	8	81	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
-2377	5	80	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2378	7	80	459	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/12
-2379	8	80	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
-2380	8	430	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
+2258	1	429	447	http://www.mycancergenome.org/content/disease/melanoma/ctnnb1/106
+2259	42	430	447	\N
+2260	42	3	447	\N
+2261	2	139	448	\N
+2262	2	138	448	\N
+2263	2	139	449	\N
+2264	2	138	449	\N
+2265	5	87	450	\N
+2266	8	3	450	\N
+2267	5	3	450	\N
+2268	5	87	451	\N
+2269	8	3	451	\N
+2270	5	3	451	\N
+2271	5	87	452	\N
+2272	8	3	452	\N
+2273	5	3	452	\N
+2274	8	3	453	\N
+2275	5	3	453	\N
+2276	8	3	454	\N
+2277	5	79	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2278	3	79	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2279	5	81	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2280	3	81	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2281	8	81	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
+2282	5	80	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2283	3	80	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2284	7	80	455	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/7
+2285	8	80	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
+2286	8	431	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
+2287	3	312	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2288	3	309	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2289	8	432	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
+2290	5	83	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2291	3	83	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2292	8	83	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
+2293	3	311	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2294	5	87	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2295	3	310	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2296	5	86	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2297	5	82	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2298	3	82	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2299	8	82	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
+2300	5	49	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2301	3	281	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2302	5	85	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2303	8	85	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
+2304	5	84	455	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/7
+2305	3	84	455	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/7
+2306	8	84	455	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/7
+2307	7	358	455	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/7
+2308	8	433	455	\N
+2309	8	3	455	\N
+2310	3	3	456	\N
+2311	5	79	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2312	3	79	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2313	5	81	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2314	3	81	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2315	8	81	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
+2316	5	80	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2317	3	80	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2318	7	80	457	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/8
+2319	8	80	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
+2320	8	431	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
+2321	3	312	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2322	3	309	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2323	8	432	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
+2324	5	83	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2325	3	83	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2326	8	83	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
+2327	3	311	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2328	5	87	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2329	3	310	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2330	5	86	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2331	5	82	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2332	3	82	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2333	8	82	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
+2334	5	49	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2335	3	281	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2336	5	85	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2337	8	85	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
+2338	5	84	457	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/8
+2339	3	84	457	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/8
+2340	8	84	457	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/8
+2341	7	358	457	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/8
+2342	8	433	457	\N
+2343	8	3	457	\N
+2344	5	79	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2345	3	79	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2346	5	81	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2347	3	81	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2348	8	81	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
+2349	5	80	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2350	3	80	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2351	8	80	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
+2352	8	431	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
+2353	3	312	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2354	3	309	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2355	8	432	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
+2356	5	83	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2357	3	83	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2358	8	83	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
+2359	3	311	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2360	5	87	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2361	3	310	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2362	5	86	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2363	5	82	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2364	3	82	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2365	8	82	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
+2366	5	49	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2367	3	281	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2368	5	85	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2369	8	85	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
+2370	5	84	458	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/9
+2371	3	84	458	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/9
+2372	8	84	458	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/9
+2373	43	434	458	\N
+2374	43	3	458	\N
+2375	5	79	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2376	5	81	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2377	8	81	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
+2378	5	80	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2379	7	80	459	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/12
+2380	8	80	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
 2381	8	431	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
-2382	5	83	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2383	8	83	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
-2384	5	87	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2385	5	86	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2386	5	82	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2387	8	82	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
-2388	5	49	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2389	5	85	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2390	8	85	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
-2391	5	84	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
-2392	8	84	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
-2393	7	358	459	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/12
-2394	8	3	459	\N
-2395	5	79	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2396	5	81	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2397	8	81	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
-2398	5	80	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2399	8	80	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
-2400	8	430	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
+2382	8	432	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
+2383	5	83	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2384	8	83	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
+2385	5	87	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2386	5	86	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2387	5	82	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2388	8	82	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
+2389	5	49	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2390	5	85	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2391	8	85	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
+2392	5	84	459	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/12
+2393	8	84	459	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/12
+2394	7	358	459	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/12
+2395	8	3	459	\N
+2396	5	79	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2397	5	81	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2398	8	81	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
+2399	5	80	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2400	8	80	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
 2401	8	431	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
-2402	5	83	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2403	8	83	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
-2404	5	87	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2405	5	86	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2406	5	82	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2407	8	82	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
-2408	5	49	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2409	5	85	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2410	8	85	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
-2411	5	84	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
-2412	8	84	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
-2413	1	434	460	\N
-2414	5	3	460	\N
-2415	1	3	460	\N
-2416	5	79	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2417	5	81	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2418	8	81	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
-2419	5	80	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2420	8	80	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
-2421	8	430	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
+2402	8	432	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
+2403	5	83	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2404	8	83	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
+2405	5	87	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2406	5	86	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2407	5	82	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2408	8	82	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
+2409	5	49	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2410	5	85	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2411	8	85	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
+2412	5	84	460	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/13
+2413	8	84	460	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/13
+2414	1	435	460	\N
+2415	5	3	460	\N
+2416	1	3	460	\N
+2417	5	79	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2418	5	81	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2419	8	81	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
+2420	5	80	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2421	8	80	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
 2422	8	431	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
-2423	5	83	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2424	8	83	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
-2425	5	87	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2426	5	86	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2427	5	82	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2428	8	82	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
-2429	5	49	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2430	5	85	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2431	8	85	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
-2432	5	84	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
-2433	8	84	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
-2434	8	3	462	\N
-2435	8	3	463	\N
-2436	5	79	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2437	5	81	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2438	8	81	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
-2439	5	80	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2440	7	80	464	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/16
-2441	8	80	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
-2442	8	430	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
+2423	8	432	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
+2424	5	83	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2425	8	83	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
+2426	5	87	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2427	5	86	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2428	5	82	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2429	8	82	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
+2430	5	49	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2431	5	85	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2432	8	85	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
+2433	5	84	461	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/14
+2434	8	84	461	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/14
+2435	8	3	462	\N
+2436	8	3	463	\N
+2437	5	79	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2438	5	81	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2439	8	81	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
+2440	5	80	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2441	7	80	464	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/16
+2442	8	80	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
 2443	8	431	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
-2444	5	83	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2445	8	83	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
-2446	5	87	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2447	5	86	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2448	5	82	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2449	8	82	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
-2450	5	49	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2451	5	85	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2452	8	85	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
-2453	5	84	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
-2454	8	84	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
-2455	7	358	464	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/16
-2456	16	3	464	\N
-2457	5	79	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2458	5	81	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2459	8	81	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
-2460	5	80	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2461	8	80	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
-2462	8	430	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
+2444	8	432	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
+2445	5	83	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2446	8	83	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
+2447	5	87	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2448	5	86	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2449	5	82	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2450	8	82	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
+2451	5	49	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2452	5	85	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2453	8	85	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
+2454	5	84	464	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/16
+2455	8	84	464	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/16
+2456	7	358	464	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/16
+2457	16	3	464	\N
+2458	5	79	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2459	5	81	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2460	8	81	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
+2461	5	80	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2462	8	80	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
 2463	8	431	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
-2464	5	83	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2465	8	83	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
-2466	5	87	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2467	5	86	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2468	5	82	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2469	8	82	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
-2470	5	49	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2471	5	85	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2472	8	85	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
-2473	5	84	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
-2474	8	84	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
-2475	5	79	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2476	5	81	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2477	8	81	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
-2478	5	80	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2479	8	80	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
-2480	8	430	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
+2464	8	432	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
+2465	5	83	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2466	8	83	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
+2467	5	87	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2468	5	86	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2469	5	82	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2470	8	82	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
+2471	5	49	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2472	5	85	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2473	8	85	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
+2474	5	84	465	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/15
+2475	8	84	465	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/15
+2476	5	79	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2477	5	81	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2478	8	81	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
+2479	5	80	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2480	8	80	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
 2481	8	431	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
-2482	5	83	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2483	8	83	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
-2484	5	87	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2485	5	86	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2486	5	82	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2487	8	82	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
-2488	5	49	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2489	5	85	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2490	8	85	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
-2491	5	84	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
-2492	8	84	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
-2493	5	79	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2494	5	81	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2495	8	81	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
-2496	5	80	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2497	8	80	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
-2498	8	430	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
+2482	8	432	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
+2483	5	83	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2484	8	83	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
+2485	5	87	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2486	5	86	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2487	5	82	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2488	8	82	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
+2489	5	49	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2490	5	85	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2491	8	85	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
+2492	5	84	466	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/18
+2493	8	84	466	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/18
+2494	5	79	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2495	5	81	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2496	8	81	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
+2497	5	80	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2498	8	80	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
 2499	8	431	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
-2500	5	83	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2501	8	83	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
-2502	5	87	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2503	5	86	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2504	5	82	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2505	8	82	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
-2506	5	49	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2507	5	85	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2508	8	85	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
-2509	5	84	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
-2510	8	84	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
-2511	8	81	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
-2512	8	80	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
-2513	8	430	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
+2500	8	432	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
+2501	5	83	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2502	8	83	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
+2503	5	87	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2504	5	86	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2505	5	82	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2506	8	82	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
+2507	5	49	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2508	5	85	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2509	8	85	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
+2510	5	84	467	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/19
+2511	8	84	467	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/19
+2512	8	81	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
+2513	8	80	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
 2514	8	431	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
-2515	8	83	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
-2516	8	82	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
-2517	8	85	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
-2518	8	84	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
-2519	5	79	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2520	5	81	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2521	8	81	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
-2522	5	80	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2523	8	80	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
-2524	8	430	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
+2515	8	432	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
+2516	8	83	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
+2517	8	82	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
+2518	8	85	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
+2519	8	84	468	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/17
+2520	5	79	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2521	5	81	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2522	8	81	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
+2523	5	80	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2524	8	80	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
 2525	8	431	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
-2526	5	83	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2527	8	83	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
-2528	5	87	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2529	5	86	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2530	5	82	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2531	8	82	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
-2532	5	49	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2533	5	85	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2534	8	85	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
-2535	5	84	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
-2536	8	84	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
-2537	8	430	470	\N
-2538	8	3	470	\N
-2539	8	3	471	\N
-2540	5	435	472	\N
-2541	5	3	472	\N
-2542	5	435	473	\N
-2543	5	3	473	\N
-2544	44	436	474	\N
-2545	44	3	474	\N
-2546	5	79	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2547	3	79	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2548	5	81	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2549	3	81	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2550	8	81	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
-2551	5	80	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2552	3	80	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2553	7	80	475	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/11
-2554	8	80	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
-2555	8	430	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
-2556	3	312	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2557	3	309	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2558	8	431	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
-2559	5	83	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2560	3	83	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2561	8	83	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
-2562	3	311	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2563	5	87	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2564	3	310	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2565	5	86	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2566	5	82	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2567	3	82	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2568	8	82	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
-2569	5	49	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2570	3	281	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2571	5	85	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2572	8	85	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
-2573	5	84	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2574	3	84	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
-2575	8	84	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
-2576	7	358	475	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/11
-2577	28	3	475	\N
-2578	5	79	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2579	3	79	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2580	5	81	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2581	3	81	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2582	8	81	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
-2583	5	80	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2584	3	80	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2585	7	80	476	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/10
-2586	8	80	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
-2587	8	430	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
-2588	3	312	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2589	3	309	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2590	8	431	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
-2591	5	83	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2592	3	83	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2593	8	83	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
-2594	3	311	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2595	5	87	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2596	3	310	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2597	5	86	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2598	5	82	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2599	3	82	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2600	8	82	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
-2601	5	49	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2602	5	49	476	\N
-2603	3	281	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2604	5	85	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2605	8	85	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
-2606	5	84	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
-2607	3	84	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
-2608	8	84	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
-2609	7	358	476	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/10
-2610	5	3	476	\N
-2611	5	49	477	\N
-2612	5	3	477	\N
-2613	44	436	478	\N
-2614	44	3	478	\N
-2615	31	322	479	\N
-2616	31	3	479	\N
-2617	45	437	480	\N
-2618	45	3	480	\N
-2619	45	437	481	\N
-2620	45	3	481	\N
-2621	45	3	482	\N
-2622	46	438	483	\N
-2623	45	437	483	\N
-2624	46	439	483	\N
-2625	46	440	483	\N
-2626	45	3	483	\N
-2627	46	440	484	\N
-2628	45	3	485	\N
-2629	45	3	486	\N
-2630	11	105	487	http://www.mycancergenome.org/content/disease/gist/pdgfra/48
-2631	11	106	487	http://www.mycancergenome.org/content/disease/gist/pdgfra/48
-2632	11	441	487	\N
+2526	8	432	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
+2527	5	83	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2528	8	83	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
+2529	5	87	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2530	5	86	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2531	5	82	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2532	8	82	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
+2533	5	49	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2534	5	85	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2535	8	85	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
+2536	5	84	469	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/20
+2537	8	84	469	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/20
+2538	8	431	470	\N
+2539	8	3	470	\N
+2540	8	3	471	\N
+2541	5	436	472	\N
+2542	5	3	472	\N
+2543	5	436	473	\N
+2544	5	3	473	\N
+2545	44	437	474	\N
+2546	44	3	474	\N
+2547	5	79	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2548	3	79	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2549	5	81	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2550	3	81	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2551	8	81	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
+2552	5	80	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2553	3	80	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2554	7	80	475	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/11
+2555	8	80	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
+2556	8	431	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
+2557	3	312	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2558	3	309	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2559	8	432	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
+2560	5	83	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2561	3	83	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2562	8	83	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
+2563	3	311	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2564	5	87	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2565	3	310	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2566	5	86	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2567	5	82	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2568	3	82	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2569	8	82	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
+2570	5	49	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2571	3	281	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2572	5	85	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2573	8	85	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
+2574	5	84	475	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2575	3	84	475	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/11
+2576	8	84	475	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/11
+2577	7	358	475	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/11
+2578	28	3	475	\N
+2579	5	79	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2580	3	79	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2581	5	81	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2582	3	81	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2583	8	81	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
+2584	5	80	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2585	3	80	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2586	7	80	476	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/10
+2587	8	80	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
+2588	8	431	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
+2589	3	312	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2590	3	309	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2591	8	432	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
+2592	5	83	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2593	3	83	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2594	8	83	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
+2595	3	311	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2596	5	87	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2597	3	310	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2598	5	86	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2599	5	82	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2600	3	82	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2601	8	82	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
+2602	5	49	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2603	5	49	476	\N
+2604	3	281	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2605	5	85	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2606	8	85	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
+2607	5	84	476	http://www.mycancergenome.org/content/disease/colorectal-cancer/pik3ca/10
+2608	3	84	476	http://www.mycancergenome.org/content/disease/lung-cancer/pik3ca/10
+2609	8	84	476	http://www.mycancergenome.org/content/disease/breast-cancer/pik3ca/10
+2610	7	358	476	http://www.mycancergenome.org/content/disease/ovarian-cancer/pik3ca/10
+2611	5	3	476	\N
+2612	5	49	477	\N
+2613	5	3	477	\N
+2614	44	437	478	\N
+2615	44	3	478	\N
+2616	31	322	479	\N
+2617	31	3	479	\N
+2618	45	438	480	\N
+2619	45	3	480	\N
+2620	45	438	481	\N
+2621	45	3	481	\N
+2622	45	3	482	\N
+2623	46	439	483	\N
+2624	45	438	483	\N
+2625	46	441	483	\N
+2626	46	440	483	\N
+2627	45	3	483	\N
+2628	46	440	484	\N
+2629	45	3	485	\N
+2630	45	3	486	\N
+2631	11	105	487	http://www.mycancergenome.org/content/disease/gist/pdgfra/48
+2632	11	106	487	http://www.mycancergenome.org/content/disease/gist/pdgfra/48
 2633	11	442	487	\N
-2634	11	3	487	\N
-2635	1	443	488	\N
-2636	1	443	489	\N
-2637	11	105	490	http://www.mycancergenome.org/content/disease/gist/pdgfra/51
-2638	11	106	490	http://www.mycancergenome.org/content/disease/gist/pdgfra/51
-2639	11	105	491	http://www.mycancergenome.org/content/disease/gist/pdgfra/51
-2640	11	106	491	http://www.mycancergenome.org/content/disease/gist/pdgfra/51
-2641	11	3	492	\N
-2642	1	443	493	\N
-2643	11	110	494	\N
-2644	11	3	494	\N
-2645	11	441	495	\N
+2634	11	443	487	\N
+2635	11	3	487	\N
+2636	1	444	488	\N
+2637	1	444	489	\N
+2638	11	105	490	http://www.mycancergenome.org/content/disease/gist/pdgfra/51
+2639	11	106	490	http://www.mycancergenome.org/content/disease/gist/pdgfra/51
+2640	11	105	491	http://www.mycancergenome.org/content/disease/gist/pdgfra/51
+2641	11	106	491	http://www.mycancergenome.org/content/disease/gist/pdgfra/51
+2642	11	3	492	\N
+2643	1	444	493	\N
+2644	11	110	494	\N
+2645	11	3	494	\N
 2646	11	442	495	\N
-2647	11	110	495	\N
-2648	11	3	495	\N
-2649	11	3	496	\N
-2650	11	3	497	\N
-2651	11	105	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
-2652	11	444	498	\N
-2653	11	106	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
-2654	11	108	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
-2655	11	108	498	\N
-2656	11	441	498	\N
-2657	11	109	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
-2658	11	107	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
-2659	11	110	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
-2660	11	110	498	\N
-2661	11	3	498	\N
-2662	11	3	499	\N
-2663	1	443	500	\N
-2664	11	106	501	\N
-2665	11	3	501	\N
-2666	1	443	502	\N
-2667	28	3	503	\N
-2668	12	327	504	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/218
-2669	12	326	504	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/218
-2670	1	445	505	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2671	1	446	506	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2647	11	443	495	\N
+2648	11	110	495	\N
+2649	11	3	495	\N
+2650	11	3	496	\N
+2651	11	3	497	\N
+2652	11	105	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
+2653	11	445	498	\N
+2654	11	106	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
+2655	11	108	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
+2656	11	108	498	\N
+2657	11	442	498	\N
+2658	11	109	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
+2659	11	107	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
+2660	11	110	498	http://www.mycancergenome.org/content/disease/gist/pdgfra/45
+2661	11	110	498	\N
+2662	11	3	498	\N
+2663	11	3	499	\N
+2664	1	444	500	\N
+2665	11	106	501	\N
+2666	11	3	501	\N
+2667	1	444	502	\N
+2668	28	3	503	\N
+2669	12	327	504	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/218
+2670	12	326	504	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/218
+2671	1	446	505	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2672	1	447	506	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2673	1	446	507	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2673	1	448	506	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2674	1	447	507	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2675	12	328	508	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/124
-2676	1	328	508	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2677	12	326	508	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/124
-2678	1	326	508	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2679	12	329	508	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/124
-2680	11	3	509	\N
-2681	11	3	510	\N
-2682	1	448	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2675	1	448	507	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2676	12	328	508	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/124
+2677	1	328	508	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2678	12	326	508	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/124
+2679	1	326	508	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2680	12	329	508	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/124
+2681	11	3	509	\N
+2682	11	3	510	\N
 2683	1	449	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2684	1	450	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2685	1	451	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2686	1	334	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2687	1	452	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2686	1	452	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2687	1	334	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2688	1	453	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2689	1	454	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2690	1	455	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
@@ -5937,13 +5934,13 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 2693	1	458	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2694	1	459	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2695	1	460	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2696	1	448	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2696	1	461	511	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2697	1	449	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2698	1	450	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2699	12	330	512	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/110
-2700	1	451	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2701	1	334	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2702	1	452	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2699	1	451	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2700	12	330	512	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/110
+2701	1	452	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2702	1	334	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2703	1	453	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2704	1	454	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2705	1	455	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
@@ -5952,2211 +5949,2216 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 2708	1	458	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2709	1	459	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2710	1	460	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2711	12	326	512	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/110
-2712	1	461	513	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2713	1	461	514	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2714	11	101	515	\N
-2715	22	462	515	\N
-2716	11	100	515	\N
-2717	11	99	515	\N
-2718	22	3	515	\N
-2719	1	3	516	\N
-2720	1	448	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2711	1	461	512	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2712	12	326	512	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/110
+2713	1	462	513	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2714	1	462	514	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2715	11	101	515	\N
+2716	22	463	515	\N
+2717	11	100	515	\N
+2718	11	99	515	\N
+2719	22	3	515	\N
+2720	1	3	516	\N
 2721	1	449	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2722	1	450	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2723	1	451	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2724	1	463	517	\N
-2725	1	464	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2726	11	101	517	\N
-2727	1	334	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2728	1	334	517	\N
-2729	1	454	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2724	1	452	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2725	1	464	517	\N
+2726	1	465	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2727	11	101	517	\N
+2728	1	334	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2729	1	334	517	\N
 2730	1	455	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2731	1	456	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2732	1	457	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2733	1	458	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2734	11	100	517	\N
-2735	1	459	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2736	11	99	517	\N
-2737	1	3	517	\N
-2738	1	448	518	\N
+2734	1	459	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2735	11	100	517	\N
+2736	1	460	517	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2737	11	99	517	\N
+2738	1	3	517	\N
 2739	1	449	518	\N
 2740	1	450	518	\N
-2741	12	330	518	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/112
-2742	1	451	518	\N
-2743	1	464	518	\N
-2744	1	334	518	\N
-2745	1	454	518	\N
+2741	1	451	518	\N
+2742	12	330	518	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/112
+2743	1	452	518	\N
+2744	1	465	518	\N
+2745	1	334	518	\N
 2746	1	455	518	\N
 2747	1	456	518	\N
 2748	1	457	518	\N
-2749	12	331	518	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/112
-2750	1	465	518	\N
-2751	1	458	518	\N
+2749	1	458	518	\N
+2750	12	331	518	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/112
+2751	1	466	518	\N
 2752	1	459	518	\N
-2753	12	326	518	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/112
-2754	1	466	518	\N
-2755	1	3	518	\N
-2756	11	467	519	\N
-2757	1	446	519	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2753	1	460	518	\N
+2754	12	326	518	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/112
+2755	1	467	518	\N
+2756	1	3	518	\N
+2757	11	468	519	\N
 2758	1	447	519	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2759	11	3	519	\N
-2760	12	333	520	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/123
-2761	12	335	520	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/123
-2762	12	334	520	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/123
-2763	12	332	520	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/123
-2764	1	454	521	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2765	11	104	521	\N
-2766	1	456	521	\N
-2767	1	3	521	\N
-2768	11	3	521	\N
-2769	1	454	522	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2770	11	468	523	\N
-2771	1	454	523	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2772	11	469	523	\N
-2773	11	3	523	\N
-2774	1	446	524	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2759	1	448	519	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2760	11	3	519	\N
+2761	12	333	520	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/123
+2762	12	335	520	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/123
+2763	12	334	520	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/123
+2764	12	332	520	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/123
+2765	1	455	521	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2766	11	104	521	\N
+2767	1	457	521	\N
+2768	1	3	521	\N
+2769	11	3	521	\N
+2770	1	455	522	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2771	11	469	523	\N
+2772	1	455	523	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2773	11	470	523	\N
+2774	11	3	523	\N
 2775	1	447	524	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2776	1	446	525	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2776	1	448	524	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2777	1	447	525	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2778	1	448	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
+2778	1	448	525	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2779	1	449	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
 2780	1	450	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
 2781	1	451	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
-2782	1	464	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
-2783	12	334	526	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/96
-2784	1	334	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
-2785	1	334	526	\N
-2786	12	336	526	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/96
-2787	1	455	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
+2782	1	452	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
+2783	1	465	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
+2784	12	334	526	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/96
+2785	1	334	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
+2786	1	334	526	\N
+2787	12	336	526	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/96
 2788	1	456	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
-2789	1	456	526	\N
-2790	1	470	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
-2791	1	458	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
+2789	1	457	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
+2790	1	457	526	\N
+2791	1	471	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
 2792	1	459	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
 2793	1	460	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
-2794	12	326	526	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/96
-2795	1	3	526	\N
-2796	12	337	527	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/122
-2797	1	448	528	\N
+2794	1	461	526	http://www.mycancergenome.org/content/disease/melanoma/kit/96
+2795	12	326	526	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/96
+2796	1	3	526	\N
+2797	12	337	527	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/122
 2798	1	449	528	\N
 2799	1	450	528	\N
-2800	11	471	528	\N
-2801	1	451	528	\N
-2802	1	464	528	\N
-2803	1	334	528	\N
-2804	11	472	528	\N
-2805	1	453	528	\N
-2806	1	455	528	\N
-2807	1	473	528	\N
-2808	1	458	528	\N
-2809	11	3	528	\N
-2810	1	474	529	\N
-2811	11	444	530	\N
-2812	11	108	530	\N
-2813	11	102	530	\N
-2814	11	101	530	\N
-2815	11	475	530	\N
-2816	11	100	530	\N
-2817	1	476	530	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2818	1	474	530	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2819	11	99	530	\N
-2820	11	3	530	\N
-2821	1	446	531	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2800	1	451	528	\N
+2801	11	472	528	\N
+2802	1	452	528	\N
+2803	1	465	528	\N
+2804	1	334	528	\N
+2805	11	473	528	\N
+2806	1	454	528	\N
+2807	1	456	528	\N
+2808	1	474	528	\N
+2809	1	459	528	\N
+2810	11	3	528	\N
+2811	1	475	529	\N
+2812	11	445	530	\N
+2813	11	108	530	\N
+2814	11	102	530	\N
+2815	11	101	530	\N
+2816	11	476	530	\N
+2817	11	100	530	\N
+2818	1	477	530	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2819	1	475	530	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2820	11	99	530	\N
+2821	11	3	530	\N
 2822	1	447	531	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2823	1	446	532	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2823	1	448	531	http://www.mycancergenome.org/content/disease/melanoma/kit/132
 2824	1	447	532	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2825	1	477	533	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2826	11	478	534	\N
-2827	11	444	534	\N
-2828	11	108	534	\N
-2829	11	101	534	\N
-2830	11	100	534	\N
-2831	11	99	534	\N
-2832	11	103	534	\N
-2833	11	3	534	\N
-2834	12	332	535	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/121
-2835	1	448	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
+2825	1	448	532	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2826	1	478	533	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2827	11	479	534	\N
+2828	11	445	534	\N
+2829	11	108	534	\N
+2830	11	101	534	\N
+2831	11	100	534	\N
+2832	11	99	534	\N
+2833	11	103	534	\N
+2834	11	3	534	\N
+2835	12	332	535	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/121
 2836	1	449	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
 2837	1	450	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
 2838	1	451	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
-2839	1	479	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
-2840	11	104	536	\N
-2841	11	480	536	\N
-2842	1	458	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
+2839	1	452	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
+2840	1	480	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
+2841	11	104	536	\N
+2842	11	481	536	\N
 2843	1	459	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
-2844	11	3	536	\N
-2845	11	451	537	\N
-2846	11	468	537	\N
-2847	1	481	537	\N
-2848	11	104	537	\N
-2849	2	104	537	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/274
-2850	2	128	537	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/274
-2851	11	3	537	\N
-2852	2	104	538	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/276
-2853	2	128	538	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/276
-2854	47	482	539	\N
+2844	1	460	536	http://www.mycancergenome.org/content/disease/melanoma/kit/84
+2845	11	3	536	\N
+2846	11	452	537	\N
+2847	11	469	537	\N
+2848	1	482	537	\N
+2849	11	104	537	\N
+2850	2	104	537	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/274
+2851	2	128	537	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/274
+2852	11	3	537	\N
+2853	2	104	538	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/276
+2854	2	128	538	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/276
 2855	47	483	539	\N
-2856	11	101	539	\N
-2857	47	484	539	\N
-2858	2	158	539	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/275
-2859	11	104	539	\N
-2860	2	104	539	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/275
-2861	11	100	539	\N
-2862	2	121	539	\N
-2863	11	99	539	\N
-2864	2	128	539	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/275
-2865	2	157	539	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/275
-2866	47	3	539	\N
-2867	1	448	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
+2856	47	484	539	\N
+2857	11	101	539	\N
+2858	47	485	539	\N
+2859	2	158	539	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/275
+2860	11	104	539	\N
+2861	2	104	539	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/275
+2862	11	100	539	\N
+2863	2	121	539	\N
+2864	11	99	539	\N
+2865	2	128	539	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/275
+2866	2	157	539	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/kit/275
+2867	47	3	539	\N
 2868	1	449	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
 2869	1	450	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
 2870	1	451	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
-2871	1	479	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
-2872	1	458	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
+2871	1	452	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
+2872	1	480	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
 2873	1	459	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
-2874	1	485	541	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2875	1	458	541	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2876	1	486	541	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2877	48	324	542	\N
-2878	12	339	543	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/120
-2879	12	338	543	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/120
-2880	12	326	543	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/120
-2881	11	101	544	\N
-2882	1	465	544	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2883	11	100	544	\N
-2884	11	99	544	\N
-2885	11	444	545	\N
-2886	11	339	545	\N
-2887	1	458	545	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2888	1	474	545	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2889	2	159	545	\N
-2890	11	3	545	\N
-2893	1	458	546	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2894	1	474	546	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2895	2	159	546	\N
-2896	11	3	546	\N
-2897	11	101	547	\N
-2898	11	100	547	\N
-2899	11	99	547	\N
-2900	1	456	548	\N
-2901	1	395	548	\N
-2902	1	3	548	\N
-2903	11	101	549	\N
-2904	11	100	549	\N
-2905	11	99	549	\N
-2906	1	99	549	http://www.mycancergenome.org/content/disease/melanoma/kit/132
-2907	11	451	550	\N
-2908	11	3	550	\N
-2909	27	10	551	\N
-2910	27	11	551	\N
-2911	28	487	552	\N
-2912	28	3	552	\N
-2913	28	487	553	\N
-2914	28	3	553	\N
-2915	28	3	554	\N
-2916	28	3	555	\N
-2917	28	3	556	\N
-2918	28	3	557	\N
-2919	28	3	558	\N
-2920	28	488	559	\N
-2921	28	3	559	\N
-2922	28	488	560	\N
-2923	28	3	560	\N
-2924	28	3	561	\N
-2925	28	3	562	\N
-2926	5	23	563	\N
-2927	5	22	563	\N
-2928	5	21	563	\N
-2929	5	3	563	\N
-2930	5	24	564	\N
-2931	5	22	564	\N
-2932	31	255	564	\N
-2933	5	25	564	\N
-2934	5	18	564	\N
-2935	5	3	564	\N
-2936	31	3	564	\N
-2937	5	23	565	\N
-2938	5	22	565	\N
-2939	5	26	565	\N
-2940	5	3	565	\N
-2941	28	3	566	\N
-2942	28	3	567	\N
-2943	5	29	568	\N
-2944	5	23	568	\N
-2945	5	22	568	\N
-2946	5	30	568	\N
-2947	5	27	568	\N
-2948	5	28	568	\N
-2949	5	26	568	\N
-2950	5	3	568	\N
-2951	5	29	569	\N
-2952	5	23	569	\N
-2953	5	30	569	\N
-2954	5	27	569	\N
-2955	5	31	569	\N
-2956	5	26	569	\N
-2957	5	3	569	\N
-2958	5	22	570	\N
-2959	5	32	570	\N
-2960	5	33	570	\N
-2961	5	18	570	\N
-2962	5	3	570	\N
-2963	5	23	571	\N
-2964	5	22	571	\N
-2965	5	27	571	\N
-2966	5	26	571	\N
-2967	5	3	571	\N
-2968	5	23	572	\N
-2969	5	22	572	\N
-2970	5	30	572	\N
-2971	5	35	572	\N
-2972	5	27	572	\N
-2973	5	34	572	\N
-2974	5	3	572	\N
-2975	5	29	573	\N
-2976	5	23	573	\N
-2977	5	22	573	\N
-2978	5	30	573	\N
-2979	5	35	573	\N
-2980	5	33	573	\N
-2981	5	25	573	\N
-2982	5	27	573	\N
-2983	5	28	573	\N
-2984	5	18	573	\N
-2985	5	26	573	\N
-2986	5	3	573	\N
-2987	28	3	574	\N
-2988	28	3	575	\N
-2989	28	3	576	\N
-2990	28	3	577	\N
-2991	28	3	578	\N
-2992	28	3	579	\N
-2993	28	3	580	\N
-2994	25	350	581	\N
-2995	28	3	582	\N
-2996	28	3	583	\N
-2997	2	133	584	\N
-2998	2	133	585	\N
-2999	2	133	586	\N
-3000	2	133	587	\N
-3001	10	341	588	\N
-3002	10	341	589	\N
-3003	10	341	590	\N
-3004	31	262	591	\N
-3005	8	489	592	\N
+2874	1	460	540	http://www.mycancergenome.org/content/disease/melanoma/kit/84
+2875	1	486	541	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2876	1	459	541	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2877	1	487	541	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2878	48	324	542	\N
+2879	12	339	543	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/120
+2880	12	338	543	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/120
+2881	12	326	543	http://www.mycancergenome.org/content/disease/thymic-carcinoma/kit/120
+2882	11	101	544	\N
+2883	1	466	544	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2884	11	100	544	\N
+2885	11	99	544	\N
+2886	11	445	545	\N
+2887	11	339	545	\N
+2888	1	459	545	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2889	1	475	545	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2890	2	159	545	\N
+2891	11	3	545	\N
+2892	11	445	546	\N
+2893	11	339	546	\N
+2894	1	459	546	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2895	1	475	546	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2896	2	159	546	\N
+2897	11	3	546	\N
+2898	11	101	547	\N
+2899	11	100	547	\N
+2900	11	99	547	\N
+2901	1	457	548	\N
+2902	1	390	548	\N
+2903	1	3	548	\N
+2904	11	101	549	\N
+2905	11	100	549	\N
+2906	11	99	549	\N
+2907	1	99	549	http://www.mycancergenome.org/content/disease/melanoma/kit/132
+2908	11	452	550	\N
+2909	11	3	550	\N
+2910	27	10	551	\N
+2911	27	11	551	\N
+2912	28	488	552	\N
+2913	28	3	552	\N
+2914	28	488	553	\N
+2915	28	3	553	\N
+2916	28	3	554	\N
+2917	28	3	555	\N
+2918	28	3	556	\N
+2919	28	3	557	\N
+2920	28	3	558	\N
+2921	28	489	559	\N
+2922	28	3	559	\N
+2923	28	489	560	\N
+2924	28	3	560	\N
+2925	28	3	561	\N
+2926	28	3	562	\N
+2927	5	23	563	\N
+2928	5	22	563	\N
+2929	5	21	563	\N
+2930	5	3	563	\N
+2931	5	24	564	\N
+2932	5	22	564	\N
+2933	31	255	564	\N
+2934	5	25	564	\N
+2935	5	18	564	\N
+2936	5	3	564	\N
+2937	31	3	564	\N
+2938	5	23	565	\N
+2939	5	22	565	\N
+2940	5	26	565	\N
+2941	5	3	565	\N
+2942	28	3	566	\N
+2943	28	3	567	\N
+2944	5	29	568	\N
+2945	5	23	568	\N
+2946	5	22	568	\N
+2947	5	30	568	\N
+2948	5	27	568	\N
+2949	5	28	568	\N
+2950	5	26	568	\N
+2951	5	3	568	\N
+2952	5	29	569	\N
+2953	5	23	569	\N
+2954	5	30	569	\N
+2955	5	27	569	\N
+2956	5	31	569	\N
+2957	5	26	569	\N
+2958	5	3	569	\N
+2959	5	22	570	\N
+2960	5	32	570	\N
+2961	5	33	570	\N
+2962	5	18	570	\N
+2963	5	3	570	\N
+2964	5	23	571	\N
+2965	5	22	571	\N
+2966	5	27	571	\N
+2967	5	26	571	\N
+2968	5	3	571	\N
+2969	5	23	572	\N
+2970	5	22	572	\N
+2971	5	30	572	\N
+2972	5	35	572	\N
+2973	5	27	572	\N
+2974	5	34	572	\N
+2975	5	3	572	\N
+2976	5	29	573	\N
+2977	5	23	573	\N
+2978	5	22	573	\N
+2979	5	30	573	\N
+2980	5	35	573	\N
+2981	5	33	573	\N
+2982	5	25	573	\N
+2983	5	27	573	\N
+2984	5	28	573	\N
+2985	5	18	573	\N
+2986	5	26	573	\N
+2987	5	3	573	\N
+2988	28	3	574	\N
+2989	28	3	575	\N
+2990	28	3	576	\N
+2991	28	3	577	\N
+2992	28	3	578	\N
+2993	28	3	579	\N
+2994	28	3	580	\N
+2995	25	350	581	\N
+2996	28	3	582	\N
+2997	28	3	583	\N
+2998	2	133	584	\N
+2999	2	133	585	\N
+3000	2	133	586	\N
+3001	2	133	587	\N
+3002	10	341	588	\N
+3003	10	341	589	\N
+3004	10	341	590	\N
+3005	31	262	591	\N
 3006	8	490	592	\N
 3007	8	491	592	\N
-3008	13	490	593	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3009	13	490	594	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3010	13	490	595	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3011	13	489	596	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3008	8	492	592	\N
+3009	13	491	593	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3010	13	491	594	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3011	13	491	595	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
 3012	13	490	596	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3013	13	490	597	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3013	13	491	596	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
 3014	13	491	597	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3015	13	489	598	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3015	13	492	597	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
 3016	13	490	598	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
 3017	13	491	598	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3018	13	490	599	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3018	13	492	598	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
 3019	13	491	599	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3020	13	489	600	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3020	13	492	599	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
 3021	13	490	600	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3022	13	492	600	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3023	13	491	600	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
-3024	1	493	601	\N
-3025	30	494	602	\N
-3026	30	494	603	\N
-3027	30	494	604	\N
-3028	5	61	605	\N
-3029	43	495	606	\N
-3030	30	494	607	\N
-3031	49	343	608	\N
-3032	3	268	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3033	3	269	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3034	3	270	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3035	3	272	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3036	3	273	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3037	3	274	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3040	3	271	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3041	3	275	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3042	3	276	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3043	3	277	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
-3044	3	3	609	\N
-3045	3	268	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3046	3	269	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3047	3	270	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3048	3	272	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3049	3	273	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3050	3	274	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3051	3	498	610	\N
+3022	13	491	600	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3023	13	493	600	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3024	13	492	600	http://www.mycancergenome.org/content/disease/breast-cancer/er/314/
+3025	1	494	601	\N
+3026	30	495	602	\N
+3027	30	495	603	\N
+3028	30	495	604	\N
+3029	5	61	605	\N
+3030	43	496	606	\N
+3031	30	495	607	\N
+3032	49	343	608	\N
+3033	3	268	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3034	3	269	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3035	3	270	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3036	3	272	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3037	3	273	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3038	3	274	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3039	3	497	609	\N
+3040	3	498	609	\N
+3041	3	271	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3042	3	275	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3043	3	276	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3044	3	277	609	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/3
+3045	3	3	609	\N
+3046	3	268	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
+3047	3	269	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
+3048	3	270	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
+3049	3	272	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
+3050	3	273	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
+3051	3	274	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
 3052	3	499	610	\N
-3053	3	271	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3054	3	275	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3055	3	276	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3056	3	277	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
-3057	3	3	610	\N
-3058	20	276	611	\N
-3059	20	277	611	\N
-3060	3	500	611	\N
-3061	3	3	611	\N
-3062	3	501	612	\N
-3063	3	268	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3064	3	269	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3065	3	270	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3066	3	272	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3067	3	273	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3068	3	274	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3069	3	502	612	\N
-3070	3	271	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3071	3	275	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3072	3	276	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3073	3	277	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
-3074	3	503	612	\N
-3075	3	3	612	\N
-3076	3	3	613	\N
-3077	3	504	614	\N
-3078	36	3	614	\N
-3079	3	3	614	\N
-3080	3	505	615	\N
-3081	3	3	615	\N
-3082	3	504	616	\N
-3083	50	3	616	\N
-3084	3	3	616	\N
-3085	3	506	617	\N
-3086	3	3	617	\N
-3087	51	507	618	\N
+3053	3	500	610	\N
+3054	3	271	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
+3055	3	275	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
+3056	3	276	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
+3057	3	277	610	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/2
+3058	3	3	610	\N
+3059	20	276	611	\N
+3060	20	277	611	\N
+3061	3	501	611	\N
+3062	3	3	611	\N
+3063	3	502	612	\N
+3064	3	268	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3065	3	269	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3066	3	270	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3067	3	272	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3068	3	273	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3069	3	274	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3070	3	503	612	\N
+3071	3	271	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3072	3	275	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3073	3	276	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3074	3	277	612	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/1
+3075	3	504	612	\N
+3076	3	3	612	\N
+3077	3	3	613	\N
+3078	3	505	614	\N
+3079	36	3	614	\N
+3080	3	3	614	\N
+3081	3	506	615	\N
+3082	3	3	615	\N
+3083	3	505	616	\N
+3084	50	3	616	\N
+3085	3	3	616	\N
+3086	3	507	617	\N
+3087	3	3	617	\N
 3088	51	508	618	\N
-3089	51	3	618	\N
-3090	3	3	619	\N
-3091	20	276	620	\N
-3092	20	277	620	\N
-3093	31	280	621	\N
-3094	3	509	621	\N
-3095	31	3	621	\N
-3096	3	3	621	\N
-3097	3	3	622	\N
-3098	3	510	623	\N
-3099	43	511	623	\N
-3100	3	3	623	\N
-3101	3	506	624	\N
-3102	3	512	624	\N
-3103	3	3	624	\N
-3104	3	513	625	\N
+3089	51	509	618	\N
+3090	51	3	618	\N
+3091	3	3	619	\N
+3092	20	276	620	\N
+3093	20	277	620	\N
+3094	31	280	621	\N
+3095	3	510	621	\N
+3096	31	3	621	\N
+3097	3	3	621	\N
+3098	3	3	622	\N
+3099	3	511	623	\N
+3100	43	512	623	\N
+3101	3	3	623	\N
+3102	3	507	624	\N
+3103	3	513	624	\N
+3104	3	3	624	\N
 3105	3	514	625	\N
-3106	3	3	625	\N
-3107	52	515	626	\N
-3108	3	516	626	\N
-3109	3	506	626	\N
-3110	20	276	626	\N
-3111	20	277	626	\N
-3112	52	3	626	\N
-3113	3	3	626	\N
-3114	3	517	627	\N
-3115	3	3	627	\N
-3116	3	268	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3117	3	269	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3118	3	270	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3119	3	279	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3120	3	280	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3121	3	285	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3122	3	285	628	\N
-3123	3	278	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3124	3	518	628	\N
-3125	3	284	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3126	3	282	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3127	3	519	628	\N
-3128	3	281	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3129	3	283	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3130	3	520	628	\N
-3131	3	287	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3132	3	286	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3133	3	277	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3134	3	288	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3135	3	289	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
-3136	3	3	628	\N
-3137	53	3	629	\N
-3138	53	3	630	\N
-3139	43	521	631	\N
-3140	3	505	632	\N
-3141	3	522	632	\N
-3142	3	3	632	\N
-3143	3	3	633	\N
-3144	3	3	634	\N
-3145	3	268	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3146	3	269	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3147	3	270	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3148	3	497	635	\N
-3149	3	300	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3150	3	299	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3151	3	505	635	\N
-3152	3	293	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3153	3	294	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3154	3	271	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3155	3	292	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3156	3	275	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3157	3	291	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3158	3	290	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3159	3	298	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3160	3	295	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3161	3	297	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3162	3	276	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3163	3	277	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3164	3	296	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3165	3	301	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
-3166	3	3	635	\N
-3167	3	3	636	\N
-3168	3	268	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
-3169	3	269	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
-3170	3	270	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
-3171	3	271	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
-3172	3	276	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
-3173	3	277	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
-3174	20	276	638	\N
-3175	20	277	638	\N
-3176	20	276	639	\N
-3177	20	277	639	\N
-3178	28	523	640	\N
-3179	28	523	641	\N
-3180	28	523	642	\N
-3181	18	524	643	\N
-3182	18	3	643	\N
-3183	18	249	644	\N
-3184	18	3	644	\N
-3185	18	525	645	\N
+3106	3	515	625	\N
+3107	3	3	625	\N
+3108	52	516	626	\N
+3109	3	517	626	\N
+3110	3	507	626	\N
+3111	20	276	626	\N
+3112	20	277	626	\N
+3113	52	3	626	\N
+3114	3	3	626	\N
+3115	3	518	627	\N
+3116	3	3	627	\N
+3117	3	268	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3118	3	269	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3119	3	270	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3120	3	279	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3121	3	280	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3122	3	285	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3123	3	285	628	\N
+3124	3	278	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3125	3	519	628	\N
+3126	3	284	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3127	3	282	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3128	3	520	628	\N
+3129	3	281	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3130	3	283	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3131	3	521	628	\N
+3132	3	287	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3133	3	286	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3134	3	277	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3135	3	288	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3136	3	289	628	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/4
+3137	3	3	628	\N
+3138	53	3	629	\N
+3139	53	3	630	\N
+3140	43	522	631	\N
+3141	3	506	632	\N
+3142	3	523	632	\N
+3143	3	3	632	\N
+3144	3	3	633	\N
+3145	3	3	634	\N
+3146	3	268	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3147	3	269	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3148	3	270	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3149	3	498	635	\N
+3254	1	3	663	\N
+3150	3	300	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3151	3	299	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3152	3	506	635	\N
+3153	3	293	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3154	3	294	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3155	3	271	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3156	3	292	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3157	3	275	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3158	3	291	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3159	3	290	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3160	3	298	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3161	3	295	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3162	3	297	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3163	3	276	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3164	3	277	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3165	3	296	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3166	3	301	635	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/5
+3167	3	3	635	\N
+3168	3	3	636	\N
+3169	3	268	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
+3170	3	269	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
+3171	3	270	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
+3172	3	271	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
+3173	3	276	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
+3174	3	277	637	http://www.mycancergenome.org/content/disease/lung-cancer/egfr/6
+3175	20	276	638	\N
+3176	20	277	638	\N
+3177	20	276	639	\N
+3178	20	277	639	\N
+3179	28	524	640	\N
+3180	28	524	641	\N
+3181	28	524	642	\N
+3182	18	525	643	\N
+3183	18	3	643	\N
+3184	18	249	644	\N
+3185	18	3	644	\N
 3186	18	526	645	\N
-3187	18	3	645	\N
-3188	18	525	646	\N
-3189	28	523	646	\N
-3190	18	3	646	\N
-3191	28	523	647	\N
-3192	18	250	648	\N
-3193	18	3	648	\N
-3194	28	523	649	\N
-3195	28	523	650	\N
-3196	28	523	651	\N
-3197	14	352	652	http://www.mycancergenome.org/content/disease/basal-cell-carcinoma/smo/163
-3198	15	352	652	http://www.mycancergenome.org/content/disease/medulloblastoma/smo/163
-3199	14	353	652	http://www.mycancergenome.org/content/disease/basal-cell-carcinoma/smo/163
-3200	15	353	652	http://www.mycancergenome.org/content/disease/medulloblastoma/smo/163
-3201	1	3	653	\N
-3202	1	3	654	\N
-3203	1	3	655	\N
-3204	1	3	656	\N
-3205	1	3	657	\N
-3206	1	366	658	\N
-3207	1	41	659	\N
-3208	1	367	659	\N
-3209	1	96	659	\N
-3210	1	97	659	\N
-3211	1	371	659	\N
-3212	1	368	659	\N
-3213	1	369	659	\N
-3214	1	357	659	\N
-3215	1	370	659	\N
-3216	1	372	659	\N
-3217	1	3	659	\N
-3218	1	41	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3219	1	367	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3220	1	376	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3221	1	373	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3222	1	96	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3223	1	97	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3224	1	371	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3225	1	368	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3226	1	51	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3227	1	369	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3228	1	375	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3229	1	370	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3230	1	372	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3231	1	374	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
-3232	1	527	660	\N
-3233	1	3	660	\N
-3234	1	97	661	\N
-3235	54	46	661	\N
-3236	1	528	661	\N
+3187	18	527	645	\N
+3188	18	3	645	\N
+3189	18	526	646	\N
+3190	28	524	646	\N
+3191	18	3	646	\N
+3192	28	524	647	\N
+3193	18	250	648	\N
+3194	18	3	648	\N
+3195	28	524	649	\N
+3196	28	524	650	\N
+3197	28	524	651	\N
+3198	14	352	652	http://www.mycancergenome.org/content/disease/basal-cell-carcinoma/smo/163
+3199	15	352	652	http://www.mycancergenome.org/content/disease/medulloblastoma/smo/163
+3200	14	353	652	http://www.mycancergenome.org/content/disease/basal-cell-carcinoma/smo/163
+3201	15	353	652	http://www.mycancergenome.org/content/disease/medulloblastoma/smo/163
+3202	1	3	653	\N
+3203	1	3	654	\N
+3204	1	3	655	\N
+3205	1	3	656	\N
+3206	1	3	657	\N
+3207	1	366	658	\N
+3208	1	41	659	\N
+3209	1	367	659	\N
+3210	1	96	659	\N
+3211	1	97	659	\N
+3212	1	371	659	\N
+3213	1	368	659	\N
+3214	1	369	659	\N
+3215	1	357	659	\N
+3216	1	370	659	\N
+3217	1	372	659	\N
+3218	1	3	659	\N
+3219	1	41	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3220	1	367	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3221	1	376	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3222	1	373	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3223	1	96	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3224	1	97	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3225	1	371	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3226	1	368	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3227	1	51	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3228	1	369	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3229	1	375	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3230	1	370	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3231	1	372	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3232	1	374	660	http://www.mycancergenome.org/content/disease/melanoma/braf/114
+3233	1	528	660	\N
+3234	1	3	660	\N
+3235	1	97	661	\N
+3236	54	46	661	\N
 3237	1	529	661	\N
 3238	1	530	661	\N
-3239	1	3	661	\N
-3240	54	3	661	\N
-3241	1	41	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3242	1	367	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3243	1	96	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3244	1	97	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3245	1	371	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3246	1	368	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3247	1	51	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3248	1	369	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3249	1	375	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3250	1	370	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3251	1	372	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3252	1	374	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
-3253	1	3	663	\N
-3254	5	41	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3255	11	41	664	http://www.mycancergenome.org/content/disease/gist/braf/54
-3256	7	41	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3239	1	531	661	\N
+3240	1	3	661	\N
+3241	54	3	661	\N
+3242	1	41	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3243	1	367	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3244	1	96	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3245	1	97	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3246	1	371	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3247	1	368	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3248	1	51	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3249	1	369	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3250	1	375	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3251	1	370	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3252	1	372	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3253	1	374	662	http://www.mycancergenome.org/content/disease/melanoma/braf/115
+3255	5	41	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3256	11	41	664	http://www.mycancergenome.org/content/disease/gist/braf/54
 3257	7	41	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3258	1	41	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3259	4	41	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3260	16	41	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3261	16	302	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3262	16	531	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3263	1	367	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3264	4	532	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3265	16	533	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3266	7	356	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3267	16	534	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3268	4	399	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3269	1	378	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3270	5	38	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3271	11	95	664	http://www.mycancergenome.org/content/disease/gist/braf/54
-3272	4	400	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3273	5	40	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3274	4	535	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3275	5	44	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3276	5	49	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3277	1	373	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3278	11	96	664	http://www.mycancergenome.org/content/disease/gist/braf/54
-3279	7	96	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3258	7	41	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3259	1	41	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3260	4	41	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3261	16	41	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3262	16	302	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3263	16	536	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3264	1	367	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3265	4	537	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3266	16	535	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3267	7	356	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3268	16	538	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3269	4	400	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3270	1	378	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3271	5	38	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3272	11	95	664	http://www.mycancergenome.org/content/disease/gist/braf/54
+3273	4	401	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3274	5	40	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3275	4	539	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3276	5	44	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3277	5	49	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3278	1	373	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3279	11	96	664	http://www.mycancergenome.org/content/disease/gist/braf/54
 3280	7	96	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3281	1	96	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3282	4	96	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3283	5	43	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3284	5	39	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3285	1	380	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3286	5	42	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3287	5	45	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3288	16	536	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3289	11	97	664	http://www.mycancergenome.org/content/disease/gist/braf/54
-3290	7	97	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3281	7	96	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3282	1	96	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3283	4	96	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3284	5	43	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3285	5	39	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3286	1	380	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3287	5	42	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3288	5	45	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3289	16	540	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3290	11	97	664	http://www.mycancergenome.org/content/disease/gist/braf/54
 3291	7	97	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3292	1	97	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3293	1	97	664	\N
-3294	7	354	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3292	7	97	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3293	1	97	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3294	1	97	664	\N
 3295	7	354	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3296	7	355	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3296	7	354	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
 3297	7	355	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3298	30	537	664	\N
-3299	1	371	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3300	5	48	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3301	4	538	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3302	5	46	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3303	54	46	664	\N
-3304	1	381	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3305	1	368	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3306	1	379	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3307	5	47	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3308	1	377	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3309	30	539	664	\N
-3310	5	51	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3311	11	51	664	http://www.mycancergenome.org/content/disease/gist/braf/54
-3312	7	51	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3298	7	355	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3299	30	541	664	\N
+3300	1	371	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3301	5	48	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3302	4	532	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3303	5	46	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3304	54	46	664	\N
+3305	1	381	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3306	1	368	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3307	1	379	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3308	5	47	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3309	1	377	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3310	30	542	664	\N
+3311	5	51	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3312	11	51	664	http://www.mycancergenome.org/content/disease/gist/braf/54
 3313	7	51	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3314	1	51	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3315	4	51	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3316	16	51	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3317	16	540	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3318	1	369	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3319	1	375	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3320	16	541	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3321	16	260	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3322	1	370	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3323	1	372	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3324	1	382	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3325	1	374	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3326	1	528	664	\N
-3327	5	52	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3328	5	50	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3329	4	402	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3330	11	98	664	http://www.mycancergenome.org/content/disease/gist/braf/54
-3331	4	542	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
-3332	16	543	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3333	5	53	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3334	46	544	664	\N
-3335	1	383	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
-3336	16	545	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
-3337	1	529	664	\N
-3338	5	54	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3339	5	55	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
-3340	1	530	664	\N
-3341	1	3	664	\N
-3342	54	3	664	\N
-3343	1	41	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3344	1	367	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3345	1	376	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3346	1	96	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3347	1	97	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3348	1	371	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3349	1	368	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3350	1	51	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3351	1	369	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3352	1	375	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3353	1	370	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3354	1	372	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3355	1	374	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3356	1	384	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3357	1	366	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
-3358	1	527	665	\N
-3359	1	3	665	\N
-3360	1	41	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3361	1	367	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3362	1	373	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3363	1	373	666	\N
-3364	1	96	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3365	1	97	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3366	1	371	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3367	1	368	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3368	1	377	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3369	1	51	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3370	1	369	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3371	1	375	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3372	1	370	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3373	1	372	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3374	1	529	666	\N
+3314	7	51	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
+3315	1	51	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3316	4	51	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3317	16	51	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3318	16	543	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3319	1	369	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3320	1	375	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3321	16	534	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3322	16	260	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3323	1	370	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3324	1	372	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3325	1	382	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3326	1	374	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3327	1	529	664	\N
+3328	5	52	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3329	5	50	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3330	4	403	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3331	11	98	664	http://www.mycancergenome.org/content/disease/gist/braf/54
+3332	4	544	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
+3333	16	533	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3334	5	53	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3335	46	545	664	\N
+3336	1	383	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
+3337	16	546	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
+3338	1	530	664	\N
+3339	5	54	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3340	5	55	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
+3341	1	531	664	\N
+3342	1	3	664	\N
+3343	54	3	664	\N
+3344	1	41	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3345	1	367	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3346	1	376	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3347	1	96	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3348	1	97	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3349	1	371	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3350	1	368	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3351	1	51	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3352	1	369	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3353	1	375	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3354	1	370	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3355	1	372	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3356	1	374	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3357	1	384	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3358	1	366	665	http://www.mycancergenome.org/content/disease/melanoma/braf/118
+3359	1	528	665	\N
+3360	1	3	665	\N
+3361	1	41	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3362	1	367	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3363	1	373	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3364	1	373	666	\N
+3365	1	96	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3366	1	97	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3367	1	371	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3368	1	368	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3369	1	377	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3370	1	51	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3371	1	369	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3372	1	375	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3373	1	370	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3374	1	372	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
 3375	1	530	666	\N
-3376	1	3	666	\N
-3377	1	493	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
-3378	1	378	667	\N
-3379	1	546	667	\N
-3380	1	395	667	\N
-3381	1	3	667	\N
-3382	1	395	668	\N
-3383	1	3	668	\N
-3384	1	41	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
-3385	1	302	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
-3386	1	531	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
-3387	1	533	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
-3388	1	534	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
-3389	1	536	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
+3376	1	531	666	\N
+3377	1	3	666	\N
+3378	1	494	666	http://www.mycancergenome.org/content/disease/melanoma/braf/116
+3379	1	378	667	\N
+3380	1	547	667	\N
+3381	1	390	667	\N
+3382	1	3	667	\N
+3383	1	390	668	\N
+3384	1	3	668	\N
+3385	1	41	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
+3386	1	302	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
+3387	1	536	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
+3388	1	535	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
+3389	1	538	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
 3390	1	540	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
-3391	1	541	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
-3392	1	528	669	\N
-3393	1	543	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
-3394	1	545	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
-3395	1	3	669	\N
-3396	1	3	670	\N
-3397	7	41	671	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/138
-3398	1	41	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3399	1	302	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3400	1	531	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3401	1	533	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3402	1	534	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3403	1	536	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3404	7	354	671	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/138
-3405	7	355	671	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/138
-3406	1	540	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3407	7	357	671	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/138
-3408	1	357	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3409	1	357	671	\N
-3410	1	370	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3411	1	547	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3412	1	547	671	\N
-3413	1	545	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
-3414	1	3	671	\N
-3415	1	548	672	\N
-3416	1	41	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3417	1	302	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3418	1	531	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3419	1	533	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3420	1	534	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3421	1	536	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3391	1	543	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
+3392	1	534	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
+3393	1	529	669	\N
+3394	1	533	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
+3395	1	546	669	http://www.mycancergenome.org/content/disease/melanoma/braf/117
+3396	1	3	669	\N
+3397	1	3	670	\N
+3398	7	41	671	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/138
+3399	1	41	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3400	1	302	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3401	1	536	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3402	1	535	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3403	1	538	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3404	1	540	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3405	7	354	671	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/138
+3406	7	355	671	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/138
+3407	1	543	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3408	7	357	671	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/138
+3409	1	357	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3410	1	357	671	\N
+3411	1	370	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3412	1	548	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3413	1	548	671	\N
+3414	1	546	671	http://www.mycancergenome.org/content/disease/melanoma/braf/138
+3415	1	3	671	\N
+3416	1	549	672	\N
+3417	1	41	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3418	1	302	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3419	1	536	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3420	1	535	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3421	1	538	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
 3422	1	540	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3423	1	357	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3424	1	357	672	\N
-3425	1	370	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3426	1	547	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3427	1	545	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
-3428	1	3	672	\N
-3429	1	41	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3430	1	302	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3431	1	531	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3432	1	533	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3433	1	534	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3434	1	536	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3423	1	543	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3424	1	357	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3425	1	357	672	\N
+3426	1	370	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3427	1	548	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3428	1	546	672	http://www.mycancergenome.org/content/disease/melanoma/braf/188
+3429	1	3	672	\N
+3430	1	41	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3431	1	302	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3432	1	536	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3433	1	535	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3434	1	538	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
 3435	1	540	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3436	1	357	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3437	1	357	673	\N
-3438	1	370	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3439	1	547	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3440	1	545	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
-3441	1	3	673	\N
-3442	1	41	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3443	16	41	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
-3444	1	302	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3445	16	302	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
-3446	1	531	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3447	16	531	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
-3448	1	533	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3449	16	533	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
-3450	1	534	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3451	16	534	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
-3452	1	536	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3453	16	536	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
-3454	1	540	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3455	16	540	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
-3456	1	357	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3457	16	357	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
-3458	1	370	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3459	1	547	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3460	1	545	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
-3461	16	545	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
-3462	1	3	674	\N
-3463	5	41	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
-3464	5	38	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
-3465	5	40	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
-3466	5	39	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
-3467	5	48	675	\N
-3468	5	56	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
-3469	1	3	675	\N
-3470	5	3	675	\N
-3471	1	395	676	\N
-3472	1	3	676	\N
-3473	1	3	677	\N
-3474	1	3	678	\N
-3475	1	395	679	\N
-3476	1	3	679	\N
-3477	1	41	680	http://www.mycancergenome.org/content/disease/melanoma/braf/302
-3478	1	367	680	http://www.mycancergenome.org/content/disease/melanoma/braf/302
-3479	1	41	681	http://www.mycancergenome.org/content/disease/melanoma/braf/301
-3480	1	367	681	http://www.mycancergenome.org/content/disease/melanoma/braf/301
-3481	1	549	681	\N
-3482	1	3	681	\N
-3483	5	41	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
-3484	1	41	682	http://www.mycancergenome.org/content/disease/melanoma/braf/149
-3485	5	59	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
-3486	5	57	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
-3487	1	367	682	http://www.mycancergenome.org/content/disease/melanoma/braf/149
-3488	5	58	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
-3489	5	38	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
-3490	5	40	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
-3491	5	39	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
-3492	5	56	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
-3493	1	3	682	\N
-3494	5	41	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
-3495	1	41	683	http://www.mycancergenome.org/content/disease/melanoma/braf/148
-3496	1	367	683	http://www.mycancergenome.org/content/disease/melanoma/braf/148
-3497	1	550	683	http://www.mycancergenome.org/content/disease/melanoma/braf/148
-3498	1	550	683	\N
-3499	5	38	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
-3500	5	40	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
-3501	5	49	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
-3502	5	49	683	\N
-3876	21	183	769	\N
-3503	5	39	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
-3504	5	56	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
-3505	1	3	683	\N
-3506	5	3	683	\N
-3507	1	551	684	\N
-3508	1	41	685	http://www.mycancergenome.org/content/disease/melanoma/braf/300
-3509	1	367	685	http://www.mycancergenome.org/content/disease/melanoma/braf/300
-3510	1	41	686	http://www.mycancergenome.org/content/disease/melanoma/braf/298
-3511	1	367	686	http://www.mycancergenome.org/content/disease/melanoma/braf/298
-3512	1	41	687	http://www.mycancergenome.org/content/disease/melanoma/braf/299
-3513	1	367	687	http://www.mycancergenome.org/content/disease/melanoma/braf/299
-3514	1	552	687	http://www.mycancergenome.org/content/disease/melanoma/braf/299
-3515	28	3	688	\N
-3516	1	553	689	\N
-3517	1	3	689	\N
-3518	28	3	690	\N
-3519	28	3	691	\N
-3520	28	3	692	\N
-3521	1	389	693	\N
-3522	1	554	693	\N
-3523	1	3	693	\N
-3524	21	555	694	\N
-3525	21	3	694	\N
-3526	1	3	694	\N
-3527	16	41	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
-3528	16	302	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
-3529	16	531	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
-3530	16	533	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
-3531	16	534	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
-3532	16	536	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
+3436	1	543	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3437	1	357	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3438	1	357	673	\N
+3439	1	370	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3440	1	548	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3441	1	546	673	http://www.mycancergenome.org/content/disease/melanoma/braf/189
+3442	1	3	673	\N
+3443	1	41	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3444	16	41	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
+3445	1	302	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3446	16	302	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
+3447	1	536	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3448	16	536	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
+3449	1	535	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3450	16	535	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
+3451	1	538	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3452	16	538	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
+3453	1	540	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3454	16	540	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
+3455	1	543	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3456	16	543	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
+3457	1	357	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3458	16	357	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
+3459	1	370	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3460	1	548	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3461	1	546	674	http://www.mycancergenome.org/content/disease/melanoma/braf/73
+3462	16	546	674	http://www.mycancergenome.org/content/disease/lung-cancer/braf/73
+3463	1	3	674	\N
+3464	5	41	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
+3465	5	38	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
+3466	5	40	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
+3467	5	39	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
+3468	5	48	675	\N
+3469	5	56	675	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/150
+3470	1	3	675	\N
+3471	5	3	675	\N
+3472	1	390	676	\N
+3473	1	3	676	\N
+3474	1	3	677	\N
+3475	1	3	678	\N
+3476	1	390	679	\N
+3477	1	3	679	\N
+3478	1	41	680	http://www.mycancergenome.org/content/disease/melanoma/braf/302
+3479	1	367	680	http://www.mycancergenome.org/content/disease/melanoma/braf/302
+3480	1	41	681	http://www.mycancergenome.org/content/disease/melanoma/braf/301
+3481	1	367	681	http://www.mycancergenome.org/content/disease/melanoma/braf/301
+3482	1	550	681	\N
+3483	1	3	681	\N
+3484	5	41	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
+3485	1	41	682	http://www.mycancergenome.org/content/disease/melanoma/braf/149
+3486	5	59	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
+3487	5	57	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
+3488	1	367	682	http://www.mycancergenome.org/content/disease/melanoma/braf/149
+3489	5	58	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
+3490	5	38	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
+3491	5	40	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
+3492	5	39	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
+3493	5	56	682	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/149
+3494	1	3	682	\N
+3495	5	41	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
+3496	1	41	683	http://www.mycancergenome.org/content/disease/melanoma/braf/148
+3497	1	367	683	http://www.mycancergenome.org/content/disease/melanoma/braf/148
+3498	1	551	683	http://www.mycancergenome.org/content/disease/melanoma/braf/148
+3499	1	551	683	\N
+3500	5	38	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
+3501	5	40	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
+3502	5	49	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
+3503	5	49	683	\N
+3504	5	39	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
+3505	5	56	683	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/148
+3506	1	3	683	\N
+3507	5	3	683	\N
+3508	1	552	684	\N
+3509	1	41	685	http://www.mycancergenome.org/content/disease/melanoma/braf/300
+3510	1	367	685	http://www.mycancergenome.org/content/disease/melanoma/braf/300
+3511	1	41	686	http://www.mycancergenome.org/content/disease/melanoma/braf/298
+3512	1	367	686	http://www.mycancergenome.org/content/disease/melanoma/braf/298
+3513	1	41	687	http://www.mycancergenome.org/content/disease/melanoma/braf/299
+3514	1	367	687	http://www.mycancergenome.org/content/disease/melanoma/braf/299
+3515	1	553	687	http://www.mycancergenome.org/content/disease/melanoma/braf/299
+3516	28	3	688	\N
+3517	1	554	689	\N
+3518	1	3	689	\N
+3519	28	3	690	\N
+3520	28	3	691	\N
+3521	28	3	692	\N
+3522	1	393	693	\N
+3523	1	555	693	\N
+3524	1	3	693	\N
+3525	21	556	694	\N
+3526	21	3	694	\N
+3527	1	3	694	\N
+3528	16	41	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
+3529	16	302	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
+3530	16	536	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
+3531	16	535	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
+3532	16	538	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
 3533	16	540	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
-3534	16	545	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
-3535	1	3	696	\N
-3536	5	41	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
-3537	5	60	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
-3538	5	38	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
-3539	5	40	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
-3540	5	39	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
-3541	5	56	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
-3542	28	3	697	\N
-3543	5	41	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
-3544	16	41	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
-3545	16	302	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
-3546	16	531	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
-3547	5	60	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
-3548	16	533	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
-3549	16	534	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
-3550	5	38	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
-3551	5	40	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
-3552	5	39	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
-3553	16	536	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
-3554	5	56	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
-3555	16	540	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
-3556	31	260	698	\N
+3534	16	543	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
+3535	16	546	695	http://www.mycancergenome.org/content/disease/lung-cancer/braf/209
+3536	1	3	696	\N
+3537	5	41	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
+3538	5	60	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
+3539	5	38	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
+3540	5	40	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
+3541	5	39	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
+3542	5	56	697	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/147
+3543	28	3	697	\N
+3544	5	41	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
+3545	16	41	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
+3546	16	302	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
+3547	16	536	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
+3548	5	60	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
+3549	16	535	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
+3550	16	538	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
+3551	5	38	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
+3552	5	40	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
+3553	5	39	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
+3554	16	540	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
+3555	5	56	698	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/71
+3556	16	543	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
 3557	31	260	698	\N
-3558	16	545	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
-3559	31	3	698	\N
-3560	5	41	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
-3561	5	60	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
-3562	1	550	699	\N
-3563	1	550	699	\N
-3564	5	38	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
-3565	5	40	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
-3566	5	39	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
-3567	5	56	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
-3568	1	3	699	\N
-3569	16	41	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
-3570	16	302	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
-3571	16	531	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
-3572	16	533	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
-3573	16	534	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
-3574	16	536	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
+3558	31	260	698	\N
+3559	16	546	698	http://www.mycancergenome.org/content/disease/lung-cancer/braf/71
+3560	31	3	698	\N
+3561	5	41	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
+3562	5	60	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
+3563	1	551	699	\N
+3564	1	551	699	\N
+3565	5	38	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
+3566	5	40	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
+3567	5	39	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
+3568	5	56	699	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/146
+3569	1	3	699	\N
+3570	16	41	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
+3571	16	302	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
+3572	16	536	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
+3573	16	535	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
+3574	16	538	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
 3575	16	540	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
-3576	16	545	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
-3577	16	556	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
-3578	1	557	701	\N
-3579	1	3	701	\N
-3580	1	3	702	\N
-3581	1	3	703	\N
-3582	5	41	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
-3583	16	41	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
-3584	16	302	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
-3585	16	531	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
-3586	5	60	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
-3587	16	533	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
-3588	16	534	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
-3877	21	239	769	\N
-3589	5	38	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
-3590	5	40	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
-3591	5	39	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
-3592	16	536	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
-3593	5	56	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
-3594	16	540	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
-3595	3	540	704	\N
-3596	16	545	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
-3597	3	3	704	\N
-3598	1	3	705	\N
-3599	1	558	706	\N
-3600	1	3	706	\N
-3601	7	3	707	\N
-3602	8	41	708	\N
-3603	8	559	708	\N
-3604	8	3	708	\N
-3605	55	306	709	\N
-3606	55	3	709	\N
-3607	1	403	710	\N
-3608	1	3	710	\N
-3609	1	306	711	\N
-3610	1	3	711	\N
-3611	35	560	712	\N
-3612	35	560	713	\N
+3576	16	543	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
+3577	16	546	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
+3578	16	557	700	http://www.mycancergenome.org/content/disease/lung-cancer/braf/310
+3579	1	558	701	\N
+3580	1	3	701	\N
+3581	1	3	702	\N
+3582	1	3	703	\N
+3583	5	41	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
+3584	16	41	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
+3585	16	302	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
+3586	16	536	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
+3587	5	60	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
+3588	16	535	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
+3589	16	538	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
+3590	5	38	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
+3591	5	40	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
+3592	5	39	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
+3593	16	540	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
+3594	5	56	704	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/70
+3595	16	543	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
+3596	3	543	704	\N
+3597	16	546	704	http://www.mycancergenome.org/content/disease/lung-cancer/braf/70
+3598	3	3	704	\N
+3599	1	3	705	\N
+3600	1	559	706	\N
+3601	1	3	706	\N
+3602	7	3	707	\N
+3603	8	41	708	\N
+3604	8	560	708	\N
+3605	8	3	708	\N
+3606	55	306	709	\N
+3607	55	3	709	\N
+3608	1	404	710	\N
+3609	1	3	710	\N
+3610	1	306	711	\N
+3611	1	3	711	\N
+3612	35	561	712	\N
 3613	35	561	713	\N
-3614	35	560	714	\N
-3615	35	560	715	\N
-3616	35	560	716	\N
-3617	28	3	717	\N
-3618	28	3	718	\N
-3619	28	3	719	\N
-3620	28	3	720	\N
-3621	28	3	721	\N
-3622	28	3	722	\N
-3623	28	3	723	\N
-3624	28	3	724	\N
-3625	24	562	725	\N
-3626	2	154	725	\N
-3627	2	155	725	\N
-3628	2	153	725	\N
-3629	2	152	725	\N
-3630	2	151	725	\N
-3631	2	156	725	\N
-3632	2	150	725	\N
-3633	2	149	725	\N
-3634	2	148	725	\N
-3635	2	147	725	\N
-3636	2	146	725	\N
-3637	24	246	725	\N
-3638	24	3	725	\N
-3639	27	17	726	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/200
-3640	27	13	726	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/200
-3641	27	16	726	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/200
-3642	27	11	726	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/200
-3643	27	17	727	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/203
-3644	27	13	727	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/203
-3645	27	16	727	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/203
-3646	27	11	727	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/203
-3647	27	17	728	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/202
-3648	27	13	728	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/202
-3649	27	16	728	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/202
-3650	27	11	728	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/202
-3651	27	17	729	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/201
-3652	27	13	729	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/201
-3653	27	16	729	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/201
-3654	27	11	729	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/201
-3655	1	3	730	\N
-3656	28	3	731	\N
-3657	28	3	732	\N
-3658	28	3	733	\N
-3659	28	3	734	\N
-3660	28	3	735	\N
-3661	28	3	736	\N
-3662	1	563	737	\N
-3663	1	3	737	\N
-3664	28	3	738	\N
-3665	28	3	739	\N
-3666	28	3	740	\N
-3667	1	564	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
+3614	35	562	713	\N
+3615	35	561	714	\N
+3616	35	561	715	\N
+3617	35	561	716	\N
+3618	28	3	717	\N
+3619	28	3	718	\N
+3620	28	3	719	\N
+3621	28	3	720	\N
+3622	28	3	721	\N
+3623	28	3	722	\N
+3624	28	3	723	\N
+3625	28	3	724	\N
+3626	24	563	725	\N
+3627	2	154	725	\N
+3628	2	155	725	\N
+3629	2	153	725	\N
+3630	2	152	725	\N
+3631	2	151	725	\N
+3632	2	156	725	\N
+3633	2	150	725	\N
+3634	2	149	725	\N
+3635	2	148	725	\N
+3636	2	147	725	\N
+3637	2	146	725	\N
+3638	24	246	725	\N
+3639	24	3	725	\N
+3640	27	17	726	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/200
+3641	27	13	726	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/200
+3642	27	16	726	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/200
+3643	27	11	726	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/200
+3644	27	17	727	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/203
+3645	27	13	727	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/203
+3646	27	16	727	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/203
+3647	27	11	727	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/203
+3648	27	17	728	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/202
+3649	27	13	728	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/202
+3650	27	16	728	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/202
+3651	27	11	728	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/202
+3652	27	17	729	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/201
+3653	27	13	729	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/201
+3654	27	16	729	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/201
+3655	27	11	729	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/jak2/201
+3656	1	3	730	\N
+3657	28	3	731	\N
+3658	28	3	732	\N
+3659	28	3	733	\N
+3660	28	3	734	\N
+3661	28	3	735	\N
+3662	28	3	736	\N
+3663	1	564	737	\N
+3664	1	3	737	\N
+3665	28	3	738	\N
+3666	28	3	739	\N
+3667	28	3	740	\N
 3668	1	565	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
-3669	1	566	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
-3670	1	567	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
-3671	1	568	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
-3672	1	569	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
-3673	1	570	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
-3674	1	571	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
-3675	56	571	741	\N
-3676	1	572	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
-3677	56	3	741	\N
-3678	1	564	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
+3669	1	568	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
+3670	1	569	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
+3671	1	570	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
+3672	1	571	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
+3673	1	572	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
+3674	1	567	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
+3675	1	566	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
+3676	56	566	741	\N
+3677	1	573	741	http://www.mycancergenome.org/content/disease/melanoma/gnaq/100
+3678	56	3	741	\N
 3679	1	565	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
-3680	1	566	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
-3681	1	567	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
-3682	1	568	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
-3683	1	569	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
-3684	1	570	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
-3685	1	571	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
-3686	1	572	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
-3687	1	564	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
+3680	1	568	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
+3681	1	569	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
+3682	1	570	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
+3683	1	571	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
+3684	1	572	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
+3685	1	567	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
+3686	1	566	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
+3687	1	573	742	http://www.mycancergenome.org/content/disease/melanoma/gnaq/103
 3688	1	565	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
-3689	1	566	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
-3690	1	567	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
-3691	1	568	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
-3692	1	569	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
-3693	1	570	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
-3694	1	571	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
-3695	56	571	743	\N
-3696	1	572	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
-3697	56	3	743	\N
-3698	56	3	744	\N
-3699	21	210	745	\N
-3700	27	493	745	\N
-3701	27	493	746	\N
-3702	21	190	747	\N
-3703	21	189	747	\N
-3704	21	188	747	\N
-3705	21	187	747	\N
-3706	21	186	747	\N
-3707	21	185	747	\N
-3708	21	184	747	\N
-3709	21	183	747	\N
-3710	21	3	747	\N
-3711	21	188	748	\N
-3712	21	191	748	\N
-3713	21	193	748	\N
-3714	21	186	748	\N
-3715	21	192	748	\N
-3716	21	3	748	\N
-3717	21	195	749	\N
-3718	21	188	749	\N
-3719	21	186	749	\N
-3720	21	194	749	\N
-3721	21	184	749	\N
-3722	21	196	749	\N
-3723	21	183	749	\N
-3724	21	3	749	\N
-3725	21	190	750	\N
-3726	21	188	750	\N
-3727	21	197	750	\N
-3728	21	186	750	\N
-3729	21	198	750	\N
-3730	21	3	750	\N
-3731	21	188	751	\N
-3732	21	197	751	\N
-3733	21	3	751	\N
-3734	27	2	752	\N
-3735	21	195	752	\N
-3736	21	190	752	\N
-3737	21	203	752	\N
-3738	21	202	752	\N
-3739	21	197	752	\N
-3740	21	201	752	\N
-3741	27	1	752	\N
-3742	21	200	752	\N
-3743	21	199	752	\N
-3744	21	186	752	\N
-3745	21	205	752	\N
-3746	21	194	752	\N
-3747	21	210	752	\N
-3748	21	184	752	\N
-3749	21	183	752	\N
-3750	21	204	752	\N
-3751	27	3	752	\N
-3752	21	3	752	\N
-3753	27	493	752	\N
-3754	21	190	753	\N
-3755	21	188	753	\N
-3756	21	186	753	\N
-3757	21	3	753	\N
-3758	21	211	754	\N
-3759	21	212	754	\N
-3760	21	2	754	\N
-3761	21	4	754	\N
-3762	21	195	754	\N
-3763	21	190	754	\N
-3764	21	188	754	\N
-3765	21	202	754	\N
-3766	21	209	754	\N
-3767	21	214	754	\N
-3768	21	213	754	\N
-3769	21	210	754	\N
-3770	21	206	754	\N
-3771	21	208	754	\N
-3772	21	183	754	\N
-3773	21	207	754	\N
-3774	21	3	754	\N
-3775	21	215	755	\N
-3776	21	2	755	\N
-3777	21	190	755	\N
-3778	21	188	755	\N
-3779	21	202	755	\N
-3780	21	217	755	\N
-3781	21	216	755	\N
-3782	21	183	755	\N
-3783	21	207	755	\N
-3784	21	3	755	\N
-3785	21	202	756	\N
-3786	21	218	756	\N
-3787	21	184	756	\N
-3788	21	204	756	\N
-3789	21	3	756	\N
-3790	21	210	757	\N
-3791	27	493	757	\N
-3792	21	210	758	\N
-3793	27	493	758	\N
-3794	21	211	759	\N
-3795	21	2	759	\N
-3796	27	4	759	\N
-3797	21	195	759	\N
-3798	21	225	759	\N
-3799	21	190	759	\N
-3800	21	188	759	\N
-3801	21	202	759	\N
-3802	21	186	759	\N
-3803	21	223	759	\N
-3804	21	224	759	\N
-3805	21	210	759	\N
-3806	21	222	759	\N
-3807	21	226	759	\N
-3808	21	184	759	\N
-3809	21	221	759	\N
-3810	27	5	759	\N
-3811	21	196	759	\N
-3812	21	220	759	\N
-3813	21	219	759	\N
-3814	21	183	759	\N
-3815	21	207	759	\N
-3816	27	3	759	\N
-3817	21	3	759	\N
-3818	21	210	760	\N
-3819	27	493	760	\N
-3820	21	210	761	\N
-3821	27	493	761	\N
-3822	21	210	762	\N
-3823	27	493	762	\N
-3824	21	188	763	\N
-3825	21	228	763	\N
-3826	21	229	763	\N
-3827	21	186	763	\N
-3828	21	227	763	\N
-3829	21	210	763	\N
-3830	21	184	763	\N
-3831	21	3	763	\N
-3832	27	493	763	\N
-3833	21	195	764	\N
-3834	21	188	764	\N
-3835	21	186	764	\N
-3836	21	227	764	\N
-3837	21	210	764	\N
-3838	21	230	764	\N
-3839	21	183	764	\N
-3840	21	3	764	\N
-3841	27	493	764	\N
-3842	21	195	765	\N
-3843	21	225	765	\N
-3844	21	190	765	\N
-3845	21	188	765	\N
-3846	21	235	765	\N
-3847	21	202	765	\N
-3848	21	201	765	\N
-3849	21	236	765	\N
-3850	21	232	765	\N
-3851	21	231	765	\N
-3852	21	234	765	\N
-3853	21	233	765	\N
-3854	21	220	765	\N
-3855	21	183	765	\N
-3856	21	3	765	\N
-3857	21	190	766	\N
-3858	21	188	766	\N
-3859	21	235	766	\N
-3860	21	238	766	\N
-3861	21	237	766	\N
-3862	21	183	766	\N
-3863	21	204	766	\N
-3864	21	3	766	\N
-3865	21	210	767	\N
-3866	27	493	767	\N
-3867	21	210	768	\N
-3868	27	493	768	\N
-3869	21	188	769	\N
-3870	21	202	769	\N
-3871	21	231	769	\N
-3872	21	186	769	\N
-3873	21	210	769	\N
-3874	21	184	769	\N
-3875	21	240	769	\N
-3878	21	3	769	\N
-3879	21	210	770	\N
-3880	27	493	770	\N
-3881	21	190	771	\N
-3882	21	188	771	\N
-3883	21	202	771	\N
-3884	21	241	771	\N
-3885	21	227	771	\N
-3886	21	183	771	\N
-3887	21	3	771	\N
-3888	57	3	772	\N
-3889	57	3	773	\N
-3890	57	3	774	\N
-3891	57	573	775	\N
-3892	57	3	775	\N
-3893	28	3	776	\N
-3894	4	574	777	\N
-3895	57	575	777	\N
-3896	4	576	777	\N
-3897	4	577	777	\N
-3898	4	578	777	\N
-3899	57	3	777	\N
-3900	28	3	778	\N
-3901	57	573	779	\N
-3902	57	3	779	\N
-3903	57	3	780	\N
-3904	4	579	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
-3905	57	580	781	\N
-3906	4	532	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
-3907	4	399	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
-3908	4	574	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
-3909	4	535	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
-3910	4	581	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
+3689	1	568	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
+3690	1	569	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
+3691	1	570	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
+3692	1	571	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
+3693	1	572	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
+3694	1	567	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
+3695	1	566	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
+3696	56	566	743	\N
+3697	1	573	743	http://www.mycancergenome.org/content/disease/melanoma/gnaq/102
+3698	56	3	743	\N
+3699	56	3	744	\N
+3700	21	210	745	\N
+3701	27	494	745	\N
+3702	27	494	746	\N
+3703	21	190	747	\N
+3704	21	189	747	\N
+3705	21	188	747	\N
+3706	21	187	747	\N
+3707	21	186	747	\N
+3708	21	185	747	\N
+3709	21	184	747	\N
+3710	21	183	747	\N
+3711	21	3	747	\N
+3712	21	188	748	\N
+3713	21	191	748	\N
+3714	21	193	748	\N
+3715	21	186	748	\N
+3716	21	192	748	\N
+3717	21	3	748	\N
+3718	21	195	749	\N
+3719	21	188	749	\N
+3720	21	186	749	\N
+3721	21	194	749	\N
+3722	21	184	749	\N
+3723	21	196	749	\N
+3724	21	183	749	\N
+3725	21	3	749	\N
+3726	21	190	750	\N
+3727	21	188	750	\N
+3728	21	197	750	\N
+3729	21	186	750	\N
+3730	21	198	750	\N
+3731	21	3	750	\N
+3732	21	188	751	\N
+3733	21	197	751	\N
+3734	21	3	751	\N
+3735	27	2	752	\N
+3736	21	195	752	\N
+3737	21	190	752	\N
+3738	21	203	752	\N
+3739	21	202	752	\N
+3740	21	197	752	\N
+3741	21	201	752	\N
+3742	27	1	752	\N
+3743	21	200	752	\N
+3744	21	199	752	\N
+3745	21	186	752	\N
+3746	21	205	752	\N
+3747	21	194	752	\N
+3748	21	210	752	\N
+3749	21	184	752	\N
+3750	21	183	752	\N
+3751	21	204	752	\N
+3752	27	3	752	\N
+3753	21	3	752	\N
+3754	27	494	752	\N
+3755	21	190	753	\N
+3756	21	188	753	\N
+3757	21	186	753	\N
+3758	21	3	753	\N
+3759	21	211	754	\N
+3760	21	212	754	\N
+3761	21	2	754	\N
+3762	21	4	754	\N
+3763	21	195	754	\N
+3764	21	190	754	\N
+3765	21	188	754	\N
+3766	21	202	754	\N
+3767	21	209	754	\N
+3768	21	214	754	\N
+3769	21	213	754	\N
+3770	21	210	754	\N
+3771	21	206	754	\N
+3772	21	208	754	\N
+3773	21	183	754	\N
+3774	21	207	754	\N
+3775	21	3	754	\N
+3776	21	215	755	\N
+3777	21	2	755	\N
+3778	21	190	755	\N
+3779	21	188	755	\N
+3780	21	202	755	\N
+3781	21	217	755	\N
+3782	21	216	755	\N
+3783	21	183	755	\N
+3784	21	207	755	\N
+3785	21	3	755	\N
+3786	21	202	756	\N
+3787	21	218	756	\N
+3788	21	184	756	\N
+3789	21	204	756	\N
+3790	21	3	756	\N
+3791	21	210	757	\N
+3792	27	494	757	\N
+3793	21	210	758	\N
+3794	27	494	758	\N
+3795	21	211	759	\N
+3796	21	2	759	\N
+3797	27	4	759	\N
+3798	21	195	759	\N
+3799	21	225	759	\N
+3800	21	190	759	\N
+3801	21	188	759	\N
+3802	21	202	759	\N
+3803	21	186	759	\N
+3804	21	223	759	\N
+3805	21	224	759	\N
+3806	21	210	759	\N
+3807	21	222	759	\N
+3808	21	226	759	\N
+3809	21	184	759	\N
+3810	21	221	759	\N
+3811	27	5	759	\N
+3812	21	196	759	\N
+3813	21	220	759	\N
+3814	21	219	759	\N
+3815	21	183	759	\N
+3816	21	207	759	\N
+3817	27	3	759	\N
+3818	21	3	759	\N
+3819	21	210	760	\N
+3820	27	494	760	\N
+3821	21	210	761	\N
+3822	27	494	761	\N
+3823	21	210	762	\N
+3824	27	494	762	\N
+3825	21	188	763	\N
+3826	21	228	763	\N
+3827	21	229	763	\N
+3828	21	186	763	\N
+3829	21	227	763	\N
+3830	21	210	763	\N
+3831	21	184	763	\N
+3832	21	3	763	\N
+3833	27	494	763	\N
+3834	21	195	764	\N
+3835	21	188	764	\N
+3836	21	186	764	\N
+3837	21	227	764	\N
+3838	21	210	764	\N
+3839	21	230	764	\N
+3840	21	183	764	\N
+3841	21	3	764	\N
+3842	27	494	764	\N
+3843	21	195	765	\N
+3844	21	225	765	\N
+3845	21	190	765	\N
+3846	21	188	765	\N
+3847	21	235	765	\N
+3848	21	202	765	\N
+3849	21	201	765	\N
+3850	21	236	765	\N
+3851	21	232	765	\N
+3852	21	231	765	\N
+3853	21	234	765	\N
+3854	21	233	765	\N
+3855	21	220	765	\N
+3856	21	183	765	\N
+3857	21	3	765	\N
+3858	21	190	766	\N
+3859	21	188	766	\N
+3860	21	235	766	\N
+3861	21	238	766	\N
+3862	21	237	766	\N
+3863	21	183	766	\N
+3864	21	204	766	\N
+3865	21	3	766	\N
+3866	21	210	767	\N
+3867	27	494	767	\N
+3868	21	210	768	\N
+3869	27	494	768	\N
+3870	21	188	769	\N
+3871	21	202	769	\N
+3872	21	231	769	\N
+3873	21	186	769	\N
+3874	21	210	769	\N
+3875	21	184	769	\N
+3876	21	240	769	\N
+3877	21	183	769	\N
+3878	21	239	769	\N
+3879	21	3	769	\N
+3880	21	210	770	\N
+3881	27	494	770	\N
+3882	21	190	771	\N
+3883	21	188	771	\N
+3884	21	202	771	\N
+3885	21	241	771	\N
+3886	21	227	771	\N
+3887	21	183	771	\N
+3888	21	3	771	\N
+3889	57	3	772	\N
+3890	57	3	773	\N
+3891	57	3	774	\N
+3892	57	574	775	\N
+3893	57	3	775	\N
+3894	28	3	776	\N
+3895	4	575	777	\N
+3896	57	578	777	\N
+3897	4	576	777	\N
+3898	4	579	777	\N
+3899	4	577	777	\N
+3900	57	3	777	\N
+3901	28	3	778	\N
+3902	57	574	779	\N
+3903	57	3	779	\N
+3904	57	3	780	\N
+3905	4	580	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
+3906	57	581	781	\N
+3907	4	537	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
+3908	4	400	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
+3909	4	575	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
+3910	4	539	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
 3911	4	582	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
-3912	4	576	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
-3913	4	577	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
-3914	4	578	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
-3915	57	3	781	\N
-3916	7	318	782	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/145
-3917	7	359	782	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/145
-3918	7	317	782	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/145
-3919	44	436	782	\N
-3920	44	3	782	\N
-3921	30	583	783	\N
-3922	7	318	783	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/137
-3923	7	359	783	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/137
-3924	7	317	783	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/137
-3925	30	3	783	\N
-3926	7	318	784	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/144
-3927	7	359	784	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/144
-3928	7	317	784	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/144
-3929	28	3	784	\N
-3930	8	316	785	http://www.mycancergenome.org/content/disease/breast-cancer/pten/24
-3931	8	318	785	http://www.mycancergenome.org/content/disease/breast-cancer/pten/24
-3932	5	79	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3933	5	81	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3934	5	80	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3935	5	83	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3936	5	87	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3937	5	86	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3938	8	317	785	http://www.mycancergenome.org/content/disease/breast-cancer/pten/24
-3939	5	82	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3940	8	82	785	http://www.mycancergenome.org/content/disease/breast-cancer/pten/24
-3941	5	49	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3942	5	85	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3943	5	84	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
-3944	30	3	786	\N
-3945	30	584	787	\N
-3946	30	3	787	\N
-3947	3	314	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
-3948	3	316	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
-3949	8	316	788	http://www.mycancergenome.org/content/disease/breast-cancer/pten/25
-3950	3	318	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
-3951	8	318	788	http://www.mycancergenome.org/content/disease/breast-cancer/pten/25
-3952	5	79	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3953	5	81	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3954	5	80	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3955	5	83	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3956	3	319	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
-3957	5	87	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3958	5	86	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3959	3	313	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
-3960	3	317	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
-3961	8	317	788	http://www.mycancergenome.org/content/disease/breast-cancer/pten/25
-3962	5	82	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3963	8	82	788	http://www.mycancergenome.org/content/disease/breast-cancer/pten/25
-3964	5	49	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3965	3	315	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
-3966	5	85	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3967	5	84	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
-3968	28	3	789	\N
-3969	8	316	790	http://www.mycancergenome.org/content/disease/breast-cancer/pten/26
-3970	8	318	790	http://www.mycancergenome.org/content/disease/breast-cancer/pten/26
-3971	5	79	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3972	5	81	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3973	5	80	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3974	5	83	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3975	5	87	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3976	5	86	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3977	8	317	790	http://www.mycancergenome.org/content/disease/breast-cancer/pten/26
-3978	5	82	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3979	8	82	790	http://www.mycancergenome.org/content/disease/breast-cancer/pten/26
-3980	5	49	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3981	5	85	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3982	5	84	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
-3983	30	3	791	\N
-3984	49	344	792	\N
-3985	37	3	793	\N
-3986	49	344	794	\N
-3987	49	344	795	\N
-3988	49	344	796	\N
-3989	49	345	797	\N
-3990	49	346	797	\N
-3991	49	347	797	\N
-3992	49	344	797	\N
-3993	49	345	798	\N
-3994	49	346	798	\N
-3995	49	347	798	\N
-3996	49	344	798	\N
-3997	49	344	799	\N
-3998	49	344	800	\N
-3999	49	344	801	\N
-4000	49	344	802	\N
-4001	49	344	803	\N
-4002	49	344	804	\N
-4003	49	344	805	\N
-4004	49	344	806	\N
-4005	37	3	807	\N
-4006	37	585	808	\N
-4007	37	3	808	\N
-4008	37	585	809	\N
-4009	37	3	809	\N
-4010	20	322	810	\N
-4011	37	345	811	\N
-4012	37	3	811	\N
-4013	20	322	812	\N
-4014	43	322	813	\N
-4015	49	345	814	\N
-4016	37	345	814	\N
-4017	37	585	814	\N
-4018	49	346	814	\N
-4019	49	347	814	\N
-4020	37	3	814	\N
-4021	28	3	815	\N
-4022	28	3	816	\N
-4023	28	3	817	\N
-4024	28	3	818	\N
-4025	58	586	819	\N
+3912	4	583	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
+3913	4	576	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
+3914	4	579	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
+3915	4	577	781	http://www.mycancergenome.org/content/disease/thyroid-cancer/ret/128
+3916	57	3	781	\N
+3917	7	318	782	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/145
+3918	7	359	782	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/145
+3919	7	317	782	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/145
+3920	44	437	782	\N
+3921	44	3	782	\N
+3922	30	584	783	\N
+3923	7	318	783	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/137
+3924	7	359	783	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/137
+3925	7	317	783	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/137
+3926	30	3	783	\N
+3927	7	318	784	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/144
+3928	7	359	784	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/144
+3929	7	317	784	http://www.mycancergenome.org/content/disease/ovarian-cancer/pten/144
+3930	28	3	784	\N
+3931	8	316	785	http://www.mycancergenome.org/content/disease/breast-cancer/pten/24
+3932	8	318	785	http://www.mycancergenome.org/content/disease/breast-cancer/pten/24
+3933	5	79	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3934	5	81	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3935	5	80	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3936	5	83	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3937	5	87	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3938	5	86	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3939	8	317	785	http://www.mycancergenome.org/content/disease/breast-cancer/pten/24
+3940	5	82	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3941	8	82	785	http://www.mycancergenome.org/content/disease/breast-cancer/pten/24
+3942	5	49	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3943	5	85	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3944	5	84	785	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/24
+3945	30	3	786	\N
+3946	30	585	787	\N
+3947	30	3	787	\N
+3948	3	314	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
+3949	3	316	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
+3950	8	316	788	http://www.mycancergenome.org/content/disease/breast-cancer/pten/25
+3951	3	318	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
+3952	8	318	788	http://www.mycancergenome.org/content/disease/breast-cancer/pten/25
+3953	5	79	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3954	5	81	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3955	5	80	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3956	5	83	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3957	3	319	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
+3958	5	87	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3959	5	86	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3960	3	313	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
+3961	3	317	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
+3962	8	317	788	http://www.mycancergenome.org/content/disease/breast-cancer/pten/25
+3963	5	82	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3964	8	82	788	http://www.mycancergenome.org/content/disease/breast-cancer/pten/25
+3965	5	49	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3966	3	315	788	http://www.mycancergenome.org/content/disease/lung-cancer/pten/25
+3967	5	85	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3968	5	84	788	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/25
+3969	28	3	789	\N
+4580	60	3	894	\N
+4581	60	3	895	\N
+3970	8	316	790	http://www.mycancergenome.org/content/disease/breast-cancer/pten/26
+3971	8	318	790	http://www.mycancergenome.org/content/disease/breast-cancer/pten/26
+3972	5	79	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3973	5	81	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3974	5	80	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3975	5	83	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3976	5	87	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3977	5	86	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3978	8	317	790	http://www.mycancergenome.org/content/disease/breast-cancer/pten/26
+3979	5	82	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3980	8	82	790	http://www.mycancergenome.org/content/disease/breast-cancer/pten/26
+3981	5	49	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3982	5	85	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3983	5	84	790	http://www.mycancergenome.org/content/disease/colorectal-cancer/pten/26
+3984	30	3	791	\N
+3985	49	344	792	\N
+3986	37	3	793	\N
+3987	49	344	794	\N
+3988	49	344	795	\N
+3989	49	344	796	\N
+3990	49	345	797	\N
+3991	49	346	797	\N
+3992	49	347	797	\N
+3993	49	344	797	\N
+3994	49	345	798	\N
+3995	49	346	798	\N
+3996	49	347	798	\N
+3997	49	344	798	\N
+3998	49	344	799	\N
+3999	49	344	800	\N
+4000	49	344	801	\N
+4001	49	344	802	\N
+4002	49	344	803	\N
+4003	49	344	804	\N
+4004	49	344	805	\N
+4005	49	344	806	\N
+4006	37	3	807	\N
+4007	37	586	808	\N
+4008	37	3	808	\N
+4009	37	586	809	\N
+4010	37	3	809	\N
+4011	20	322	810	\N
+4012	37	345	811	\N
+4013	37	3	811	\N
+4014	20	322	812	\N
+4015	43	322	813	\N
+4016	49	345	814	\N
+4017	37	345	814	\N
+4018	37	586	814	\N
+4019	49	346	814	\N
+4020	49	347	814	\N
+4021	37	3	814	\N
+4022	28	3	815	\N
+4023	28	3	816	\N
+4024	28	3	817	\N
+4025	28	3	818	\N
 4026	58	587	819	\N
-4027	58	3	819	\N
-4028	4	398	820	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/307
+4027	58	588	819	\N
+4028	58	3	819	\N
 4029	4	399	820	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/307
 4030	4	400	820	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/307
-4031	4	402	820	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/307
-4032	28	3	820	\N
-4033	28	3	821	\N
-4034	8	3	822	\N
-4035	12	588	823	\N
-4036	12	3	823	\N
-4037	4	398	824	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/305
+4031	4	401	820	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/307
+4032	4	403	820	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/307
+4033	28	3	820	\N
+4034	28	3	821	\N
+4035	8	3	822	\N
+4036	12	589	823	\N
+4037	12	3	823	\N
 4038	4	399	824	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/305
 4039	4	400	824	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/305
-4040	4	402	824	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/305
-4041	28	3	824	\N
-4042	4	398	825	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/306
+4040	4	401	824	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/305
+4041	4	403	824	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/305
+4042	28	3	824	\N
 4043	4	399	825	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/306
 4044	4	400	825	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/306
-4045	4	402	825	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/306
-4046	4	3	825	\N
-4047	28	3	826	\N
-4048	4	398	827	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/304
+4045	4	401	825	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/306
+4046	4	403	825	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/306
+4047	4	3	825	\N
+4048	28	3	826	\N
 4049	4	399	827	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/304
 4050	4	400	827	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/304
-4051	4	402	827	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/304
-4052	1	3	827	\N
-4053	8	3	828	\N
-4054	45	3	829	\N
-4055	5	589	830	\N
-4056	4	398	830	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/303
+4051	4	401	827	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/304
+4052	4	403	827	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/304
+4053	1	3	827	\N
+4054	8	3	828	\N
+4055	45	3	829	\N
+4056	5	590	830	\N
 4057	4	399	830	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/303
 4058	4	400	830	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/303
-4059	4	402	830	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/303
-4060	5	3	830	\N
-4061	2	180	831	\N
-4062	2	179	831	\N
-4063	2	178	831	\N
-4064	2	166	831	\N
-4065	2	177	831	\N
-4066	2	176	831	\N
-4067	25	349	832	\N
-4068	25	349	833	\N
-4069	5	64	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
-4070	5	68	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
-4071	5	62	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
-4072	5	65	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
-4073	4	399	834	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/29
-4074	5	63	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
-4075	4	400	834	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/29
-4076	5	69	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
-4077	5	67	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
-4078	5	66	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
-4079	4	402	834	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/29
-4080	5	64	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
-4081	5	68	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
-4082	5	62	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
-4083	5	65	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
-4084	5	63	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
-4085	5	69	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
-4086	5	67	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
-4087	5	66	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
-4088	5	64	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
-4089	5	68	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
-4090	5	62	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
-4091	5	65	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
-4092	5	63	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
-4093	5	69	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
-4094	5	67	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
-4095	5	66	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
-4096	5	590	836	\N
-4097	5	3	836	\N
-4098	5	64	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
-4099	5	68	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
-4100	5	62	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
-4101	5	65	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
-4102	5	63	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
-4103	5	69	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
-4104	5	67	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
-4105	5	66	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
-4106	5	64	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
-4107	5	68	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
-4108	5	62	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
-4109	5	65	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
-4110	5	63	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
-4111	5	69	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
-4112	5	67	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
-4113	5	66	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
-4114	2	163	839	\N
-4115	2	164	839	\N
-4116	3	302	839	http://www.mycancergenome.org/content/disease/lung-cancer/kras/31
-4117	5	64	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
-4118	2	162	839	\N
-4119	5	68	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
-4120	5	62	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
-4121	3	303	839	http://www.mycancergenome.org/content/disease/lung-cancer/kras/31
-4122	2	161	839	\N
-4123	5	65	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
-4124	5	63	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
-4125	5	69	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
-4126	5	67	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
-4127	5	66	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
-4128	2	160	839	\N
-4129	5	591	839	\N
-4130	5	50	839	\N
-4131	5	3	839	\N
-4132	2	163	840	\N
-4133	2	164	840	\N
-4134	3	302	840	http://www.mycancergenome.org/content/disease/lung-cancer/kras/30
-4135	5	64	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
-4136	2	162	840	\N
-4137	5	68	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
-4138	5	62	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
-4139	3	303	840	http://www.mycancergenome.org/content/disease/lung-cancer/kras/30
-4140	2	161	840	\N
-4141	5	65	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
-4142	5	63	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
-4143	5	69	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
-4144	5	67	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
-4145	5	66	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
-4146	2	160	840	\N
-4147	5	591	840	\N
-4148	5	50	840	\N
-4149	5	3	840	\N
-4150	3	302	841	http://www.mycancergenome.org/content/disease/lung-cancer/kras/42
-4151	5	64	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
-4152	5	68	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
-4153	4	398	841	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/42
-4154	5	62	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
-4155	3	303	841	http://www.mycancergenome.org/content/disease/lung-cancer/kras/42
-4156	5	65	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
-4157	4	399	841	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/42
-4158	5	63	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
-4159	4	400	841	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/42
-4160	5	49	841	\N
-4161	5	69	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
-4162	5	67	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
-4163	5	66	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
-4164	4	402	841	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/42
-4165	5	3	841	\N
-4166	3	302	842	http://www.mycancergenome.org/content/disease/lung-cancer/kras/43
-4167	5	64	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
-4168	5	68	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
-4169	4	398	842	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/43
-4170	5	62	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
-4171	3	303	842	http://www.mycancergenome.org/content/disease/lung-cancer/kras/43
-4172	5	65	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
-4173	4	399	842	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/43
-4174	5	63	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
-4175	4	400	842	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/43
-4176	5	69	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
-4177	5	67	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
-4178	5	66	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
-4179	4	402	842	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/43
-4180	5	3	842	\N
-4181	4	398	843	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/308
+4059	4	401	830	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/303
+4060	4	403	830	http://www.mycancergenome.org/content/disease/thyroid-cancer/hras/303
+4061	5	3	830	\N
+4062	2	180	831	\N
+4063	2	179	831	\N
+4064	2	178	831	\N
+4065	2	166	831	\N
+4066	2	177	831	\N
+4067	2	176	831	\N
+4068	25	349	832	\N
+4069	25	349	833	\N
+4070	5	64	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
+4071	5	68	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
+4072	5	62	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
+4073	5	65	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
+4074	4	400	834	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/29
+4075	5	63	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
+4076	4	401	834	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/29
+4077	5	69	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
+4078	5	67	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
+4079	5	66	834	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/29
+4080	4	403	834	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/29
+4081	5	64	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
+4082	5	68	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
+4083	5	62	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
+4084	5	65	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
+4085	5	63	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
+4086	5	69	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
+4087	5	67	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
+4088	5	66	835	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/27
+4089	5	64	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
+4090	5	68	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
+4091	5	62	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
+4092	5	65	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
+4093	5	63	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
+4094	5	69	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
+4095	5	67	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
+4096	5	66	836	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/28
+4097	5	591	836	\N
+4098	5	3	836	\N
+4099	5	64	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
+4100	5	68	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
+4101	5	62	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
+4102	5	65	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
+4103	5	63	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
+4104	5	69	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
+4105	5	67	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
+4106	5	66	837	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/161
+4107	5	64	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
+4108	5	68	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
+4109	5	62	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
+4110	5	65	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
+4111	5	63	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
+4112	5	69	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
+4113	5	67	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
+4114	5	66	838	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/160
+4115	2	163	839	\N
+4116	2	164	839	\N
+4117	3	302	839	http://www.mycancergenome.org/content/disease/lung-cancer/kras/31
+4118	5	64	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
+4119	2	162	839	\N
+4120	5	68	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
+4121	5	62	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
+4122	3	303	839	http://www.mycancergenome.org/content/disease/lung-cancer/kras/31
+4123	2	161	839	\N
+4124	5	65	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
+4125	5	63	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
+4126	5	69	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
+4127	5	67	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
+4128	5	66	839	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/31
+4129	2	160	839	\N
+4130	5	592	839	\N
+4131	5	50	839	\N
+4132	5	3	839	\N
+4133	2	163	840	\N
+4134	2	164	840	\N
+4135	3	302	840	http://www.mycancergenome.org/content/disease/lung-cancer/kras/30
+4136	5	64	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
+4137	2	162	840	\N
+4138	5	68	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
+4139	5	62	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
+4140	3	303	840	http://www.mycancergenome.org/content/disease/lung-cancer/kras/30
+4141	2	161	840	\N
+4142	5	65	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
+4143	5	63	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
+4144	5	69	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
+4145	5	67	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
+4146	5	66	840	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/30
+4147	2	160	840	\N
+4148	5	592	840	\N
+4149	5	50	840	\N
+4150	5	3	840	\N
+4151	3	302	841	http://www.mycancergenome.org/content/disease/lung-cancer/kras/42
+4152	5	64	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
+4153	5	68	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
+4154	4	399	841	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/42
+4155	5	62	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
+4156	3	303	841	http://www.mycancergenome.org/content/disease/lung-cancer/kras/42
+4157	5	65	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
+4158	4	400	841	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/42
+4159	5	63	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
+4160	4	401	841	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/42
+4161	5	49	841	\N
+4162	5	69	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
+4163	5	67	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
+4164	5	66	841	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/42
+4165	4	403	841	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/42
+4166	5	3	841	\N
+4167	3	302	842	http://www.mycancergenome.org/content/disease/lung-cancer/kras/43
+4168	5	64	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
+4169	5	68	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
+4170	4	399	842	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/43
+4171	5	62	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
+4172	3	303	842	http://www.mycancergenome.org/content/disease/lung-cancer/kras/43
+4173	5	65	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
+4174	4	400	842	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/43
+4175	5	63	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
+4176	4	401	842	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/43
+4177	5	69	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
+4178	5	67	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
+4179	5	66	842	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/43
+4180	4	403	842	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/43
+4181	5	3	842	\N
 4182	4	399	843	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/308
 4183	4	400	843	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/308
-4184	4	402	843	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/308
-4185	5	3	843	\N
-4186	5	3	844	\N
-4187	3	302	845	http://www.mycancergenome.org/content/disease/lung-cancer/kras/41
-4188	5	64	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
-4189	5	68	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
-4190	4	398	845	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/41
-4191	5	62	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
-4192	3	303	845	http://www.mycancergenome.org/content/disease/lung-cancer/kras/41
-4193	5	65	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
-4194	4	399	845	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/41
-4195	5	63	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
-4196	4	400	845	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/41
-4197	5	69	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
-4198	5	67	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
-4199	5	66	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
-4200	4	402	845	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/41
-4201	5	3	845	\N
-4202	5	590	846	\N
-4203	5	3	846	\N
-4204	5	3	847	\N
-4205	59	592	848	\N
-4206	59	3	848	\N
-4207	59	592	849	\N
-4208	59	3	849	\N
-4209	5	64	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
-4210	5	68	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
-4211	5	62	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
-4212	5	65	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
-4213	5	63	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
-4214	5	69	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
-4215	5	67	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
-4216	5	66	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
-4217	4	593	850	\N
-4218	5	3	850	\N
-4219	4	3	850	\N
-4220	3	302	851	http://www.mycancergenome.org/content/disease/lung-cancer/kras/68
-4221	5	64	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
-4222	5	68	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
-4223	5	62	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
-4224	3	303	851	http://www.mycancergenome.org/content/disease/lung-cancer/kras/68
-4225	5	65	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
-4226	5	63	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
-4227	5	69	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
-4228	5	67	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
-4229	5	66	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
-4230	5	3	851	\N
-4231	2	163	852	\N
-4232	2	164	852	\N
-4233	3	302	852	http://www.mycancergenome.org/content/disease/lung-cancer/kras/39
-4234	5	64	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4235	2	162	852	\N
-4236	5	68	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4237	4	398	852	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/39
-4238	5	62	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4239	3	303	852	http://www.mycancergenome.org/content/disease/lung-cancer/kras/39
-4240	7	356	852	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/39
-4241	2	161	852	\N
-4242	5	65	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4243	4	399	852	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/39
-4244	5	63	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4245	4	400	852	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/39
-4246	5	69	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4247	5	67	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4248	5	71	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4249	5	66	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4250	5	590	852	\N
-4251	7	355	852	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/39
-4252	5	72	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4253	2	160	852	\N
-4254	5	70	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
-4255	5	70	852	\N
-4256	5	594	852	\N
-4257	4	402	852	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/39
-4258	5	595	852	\N
-4259	5	3	852	\N
-4260	3	302	853	http://www.mycancergenome.org/content/disease/lung-cancer/kras/38
-4261	5	64	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
-4262	5	68	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
-4263	5	62	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
-4264	3	303	853	http://www.mycancergenome.org/content/disease/lung-cancer/kras/38
-4265	5	65	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
-4266	5	63	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
-4267	5	69	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
-4268	5	67	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
-4269	5	66	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
-4270	5	3	853	\N
-4271	3	302	854	http://www.mycancergenome.org/content/disease/lung-cancer/kras/40
-4272	5	64	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
-4273	5	68	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
-4274	4	398	854	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/40
-4275	5	62	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
-4276	3	303	854	http://www.mycancergenome.org/content/disease/lung-cancer/kras/40
-4277	5	65	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
-4278	4	399	854	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/40
-4279	5	63	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
-4280	4	400	854	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/40
-4281	5	69	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
-4282	5	67	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
-4283	5	66	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
-4284	4	402	854	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/40
-4285	5	3	854	\N
-4286	3	302	855	http://www.mycancergenome.org/content/disease/lung-cancer/kras/69
-4287	5	64	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
-4288	5	68	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
-4289	4	398	855	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/69
-4290	5	62	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
-4291	3	303	855	http://www.mycancergenome.org/content/disease/lung-cancer/kras/69
-4292	5	65	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
-4293	4	399	855	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/69
-4294	5	63	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
-4295	4	400	855	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/69
-4296	5	69	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
-4297	5	67	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
-4298	5	66	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
-4299	4	402	855	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/69
-4300	5	3	855	\N
-4301	2	163	856	\N
-4302	2	164	856	\N
-4303	5	64	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
-4304	2	162	856	\N
-4305	5	68	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
-4306	4	398	856	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/37
-4307	5	62	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
-4308	7	356	856	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/37
-4309	2	161	856	\N
-4310	5	65	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
-4311	4	399	856	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/37
-4312	5	63	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
-4313	4	400	856	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/37
-4314	5	596	856	\N
-4315	5	69	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
-4316	5	67	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
-4317	5	66	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
-4318	3	590	856	\N
-4319	5	590	856	\N
-4320	7	355	856	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/37
-4321	3	597	856	\N
-4322	2	160	856	\N
-4323	5	70	856	\N
-4324	3	598	856	\N
-4325	4	402	856	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/37
-4326	3	3	856	\N
-4327	5	3	856	\N
-4328	3	302	857	http://www.mycancergenome.org/content/disease/lung-cancer/kras/32
-4329	5	64	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
-4330	5	68	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
-4331	5	62	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
-4332	3	303	857	http://www.mycancergenome.org/content/disease/lung-cancer/kras/32
-4333	7	356	857	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/32
-4334	5	65	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
-4335	5	63	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
-4336	5	69	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
-4337	5	67	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
-4338	5	66	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
-4339	7	355	857	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/32
-4340	11	599	857	\N
-4341	5	594	857	\N
-4342	11	3	857	\N
-4343	5	3	857	\N
-4344	2	163	858	\N
-4345	2	164	858	\N
-4346	3	302	858	http://www.mycancergenome.org/content/disease/lung-cancer/kras/34
-4347	5	64	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
-4348	2	162	858	\N
-4349	5	68	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
-4350	4	398	858	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/34
-4351	5	62	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
-4352	3	303	858	http://www.mycancergenome.org/content/disease/lung-cancer/kras/34
-4353	7	356	858	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/34
-4354	16	311	858	\N
-4355	2	161	858	\N
-4356	5	65	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
-4357	4	399	858	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/34
-4358	5	63	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
-4359	4	400	858	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/34
-4360	5	69	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
-4361	5	67	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
-4362	5	66	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
-4363	7	355	858	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/34
-4364	2	160	858	\N
-4365	4	402	858	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/34
-4366	16	600	858	\N
-4367	16	3	858	\N
-4368	3	302	859	http://www.mycancergenome.org/content/disease/lung-cancer/kras/33
-4369	5	64	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
-4370	5	68	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
-4371	4	398	859	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/33
-4372	5	62	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
-4373	3	303	859	http://www.mycancergenome.org/content/disease/lung-cancer/kras/33
-4374	7	356	859	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/33
-4375	5	65	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
-4376	4	399	859	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/33
-4377	5	63	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
-4378	4	400	859	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/33
-4379	5	69	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
-4380	5	67	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
-4381	5	66	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
-4382	7	355	859	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/33
-4383	5	594	859	\N
-4384	4	402	859	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/33
-4385	31	600	859	\N
-4386	5	3	859	\N
-4387	31	3	859	\N
-4388	3	302	860	http://www.mycancergenome.org/content/disease/lung-cancer/kras/35
-4389	5	64	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
-4390	5	68	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
-4391	4	398	860	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/35
-4392	5	62	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
-4393	3	303	860	http://www.mycancergenome.org/content/disease/lung-cancer/kras/35
-4394	7	356	860	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/35
-4395	5	65	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
-4396	4	399	860	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/35
-4397	5	63	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
-4398	4	400	860	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/35
-4399	5	69	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
-4400	5	67	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
-4401	5	66	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
-4402	7	355	860	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/35
-4403	5	591	860	\N
-4404	5	594	860	\N
-4405	4	402	860	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/35
-4406	5	3	860	\N
-4407	3	302	861	http://www.mycancergenome.org/content/disease/lung-cancer/kras/36
-4408	5	64	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
-4409	5	68	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
-4410	4	398	861	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/36
-4411	5	62	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
-4412	3	601	861	\N
-4413	3	303	861	http://www.mycancergenome.org/content/disease/lung-cancer/kras/36
-4414	5	65	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
-4415	4	399	861	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/36
-4416	5	63	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
-4417	4	400	861	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/36
-4418	5	69	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
-4419	5	67	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
-4420	5	66	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
-4421	4	402	861	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/36
-4422	3	3	861	\N
-4423	28	364	862	\N
-4424	54	364	863	\N
-4425	29	364	863	\N
-4426	28	364	864	\N
-4427	1	3	865	\N
-4428	2	121	866	\N
-4429	2	122	866	\N
-4430	2	123	866	\N
-4431	2	121	867	\N
-4432	2	122	867	\N
-4433	2	123	867	\N
-4434	2	124	868	\N
-4435	2	16	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
-4436	2	129	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
-4437	2	125	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
-4438	2	127	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
-4439	2	128	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
-4440	2	126	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
-4441	2	3	869	\N
-4442	2	3	870	\N
-4443	2	16	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
-4444	2	129	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
-4445	2	125	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
-4446	2	127	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
-4447	2	128	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
-4448	2	126	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
-4449	2	132	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4450	2	131	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4451	2	131	872	\N
-4452	2	602	872	\N
-4453	2	135	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4454	2	133	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4455	2	134	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4456	2	16	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4457	2	130	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4458	2	121	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4459	2	125	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4460	2	127	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4461	2	122	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4462	2	128	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4463	2	126	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
-4464	2	3	872	\N
-4465	2	132	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4466	2	131	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4467	2	131	873	\N
-4468	2	602	873	\N
-4469	2	135	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4470	2	133	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4471	2	134	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4472	2	16	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4473	2	130	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4474	2	121	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4475	2	125	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4476	2	127	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4477	2	122	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4478	2	128	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4479	2	126	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
-4480	2	3	873	\N
-4481	2	3	874	\N
-4482	2	132	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4483	2	603	875	\N
-4484	2	131	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4485	2	135	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4486	2	604	875	\N
-4487	2	133	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4488	2	134	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4489	2	16	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4490	2	130	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4491	2	121	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4492	2	121	875	\N
-4493	2	125	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4494	2	127	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4495	2	122	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4496	2	128	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4497	2	126	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
-4498	2	605	875	\N
-4499	2	3	875	\N
-4500	2	135	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4501	2	134	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4502	2	16	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4503	2	130	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4504	2	121	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4505	2	125	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4506	2	127	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4507	2	122	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4508	2	128	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4509	2	126	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
-4510	2	121	877	\N
-4511	2	132	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4512	2	131	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4513	2	135	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4514	2	606	878	\N
-4515	2	133	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4516	2	134	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4517	2	16	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4518	2	130	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4519	2	121	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4520	2	121	878	\N
-4521	2	125	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4522	2	127	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4523	2	122	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4524	2	128	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4525	2	126	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
-4526	2	3	878	\N
-4527	2	132	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4528	2	603	879	\N
-4529	2	131	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4530	2	135	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4531	2	607	879	\N
-4532	2	134	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4533	2	16	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4534	2	121	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4535	2	125	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4536	2	127	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4537	2	122	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4538	2	128	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4539	2	126	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
-4540	2	605	879	\N
-4541	2	3	879	\N
-4542	2	132	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4543	2	131	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4544	2	135	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4545	2	134	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4546	2	16	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4547	2	121	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4548	2	136	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4549	2	125	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4550	2	127	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4551	2	122	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4552	2	128	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4553	2	126	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
-4554	2	121	881	\N
-4555	2	121	882	\N
-4556	2	121	883	\N
-4557	2	122	883	\N
-4558	2	123	883	\N
-4559	2	137	884	\N
-4560	2	123	884	\N
-4561	2	137	885	\N
-4562	2	123	885	\N
-4563	2	121	886	\N
-4564	2	122	886	\N
-4565	2	123	886	\N
-4566	2	121	887	\N
-4567	2	122	887	\N
-4568	2	123	887	\N
-4569	2	121	888	\N
-4570	2	122	888	\N
-4571	2	123	888	\N
-4572	2	3	889	\N
-4573	28	3	890	\N
-4574	60	3	891	\N
-4575	60	3	892	\N
-4576	60	608	892	\N
-4577	60	3	893	\N
-4578	60	608	893	\N
-4579	60	3	894	\N
-4580	60	3	895	\N
-4581	60	608	895	\N
-4582	28	3	896	\N
-4583	60	3	897	\N
-4584	61	3	898	\N
-4585	28	3	899	\N
-4586	1	365	900	\N
-4587	5	20	901	\N
-4588	5	20	901	http://www.mycancergenome.org/content/disease/colorectal-cancer/akt1/23
-4589	3	20	901	\N
-4590	3	20	901	http://www.mycancergenome.org/content/disease/lung-cancer/akt1/23
-4591	8	20	901	\N
-4592	8	20	901	http://www.mycancergenome.org/content/disease/breast-cancer/akt1/23
-4593	3	267	901	http://www.mycancergenome.org/content/disease/lung-cancer/akt1/23
-4594	5	37	901	http://www.mycancergenome.org/content/disease/colorectal-cancer/akt1/23
-4595	3	265	901	http://www.mycancergenome.org/content/disease/lung-cancer/akt1/23
-4596	3	266	901	http://www.mycancergenome.org/content/disease/lung-cancer/akt1/23
-4597	8	609	901	\N
-4598	8	610	901	\N
-4599	49	342	901	\N
-4600	5	36	901	http://www.mycancergenome.org/content/disease/colorectal-cancer/akt1/23
-4601	8	82	901	http://www.mycancergenome.org/content/disease/breast-cancer/akt1/23
-4602	8	611	901	http://www.mycancergenome.org/content/disease/breast-cancer/akt1/23
-4603	8	612	901	\N
-4604	8	559	901	\N
-4605	50	613	901	\N
-4606	8	614	901	\N
-4607	50	615	901	\N
-4608	31	254	901	\N
-4609	8	616	901	\N
-4610	62	323	901	\N
-4611	5	18	901	\N
-4612	3	263	901	\N
-4613	5	19	901	\N
-4614	63	325	901	\N
-4615	61	245	901	\N
-4616	5	3	901	\N
-4617	61	3	901	\N
-4618	31	3	901	\N
-4619	3	3	901	\N
-4620	62	3	901	\N
-4621	63	3	901	\N
-4622	49	3	901	\N
-4623	8	3	901	\N
-4624	50	3	901	\N
-4625	7	493	901	\N
-4626	8	617	902	http://www.mycancergenome.org/content/disease/breast-cancer/her2/242
+4184	4	401	843	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/308
+4185	4	403	843	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/308
+4186	5	3	843	\N
+4187	5	3	844	\N
+4188	3	302	845	http://www.mycancergenome.org/content/disease/lung-cancer/kras/41
+4189	5	64	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
+4190	5	68	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
+4191	4	399	845	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/41
+4192	5	62	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
+4193	3	303	845	http://www.mycancergenome.org/content/disease/lung-cancer/kras/41
+4194	5	65	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
+4195	4	400	845	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/41
+4196	5	63	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
+4197	4	401	845	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/41
+4198	5	69	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
+4199	5	67	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
+4200	5	66	845	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/41
+4201	4	403	845	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/41
+4202	5	3	845	\N
+4203	5	591	846	\N
+4204	5	3	846	\N
+4205	5	3	847	\N
+4206	59	593	848	\N
+4207	59	3	848	\N
+4208	59	593	849	\N
+4209	59	3	849	\N
+4210	5	64	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
+4211	5	68	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
+4212	5	62	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
+4213	5	65	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
+4214	5	63	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
+4215	5	69	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
+4216	5	67	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
+4217	5	66	850	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/159
+4218	4	594	850	\N
+4219	5	3	850	\N
+4220	4	3	850	\N
+4221	3	302	851	http://www.mycancergenome.org/content/disease/lung-cancer/kras/68
+4222	5	64	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
+4223	5	68	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
+4224	5	62	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
+4225	3	303	851	http://www.mycancergenome.org/content/disease/lung-cancer/kras/68
+4226	5	65	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
+4227	5	63	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
+4228	5	69	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
+4229	5	67	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
+4230	5	66	851	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/68
+4231	5	3	851	\N
+4232	2	163	852	\N
+4233	2	164	852	\N
+4234	3	302	852	http://www.mycancergenome.org/content/disease/lung-cancer/kras/39
+4235	5	64	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4236	2	162	852	\N
+4237	5	68	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4238	4	399	852	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/39
+4239	5	62	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4240	3	303	852	http://www.mycancergenome.org/content/disease/lung-cancer/kras/39
+4241	7	356	852	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/39
+4242	2	161	852	\N
+4243	5	65	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4244	4	400	852	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/39
+4245	5	63	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4246	4	401	852	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/39
+4247	5	69	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4248	5	67	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4249	5	71	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4250	5	66	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4251	5	591	852	\N
+4252	7	355	852	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/39
+4253	5	72	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4254	2	160	852	\N
+4255	5	70	852	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/39
+4256	5	70	852	\N
+4257	5	595	852	\N
+4258	4	403	852	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/39
+4259	5	596	852	\N
+4260	5	3	852	\N
+4261	3	302	853	http://www.mycancergenome.org/content/disease/lung-cancer/kras/38
+4262	5	64	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
+4263	5	68	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
+4264	5	62	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
+4265	3	303	853	http://www.mycancergenome.org/content/disease/lung-cancer/kras/38
+4266	5	65	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
+4267	5	63	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
+4268	5	69	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
+4269	5	67	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
+4270	5	66	853	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/38
+4271	5	3	853	\N
+4272	3	302	854	http://www.mycancergenome.org/content/disease/lung-cancer/kras/40
+4273	5	64	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
+4274	5	68	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
+4275	4	399	854	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/40
+4276	5	62	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
+4277	3	303	854	http://www.mycancergenome.org/content/disease/lung-cancer/kras/40
+4278	5	65	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
+4279	4	400	854	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/40
+4280	5	63	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
+4281	4	401	854	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/40
+4282	5	69	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
+4283	5	67	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
+4284	5	66	854	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/40
+4285	4	403	854	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/40
+4286	5	3	854	\N
+4287	3	302	855	http://www.mycancergenome.org/content/disease/lung-cancer/kras/69
+4288	5	64	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
+4289	5	68	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
+4290	4	399	855	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/69
+4291	5	62	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
+4292	3	303	855	http://www.mycancergenome.org/content/disease/lung-cancer/kras/69
+4293	5	65	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
+4294	4	400	855	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/69
+4295	5	63	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
+4296	4	401	855	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/69
+4297	5	69	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
+4298	5	67	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
+4299	5	66	855	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/69
+4300	4	403	855	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/69
+4301	5	3	855	\N
+4302	2	163	856	\N
+4303	2	164	856	\N
+4304	5	64	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
+4305	2	162	856	\N
+4306	5	68	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
+4307	4	399	856	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/37
+4308	5	62	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
+4309	7	356	856	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/37
+4310	2	161	856	\N
+4311	5	65	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
+4312	4	400	856	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/37
+4313	5	63	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
+4314	4	401	856	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/37
+4315	5	597	856	\N
+4316	5	69	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
+4317	5	67	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
+4318	5	66	856	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/37
+4319	3	591	856	\N
+4320	5	591	856	\N
+4321	7	355	856	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/37
+4322	3	598	856	\N
+4323	2	160	856	\N
+4324	5	70	856	\N
+4325	3	599	856	\N
+4582	60	609	895	\N
+4583	28	3	896	\N
+4326	4	403	856	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/37
+4327	3	3	856	\N
+4328	5	3	856	\N
+4329	3	302	857	http://www.mycancergenome.org/content/disease/lung-cancer/kras/32
+4330	5	64	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
+4331	5	68	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
+4332	5	62	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
+4333	3	303	857	http://www.mycancergenome.org/content/disease/lung-cancer/kras/32
+4334	7	356	857	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/32
+4335	5	65	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
+4336	5	63	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
+4337	5	69	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
+4338	5	67	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
+4339	5	66	857	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/32
+4340	7	355	857	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/32
+4341	11	600	857	\N
+4342	5	595	857	\N
+4343	11	3	857	\N
+4344	5	3	857	\N
+4345	2	163	858	\N
+4346	2	164	858	\N
+4347	3	302	858	http://www.mycancergenome.org/content/disease/lung-cancer/kras/34
+4348	5	64	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
+4349	2	162	858	\N
+4350	5	68	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
+4351	4	399	858	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/34
+4352	5	62	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
+4353	3	303	858	http://www.mycancergenome.org/content/disease/lung-cancer/kras/34
+4354	7	356	858	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/34
+4355	16	311	858	\N
+4356	2	161	858	\N
+4357	5	65	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
+4358	4	400	858	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/34
+4359	5	63	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
+4360	4	401	858	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/34
+4361	5	69	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
+4362	5	67	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
+4363	5	66	858	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/34
+4364	7	355	858	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/34
+4365	2	160	858	\N
+4366	4	403	858	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/34
+4367	16	601	858	\N
+4368	16	3	858	\N
+4369	3	302	859	http://www.mycancergenome.org/content/disease/lung-cancer/kras/33
+4370	5	64	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
+4371	5	68	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
+4372	4	399	859	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/33
+4373	5	62	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
+4374	3	303	859	http://www.mycancergenome.org/content/disease/lung-cancer/kras/33
+4375	7	356	859	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/33
+4376	5	65	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
+4377	4	400	859	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/33
+4378	5	63	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
+4379	4	401	859	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/33
+4380	5	69	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
+4381	5	67	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
+4382	5	66	859	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/33
+4383	7	355	859	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/33
+4384	5	595	859	\N
+4385	4	403	859	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/33
+4386	31	601	859	\N
+4387	5	3	859	\N
+4388	31	3	859	\N
+4389	3	302	860	http://www.mycancergenome.org/content/disease/lung-cancer/kras/35
+4390	5	64	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
+4391	5	68	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
+4392	4	399	860	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/35
+4393	5	62	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
+4394	3	303	860	http://www.mycancergenome.org/content/disease/lung-cancer/kras/35
+4395	7	356	860	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/35
+4396	5	65	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
+4397	4	400	860	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/35
+4398	5	63	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
+4399	4	401	860	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/35
+4400	5	69	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
+4401	5	67	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
+4402	5	66	860	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/35
+4403	7	355	860	http://www.mycancergenome.org/content/disease/ovarian-cancer/kras/35
+4404	5	592	860	\N
+4405	5	595	860	\N
+4406	4	403	860	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/35
+4407	5	3	860	\N
+4408	3	302	861	http://www.mycancergenome.org/content/disease/lung-cancer/kras/36
+4409	5	64	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
+4410	5	68	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
+4411	4	399	861	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/36
+4412	5	62	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
+4413	3	602	861	\N
+4414	3	303	861	http://www.mycancergenome.org/content/disease/lung-cancer/kras/36
+4415	5	65	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
+4416	4	400	861	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/36
+4417	5	63	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
+4418	4	401	861	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/36
+4419	5	69	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
+4420	5	67	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
+4421	5	66	861	http://www.mycancergenome.org/content/disease/colorectal-cancer/kras/36
+4422	4	403	861	http://www.mycancergenome.org/content/disease/thyroid-cancer/kras/36
+4423	3	3	861	\N
+4424	28	364	862	\N
+4425	54	364	863	\N
+4426	29	364	863	\N
+4427	28	364	864	\N
+4428	1	3	865	\N
+4429	2	121	866	\N
+4430	2	122	866	\N
+4431	2	123	866	\N
+4432	2	121	867	\N
+4433	2	122	867	\N
+4434	2	123	867	\N
+4435	2	124	868	\N
+4436	2	16	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
+4437	2	129	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
+4438	2	125	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
+4439	2	127	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
+4440	2	128	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
+4441	2	126	869	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/290
+4442	2	3	869	\N
+4443	2	3	870	\N
+4444	2	16	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
+4445	2	129	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
+4446	2	125	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
+4447	2	127	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
+4448	2	128	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
+4449	2	126	871	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/284
+4450	2	132	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4451	2	131	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4452	2	131	872	\N
+4453	2	603	872	\N
+4454	2	135	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4455	2	133	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4456	2	134	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4457	2	16	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4458	2	130	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4459	2	121	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4460	2	125	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4461	2	127	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4462	2	122	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4463	2	128	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4464	2	126	872	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/283
+4465	2	3	872	\N
+4466	2	132	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4467	2	131	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4468	2	131	873	\N
+4469	2	603	873	\N
+4470	2	135	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4471	2	133	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4472	2	134	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4473	2	16	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4474	2	130	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4475	2	121	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4476	2	125	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4477	2	127	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4478	2	122	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4479	2	128	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4480	2	126	873	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/288
+4481	2	3	873	\N
+4482	2	3	874	\N
+4483	2	132	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4484	2	604	875	\N
+4485	2	131	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4486	2	135	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4487	2	605	875	\N
+4488	2	133	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4489	2	134	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4490	2	16	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4584	60	3	897	\N
+4585	61	3	898	\N
+4491	2	130	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4492	2	121	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4493	2	121	875	\N
+4494	2	125	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4495	2	127	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4496	2	122	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4497	2	128	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4498	2	126	875	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/282
+4499	2	606	875	\N
+4500	2	3	875	\N
+4501	2	135	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4502	2	134	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4503	2	16	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4504	2	130	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4505	2	121	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4506	2	125	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4507	2	127	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4508	2	122	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4509	2	128	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4510	2	126	876	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/281
+4511	2	121	877	\N
+4512	2	132	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4513	2	131	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4514	2	135	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4515	2	607	878	\N
+4516	2	133	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4517	2	134	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4518	2	16	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4519	2	130	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4520	2	121	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4521	2	121	878	\N
+4522	2	125	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4523	2	127	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4524	2	122	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4525	2	128	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4526	2	126	878	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/280
+4527	2	3	878	\N
+4528	2	132	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4529	2	604	879	\N
+4530	2	131	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4531	2	135	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4532	2	608	879	\N
+4533	2	134	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4534	2	16	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4535	2	121	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4536	2	125	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4537	2	127	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4538	2	122	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4539	2	128	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4540	2	126	879	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/278
+4541	2	606	879	\N
+4542	2	3	879	\N
+4543	2	132	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4544	2	131	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4545	2	135	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4546	2	134	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4547	2	16	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4548	2	121	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4549	2	136	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4550	2	125	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4551	2	127	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4552	2	122	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4553	2	128	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4554	2	126	880	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/flt3/279
+4555	2	121	881	\N
+4556	2	121	882	\N
+4557	2	121	883	\N
+4558	2	122	883	\N
+4559	2	123	883	\N
+4560	2	137	884	\N
+4561	2	123	884	\N
+4562	2	137	885	\N
+4563	2	123	885	\N
+4564	2	121	886	\N
+4565	2	122	886	\N
+4566	2	123	886	\N
+4567	2	121	887	\N
+4568	2	122	887	\N
+4569	2	123	887	\N
+4570	2	121	888	\N
+4571	2	122	888	\N
+4572	2	123	888	\N
+4573	2	3	889	\N
+4574	28	3	890	\N
+4575	60	3	891	\N
+4576	60	3	892	\N
+4577	60	609	892	\N
+4578	60	3	893	\N
+4579	60	609	893	\N
+4586	28	3	899	\N
+4587	1	365	900	\N
+4588	5	20	901	\N
+4589	5	20	901	http://www.mycancergenome.org/content/disease/colorectal-cancer/akt1/23
+4590	3	20	901	\N
+4591	3	20	901	http://www.mycancergenome.org/content/disease/lung-cancer/akt1/23
+4592	8	20	901	\N
+4593	8	20	901	http://www.mycancergenome.org/content/disease/breast-cancer/akt1/23
+4594	3	267	901	http://www.mycancergenome.org/content/disease/lung-cancer/akt1/23
+4595	5	37	901	http://www.mycancergenome.org/content/disease/colorectal-cancer/akt1/23
+4596	3	265	901	http://www.mycancergenome.org/content/disease/lung-cancer/akt1/23
+4597	3	266	901	http://www.mycancergenome.org/content/disease/lung-cancer/akt1/23
+4598	8	611	901	\N
+4599	8	612	901	\N
+4600	49	342	901	\N
+4601	5	36	901	http://www.mycancergenome.org/content/disease/colorectal-cancer/akt1/23
+4602	8	82	901	http://www.mycancergenome.org/content/disease/breast-cancer/akt1/23
+4603	8	610	901	http://www.mycancergenome.org/content/disease/breast-cancer/akt1/23
+4604	8	613	901	\N
+4605	8	560	901	\N
+4606	50	614	901	\N
+4607	8	615	901	\N
+4608	50	616	901	\N
+4609	31	254	901	\N
+4610	8	617	901	\N
+4611	62	323	901	\N
+4612	5	18	901	\N
+4613	3	263	901	\N
+4614	5	19	901	\N
+4615	63	325	901	\N
+4616	61	245	901	\N
+4617	5	3	901	\N
+4618	61	3	901	\N
+4619	31	3	901	\N
+4620	3	3	901	\N
+4621	62	3	901	\N
+4622	63	3	901	\N
+4623	49	3	901	\N
+4624	8	3	901	\N
+4625	50	3	901	\N
+4626	7	494	901	\N
 4627	8	618	902	http://www.mycancergenome.org/content/disease/breast-cancer/her2/242
-4628	8	618	903	http://www.mycancergenome.org/content/disease/breast-cancer/her2/246
-4629	8	618	904	http://www.mycancergenome.org/content/disease/breast-cancer/her2/239
-4630	1	619	905	http://www.mycancergenome.org/content/disease/melanoma/mek1/210
-4631	3	305	906	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/74
-4632	3	304	906	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/74
-4633	1	620	906	\N
-4634	1	395	906	\N
-4635	3	3	906	\N
-4636	1	395	907	\N
-4637	1	621	908	\N
-4638	31	3	908	\N
-4639	3	304	909	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/72
-4640	1	621	909	\N
-4641	31	3	909	\N
-4642	3	306	910	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/60
-4643	3	304	910	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/60
-4644	1	395	910	\N
-4645	1	3	910	\N
-4646	28	620	911	\N
-4647	28	620	912	\N
-4648	28	383	912	\N
-4649	28	620	913	\N
-4650	1	619	914	http://www.mycancergenome.org/content/disease/melanoma/mek1/211
-4651	1	622	914	http://www.mycancergenome.org/content/disease/melanoma/mek1/211
-4652	28	620	915	\N
-4653	28	620	916	\N
-4654	28	620	917	\N
-4655	31	3	918	\N
-4656	1	623	919	http://www.mycancergenome.org/content/disease/melanoma/mek1/212
-4657	1	619	919	http://www.mycancergenome.org/content/disease/melanoma/mek1/212
-4658	1	622	919	http://www.mycancergenome.org/content/disease/melanoma/mek1/212
-4659	1	624	919	http://www.mycancergenome.org/content/disease/melanoma/mek1/212
-4660	31	3	919	\N
-4661	1	619	920	http://www.mycancergenome.org/content/disease/melanoma/mek1/214
-4662	1	622	920	http://www.mycancergenome.org/content/disease/melanoma/mek1/214
-4663	1	620	921	http://www.mycancergenome.org/content/disease/melanoma/mek1/213
-4664	1	625	921	http://www.mycancergenome.org/content/disease/melanoma/mek1/213
-4665	1	619	921	http://www.mycancergenome.org/content/disease/melanoma/mek1/213
-4666	1	3	921	\N
-4667	1	620	922	\N
-4668	1	620	923	\N
-4669	1	383	923	\N
-4670	1	620	924	http://www.mycancergenome.org/content/disease/melanoma/mek1/215
-4671	1	619	924	http://www.mycancergenome.org/content/disease/melanoma/mek1/215
-4672	1	395	924	http://www.mycancergenome.org/content/disease/melanoma/mek1/215
-4673	28	620	925	\N
-4674	28	620	926	\N
-4675	28	383	926	\N
-4676	1	619	927	http://www.mycancergenome.org/content/disease/melanoma/mek1/216
-4677	1	626	927	http://www.mycancergenome.org/content/disease/melanoma/mek1/216
-4678	1	619	928	http://www.mycancergenome.org/content/disease/melanoma/mek1/217
-4679	2	112	929	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/272
-4680	2	140	929	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/272
-4681	2	116	929	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/272
-4682	2	118	929	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/272
-4683	2	112	930	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/271
-4684	2	140	930	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/271
-4685	2	116	930	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/271
-4686	2	142	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
-4687	2	627	931	\N
-4688	2	112	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
-4689	2	141	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
-4690	2	140	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
-4691	2	143	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
-4901	2	167	1009	\N
-4902	2	166	1009	\N
-4692	2	118	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
-4693	2	3	931	\N
-4694	2	112	932	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/268
-4695	2	140	932	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/268
-4696	2	142	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
-4697	2	112	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
-4698	2	141	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
-4699	2	628	933	\N
-4700	2	144	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
-4701	2	143	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
-4702	2	118	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
-4703	2	3	933	\N
-4704	2	112	934	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/267
-4705	2	140	934	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/267
-4706	2	116	934	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/267
-4707	55	629	935	\N
-4708	55	629	936	\N
-4709	55	629	937	\N
-4710	5	3	938	\N
-4711	43	3	938	\N
-4712	2	173	939	\N
-4713	2	172	939	\N
-4714	2	171	939	\N
-4715	28	3	939	\N
-4716	41	630	940	\N
-4717	2	173	940	\N
-4718	2	172	940	\N
-4719	2	171	940	\N
-4720	41	3	940	\N
-4721	28	3	940	\N
-4722	2	173	941	\N
-4723	2	172	941	\N
-4724	2	171	941	\N
-4725	2	173	942	\N
-4726	2	172	942	\N
-4727	2	171	942	\N
-4728	41	630	943	\N
-4729	2	173	943	\N
-4730	2	172	943	\N
-4731	2	171	943	\N
-4732	28	631	943	\N
-4733	28	3	943	\N
-4734	41	3	943	\N
-4735	2	632	944	\N
-4736	2	3	944	\N
-4737	28	3	944	\N
-4738	28	633	945	\N
-4739	28	3	945	\N
-4740	2	173	946	\N
-4741	2	172	946	\N
-4742	2	171	946	\N
-4743	28	634	947	\N
+4628	8	619	902	http://www.mycancergenome.org/content/disease/breast-cancer/her2/242
+4629	8	619	903	http://www.mycancergenome.org/content/disease/breast-cancer/her2/246
+4630	8	619	904	http://www.mycancergenome.org/content/disease/breast-cancer/her2/239
+4631	1	620	905	http://www.mycancergenome.org/content/disease/melanoma/mek1/210
+4632	3	305	906	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/74
+4633	3	304	906	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/74
+4634	1	621	906	\N
+4635	1	390	906	\N
+4636	3	3	906	\N
+4637	1	390	907	\N
+4638	1	622	908	\N
+4639	31	3	908	\N
+4640	3	304	909	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/72
+4641	1	622	909	\N
+4642	31	3	909	\N
+4643	3	306	910	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/60
+4644	3	304	910	http://www.mycancergenome.org/content/disease/lung-cancer/mek1/60
+4645	1	390	910	\N
+4646	1	3	910	\N
+4647	28	621	911	\N
+4648	28	621	912	\N
+4649	28	383	912	\N
+4650	28	621	913	\N
+4651	1	620	914	http://www.mycancergenome.org/content/disease/melanoma/mek1/211
+4652	1	623	914	http://www.mycancergenome.org/content/disease/melanoma/mek1/211
+4653	28	621	915	\N
+4654	28	621	916	\N
+4655	28	621	917	\N
+4656	31	3	918	\N
+4657	1	624	919	http://www.mycancergenome.org/content/disease/melanoma/mek1/212
+4658	1	620	919	http://www.mycancergenome.org/content/disease/melanoma/mek1/212
+4659	1	623	919	http://www.mycancergenome.org/content/disease/melanoma/mek1/212
+4660	1	625	919	http://www.mycancergenome.org/content/disease/melanoma/mek1/212
+4661	31	3	919	\N
+4662	1	620	920	http://www.mycancergenome.org/content/disease/melanoma/mek1/214
+4663	1	623	920	http://www.mycancergenome.org/content/disease/melanoma/mek1/214
+4664	1	621	921	http://www.mycancergenome.org/content/disease/melanoma/mek1/213
+4665	1	626	921	http://www.mycancergenome.org/content/disease/melanoma/mek1/213
+4666	1	620	921	http://www.mycancergenome.org/content/disease/melanoma/mek1/213
+4667	1	3	921	\N
+4668	1	621	922	\N
+4669	1	621	923	\N
+4670	1	383	923	\N
+4671	1	621	924	http://www.mycancergenome.org/content/disease/melanoma/mek1/215
+4672	1	620	924	http://www.mycancergenome.org/content/disease/melanoma/mek1/215
+4673	1	390	924	http://www.mycancergenome.org/content/disease/melanoma/mek1/215
+4674	28	621	925	\N
+4675	28	621	926	\N
+4676	28	383	926	\N
+4677	1	620	927	http://www.mycancergenome.org/content/disease/melanoma/mek1/216
+4678	1	627	927	http://www.mycancergenome.org/content/disease/melanoma/mek1/216
+4679	1	620	928	http://www.mycancergenome.org/content/disease/melanoma/mek1/217
+4680	2	112	929	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/272
+4681	2	140	929	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/272
+4682	2	116	929	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/272
+4683	2	118	929	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/272
+4684	2	112	930	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/271
+4685	2	140	930	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/271
+4686	2	116	930	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/271
+4687	2	142	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
+4688	2	628	931	\N
+4689	2	112	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
+4690	2	141	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
+4691	2	140	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
+4899	2	167	1008	\N
+4900	2	166	1008	\N
+4692	2	143	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
+4693	2	118	931	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/270
+4694	2	3	931	\N
+4695	2	112	932	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/268
+4696	2	140	932	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/268
+4697	2	142	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
+4698	2	112	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
+4699	2	141	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
+4700	2	629	933	\N
+4701	2	144	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
+4702	2	143	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
+4703	2	118	933	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/266
+4704	2	3	933	\N
+4705	2	112	934	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/267
+4706	2	140	934	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/267
+4707	2	116	934	http://www.mycancergenome.org/content/disease/acute-myeloid-leukemia/idh2/267
+4708	55	630	935	\N
+4709	55	630	936	\N
+4710	55	630	937	\N
+4711	5	3	938	\N
+4712	43	3	938	\N
+4713	2	173	939	\N
+4714	2	172	939	\N
+4715	2	171	939	\N
+4716	28	3	939	\N
+4717	41	631	940	\N
+4718	2	173	940	\N
+4719	2	172	940	\N
+4720	2	171	940	\N
+4721	41	3	940	\N
+4722	28	3	940	\N
+4723	2	173	941	\N
+4724	2	172	941	\N
+4725	2	171	941	\N
+4726	2	173	942	\N
+4727	2	172	942	\N
+4728	2	171	942	\N
+4729	41	631	943	\N
+4730	2	173	943	\N
+4731	2	172	943	\N
+4732	2	171	943	\N
+4733	28	632	943	\N
+4734	28	3	943	\N
+4735	41	3	943	\N
+4736	2	633	944	\N
+4737	2	3	944	\N
+4738	28	3	944	\N
+4739	28	634	945	\N
+4740	28	3	945	\N
+4741	2	173	946	\N
+4742	2	172	946	\N
+4743	2	171	946	\N
 4744	28	635	947	\N
-4745	28	3	947	\N
-4746	2	173	948	\N
-4747	2	172	948	\N
-4748	2	171	948	\N
-4749	2	173	949	\N
-4750	2	172	949	\N
-4751	2	171	949	\N
-4752	31	261	950	\N
-4753	8	618	951	\N
-4754	28	261	952	\N
-4755	28	261	953	\N
-4756	8	618	954	http://www.mycancergenome.org/content/disease/breast-cancer/her2/242/
-4757	8	636	955	\N
+4745	28	636	947	\N
+4746	28	3	947	\N
+4747	2	173	948	\N
+4748	2	172	948	\N
+4749	2	171	948	\N
+4750	2	173	949	\N
+4751	2	172	949	\N
+4752	2	171	949	\N
+4753	31	261	950	\N
+4754	8	619	951	\N
+4755	28	261	952	\N
+4756	28	261	953	\N
+4757	8	619	954	http://www.mycancergenome.org/content/disease/breast-cancer/her2/242/
 4758	8	637	955	\N
-4759	8	3	955	\N
-4760	8	617	956	http://www.mycancergenome.org/content/disease/breast-cancer/her2/240
+4759	8	638	955	\N
+4760	8	3	955	\N
 4761	8	618	956	http://www.mycancergenome.org/content/disease/breast-cancer/her2/240
-4762	8	618	956	\N
-4763	8	3	956	\N
-4764	8	617	957	http://www.mycancergenome.org/content/disease/breast-cancer/her2/241
+4762	8	619	956	http://www.mycancergenome.org/content/disease/breast-cancer/her2/240
+4763	8	619	956	\N
+4764	8	3	956	\N
 4765	8	618	957	http://www.mycancergenome.org/content/disease/breast-cancer/her2/241
-4766	8	618	957	\N
-4767	28	3	958	\N
-4768	8	3	959	\N
-4769	8	637	960	\N
+4766	8	619	957	http://www.mycancergenome.org/content/disease/breast-cancer/her2/241
+4767	8	619	957	\N
+4768	28	3	958	\N
+4769	8	3	959	\N
 4770	8	638	960	\N
-4771	8	3	960	\N
-4772	8	617	961	http://www.mycancergenome.org/content/disease/breast-cancer/her2/247
-4773	8	637	961	\N
-4774	8	618	961	http://www.mycancergenome.org/content/disease/breast-cancer/her2/247
-4775	8	638	961	\N
-4776	8	3	961	\N
-4777	8	618	962	http://www.mycancergenome.org/content/disease/breast-cancer/her2/243/
-4778	8	3	963	\N
-4779	8	617	964	http://www.mycancergenome.org/content/disease/breast-cancer/her2/244
-4780	8	617	964	http://www.mycancergenome.org/content/disease/breast-cancer/her2/244
+4771	8	639	960	\N
+4772	8	3	960	\N
+4773	8	618	961	http://www.mycancergenome.org/content/disease/breast-cancer/her2/247
+4774	8	638	961	\N
+4775	8	619	961	http://www.mycancergenome.org/content/disease/breast-cancer/her2/247
+4776	8	639	961	\N
+4777	8	3	961	\N
+4778	8	619	962	http://www.mycancergenome.org/content/disease/breast-cancer/her2/243/
+4779	8	3	963	\N
+4780	8	618	964	http://www.mycancergenome.org/content/disease/breast-cancer/her2/244
 4781	8	618	964	http://www.mycancergenome.org/content/disease/breast-cancer/her2/244
-4782	8	618	964	http://www.mycancergenome.org/content/disease/breast-cancer/her2/244
-4783	8	617	965	http://www.mycancergenome.org/content/disease/breast-cancer/her2/245
+4782	8	619	964	http://www.mycancergenome.org/content/disease/breast-cancer/her2/244
+4783	8	619	964	http://www.mycancergenome.org/content/disease/breast-cancer/her2/244
 4784	8	618	965	http://www.mycancergenome.org/content/disease/breast-cancer/her2/245
-4785	5	91	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
-4786	5	92	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
-4787	5	89	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
-4788	5	94	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
-4789	5	90	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
-4790	5	88	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
-4791	5	93	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
-4792	5	91	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
-4793	5	92	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
-4794	5	89	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
-4795	5	94	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
-4796	5	90	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
-4797	5	88	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
-4798	5	93	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
-4799	5	91	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
-4800	5	92	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
-4801	5	89	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
-4802	5	94	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
-4803	5	90	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
-4804	5	88	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
-4805	5	93	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
-4806	5	91	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
-4807	5	92	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
-4808	5	89	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
-4809	5	94	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
-4810	5	90	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
-4811	5	88	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
-4812	5	93	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
-4813	5	91	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
-4814	5	92	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
-4815	5	89	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
-4816	5	94	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
-4817	5	90	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
-4818	5	88	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
-4819	5	93	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
-4820	5	91	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
-4821	5	92	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
-4822	5	89	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
-4823	5	94	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
-4824	5	90	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
-4825	5	88	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
-4826	5	93	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
-4827	5	91	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
-4828	5	92	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
-4829	5	89	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
-4830	5	94	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
-4831	5	90	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
-4832	5	88	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
-4833	5	93	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
-4834	5	91	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
-4835	5	92	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
-4836	5	89	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
-4837	5	94	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
-4838	5	90	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
-4839	5	88	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
-4840	5	93	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
-4841	28	3	974	\N
-4842	28	3	975	\N
-4843	28	3	976	\N
-4844	28	3	977	\N
-4845	64	639	978	\N
-4846	64	639	979	\N
-4847	3	3	980	\N
-4848	28	3	981	\N
-4849	28	3	982	\N
-4850	28	3	983	\N
-4851	28	3	984	\N
-4852	1	564	985	http://www.mycancergenome.org/content/disease/melanoma/gna11/101
+4785	8	619	965	http://www.mycancergenome.org/content/disease/breast-cancer/her2/245
+4786	5	91	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
+4787	5	92	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
+4788	5	89	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
+4789	5	94	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
+4790	5	90	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
+4791	5	88	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
+4792	5	93	966	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/151
+4793	5	91	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
+4794	5	92	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
+4795	5	89	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
+4796	5	94	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
+4797	5	90	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
+4798	5	88	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
+4799	5	93	967	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/154
+4800	5	91	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
+4801	5	92	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
+4802	5	89	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
+4803	5	94	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
+4804	5	90	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
+4805	5	88	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
+4806	5	93	968	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/152
+4807	5	91	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
+4808	5	92	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
+4809	5	89	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
+4810	5	94	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
+4811	5	90	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
+4812	5	88	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
+4813	5	93	969	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/155
+4814	5	91	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
+4815	5	92	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
+4816	5	89	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
+4817	5	94	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
+4818	5	90	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
+4819	5	88	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
+4820	5	93	970	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/156
+4821	5	91	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
+4822	5	92	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
+4823	5	89	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
+4824	5	94	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
+4825	5	90	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
+4826	5	88	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
+4827	5	93	971	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/157
+4828	5	91	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
+4829	5	92	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
+4830	5	89	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
+4831	5	94	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
+4832	5	90	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
+4833	5	88	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
+4834	5	93	972	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/158
+4835	5	91	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
+4836	5	92	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
+4837	5	89	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
+4838	5	94	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
+4839	5	90	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
+4840	5	88	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
+4841	5	93	973	http://www.mycancergenome.org/content/disease/colorectal-cancer/smad4/153
+4842	28	3	974	\N
+4843	28	3	975	\N
+4844	28	3	976	\N
+4845	28	3	977	\N
+4846	64	640	978	\N
+4847	64	640	979	\N
+4848	3	3	980	\N
+4849	28	3	981	\N
+4850	28	3	982	\N
+4851	28	3	983	\N
+4852	28	3	984	\N
 4853	1	565	985	http://www.mycancergenome.org/content/disease/melanoma/gna11/101
 4854	1	568	985	http://www.mycancergenome.org/content/disease/melanoma/gna11/101
 4855	1	571	985	http://www.mycancergenome.org/content/disease/melanoma/gna11/101
-4856	56	571	985	\N
-4857	1	572	985	http://www.mycancergenome.org/content/disease/melanoma/gna11/101
-4858	56	3	985	\N
-4859	1	564	986	http://www.mycancergenome.org/content/disease/melanoma/gna11/99
+4856	1	566	985	http://www.mycancergenome.org/content/disease/melanoma/gna11/101
+4857	56	566	985	\N
+4858	1	573	985	http://www.mycancergenome.org/content/disease/melanoma/gna11/101
+4859	56	3	985	\N
 4860	1	565	986	http://www.mycancergenome.org/content/disease/melanoma/gna11/99
 4861	1	568	986	http://www.mycancergenome.org/content/disease/melanoma/gna11/99
-4862	56	640	986	\N
-4863	1	571	986	http://www.mycancergenome.org/content/disease/melanoma/gna11/99
-4864	56	571	986	\N
-4865	1	572	986	http://www.mycancergenome.org/content/disease/melanoma/gna11/99
-4866	56	641	986	\N
-4867	56	3	986	\N
-4868	1	642	987	\N
-4869	1	642	988	\N
-4870	1	643	989	\N
-4871	1	642	990	\N
-4872	1	642	991	\N
-4873	27	3	992	\N
-4874	65	182	993	\N
-4875	22	644	994	\N
+4862	1	571	986	http://www.mycancergenome.org/content/disease/melanoma/gna11/99
+4863	56	641	986	\N
+4864	1	566	986	http://www.mycancergenome.org/content/disease/melanoma/gna11/99
+4865	56	566	986	\N
+4866	1	573	986	http://www.mycancergenome.org/content/disease/melanoma/gna11/99
+4867	56	642	986	\N
+4868	56	3	986	\N
+4869	1	643	987	\N
+4870	1	643	988	\N
+4871	1	644	989	\N
+4872	1	643	990	\N
+4873	1	643	991	\N
+4874	27	3	992	\N
+4875	65	182	993	\N
 4876	22	645	994	\N
 4877	22	646	994	\N
-4878	22	3	994	\N
-4879	65	182	995	\N
-4880	65	182	996	\N
-4881	27	644	997	\N
-4882	27	3	997	\N
-4883	65	182	998	\N
-4884	49	348	999	\N
-4885	3	264	1000	\N
-4886	3	3	1000	\N
-4887	5	647	1001	\N
-4888	5	3	1001	\N
-4889	28	3	1002	\N
-4890	28	648	1003	\N
-4891	28	3	1003	\N
-4892	28	648	1004	\N
-4893	28	3	1004	\N
-4894	28	648	1005	\N
-4895	28	3	1006	\N
-4896	2	165	1007	\N
-4897	2	168	1008	\N
-4898	2	167	1008	\N
-4899	2	166	1008	\N
-4900	2	168	1009	\N
-4903	2	169	1010	\N
-4904	2	166	1010	\N
-4905	2	169	1011	\N
-4906	2	166	1011	\N
-4907	2	174	1012	\N
-4908	2	174	1013	\N
-4909	2	174	1014	\N
-4910	2	175	1014	\N
-4911	2	174	1015	\N
-4912	2	175	1015	\N
-4913	27	6	1016	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
-4914	27	7	1016	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
-4915	27	8	1016	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
-4916	27	9	1016	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
-4917	31	259	1017	\N
-4918	8	629	1018	\N
-4919	8	629	1019	\N
+4878	22	647	994	\N
+4879	22	3	994	\N
+4880	65	182	995	\N
+4881	65	182	996	\N
+4882	27	645	997	\N
+4883	27	3	997	\N
+4884	65	182	998	\N
+4885	49	348	999	\N
+4886	3	264	1000	\N
+4887	3	3	1000	\N
+4888	5	648	1001	\N
+4889	5	3	1001	\N
+4890	28	3	1002	\N
+4891	28	649	1003	\N
+4892	28	3	1003	\N
+4893	28	649	1004	\N
+4894	28	3	1004	\N
+4895	28	649	1005	\N
+4896	28	3	1006	\N
+4897	2	165	1007	\N
+4898	2	168	1008	\N
+4901	2	168	1009	\N
+4902	2	167	1009	\N
+4903	2	166	1009	\N
+4904	2	169	1010	\N
+4905	2	166	1010	\N
+4906	2	169	1011	\N
+4907	2	166	1011	\N
+4908	2	174	1012	\N
+4909	2	174	1013	\N
+4910	2	174	1014	\N
+4911	2	175	1014	\N
+4912	2	174	1015	\N
+4913	2	175	1015	\N
+4914	27	6	1016	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
+4915	27	7	1016	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
+4916	27	8	1016	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
+4917	27	9	1016	http://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/crlf2/199
+4918	31	259	1017	\N
+4919	8	630	1018	\N
+4920	8	630	1019	\N
 \.
 
 
@@ -8164,7 +8166,7 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 -- Name: disease_source_variants_id_seq; Type: SEQUENCE SET; Schema: public; Owner: acoffman
 --
 
-SELECT pg_catalog.setval('disease_source_variants_id_seq', 4919, true);
+SELECT pg_catalog.setval('disease_source_variants_id_seq', 4920, true);
 
 
 --
@@ -8178,7 +8180,431 @@ SELECT pg_catalog.setval('diseases_id_seq', 65, true);
 -- Data for Name: drug_interactions; Type: TABLE DATA; Schema: public; Owner: acoffman
 --
 
-COPY drug_interactions (id, effect, pathway, therapeutic_context, status, evidence, variant_id, source_id) FROM stdin;
+COPY drug_interactions (id, effect, pathway, therapeutic_context, status, evidence, variant_id, source_id, clinical_association) FROM stdin;
+1	gain-of-function	activation	rapamycin	preclinical	emerging	308	251	sensitivity
+2	gain-of-function	activation	everolimus	case report	emerging	309	253	sensitivity
+3	gain-of-function	activation	everolimus	case report	emerging	310	252	response
+4	gain-of-function	activation	rapamycin	preclinical	emerging	311	251	sensitivity
+5	gain-of-function	activation	everolimus	case report	emerging	312	253	sensitivity
+6	gain-of-function	activation	rapamycin	preclinical	emerging	313	251	sensitivity
+7	gain-of-function	activation	mTOR inhibitors, dasatinib	preclinical	emerging	314	321	sensitivity
+8	gain-of-function	activation	mTOR inhibitors, dasatinib	preclinical	emerging	315	321	sensitivity
+9	gain-of-function	activation	ruxolitinib	case report	emerging	316	242	response
+10	gain-of-function	activation	ruxolitinib	preclinical	emerging	317	242	sensitivity
+11	gain-of-function	activation	JAK inhibitors	preclinical	emerging	320	351	sensitivity
+12	gain-of-function	activation	ruxolitinib	preclinical	emerging	322	11	sensitivity
+13	gain-of-function	activation	MEK inhibitors	late trials	emerging	323	387	response
+14	gain-of-function	activation	MEK inhibitors	early trials	emerging	323	388	response
+15	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	323	389	sensitivity
+16	gain-of-function	activation	BRAF inhibitors	case report	emerging	323	390	resistance
+17	gain-of-function	activation	preclinical	preclinical	emerging	323	383	ERK inhibitors
+18	gain-of-function	activation	MEK inhibitors	late trials	emerging	324	387	response
+19	gain-of-function	activation	MEK inhibitors	early trials	emerging	324	388	response
+20	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	324	389	sensitivity
+21	gain-of-function	activation	BRAF inhibitors	case report	emerging	324	390	resistance
+22	gain-of-function	activation	preclinical	preclinical	emerging	324	383	ERK inhibitors
+23	gain-of-function	activation	MEK inhibitors	late trials	emerging	325	387	response
+24	gain-of-function	activation	MEK inhibitors	early trials	emerging	325	388	response
+25	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	325	389	sensitivity
+26	gain-of-function	activation	BRAF inhibitors	case report	emerging	325	390	resistance
+27	gain-of-function	activation	preclinical	preclinical	emerging	325	383	ERK inhibitors
+28	gain-of-function	activation	MEK inhibitors	late trials	emerging	326	387	response
+29	gain-of-function	activation	MEK inhibitors	early trials	emerging	326	388	response
+30	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	326	389	sensitivity
+31	gain-of-function	activation	BRAF inhibitors	case report	emerging	326	390	resistance
+32	gain-of-function	activation	preclinical	preclinical	emerging	326	383	ERK inhibitors
+33	gain-of-function	activation	MEK inhibitors	late trials	emerging	327	387	response
+34	gain-of-function	activation	MEK inhibitors	early trials	emerging	327	388	response
+35	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	327	389	sensitivity
+36	gain-of-function	activation	BRAF inhibitors	case report	emerging	327	390	resistance
+37	gain-of-function	activation	preclinical	preclinical	emerging	327	383	ERK inhibitors
+38	gain-of-function	activation	MEK inhibitors	late trials	emerging	328	387	response
+39	gain-of-function	activation	MEK inhibitors	early trials	emerging	328	388	response
+40	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	328	389	sensitivity
+41	gain-of-function	activation	BRAF inhibitors	case report	emerging	328	390	resistance
+42	gain-of-function	activation	preclinical	preclinical	emerging	328	383	ERK inhibitors
+43	gain-of-function	activation	MEK inhibitors	late trials	emerging	329	387	response
+44	gain-of-function	activation	MEK inhibitors	early trials	emerging	329	388	response
+45	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	329	389	sensitivity
+46	gain-of-function	activation	BRAF inhibitors	case report	emerging	329	390	resistance
+47	gain-of-function	activation	preclinical	preclinical	emerging	329	383	ERK inhibitors
+48	gain-of-function	activation	MEK inhibitors	late trials	emerging	332	387	response
+49	gain-of-function	activation	MEK inhibitors	early trials	emerging	332	388	response
+50	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	332	389	sensitivity
+51	gain-of-function	activation	BRAF inhibitors	case report	emerging	332	390	resistance
+52	gain-of-function	activation	preclinical	preclinical	emerging	332	383	ERK inhibitors
+53	gain-of-function	activation	MEK inhibitors	late trials	emerging	333	387	response
+54	gain-of-function	activation	MEK inhibitors	early trials	emerging	333	388	response
+55	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	333	389	sensitivity
+56	gain-of-function	activation	BRAF inhibitors	case report	emerging	333	390	resistance
+57	gain-of-function	activation	preclinical	preclinical	emerging	333	383	ERK inhibitors
+58	gain-of-function	activation	ERK inhibitors	preclinical	emerging	344	383	sensitivity
+59	gain-of-function	activation	dasatinib	preclinical	emerging	347	320	sensitivity
+60	gain-of-function	activation	dasatinib	preclinical	emerging	348	320	sensitivity
+61	gain-of-function	activation	dasatinib	preclinical	emerging	349	320	sensitivity
+62	gain-of-function	activation	dasatinib	preclinical	emerging	350	320	sensitivity
+63	gain-of-function	activation	dasatinib	preclinical	emerging	351	320	sensitivity
+64	gain-of-function	activation	dasatinib + erlotinib	case report	emerging	352	320	response
+65	gain-of-function	activation	dasatinib	preclinical	emerging	352	320	sensitivity
+66	gain-of-function	activation	dasatinib	preclinical	emerging	353	320	sensitivity
+67	gain-of-function	activation	crizotinib	preclinical	emerging	361	243	sensitivity
+68	gain-of-function	activation	crizotinib	case report	emerging	362	256	resistance
+69	gain-of-function	activation	ceritinib	FDA-approved	consensus	362	257	response
+70	gain-of-function	activation	crizotinib	preclinical	emerging	364	243	sensitivity
+71	gain-of-function	activation	crizotinib	case report	emerging	367	256	resistance
+72	gain-of-function	activation	ceritinib	FDA-approved	consensus	367	257	response
+73	gain-of-function	activation	crizotinib	case report	emerging	368	256	resistance
+74	gain-of-function	activation	crizotinib	case report	emerging	369	256	resistance
+75	gain-of-function	activation	ceritinib	FDA-approved	consensus	369	257	response
+76	gain-of-function	activation	crizotinib	preclinical	emerging	370	243	sensitivity
+77	gain-of-function	activation	crizotinib	case report	emerging	371	256	resistance
+78	gain-of-function	activation	novel ALK inhibiors	preclinical	emerging	371	258	response
+79	gain-of-function	activation	crizotinib	preclinical	emerging	372	243	reduced sensitivity
+80	gain-of-function	activation	crizotinib	case report	emerging	372	256	resistance
+81	gain-of-function	activation	novel ALK inhibiors	preclinical	emerging	372	258	response
+82	gain-of-function	activation	crizotinib	preclinical	emerging	376	243	sensitivity
+83	gain-of-function	activation	crizotinib	case report	emerging	377	256	resistance
+84	gain-of-function	activation	crizotinib	preclinical	emerging	379	243	sensitivity
+85	switch-of-function	activation	IDH inhibitors	preclinical	emerging	396	414	sensitivity
+86	gain-of-function	activation	lapatinib	preclinical	emerging	400	416	sensitivity
+87	gain-of-function	activation	lapatinib	preclinical	emerging	401	416	sensitivity
+88	gain-of-function	activation	lapatinib	preclinical	emerging	402	416	sensitivity
+89	gain-of-function	activation	lapatinib	preclinical	emerging	403	416	sensitivity
+90	gain-of-function	activation	lapatinib	preclinical	emerging	404	416	sensitivity
+91	gain-of-function	activation	lapatinib	preclinical	emerging	405	416	sensitivity
+92	gain-of-function	activation	BRAF inhibitors in BRAF mutant tumors	preclinical	emerging	412	419	resistance
+93	gain-of-function	activation	BRAF inhibitors in BRAF mutant tumors	preclinical	emerging	413	419	resistance
+94	gain-of-function	activation	JAK inhibitors	preclinical	emerging	415	421	sensitivity
+95	gain-of-function	activation	bortezomib	preclinical	emerging	483	439	resistance
+96	gain-of-function	activation	FGFR inhibitors	preclinical	emerging	483	440	sensitivity
+97	gain-of-function	activation	FGFR inhibitors	preclinical	emerging	484	440	resistance
+98	gain-of-function	activation	imatinib, crenolanib	preclinical	emerging	488	444	sensitivity
+99	gain-of-function	activation	crenolanib	preclinical	emerging	489	444	sensitivity
+100	gain-of-function	activation	imatinib	preclinical	emerging	489	444	resistance
+101	gain-of-function	activation	imatinib, crenolanib	preclinical	emerging	493	444	sensitivity
+102	gain-of-function	activation	imatinib, sunitinib	late trials, preclinical	emerging	498	107	resistance
+103	gain-of-function	activation	HSP90 inhibitors	preclinical	emerging	498	109	sensitivity
+104	gain-of-function	activation	crenolanib	preclinical	emerging	498	110	sensitivity
+105	gain-of-function	activation	dasatinib	preclinical	emerging	498	109	sensitivity
+106	gain-of-function	activation	imatinib, crenolanib	preclinical	emerging	500	444	sensitivity
+107	gain-of-function	activation	imatinib, crenolanib	preclinical	emerging	502	444	sensitivity
+108	gain-of-function	activation	imatinib	case report	emerging	508	328	response
+109	gain-of-function	activation	sunitinib	case report	emerging	508	329	response
+110	gain-of-function	activation	imatinib	preclinical	emerging	515	99	resistance
+111	gain-of-function	activation	imatinib	preclinical	emerging	517	99	resistance
+112	gain-of-function	activation	imatinib	case report	emerging	520	333	response
+113	gain-of-function	activation	imatinib	preclinical	emerging	530	102	decreased sensitivity
+114	gain-of-function	activation	imatinib	preclinical	emerging	530	99	resistance
+115	gain-of-function	activation	imatinib	preclinical	emerging	534	99	resistance
+116	gain-of-function	activation	imatinib	case report	emerging	534	103	resistance
+117	gain-of-function	activation	sunitinib	preclinical	emerging	535	332	sensitivity
+118	gain-of-function	activation	imatinib	preclinical	emerging	539	99	resistance
+119	gain-of-function	activation	dasatinib	case report	emerging	539	158	response
+120	gain-of-function	activation	quizartinib	preclinical	emerging	539	121	resistance
+121	gain-of-function	activation	imatinib	case report	emerging	541	487	response
+122	gain-of-function	activation	dasatinib	early trials	emerging	542	324	response
+123	gain-of-function	activation	sorafenib	case report	emerging	543	338	response
+124	gain-of-function	activation	imatinib	preclinical	emerging	544	99	resistance
+125	gain-of-function	activation	dasatinib	preclinical	emerging	545	159	sensitivity
+126	gain-of-function	activation	dasatinib	preclinical	emerging	546	159	sensitivity
+127	gain-of-function	activation	imatinib	preclinical	emerging	547	99	resistance
+128	gain-of-function	activation	imatinib	preclinical	emerging	549	99	resistance
+129	gain-of-function	activation	ruxolitinib (in SH2B3 deleted)	preclinical	emerging	551	10	sensitivity
+130	gain-of-function	activation	mTOR inhibitors  (in SH2B3 deleted)	preclinical	emerging	551	11	sensitivity
+131	gain-of-function	activation	imatinib	preclinical	emerging	581	350	sensitivity
+132	gain-of-function	activation	FGFR inhibitors	preclinical	emerging	588	341	sensitivity
+133	gain-of-function	activation	FGFR inhibitors	preclinical	emerging	589	341	sensitivity
+134	gain-of-function	activation	FGFR inhibitors	preclinical	emerging	590	341	sensitivity
+135	gain-of-function	activation	crizotinib	case report	emerging	591	262	resistance
+136	gain-of-function	activation	anti-estrogens	early trials	emerging	592	491	resistance
+137	gain-of-function	activation	anti-estrogens	early trials	emerging	595	491	resistance
+138	gain-of-function	activation	anti-estrogens	early trials	emerging	596	491	resistance
+139	gain-of-function	activation	erlotinib	preclinical	emerging	602	495	sensitivity
+140	gain-of-function	activation	erlotinib	preclinical	emerging	603	495	sensitivity
+141	gain-of-function	activation	erlotinib	preclinical	emerging	604	495	sensitivity
+142	gain-of-function	activation	cetuximab	case report	emerging	605	61	resistance
+143	gain-of-function	activation	panitumumab	case report	emerging	605	61	response
+144	gain-of-function	activation	cetuximab	case report	emerging	606	496	response
+145	gain-of-function	activation	erlotinib	preclinical	emerging	607	495	sensitivity
+146	gain-of-function	activation	lapatinib	case report	emerging	608	343	response
+147	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	609	276	response
+148	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	609	277	sensitivity
+149	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	610	276	response
+150	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	610	277	sensitivity
+151	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	611	276	response
+152	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	611	277	sensitivity
+153	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	612	276	response
+154	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	612	277	sensitivity
+155	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	620	276	response
+156	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	620	277	sensitivity
+157	gain-of-function	activation	cetuximab plus sirolimus	case report	emerging	623	512	response
+158	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	626	276	response
+159	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	626	277	sensitivity
+160	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	628	277	sensitivity
+161	gain-of-function	activation	gefitinib	case report	emerging	631	522	no response
+162	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	635	276	response
+163	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	635	277	sensitivity
+164	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	637	276	response
+165	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	637	277	sensitivity
+166	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	638	276	response
+167	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	638	277	sensitivity
+168	gain-of-function	activation	irreversible EGFR TKIs	late trials	emerging	639	276	response
+169	gain-of-function	activation	MEK inhibitors (alone or in combination)	preclinical	emerging	639	277	sensitivity
+170	gain-of-function	activation	crizotinib	preclinical	emerging	640	524	sensitivity
+171	gain-of-function	activation	crizotinib	preclinical	emerging	641	524	sensitivity
+172	gain-of-function	activation	crizotinib	preclinical	emerging	642	524	sensitivity
+173	gain-of-function	activation	MET inhibitors	early trials	emerging	644	249	response
+174	gain-of-function	activation	crizotinib	preclinical	emerging	646	524	reduced sensitivity
+175	gain-of-function	activation	crizotinib	preclinical	emerging	647	524	reduced sensitivity
+176	gain-of-function	activation	MET inhibitors	case report	emerging	648	250	response
+177	gain-of-function	activation	crizotinib	preclinical	emerging	649	524	sensitivity
+178	gain-of-function	activation	crizotinib	preclinical	emerging	650	524	sensitivity
+179	gain-of-function	activation	crizotinib	preclinical	emerging	651	524	sensitivity
+180	gain-of-function	activation	vismodegib	case report	emerging	652	352	resistance
+181	gain-of-function	activation	MEK inhibitors	case report	emerging	658	366	response
+182	gain-of-function	activation	cetuximab, panitumumab	late trials	emerging	664	49	resistance
+183	gain-of-function	activation	BRAF inhibitors +/- MEK inhibitors	early trials	emerging	664	51	response
+184	gain-of-function	activation	BRAF inhibitors + EGFR inhibitors	preclinical	emerging	664	46	sensitivity
+185	gain-of-function	activation	BRAF inhibitors + PI3K pathway inhibitors	preclinical	emerging	664	52	sensitivity
+186	gain-of-function	activation	proteosome inhibitors	preclinical	emerging	664	54	sensitivity
+187	gain-of-function	activation	preclinical	preclinical	emerging	664	55	mTOR inhibitors + BH3 mimetics
+188	gain-of-function	activation	dabrafenib	case report	emerging	664	98	response
+189	gain-of-function	activation	BRAF inhibitors	case report	emerging	664	51	response
+190	gain-of-function	activation	MEK inhibitors	preclinical	emerging	664	356	sensitivity
+191	gain-of-function	activation	dabrafenib	case report	emerging	664	51	response
+192	gain-of-function	activation	BRAF inhibitors + PI3K pathway inhibitors	preclinical	emerging	664	379	sensitivity
+193	gain-of-function	activation	BRAF inhibitors + HSP90 inhibitors	preclinical	emerging	664	381	sensitivity
+194	gain-of-function	activation	BRAF inhibitors + CDK2/4 inhibitors	preclinical	emerging	664	382	sensitivity
+195	gain-of-function	activation	preclinical	preclinical	emerging	664	383	ERK inhibitors
+196	gain-of-function	activation	vemurafenib, dabrafenib	early trials	emerging	664	51	response
+197	gain-of-function	activation	MEK inhibitors	early trials	emerging	664	532	response
+198	gain-of-function	activation	MEK-enhanced radioiodine uptake	early trials	emerging	664	403	response
+199	gain-of-function	activation	EGFR TKIs	case report	emerging	664	260	resistance
+200	gain-of-function	activation	dabrafenib	early trials	emerging	664	533	response
+201	gain-of-function	activation	vemurafenib	case report	emerging	664	534	response
+202	gain-of-function	activation	BRAF inhibitors +/- MEK inhibitors	preclinical	emerging	664	535	sensitivity
+203	gain-of-function	activation	BRAF inhibitors	preclinical	emerging	664	541	sensitivity
+204	gain-of-function	activation	vemurafenib	case report	emerging	664	545	response
+205	gain-of-function	activation	BRAF inhibitors	early trials	emerging	665	384	response
+206	gain-of-function	activation	MEK inhibitors	case report	emerging	665	366	response
+207	gain-of-function	activation	vemurafenib	late trials	emerging	666	368	response
+208	gain-of-function	activation	trametinib, MEK inhibitors	case report	emerging	671	370	response
+209	gain-of-function	activation	BRAF inhibitors	case report	emerging	671	548	response
+210	gain-of-function	activation	trametinib, MEK inhibitors	case report	emerging	672	370	response
+211	gain-of-function	activation	BRAF inhibitors	case report	emerging	672	548	response
+212	gain-of-function	activation	trametinib, MEK inhibitors	case report	emerging	673	370	response
+213	gain-of-function	activation	BRAF inhibitors	case report	emerging	673	548	response
+214	gain-of-function	activation	trametinib, MEK inhibitors	case report	emerging	674	370	response
+215	gain-of-function	activation	BRAF inhibitors	case report	emerging	674	548	response
+216	gain-of-function (low activity)	activation	sorafenib	preclinical	emerging	683	551	sensitivity
+217	reduced kinase activity	activation	dasatinib	case report	emerging	695	543	response
+218	gain-of-function	activation	EGFR TKIs	case report	emerging	698	260	resistance
+219	gain-of-function	activation	EGFR TKIs + MEK inhibitors in EGFR mutant	preclinical	emerging	698	260	sensitivity
+220	gain-of-function (low activity)	activation	sorafenib	preclinical	emerging	699	551	sensitivity
+221	reduced kinase activity	activation	dasatinib	preclinical	emerging	704	543	sensitivity
+222	gain-of-function	activation	EZH2 inhibitor	preclinical	emerging	712	561	sensitivity
+223	gain-of-function	activation	EZH2 inhibitor	preclinical	emerging	713	561	sensitivity
+224	gain-of-function	activation	EZH2 inhibitor	preclinical	emerging	713	562	sensitivity
+225	gain-of-function	activation	EZH2 inhibitor	preclinical	emerging	714	561	sensitivity
+226	gain-of-function	activation	EZH2 inhibitor	preclinical	emerging	715	561	sensitivity
+227	gain-of-function	activation	EZH2 inhibitor	preclinical	emerging	716	561	sensitivity
+228	gain-of-function	activation	ruxolitinib	early trials	emerging	725	156	response
+229	gain-of-function	activation	JAK inhibitors (alone or in combination)	preclinical	emerging	725	148	response
+230	gain-of-function	activation	ruxolitinib	preclinical	emerging	726	17	sensitivity
+231	gain-of-function	activation	ruxolitinib	preclinical	emerging	727	17	sensitivity
+232	gain-of-function	activation	ruxolitinib	preclinical	emerging	728	17	sensitivity
+233	gain-of-function	activation	ruxolitinib	preclinical	emerging	729	17	sensitivity
+234	gain-of-function	activation	PI3K pathway inhibitors + MEK inhibitors	preclinical	emerging	741	566	response
+235	gain-of-function	activation	PKC inhibitor	preclinical	emerging	741	567	sensitivity
+236	gain-of-function	activation	PI3K pathway inhibitors + MEK inhibitors	preclinical	emerging	742	566	response
+237	gain-of-function	activation	PKC inhibitor	preclinical	emerging	742	567	sensitivity
+238	gain-of-function	activation	PI3K pathway inhibitors + MEK inhibitors	preclinical	emerging	743	566	response
+239	gain-of-function	activation	PKC inhibitor	preclinical	emerging	743	567	sensitivity
+240	gain-of-function	activation	dasatinib, bosutinib, ponatinib	NCCN guidelines	consensus	745	210	response
+241	gain-of-function	activation	dasatinib, bosutinib, ponatinib	NCCN guidelines	consensus	752	210	response
+242	gain-of-function	activation	nilotinib, ponatinib	NCCN guidelines	consensus	757	210	response
+243	gain-of-function	activation	nilotinib, bosutinib, ponatinib	NCCN guidelines	consensus	758	210	response
+244	gain-of-function	activation	ponatinib	NCCN guidelines	consensus	759	210	response
+245	gain-of-function	activation	AURK inhibitors + BCR-ABL1 inhibitors	case report	emerging	759	5	response
+246	gain-of-function	activation	nilotinib, bosutinib, ponatinib	NCCN guidelines	consensus	760	210	response
+247	gain-of-function	activation	nilotinib, bosutinib, ponatinib	NCCN guidelines	consensus	761	210	response
+248	gain-of-function	activation	nilotinib, bosutinib, ponatinib	NCCN guidelines	consensus	762	210	response
+249	gain-of-function	activation	nilotinib, bosutinib, ponatinib	NCCN guidelines	consensus	763	210	response
+250	gain-of-function	activation	nilotinib, bosutinib, ponatinib	NCCN guidelines	consensus	764	210	response
+251	gain-of-function	activation	dasatinib, bosutinib, ponatinib	NCCN guidelines	consensus	767	210	response
+252	gain-of-function	activation	dasatinib, bosutinib, ponatinib	NCCN guidelines	consensus	768	210	response
+253	gain-of-function	activation	dasatinib, bosutinib, ponatinib	NCCN guidelines	consensus	770	210	response
+254	gain-of-function	activation	vandetanib	FDA-approved	consensus	777	575	response
+255	gain-of-function	activation	cabozantinib, sunitinib	preclinical	emerging	777	576	sensitivity
+256	gain-of-function	activation	RET inhibitors	preclinical	emerging	777	577	sensitivity
+257	gain-of-function	activation	vandetanib	FDA-approved	consensus	781	575	response
+258	gain-of-function	activation	cabozantinib, sunitinib	preclinical	emerging	781	576	sensitivity
+259	gain-of-function	activation	RET inhibitors	preclinical	emerging	781	577	sensitivity
+260	gain-of-function	activation	dovitinib	preclinical	emerging	792	344	resistance
+261	gain-of-function	activation	ponatinib	preclinical	emerging	792	344	sensitivity
+262	gain-of-function	activation	dovitinib	preclinical	emerging	794	344	resistance
+263	gain-of-function	activation	ponatinib	preclinical	emerging	794	344	sensitivity
+264	gain-of-function	activation	dovitinib	preclinical	emerging	795	344	resistance
+265	gain-of-function	activation	ponatinib	preclinical	emerging	795	344	sensitivity
+266	gain-of-function	activation	dovitinib	preclinical	emerging	796	344	resistance
+267	gain-of-function	activation	ponatinib	preclinical	emerging	796	344	sensitivity
+268	gain-of-function	activation	FGFR inhibitors	preclinical	emerging	797	345	sensitivity
+269	gain-of-function	activation	dovitinib	preclinical	emerging	797	344	resistance
+270	gain-of-function	activation	ponatinib	preclinical	emerging	797	344	sensitivity
+271	gain-of-function	activation	FGFR inhibitors	preclinical	emerging	798	345	sensitivity
+272	gain-of-function	activation	dovitinib	preclinical	emerging	798	344	resistance
+273	gain-of-function	activation	ponatinib	preclinical	emerging	798	344	sensitivity
+274	gain-of-function	activation	dovitinib	preclinical	emerging	799	344	resistance
+275	gain-of-function	activation	ponatinib	preclinical	emerging	799	344	sensitivity
+276	gain-of-function	activation	dovitinib	preclinical	emerging	800	344	resistance
+277	gain-of-function	activation	ponatinib	preclinical	emerging	800	344	sensitivity
+278	gain-of-function	activation	dovitinib	preclinical	emerging	801	344	resistance
+279	gain-of-function	activation	ponatinib	preclinical	emerging	801	344	sensitivity
+280	gain-of-function	activation	dovitinib	preclinical	emerging	802	344	resistance
+281	gain-of-function	activation	ponatinib	preclinical	emerging	802	344	sensitivity
+282	gain-of-function	activation	dovitinib	preclinical	emerging	803	344	resistance
+283	gain-of-function	activation	ponatinib	preclinical	emerging	803	344	sensitivity
+284	gain-of-function	activation	dovitinib	preclinical	emerging	804	344	resistance
+285	gain-of-function	activation	ponatinib	preclinical	emerging	804	344	sensitivity
+286	gain-of-function	activation	dovitinib	preclinical	emerging	805	344	resistance
+287	gain-of-function	activation	ponatinib	preclinical	emerging	805	344	sensitivity
+288	gain-of-function	activation	dovitinib	preclinical	emerging	806	344	resistance
+289	gain-of-function	activation	ponatinib	preclinical	emerging	806	344	sensitivity
+290	gain-of-function	activation	FGFR inhibitors	preclinical	emerging	810	322	sensitivity
+291	gain-of-function	activation	FGFR inhibitors	preclinical	emerging	812	322	sensitivity
+292	gain-of-function	activation	pazopanib	case report	emerging	813	322	response
+293	gain-of-function	activation	JAK inhibitors, dasatinib	preclinical	emerging	832	349	sensitivity
+294	gain-of-function	activation	JAK inhibitors, dasatinib	preclinical	emerging	833	349	sensitivity
+295	gain-of-function	activation	cetuximab	late trials	emerging	852	70	response
+296	gain-of-function	activation	MEK inhibitors + PI3K pathway inhibitors	preclinical	emerging	852	72	sensitivity
+297	gain-of-function	activation	trastuzumab, pertuzumab, lapatinib, anti-HER3 mAbs, PI3K pathway inhibitors + MEK inhibitors	preclinical	emerging	862	364	sensitivity
+298	gain-of-function	activation	trastuzumab, pertuzumab, lapatinib, anti-HER3 mAbs, PI3K pathway inhibitors + MEK inhibitors	preclinical	emerging	863	364	sensitivity
+299	gain-of-function	activation	trastuzumab, lapatinib, PI3K pathway inhibitors + MEK inhibitors	preclinical	emerging	864	364	sensitivity
+300	gain-of-function	activation	quizartinib	preclinical	emerging	866	121	resistance
+301	gain-of-function	activation	ponatinib	preclinical	emerging	866	122	resistance
+302	gain-of-function	activation	crenolanib, PKC412	preclinical	emerging	866	123	sensitivity
+303	gain-of-function	activation	quizartinib	preclinical	emerging	867	121	resistance
+304	gain-of-function	activation	ponatinib	preclinical	emerging	867	122	resistance
+305	gain-of-function	activation	crenolanib, PKC412	preclinical	emerging	867	123	sensitivity
+306	gain-of-function	activation	quizartinib	preclinical	emerging	872	121	resistance
+307	gain-of-function	activation	ponatinib	preclinical	emerging	872	122	resistance
+308	gain-of-function	activation	sorafenib	case report	emerging	872	16	resistance
+309	gain-of-function	activation	midostaurin	case report	emerging	872	134	response
+310	gain-of-function	activation	lestaurtinib	case report	emerging	872	135	response
+311	gain-of-function	activation	quizartinib	preclinical	emerging	873	121	resistance
+312	gain-of-function	activation	ponatinib	preclinical	emerging	873	122	resistance
+313	gain-of-function	activation	sorafenib	case report	emerging	873	16	resistance
+314	gain-of-function	activation	midostaurin	case report	emerging	873	134	response
+315	gain-of-function	activation	lestaurtinib	case report	emerging	873	135	response
+316	gain-of-function	activation	quizartinib	preclinical	emerging	875	121	resistance
+317	gain-of-function	activation	ponatinib	preclinical	emerging	875	122	resistance
+318	gain-of-function	activation	sorafenib	case report	emerging	875	16	resistance
+319	gain-of-function	activation	midostaurin	case report	emerging	875	134	response
+320	gain-of-function	activation	lestaurtinib	case report	emerging	875	135	response
+321	gain-of-function	activation	quizartinib	preclinical	emerging	876	121	resistance
+322	gain-of-function	activation	ponatinib	preclinical	emerging	876	122	resistance
+323	gain-of-function	activation	sorafenib	case report	emerging	876	16	resistance
+324	gain-of-function	activation	midostaurin	case report	emerging	876	134	response
+325	gain-of-function	activation	lestaurtinib	case report	emerging	876	135	response
+326	gain-of-function	activation	quizartinib	preclinical	emerging	877	121	resistance
+327	gain-of-function	activation	quizartinib	preclinical	emerging	878	121	resistance
+328	gain-of-function	activation	ponatinib	preclinical	emerging	878	122	resistance
+329	gain-of-function	activation	sorafenib	case report	emerging	878	16	resistance
+330	gain-of-function	activation	midostaurin	case report	emerging	878	134	response
+331	gain-of-function	activation	lestaurtinib	case report	emerging	878	135	response
+332	gain-of-function	activation	quizartinib	preclinical	emerging	879	121	resistance
+333	gain-of-function	activation	ponatinib	preclinical	emerging	879	122	resistance
+334	gain-of-function	activation	sorafenib	case report	emerging	879	16	resistance
+335	gain-of-function	activation	midostaurin	case report	emerging	879	134	response
+336	gain-of-function	activation	lestaurtinib	case report	emerging	879	135	response
+337	gain-of-function	activation	quizartinib	preclinical	emerging	880	121	resistance
+338	gain-of-function	activation	ponatinib	preclinical	emerging	880	122	resistance
+339	gain-of-function	activation	sorafenib	case report	emerging	880	16	resistance
+340	gain-of-function	activation	midostaurin	case report	emerging	880	134	response
+341	gain-of-function	activation	lestaurtinib	case report	emerging	880	135	response
+342	gain-of-function	activation	quizartinib	preclinical	emerging	881	121	resistance
+343	gain-of-function	activation	quizartinib	preclinical	emerging	882	121	resistance
+344	gain-of-function	activation	quizartinib	preclinical	emerging	883	121	resistance
+345	gain-of-function	activation	ponatinib	preclinical	emerging	883	122	resistance
+346	gain-of-function	activation	crenolanib, PKC412	preclinical	emerging	883	123	sensitivity
+347	gain-of-function	activation	quizartinib	preclinical	emerging	884	137	resistance
+348	gain-of-function	activation	crenolanib, PKC412	preclinical	emerging	884	123	sensitivity
+349	gain-of-function	activation	quizartinib	preclinical	emerging	885	137	resistance
+350	gain-of-function	activation	crenolanib, PKC412	preclinical	emerging	885	123	sensitivity
+351	gain-of-function	activation	quizartinib	preclinical	emerging	886	121	resistance
+352	gain-of-function	activation	ponatinib	preclinical	emerging	886	122	resistance
+353	gain-of-function	activation	crenolanib, PKC412	preclinical	emerging	886	123	sensitivity
+354	gain-of-function	activation	quizartinib	preclinical	emerging	887	121	resistance
+355	gain-of-function	activation	ponatinib	preclinical	emerging	887	122	resistance
+356	gain-of-function	activation	crenolanib, PKC412	preclinical	emerging	887	123	sensitivity
+357	gain-of-function	activation	quizartinib	preclinical	emerging	888	121	resistance
+358	gain-of-function	activation	ponatinib	preclinical	emerging	888	122	resistance
+359	gain-of-function	activation	crenolanib, PKC412	preclinical	emerging	888	123	sensitivity
+360	gain-of-function	activation	BRAF inhibitors	preclinical	emerging	900	365	resistance
+361	gain-of-function	activation	allosteric AKT inhibitors	preclinical	emerging	901	610	sensitivity
+362	gain-of-function	activation	neratinib	preclinical	emerging	903	619	sensitivity
+363	gain-of-function	activation	vemurafenib	case report	emerging	906	390	resistance
+364	gain-of-function	activation	BRAF inhibitors, MEK inhibitors	preclinical	emerging	906	621	resistance
+365	gain-of-function	activation	vemurafenib	case report	emerging	907	390	resistance
+366	gain-of-function	activation	MEK inhibitors	case report	emerging	908	622	resistance
+367	gain-of-function	activation	MEK inhibitors	case report	emerging	909	622	resistance
+368	gain-of-function	activation	MEK inhibitors	preclinical	emerging	911	621	resistance
+369	gain-of-function	activation	MEK inhibitors	preclinical	emerging	912	621	resistance
+370	gain-of-function	activation	ERK inhibitors	preclinical	emerging	912	383	sensitivity
+371	gain-of-function	activation	MEK inhibitors	preclinical	emerging	913	621	resistance
+372	gain-of-function	activation	BRAF inhibitors in BRAF mutant tumor	case report	emerging	914	623	sensitivity
+373	gain-of-function	activation	MEK inhibitors	preclinical	emerging	915	621	resistance
+374	gain-of-function	activation	MEK inhibitors	preclinical	emerging	916	621	resistance
+375	gain-of-function	activation	MEK inhibitors	preclinical	emerging	917	621	resistance
+376	gain-of-function	activation	BRAF inhibitors, MEK inhibitors	case report	emerging	919	624	resistance
+377	gain-of-function	activation	novel MEK inhibitors	preclinical	emerging	919	625	sensitivity
+378	gain-of-function	activation	BRAF inhibitors in BRAF mutant tumor	case report	emerging	920	623	sensitivity
+379	gain-of-function	activation	BRAF inhibitors, MEK inhibitors	case report	emerging	921	621	resistance
+380	gain-of-function	activation	MEK inhibitors	preclinical	emerging	922	621	resistance
+381	gain-of-function	activation	MEK inhibitors	preclinical	emerging	923	621	resistance
+382	gain-of-function	activation	ERK inhibitors	preclinical	emerging	923	383	sensitivity
+383	gain-of-function	activation	vemurafenib	case report	emerging	924	390	resistance
+384	gain-of-function	activation	BRAF inhibitors, MEK inhibitors	preclinical	emerging	924	621	resistance
+385	gain-of-function	activation	MEK inhibitors	preclinical	emerging	925	621	resistance
+386	gain-of-function	activation	MEK inhibitors	preclinical	emerging	926	621	resistance
+387	gain-of-function	activation	ERK inhibitors	preclinical	emerging	926	383	sensitivity
+388	gain-of-function	activation	ibrutinib	early trials	emerging	935	630	resistance
+389	gain-of-function	activation	ibrutinib	early trials	emerging	936	630	resistance
+390	gain-of-function	activation	ibrutinib	early trials	emerging	937	630	resistance
+391	gain-of-function	activation	ERBB2 TKIs, trastuzumab	preclinical	emerging	950	261	sensitivity
+392	gain-of-function	activation	lapatinib, neratinib	preclinical	emerging	951	619	sensitivity
+393	gain-of-function	activation	ERBB2 TKIs, trastuzumab	preclinical	emerging	952	261	sensitivity
+394	gain-of-function	activation	ERBB2 TKIs, trastuzumab	preclinical	emerging	953	261	sensitivity
+395	gain-of-function	activation	trastuzumab, lapatinib, neratinib	preclinical	emerging	956	619	sensitivity
+396	gain-of-function	activation	trastuzumab, lapatinib, neratinib	preclinical	emerging	957	619	sensitivity
+397	gain-of-function	activation	lapatinib, neratinib	preclinical	emerging	961	619	sensitivity
+398	gain-of-function	activation	lapatinib, neratinib	preclinical	emerging	964	619	sensitivity
+399	gain-of-function	activation	trastuzumab, lapatinib, neratinib	preclinical	emerging	965	619	sensitivity
+400	loss-of-function	activation	everolimus	case report	emerging	978	640	response
+401	loss-of-function	activation	everolimus	case report	emerging	979	640	response
+402	gain-of-function	activation	PI3K pathway inhibitors + MEK inhibitors	preclinical	emerging	985	566	response
+403	gain-of-function	activation	PI3K pathway inhibitors + MEK inhibitors	preclinical	emerging	986	566	response
+404	gain-of-function	activation	BRAF inhibitors, MEK inhibitors	preclinical	emerging	987	643	resistance
+405	gain-of-function	activation	ERK inhibitors	preclinical	emerging	987	643	sensitivity
+406	gain-of-function	activation	BRAF inhibitors, MEK inhibitors	preclinical	emerging	988	643	resistance
+407	gain-of-function	activation	ERK inhibitors	preclinical	emerging	988	643	sensitivity
+408	gain-of-function	activation	BRAF + MEK inhibitors	case report	emerging	989	644	resistance
+409	gain-of-function	activation	ERK inhibitors	preclinical	emerging	989	644	sensitivity
+410	gain-of-function	activation	BRAF inhibitors, MEK inhibitors	preclinical	emerging	990	643	resistance
+411	gain-of-function	activation	ERK inhibitors	preclinical	emerging	990	643	sensitivity
+412	gain-of-function	activation	BRAF inhibitors, MEK inhibitors	preclinical	emerging	991	643	resistance
+413	gain-of-function	activation	ERK inhibitors	preclinical	emerging	991	643	sensitivity
+414	gain-of-function	activation	JAK inhibitors	preclinical	emerging	993	182	sensitivity
+415	gain-of-function	activation	JAK inhibitors	preclinical	emerging	995	182	sensitivity
+416	gain-of-function	activation	JAK inhibitors	preclinical	emerging	996	182	sensitivity
+417	gain-of-function	activation	JAK inhibitors	preclinical	emerging	998	182	sensitivity
+418	loss-of-function	activation	mTOR inhibitors	preclinical	emerging	999	348	sensitivity
+419	gain-of-function	activation	JAK inhibitors	preclinical	emerging	1003	649	sensitivity
+420	gain-of-function	activation	JAK inhibitors	preclinical	emerging	1004	649	sensitivity
+421	gain-of-function	activation	JAK inhibitors	preclinical	emerging	1005	649	sensitivity
+422	gain-of-function	activation	sorafenib	case report	emerging	1017	259	response
+423	gain-of-function	activation	ibrutinib	early trials	emerging	1018	630	resistance
+424	gain-of-function	activation	ibrutinib	early trials	emerging	1019	630	resistance
 \.
 
 
@@ -8186,7 +8612,7 @@ COPY drug_interactions (id, effect, pathway, therapeutic_context, status, eviden
 -- Name: drug_interactions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: acoffman
 --
 
-SELECT pg_catalog.setval('drug_interactions_id_seq', 1, false);
+SELECT pg_catalog.setval('drug_interactions_id_seq', 424, true);
 
 
 --
@@ -8236,6 +8662,7 @@ COPY schema_migrations (version) FROM stdin;
 20151209194223
 20160203194352
 20160203214847
+20160209164657
 \.
 
 
@@ -8243,7 +8670,7 @@ COPY schema_migrations (version) FROM stdin;
 -- Name: sources_id_seq; Type: SEQUENCE SET; Schema: public; Owner: acoffman
 --
 
-SELECT pg_catalog.setval('sources_id_seq', 648, true);
+SELECT pg_catalog.setval('sources_id_seq', 649, true);
 
 
 --
