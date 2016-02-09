@@ -3,6 +3,8 @@
   %head
     %meta{charset: 'utf-8'}/
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %link{:href => "docm_favicon.png", :rel => "shortcut icon"}/
+
     %title DoCM - Database of Curated Mutations
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
@@ -59,7 +61,7 @@
           .identity.col-sm-4.hidden-xs
             %p
               %a{href: 'http://genome.wustl.edu/'}
-                = image_tag("produced-by.png", :alt => 'Produced by The Genome Institute at Washington University')
+                = image_tag("produced-by.png", :alt => 'Produced by The McDonnell Genome Institute at the Washington University School of Medicine')
           .menu.col-xs-12.col-sm-8
             %ul.pull-right.menu-footer
               %li{class: @downloads_active}
@@ -69,7 +71,7 @@
       .row.visible-xs
         .col-sm-12.identity-xs
           %a{href: 'http://genome.wustl.edu/'}
-            = image_tag("produced-by.png", :alt => 'Produced by The Genome Institute at Washington University')
+            = image_tag("produced-by.png", :alt => 'Produced by The McDonnell Genome Institute at the Washington University School of Medicine')
   -if(Rails.env.production?)
     :javascript
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
