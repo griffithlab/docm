@@ -2,7 +2,7 @@ class VersionFilter
   include Filter
 
   def self.filter(relation, value)
-    if value == 'Current'
+    if value =~ /Current/
       relation.where('versions.is_current' => true)
     else
       relation.where('versions.name' => value)
@@ -10,8 +10,8 @@ class VersionFilter
   end
 
   def self.valid_values
-    Version.order(name: :asc)
-      .pluck(:name) + ['Current']
+    current_version_name = Version.where(is_current: true).pluck(:name).first
+    ["Current (#{current_version_name})"] + Version.order(name: :asc).pluck(:name)
   end
 
   def self.param_name
