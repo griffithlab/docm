@@ -29,6 +29,7 @@ if variant.drug_interactions.any?
     json.drug di.therapeutic_context
     json.pathway di.pathway
     json.effect di.effect
+    json.association di.clinical_association
     json.status di.status
     json.evidence_type di.evidence
     json.source_pubmed_id di.source.pubmed_id
