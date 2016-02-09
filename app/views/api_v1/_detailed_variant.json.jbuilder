@@ -10,7 +10,6 @@ json.transcript do
 end
 json.reference_version variant.location.reference_sequence_version
 json.gene variant.gene.name
-json.entrez_id variant.gene.entrez_id
 json.reference variant.location.reference_read
 json.variant variant.variant
 json.amino_acid variant.amino_acid.name
