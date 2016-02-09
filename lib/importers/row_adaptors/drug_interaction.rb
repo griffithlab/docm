@@ -8,17 +8,24 @@ module Importers
         pathway = meta['Pathway']
         meta['list'].each do |interaction_meta|
           next unless valid_interaction?(interaction_meta)
-          source = ::Source.where(pubmed_id: interaction_meta['PMID'].to_i).first_or_create
-          ::DrugInteraction.where(
-            source: source,
-            variant: variant,
-            effect: effect,
-            pathway: pathway,
-            therapeutic_context: interaction_meta['Therapeutic_context'],
-            status: interaction_meta['Status'],
-            evidence: interaction_meta['Evidence'],
-            clinical_association: interaction_meta['Association']
-          ).first_or_create
+          pubmed_ids = interaction_meta['PMID']
+            .split(',')
+            .map(&:strip)
+            .map(&:to_i)
+            .reject { |id| id == 0 }
+          pubmed_ids.each do |pubmed_id|
+            source = ::Source.where(pubmed_id: pubmed_id).first_or_create
+            ::DrugInteraction.where(
+              source: source,
+              variant: variant,
+              effect: effect,
+              pathway: pathway,
+              therapeutic_context: interaction_meta['Therapeutic_context'],
+              status: interaction_meta['Status'],
+              evidence: interaction_meta['Evidence'],
+              clinical_association: interaction_meta['Association']
+            ).first_or_create
+          end
         end
       end
 
@@ -34,7 +41,7 @@ module Importers
       def self.valid_interaction?(interaction)
         required_interaction_fields.inject(true) do |valid, field|
           valid && interaction[field].present?
-        end && interaction['PMID'].to_i != 0
+        end
       end
 
       def self.required_interaction_fields
