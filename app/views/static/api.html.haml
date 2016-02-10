@@ -81,7 +81,7 @@
                 %td
                   By default, the API will return results for the current version of the DoCM database. If you would like results from a previous version, you can specify it by name with this parameter.
                 %td
-                  %code version=2
+                  %code version=1
           %strong Example Request
           %p.small Returns all variants on the gene KRAS between positions 25398284 and 25398285 in JSON.
           %pre /api/v1/variants.json?genes=KRAS&position_start=25398284&position_stop=25398285
@@ -89,7 +89,7 @@
             By default, the latest version of the DoCM database will be used. If you wish to use a previous version, you can specify it via the
             %code version
             parameter.
-          %pre /api/v1/variants.json?genes=KRAS&version=1
+          %pre /api/v1/variants.json?genes=KRAS&version=2
           %strong Example Response
           %pre
             :preserve
@@ -149,91 +149,80 @@
           %strong Example Request
           %p.small
             Returns all all the information DoCM has about the variant
-            %code ENST00000263967:c.1633G>C
-          %pre /api/v1/variants/ENST00000263967:c.1633G>C.json
+            %code ENST00000078429:c.626A>C
+          %pre /api/v1/variants/ENST00000078429:c.626A>C.json
           %strong Example Response
           %pre
             :preserve
               {
-                "hgvs":"ENST00000263967:c.1633G>C",
-                "chromosome":"3",
-                "start":178936091,
-                "stop":178936091,
-                "strand":"+1",
-                "transcript":{
-                  "name":"ENST00000263967",
-                  "source":"ensembl",
-                  "version":"74_37"
+
+                "hgvs": "ENST00000078429:c.626A>C",
+                "chromosome": "19",
+                "start": 3118942,
+                "stop": 3118942,
+                "strand": "1",
+                "transcript": {
+                  "name": "ENST00000078429",
+                  "source": "ensembl",
+                  "version": "74_37"
                 },
-                "reference_version":"GRCh37",
-                "gene":"PIK3CA",
-                "reference":"G",
-                "variant":"C",
-                "amino_acid":"p.E545Q",
-                "variant_type":"SNP",
-                "mutation_type":"missense",
-                "cdna_change":"c.1633",
-                "diseases":[
+                "reference_version": "GRCh37",
+                "gene": "GNA11",
+                "reference": "A",
+                "variant": "C",
+                "amino_acid": "p.Q209P",
+                "variant_type": "SNP",
+                "mutation_type": "missense",
+                "cdna_change": "c.626",
+                "diseases": [
                   {
-                    "disease":"breast cancer",
-                    "doid":"1612",
-                    "source_pubmed_id":20453058
+
+                    "disease": "uveal melanoma",
+                    "doid": "6039",
+                    "source_pubmed_id": 25157968
                   },
                   {
-                    "disease":"breast cancer",
-                    "doid":"1612",
-                    "source_pubmed_id":18676830
+
+                    "disease": "melanoma",
+                    "doid": "1909",
+                    "source_pubmed_id": 1328859
                   },
                   {
-                    "disease":"breast cancer",
-                    "doid":"1612",
-                    "source_pubmed_id":15805248
+                    "disease": "uveal melanoma",
+                    "doid": "6039",
+                    "source_pubmed_id": 22733540
                   },
                   {
-                    "disease":"breast cancer",
-                    "doid":"1612",
-                    "source_pubmed_id":15647370
+                    "disease": "melanoma",
+                    "doid": "1909",
+                    "source_pubmed_id": 22733540
                   },
                   {
-                    "disease":"breast cancer",
-                    "doid":"1612",
-                    "source_pubmed_id":15254419
+                    "disease": "melanoma",
+                    "doid": "1909",
+                    "source_pubmed_id": 2549426
                   },
                   {
-                    "disease":"breast cancer",
-                    "doid":"1612",
-                    "source_pubmed_id":18725974
+                    "disease": "melanoma",
+                    "doid": "1909",
+                    "source_pubmed_id": 21083380
                   },
                   {
-                    "disease":"breast cancer",
-                    "doid":"1612",
-                    "source_pubmed_id":22162589
-                  },
-                  {
-                    "disease":"breast cancer",
-                    "doid":"1612",
-                    "source_pubmed_id":22162582
+                    "disease": "melanoma",
+                    "doid": "1909",
+                    "source_pubmed_id": 22808163
                   }
-                ]
-                "drug_interactions":[
+                ],
+                "drug_interactions": [
                   {
-                    "drug":"AURK inhibitors + BCR-ABL1 inhibitors",
-                    "pathway":"activation",
-                    "effect":"response",
-                    "status":"case report",
-                    "evidence_type":"emerging",
-                    "source_pubmed_id":22772060,
-                    "aggregated_by":"Dienstman Knowledge Database - https://www.synapse.org/#!Synapse:syn2370773"
-                  },
-                  {
-                    "drug":"ponatinib",
-                    "pathway":"activation",
-                    "effect":"response",
-                    "status":"NCCN guidelines",
-                    "evidence_type":"consensus",
-                    "source_pubmed_id":21562040,
-                    "aggregated_by":"Dienstman Knowledge Database - https://www.synapse.org/#!Synapse:syn2370773"
+                    "drug": "PI3K pathway inhibitors + MEK inhibitors",
+                    "pathway": "activation",
+                    "effect": "gain-of-function",
+                    "association": "response",
+                    "status": "preclinical",
+                    "evidence_type": "emerging",
+                    "source_pubmed_id": ​22733540,
+                    "aggregated_by": "Dienstman Knowledge Database - https://www.synapse.org/#!Synapse:syn2370773"
                   }
                 ]
               }
-
