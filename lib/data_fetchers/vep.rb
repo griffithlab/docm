@@ -3,11 +3,10 @@ require 'net/http'
 module DataFetchers
   class Vep
     def self.call_vep_api(variant)
-      url = url_for_variant(variant)
-      req = Net::HTTP::Get.new(url.path)
-      res = Net::HTTP.start(url.host, url.port) { |http| http.request(req) }
-      raise "Request failed!" unless res.code == '200'
-      JSON.parse(res.body)
+      uri = url_for_variant(variant)
+      res = Net::HTTP.get_response(uri)
+      raise StandardError.new('Request Failed!')  unless res.code == '200'
+      VepResponse.new(res.body)
     end
 
     def self.url_for_variant(variant)
@@ -15,13 +14,41 @@ module DataFetchers
                     variant['chromosome'],
                     variant['start'],
                     variant['stop'],
-                    variant['variant_base'])
+                    variant['variant'])
 
-      URI.parse(url)
+      URI.parse(url).tap do |uri|
+        uri.query = URI.encode_www_form({'content-type' => 'application/json'})
+      end
     end
 
     def self.url_template
-      "http://rest.ensembl.org/vep/human/region/%s:%s-%s/%s?content-type=application/json&hgvs=true&numbers=true"
+      "http://grch37.rest.ensembl.org/vep/human/region/%s:%s-%s/%s"
+    end
+  end
+
+  class VepResponse
+    attr_reader :data, :original_variant, :transcript
+    def initialize(data, original_variant)
+      @data = JSON.parse(data)
+      @original_variant = original_variant
+      @transcript = docm_transcript_from_civic_variant
+    end
+
+    private
+    def variant_consequence
+      if @consequence
+        @consequence
+      else
+        consequences = data['transcript_consequences'].select do |cons|
+          cons['transcript_id'] == transcript
+        end
+        raise StandardError.new("Found more than one consequence!") if consequences.size > 1
+        @consequence = consequences.first
+      end
+    end
+
+    def docm_transcript_from_civic_variant
+      original_variant['transcript'].sub(/\..+\z/, '')
     end
   end
 end
