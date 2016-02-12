@@ -35,7 +35,7 @@ namespace :docm do
   desc 'import CIViC variants into the current DoCM version' 
   task import_civic: :environment do
     puts 'Importing CIViC.'
-    Importers::Civic.new(version).import!
+    Importers::Civic.new(Version.current_version).import!
     puts 'Generating HGVS strings.'
     DataFetchers::HGVS.run
     puts 'Fetching disease information from DiseaseOntology.'
