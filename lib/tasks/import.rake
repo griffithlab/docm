@@ -10,13 +10,32 @@ namespace :docm do
   end
 
   desc 'import a TSV spreadsheet to your local database'
-  task :import, [:tsv_path,:version] => :environment do |_, args|
+  task :import, [:tsv_path,:version,:import_civic] => :environment do |_, args|
     file_path = args[:tsv_path]
     version = args[:version]
+    civic = args[:import_civic] || false
     raise "File #{file_path} not found!" unless File.exists? file_path
     raise "Must specify a version to import!" unless version.present?
     puts 'Importing TSV.'
     Importers::TSV.new(file_path, version).import!
+    if civic
+      puts 'Importing CIViC.'
+      Importers::Civic.new(version).import!
+    end
+    puts 'Generating HGVS strings.'
+    DataFetchers::HGVS.run
+    puts 'Fetching disease information from DiseaseOntology.'
+    DataFetchers::DiseaseOntology.run
+    puts 'Fetching citations from PubMed.'
+    DataFetchers::PubMed.run
+    puts 'Looking up previous reference bases in Ensembl.'
+    DataFetchers::PreviousBase.run
+  end
+
+  desc 'import CIViC variants into the current DoCM version' 
+  task import_civic: :environment do
+    puts 'Importing CIViC.'
+    Importers::Civic.new(version).import!
     puts 'Generating HGVS strings.'
     DataFetchers::HGVS.run
     puts 'Fetching disease information from DiseaseOntology.'
