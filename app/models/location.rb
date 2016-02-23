@@ -6,7 +6,10 @@ class Location < ActiveRecord::Base
   #otherwise compare int to into or string to string
   #if still even, compare starting locations
   def <=>(other)
-    cmp = Location.chromosome_sort_val(self, other)
+    cmp = Location.chromosome_sort_val(
+      self.chromosome,
+      other.chromosome
+    )
     cmp.zero? ? self.start <=> other.start : cmp
   end
 
