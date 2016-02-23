@@ -43,11 +43,10 @@ class VariantVcfRowPresenter < SimpleDelegator
   end
 
   def variant_base
-    v = variant.gsub('-', '')
-    if v.empty?
-      location.previous_reference_base
+    if is_indel?
+      (location.previous_reference_base + variant).gsub('-','')
     else
-      v
+      variant
     end
   end
 
