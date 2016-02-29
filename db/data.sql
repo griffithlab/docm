@@ -2,12 +2,16 @@
 -- PostgreSQL database dump
 --
 
+-- Dumped from database version 9.5.1
+-- Dumped by pg_dump version 9.5.1
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
+SET row_security = off;
 
 SET search_path = public, pg_catalog;
 
@@ -667,6 +671,7 @@ SELECT pg_catalog.setval('amino_acids_id_seq', 636, true);
 --
 
 COPY data_versions (id, version) FROM stdin;
+1	7
 \.
 
 
@@ -674,7 +679,7 @@ COPY data_versions (id, version) FROM stdin;
 -- Name: data_versions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: acoffman
 --
 
-SELECT pg_catalog.setval('data_versions_id_seq', 1, false);
+SELECT pg_catalog.setval('data_versions_id_seq', 1, true);
 
 
 --
@@ -2615,6 +2620,7 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 744	c.626_625	AA	-1	415	4	89	77	1	\N	ENST00000286548:c.626_625CA>TT	\N	36	2	\N
 745	c.763	A	1	416	1	497	78	1	\N	ENST00000372348:c.763G>A	\N	61	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"dasatinib, ponatinib","Status":"NCCN guidelines","Evidence":"consensus","PMID":"NCCN"}]}
 761	c.1006	G	1	430	1	512	78	1	\N	ENST00000372348:c.1006T>G	\N	61	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"nilotinib, ponatinib","Status":"NCCN guidelines","Evidence":"consensus","PMID":"NCCN"}]}
+461	c.1634	T	1	110	1	141	55	1	\N	ENST00000263967:c.1634A>T	\N	25	2	\N
 762	c.1007	G	1	431	1	513	78	1	\N	ENST00000372348:c.1007T>G	\N	61	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"nilotinib, ponatinib","Status":"NCCN guidelines","Evidence":"consensus","PMID":"NCCN"}]}
 763	c.1008	A	1	432	1	514	78	1	\N	ENST00000372348:c.1008C>A	\N	61	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"nilotinib, ponatinib","Status":"NCCN guidelines","Evidence":"consensus","PMID":"NCCN"}]}
 764	c.1008	G	1	432	1	514	78	1	\N	ENST00000372348:c.1008C>G	\N	61	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"nilotinib, ponatinib","Status":"NCCN guidelines","Evidence":"consensus","PMID":"NCCN"}]}
@@ -2660,6 +2666,9 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 437	c.110	T	1	115	1	151	53	1	\N	ENST00000349496:c.110C>T	\N	26	2	\N
 438	c.118	C	1	260	1	326	53	1	\N	ENST00000349496:c.118A>C	\N	26	2	\N
 439	c.118	G	1	260	1	327	53	1	\N	ENST00000349496:c.118A>G	\N	26	2	\N
+316	c.1853	A	-1	9	1	18	39	1	\N	ENST00000373103:c.1853C>T	\N	3	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"ruxolitinib","Status":"case report","Evidence":"emerging","PMID":"23656643"}]}
+462	c.1635	C	1	266	1	337	55	1	\N	ENST00000263967:c.1635G>C	\N	25	2	\N
+463	c.1635	T	1	266	1	337	55	1	\N	ENST00000263967:c.1635G>T	\N	25	2	\N
 878	c.2503	A	-1	36	1	40	88	1	\N	ENST00000380982:c.2503G>T	\N	9	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"quizartinib","Status":"preclinical","Evidence":"emerging","PMID":"22504184"},{"Association":"resistance","Therapeutic_context":"ponatinib","Status":"preclinical","Evidence":"emerging","PMID":"23430109"},{"Association":"resistance","Therapeutic_context":"sorafenib","Status":"case report","Evidence":"emerging","PMID":"22368270"},{"Association":"response","Therapeutic_context":"midostaurin","Status":"case report","Evidence":"emerging","PMID":"20733134"},{"Association":"response","Therapeutic_context":"lestaurtinib","Status":"case report","Evidence":"emerging","PMID":"16857985.0"}]}
 879	c.2503	G	-1	36	1	41	88	1	\N	ENST00000380982:c.2503G>C	\N	9	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"quizartinib","Status":"preclinical","Evidence":"emerging","PMID":"22504184"},{"Association":"resistance","Therapeutic_context":"ponatinib","Status":"preclinical","Evidence":"emerging","PMID":"23430109"},{"Association":"resistance","Therapeutic_context":"sorafenib","Status":"case report","Evidence":"emerging","PMID":"22368270"},{"Association":"response","Therapeutic_context":"midostaurin","Status":"case report","Evidence":"emerging","PMID":"20733134"},{"Association":"response","Therapeutic_context":"lestaurtinib","Status":"case report","Evidence":"emerging","PMID":"16857985.0"}]}
 888	c.1855	A	-1	492	1	571	88	1	\N	ENST00000380982:c.1855G>T	\N	9	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"quizartinib","Status":"preclinical","Evidence":"emerging","PMID":"22504184"},{"Association":"resistance","Therapeutic_context":"ponatinib","Status":"preclinical","Evidence":"emerging","PMID":"23430109"},{"Association":"sensitivity","Therapeutic_context":"crenolanib, PKC412","Status":"preclinical","Evidence":"emerging","PMID":"24619500"}]}
@@ -2698,7 +2707,6 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 992	c.2164	T	-1	539	1	621	101	1	\N	ENST00000458235:c.2164G>A	\N	70	2	\N
 993	c.1970	T	-1	540	1	622	101	1	\N	ENST00000458235:c.1970G>A	\N	70	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"JAK inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"18397343"}]}
 315	c.1171	T	-1	210	1	271	38	1	\N	ENST00000358432:c.1171G>A	\N	39	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"mTOR inhibitors, dasatinib","Status":"preclinical","Evidence":"emerging","PMID":"20360610"}]}
-316	c.1853	A	-1	9	1	18	39	1	\N	ENST00000373103:c.1853C>T	\N	3	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"ruxolitinib","Status":"case report","Evidence":"emerging","PMID":"23656643"}]}
 317	c.1843	C	-1	211	1	272	39	1	\N	ENST00000373103:c.1843A>G	\N	3	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"ruxolitinib","Status":"preclinical","Evidence":"emerging","PMID":"23656643"}]}
 319	c.1514	A	1	213	1	274	40	1	\N	ENST00000372470:c.1514G>A	\N	40	2	\N
 320	c.1544	T	1	214	1	275	40	1	\N	ENST00000372470:c.1544G>T	\N	40	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"JAK inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"16834459"}]}
@@ -2713,6 +2721,10 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 327	c.182	A	-1	2	1	2	42	1	\N	ENST00000369535:c.182A>T	\N	1	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"MEK inhibitors","Status":"late trials","Evidence":"emerging","PMID":"23414587"},{"Association":"response","Therapeutic_context":"MEK inhibitors","Status":"early trials","Evidence":"emerging","PMID":"18390968, 22761467"},{"Association":"response","Therapeutic_context":"MEK inhibitors + CDK4/6 inhibitors","Status":"early trials","Evidence":"emerging","PMID":"ASCO 2014; abstr 9009"},{"Association":"sensitivity","Therapeutic_context":"HSP90 inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"23538902"},{"Association":"resistance","Therapeutic_context":"BRAF inhibitors","Status":"case report","Evidence":"emerging","PMID":"23569304.0"},{"Association":"ERK inhibitors","Therapeutic_context":"preclinical","Status":"preclinical","Evidence":"emerging","PMID":"23614898"}]}
 361	c.3824	T	-1	89	1	114	45	1	\N	ENST00000389048:c.3824G>A	\N	21	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"crizotinib","Status":"preclinical","Evidence":"emerging","PMID":"22072639"}]}
 455	c.1624	A	1	108	1	136	55	1	\N	ENST00000263967:c.1624G>A	\N	25	2	\N
+362	c.3806	G	-1	226	1	285	45	1	\N	ENST00000389048:c.3806G>C	\N	21	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"crizotinib","Status":"case report","Evidence":"emerging","PMID":"22277784"},{"Association":"response","Therapeutic_context":"ceritinib","Status":"FDA-approved","Evidence":"consensus","PMID":"24670165"}]}
+363	c.3735	C	-1	90	1	115	45	1	\N	ENST00000389048:c.3735C>G	\N	21	2	\N
+464	c.1636	A	1	111	1	142	55	1	\N	ENST00000263967:c.1636C>A	\N	25	2	\N
+465	c.1636	G	1	111	1	143	55	1	\N	ENST00000263967:c.1636C>G	\N	25	2	\N
 328	c.182	C	-1	2	1	27	42	1	\N	ENST00000369535:c.182A>G	\N	1	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"MEK inhibitors","Status":"late trials","Evidence":"emerging","PMID":"23414587"},{"Association":"response","Therapeutic_context":"MEK inhibitors","Status":"early trials","Evidence":"emerging","PMID":"18390968, 22761467"},{"Association":"response","Therapeutic_context":"MEK inhibitors + CDK4/6 inhibitors","Status":"early trials","Evidence":"emerging","PMID":"ASCO 2014; abstr 9009"},{"Association":"sensitivity","Therapeutic_context":"HSP90 inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"23538902"},{"Association":"resistance","Therapeutic_context":"BRAF inhibitors","Status":"case report","Evidence":"emerging","PMID":"23569304.0"},{"Association":"ERK inhibitors","Therapeutic_context":"preclinical","Status":"preclinical","Evidence":"emerging","PMID":"23614898"}]}
 329	c.182	G	-1	2	1	32	42	1	\N	ENST00000369535:c.182A>C	\N	1	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"MEK inhibitors","Status":"late trials","Evidence":"emerging","PMID":"23414587"},{"Association":"response","Therapeutic_context":"MEK inhibitors","Status":"early trials","Evidence":"emerging","PMID":"18390968, 22761467"},{"Association":"response","Therapeutic_context":"MEK inhibitors + CDK4/6 inhibitors","Status":"early trials","Evidence":"emerging","PMID":"ASCO 2014; abstr 9009"},{"Association":"sensitivity","Therapeutic_context":"HSP90 inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"23538902"},{"Association":"resistance","Therapeutic_context":"BRAF inhibitors","Status":"case report","Evidence":"emerging","PMID":"23569304.0"},{"Association":"ERK inhibitors","Therapeutic_context":"preclinical","Status":"preclinical","Evidence":"emerging","PMID":"23614898"}]}
 332	c.181	C	-1	3	1	4	42	1	\N	ENST00000369535:c.181C>G	\N	1	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"MEK inhibitors","Status":"late trials","Evidence":"emerging","PMID":"23414587"},{"Association":"response","Therapeutic_context":"MEK inhibitors","Status":"early trials","Evidence":"emerging","PMID":"18390968, 22761467"},{"Association":"response","Therapeutic_context":"MEK inhibitors + CDK4/6 inhibitors","Status":"early trials","Evidence":"emerging","PMID":"ASCO 2014; abstr 9009"},{"Association":"sensitivity","Therapeutic_context":"HSP90 inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"23538902"},{"Association":"resistance","Therapeutic_context":"BRAF inhibitors","Status":"case report","Evidence":"emerging","PMID":"23569304.0"},{"Association":"ERK inhibitors","Therapeutic_context":"preclinical","Status":"preclinical","Evidence":"emerging","PMID":"23614898"}]}
@@ -2735,8 +2747,6 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 360	c.3833	G	-1	88	1	113	45	1	\N	ENST00000389048:c.3833A>C	\N	21	2	\N
 408	c.266	A	1	241	1	299	49	1	\N	ENST00000256474:c.266T>A	\N	43	2	\N
 409	c.473	A	1	242	1	300	49	1	\N	ENST00000256474:c.473T>A	\N	43	2	\N
-362	c.3806	G	-1	226	1	285	45	1	\N	ENST00000389048:c.3806G>C	\N	21	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"crizotinib","Status":"case report","Evidence":"emerging","PMID":"22277784"},{"Association":"response","Therapeutic_context":"ceritinib","Status":"FDA-approved","Evidence":"consensus","PMID":"24670165"}]}
-363	c.3735	C	-1	90	1	115	45	1	\N	ENST00000389048:c.3735C>G	\N	21	2	\N
 364	c.3734	C	-1	91	1	116	45	1	\N	ENST00000389048:c.3734T>G	\N	21	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"crizotinib","Status":"preclinical","Evidence":"emerging","PMID":"22072639"}]}
 365	c.3733	C	-1	92	1	117	45	1	\N	ENST00000389048:c.3733T>G	\N	21	2	\N
 366	c.3673	T	-1	93	1	118	45	1	\N	ENST00000389048:c.3673G>A	\N	21	2	\N
@@ -2779,11 +2789,6 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 458	c.1633	C	1	109	1	138	55	1	\N	ENST00000263967:c.1633G>C	\N	25	2	\N
 459	c.1634	C	1	110	1	139	55	1	\N	ENST00000263967:c.1634A>C	\N	25	2	\N
 460	c.1634	G	1	110	1	140	55	1	\N	ENST00000263967:c.1634A>G	\N	25	2	\N
-461	c.1634	T	1	110	1	141	55	1	\N	ENST00000263967:c.1634A>T	\N	25	2	\N
-462	c.1635	C	1	266	1	337	55	1	\N	ENST00000263967:c.1635G>C	\N	25	2	\N
-463	c.1635	T	1	266	1	337	55	1	\N	ENST00000263967:c.1635G>T	\N	25	2	\N
-464	c.1636	A	1	111	1	142	55	1	\N	ENST00000263967:c.1636C>A	\N	25	2	\N
-465	c.1636	G	1	111	1	143	55	1	\N	ENST00000263967:c.1636C>G	\N	25	2	\N
 466	c.1637	C	1	112	1	144	55	1	\N	ENST00000263967:c.1637A>C	\N	25	2	\N
 467	c.1637	G	1	112	1	145	55	1	\N	ENST00000263967:c.1637A>G	\N	25	2	\N
 468	c.1637	T	1	112	1	146	55	1	\N	ENST00000263967:c.1637A>T	\N	25	2	\N
@@ -2887,6 +2892,7 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 585	c.862_863	CCTG	1	162	3	214	63	4	\N	ENST00000296930:c.862_863insCCTG	\N	29	2	\N
 586	c.862_863	TCAG	1	162	3	214	63	4	\N	ENST00000296930:c.862_863insTCAG	\N	29	2	\N
 587	c.862_863	TCTG	1	162	3	214	63	4	\N	ENST00000296930:c.862_863insTCTG	\N	29	2	\N
+857	c.35	G	-1	29	1	12	85	1	\N	ENST00000256078:c.35G>C	\N	8	2	\N
 588	c.1605	A	1	326	1	397	64	1	\N	ENST00000292408:c.1605C>A	\N	52	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"FGFR inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"24124571"}]}
 589	c.1605	G	1	326	1	397	64	1	\N	ENST00000292408:c.1605C>G	\N	52	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"FGFR inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"24124571"}]}
 590	c.1649	A	1	327	1	398	64	1	\N	ENST00000292408:c.1649T>A	\N	52	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"FGFR inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"24124571"}]}
@@ -2909,6 +2915,7 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 610	c.2155	T	1	193	1	254	68	1	\N	ENST00000275493:c.2155G>T	\N	34	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"erlotinib, afatinib","Status":"FDA-approved","Evidence":"consensus","PMID":"FDA"},{"Association":"response","Therapeutic_context":"irreversible EGFR TKIs","Status":"late trials","Evidence":"emerging","PMID":"22753918"},{"Association":"response","Therapeutic_context":"afatinib + cetuximab","Status":"early trials","Evidence":"emerging","PMID":"Annals Oncol 2012;23(Suppl 9):1289"},{"Association":"response","Therapeutic_context":"HSP90 inhibitors","Status":"early trials","Evidence":"emerging","PMID":"Annals Oncol 2012;23(Suppl 9):4380"},{"Association":"sensitivity","Therapeutic_context":"MEK inhibitors (alone or in combination)","Status":"preclinical","Evidence":"emerging","PMID":"23102728.0"}]}
 683	c.1781	C	-1	186	1	242	71	1	\N	ENST00000288602:c.1781A>G	\N	32	2	{"Description":"missense mutation","Effect":"gain-of-function (low activity)","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"sorafenib","Status":"preclinical","Evidence":"emerging","PMID":"18794803"}]}
 611	c.2156	A	1	194	1	409	68	1	\N	ENST00000275493:c.2156G>A	\N	34	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"erlotinib, afatinib","Status":"FDA-approved","Evidence":"consensus","PMID":"FDA"},{"Association":"response","Therapeutic_context":"irreversible EGFR TKIs","Status":"late trials","Evidence":"emerging","PMID":"22753918"},{"Association":"response","Therapeutic_context":"afatinib + cetuximab","Status":"early trials","Evidence":"emerging","PMID":"Annals Oncol 2012;23(Suppl 9):1289"},{"Association":"response","Therapeutic_context":"HSP90 inhibitors","Status":"early trials","Evidence":"emerging","PMID":"Annals Oncol 2012;23(Suppl 9):4380"},{"Association":"sensitivity","Therapeutic_context":"MEK inhibitors (alone or in combination)","Status":"preclinical","Evidence":"emerging","PMID":"23102728.0"}]}
+858	c.35	T	-1	29	1	13	85	1	\N	ENST00000256078:c.35G>A	\N	8	2	\N
 612	c.2156	C	1	194	1	255	68	1	\N	ENST00000275493:c.2156G>C	\N	34	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"erlotinib, afatinib","Status":"FDA-approved","Evidence":"consensus","PMID":"FDA"},{"Association":"response","Therapeutic_context":"irreversible EGFR TKIs","Status":"late trials","Evidence":"emerging","PMID":"22753918"},{"Association":"response","Therapeutic_context":"afatinib + cetuximab","Status":"early trials","Evidence":"emerging","PMID":"Annals Oncol 2012;23(Suppl 9):1289"},{"Association":"response","Therapeutic_context":"HSP90 inhibitors","Status":"early trials","Evidence":"emerging","PMID":"Annals Oncol 2012;23(Suppl 9):4380"},{"Association":"sensitivity","Therapeutic_context":"MEK inhibitors (alone or in combination)","Status":"preclinical","Evidence":"emerging","PMID":"23102728.0"}]}
 613	c.2193	A	1	338	1	410	68	2	\N	ENST00000275493:c.2193G>A	\N	34	2	\N
 614	c.2198	T	1	339	1	411	68	1	\N	ENST00000275493:c.2198C>T	\N	34	2	\N
@@ -3010,6 +3017,7 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 774	c.1894_1899	-	1	440	2	524	79	5	\N	ENST00000355710:c.1894_1899delGAGCTG	\N	4	2	\N
 775	c.1900	C	1	441	1	525	79	1	\N	ENST00000355710:c.1900T>C	\N	4	2	\N
 776	c.1901	A	1	442	1	526	79	1	\N	ENST00000355710:c.1901G>A	\N	4	2	\N
+859	c.34	A	-1	30	1	14	85	1	\N	ENST00000256078:c.34G>T	\N	8	2	\N
 777	c.1902	G	1	443	1	527	79	1	\N	ENST00000355710:c.1902C>G	\N	4	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"response","Therapeutic_context":"vandetanib","Status":"FDA-approved","Evidence":"consensus","PMID":"20065189, 22025146"},{"Association":"sensitivity","Therapeutic_context":"cabozantinib, sunitinib","Status":"preclinical","Evidence":"emerging","PMID":"21470995"},{"Association":"sensitivity","Therapeutic_context":"RET inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"23056499"}]}
 778	c.2304	C	1	444	1	528	79	1	\N	ENST00000355710:c.2304G>C	\N	4	2	\N
 779	c.2647_2648	TT	1	445	4	529	79	1	\N	ENST00000355710:c.2647_2648GC>TT	\N	4	2	\N
@@ -3037,6 +3045,8 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 801	c.1614	A	-1	459	1	543	81	1	\N	ENST00000457416:c.1614G>T	\N	62	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"dovitinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"},{"Association":"sensitivity","Therapeutic_context":"ponatinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"}]}
 802	c.1614	G	-1	459	1	543	81	1	\N	ENST00000457416:c.1614G>C	\N	62	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"dovitinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"},{"Association":"sensitivity","Therapeutic_context":"ponatinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"}]}
 803	c.1614	T	-1	459	1	543	81	1	\N	ENST00000457416:c.1614G>A	\N	62	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"dovitinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"},{"Association":"sensitivity","Therapeutic_context":"ponatinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"}]}
+860	c.34	G	-1	30	1	15	85	1	\N	ENST00000256078:c.34G>C	\N	8	2	\N
+861	c.34	T	-1	30	1	16	85	1	\N	ENST00000256078:c.34G>A	\N	8	2	\N
 804	c.1608	A	-1	460	1	544	81	1	\N	ENST00000457416:c.1608G>T	\N	62	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"dovitinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"},{"Association":"sensitivity","Therapeutic_context":"ponatinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"}]}
 805	c.1608	G	-1	460	1	544	81	1	\N	ENST00000457416:c.1608G>C	\N	62	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"resistance","Therapeutic_context":"dovitinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"},{"Association":"sensitivity","Therapeutic_context":"ponatinib","Status":"preclinical","Evidence":"emerging","PMID":"23908597"}]}
 809	c.1118	C	-1	463	1	347	81	1	\N	ENST00000457416:c.1118C>G	\N	62	2	\N
@@ -3087,11 +3097,6 @@ COPY variants (id, cdna_change, variant, strand, location_id, variant_type_id, a
 854	c.37	G	-1	28	1	10	85	1	\N	ENST00000256078:c.37G>C	\N	8	2	\N
 855	c.37	T	-1	28	1	33	85	1	\N	ENST00000256078:c.37G>A	\N	8	2	\N
 856	c.35	A	-1	29	1	11	85	1	\N	ENST00000256078:c.35G>T	\N	8	2	\N
-857	c.35	G	-1	29	1	12	85	1	\N	ENST00000256078:c.35G>C	\N	8	2	\N
-858	c.35	T	-1	29	1	13	85	1	\N	ENST00000256078:c.35G>A	\N	8	2	\N
-859	c.34	A	-1	30	1	14	85	1	\N	ENST00000256078:c.34G>T	\N	8	2	\N
-860	c.34	G	-1	30	1	15	85	1	\N	ENST00000256078:c.34G>C	\N	8	2	\N
-861	c.34	T	-1	30	1	16	85	1	\N	ENST00000256078:c.34G>A	\N	8	2	\N
 862	c.785	A	1	478	1	557	86	1	\N	ENST00000267101:c.785C>A	\N	64	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"trastuzumab, pertuzumab, lapatinib, anti-HER3 mAbs, PI3K pathway inhibitors + MEK inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"23680147"}]}
 863	c.850	A	1	479	1	558	86	1	\N	ENST00000267101:c.850G>A	\N	64	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"trastuzumab, pertuzumab, lapatinib, anti-HER3 mAbs, PI3K pathway inhibitors + MEK inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"23680147"}]}
 864	c.2426	G	1	480	1	559	86	1	\N	ENST00000267101:c.2426A>G	\N	64	2	{"Description":"missense mutation","Effect":"gain-of-function","Pathway":"activation","list":[{"Association":"sensitivity","Therapeutic_context":"trastuzumab, lapatinib, PI3K pathway inhibitors + MEK inhibitors","Status":"preclinical","Evidence":"emerging","PMID":"23680147"}]}
@@ -6496,7 +6501,6 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 3255	5	41	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
 3256	11	41	664	http://www.mycancergenome.org/content/disease/gist/braf/54
 3257	7	41	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3258	7	41	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
 3259	1	41	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
 3260	4	41	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
 3261	16	41	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
@@ -6519,7 +6523,6 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 3278	1	373	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
 3279	11	96	664	http://www.mycancergenome.org/content/disease/gist/braf/54
 3280	7	96	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3281	7	96	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
 3282	1	96	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
 3283	4	96	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
 3284	5	43	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
@@ -6530,13 +6533,10 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 3289	16	540	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
 3290	11	97	664	http://www.mycancergenome.org/content/disease/gist/braf/54
 3291	7	97	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3292	7	97	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
 3293	1	97	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
 3294	1	97	664	\N
 3295	7	354	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3296	7	354	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
 3297	7	355	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3298	7	355	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
 3299	30	541	664	\N
 3300	1	371	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
 3301	5	48	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
@@ -6552,7 +6552,6 @@ COPY disease_source_variants (id, disease_id, source_id, variant_id, my_cancer_g
 3311	5	51	664	http://www.mycancergenome.org/content/disease/colorectal-cancer/braf/54
 3312	11	51	664	http://www.mycancergenome.org/content/disease/gist/braf/54
 3313	7	51	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
-3314	7	51	664	http://www.mycancergenome.org/content/disease/ovarian-cancer/braf/54
 3315	1	51	664	http://www.mycancergenome.org/content/disease/melanoma/braf/54
 3316	4	51	664	http://www.mycancergenome.org/content/disease/thyroid-cancer/braf/54
 3317	16	51	664	http://www.mycancergenome.org/content/disease/lung-cancer/braf/54
