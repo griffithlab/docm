@@ -16,7 +16,7 @@ module Docm
     config.autoload_paths += %W(#{config.root}/lib)
     config.assets.initialize_on_precompile = false
 
-    config.data_dump_version = 8
+    config.data_dump_version = 9
     config.data_dump_path = File.join(Rails.root, 'db', 'data.sql')
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
