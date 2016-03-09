@@ -8,4 +8,8 @@ class StaticController < ApplicationController
   def sources
     @source_count = Source.count
   end
+
+  def about
+    @versions = Version.all.map { |v| VersionPresenter.new(v) }
+  end
 end

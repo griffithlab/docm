@@ -33,6 +33,21 @@
               and standardize the mutations in a consistent way that enables databasing. For example, publications often only 
               specify the amino acid change and gene name to describe the mutation. DoCM addresses these challenges by acting as 
               an accessible, open-source, and openly licensed somatic mutation repository that also enables community contributions.
+          %br
+          %h4
+            Database Versions
+          %table.table.table-striped.table-bordered
+            %thead
+              %tr
+                %th Version Number
+                %th Variant Count
+                %th Disease Count
+            %tbody
+            - @versions.each do |version|
+              %tr
+                %td= version.name
+                %td= version.variant_count
+                %td= version.cancer_type_count
 
           %br
           %h4
