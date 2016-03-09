@@ -24,6 +24,10 @@
       pageLength: 25,
       autoWidth: false,
       responsive: true,
+      language: {
+        info: "Showing page _PAGE_ of _PAGES_ (_MAX_ total variants)",
+        infoFiltered: ""
+      },
       ajax: {
         url: $('#variants').data('source'),
         type: 'POST',

@@ -8,7 +8,7 @@ class VariantsDatatable
   def as_json(options = {})
     {
       draw: params[:draw].to_i,
-      recordsTotal: Variant.count,
+      recordsTotal: variants.total_entries,
       recordsFiltered: variants.total_entries,
       data: data
     }
