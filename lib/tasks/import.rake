@@ -46,6 +46,25 @@ namespace :docm do
     DataFetchers::PreviousBase.run
   end
 
+  desc 'import civic into a new minor version update'
+  task update_civic: :environment do
+    ActiveRecord::Base.transaction do
+      puts 'Updating CIViC'
+      current_version = Version.current_version
+      new_version = Util.get_new_version(current_version)
+      Util.copy_variants_between_versions(current_version, new_version)
+      Importers::Civic.new(new_version.name).import!
+    end
+    puts 'Generating HGVS strings.'
+    DataFetchers::HGVS.run
+    puts 'Fetching disease information from DiseaseOntology.'
+    DataFetchers::DiseaseOntology.run
+    puts 'Fetching citations from PubMed.'
+    DataFetchers::PubMed.run
+    puts 'Looking up previous reference bases in Ensembl.'
+    DataFetchers::PreviousBase.run
+  end
+
   task get_disease_names: :environment do
     DataFetchers::DiseaseOntology.run
   end
