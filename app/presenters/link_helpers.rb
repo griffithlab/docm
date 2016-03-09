@@ -4,11 +4,11 @@ module LinkHelpers
   delegate :truncate, to: :@view_context
 
   def source_link(source)
-    link_to(source.citation, "http://www.ncbi.nlm.nih.gov/pubmed/#{source.pubmed_id}")
+    link_to(source.citation, "http://www.ncbi.nlm.nih.gov/pubmed/#{source.pubmed_id}", target: '_blank')
   end
 
   def gene_link(gene)
-    link_to(gene.name, "http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=#{gene.name}")
+    link_to(gene.name, "http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=#{gene.name}", target: '_blank')
   end
 
   def variant_link(variant, opts = {})
@@ -23,17 +23,33 @@ module LinkHelpers
 
   def my_cancer_genome_link(dsv)
     if dsv.my_cancer_genome_url
-      link_to('My Cancer Genome', dsv.my_cancer_genome_url)
+      link_to('My Cancer Genome', dsv.my_cancer_genome_url, target: '_blank')
     else
-      ''
+      nil
+    end
+  end
+
+  def civic_variant_link(variant)
+    if variant.meta && civic_url = variant.meta['civic_variant_url']
+      link_to('View variant in CIViC', civic_url, target: '_blank')
+    else
+      nil
+    end
+  end
+
+  def civic_evidence_item_link(dsv)
+    if dsv.civic_url
+      link_to('CIViC', dsv.civic_url, target: '_blank')
+    else
+      nil
     end
   end
 
   def dgidb_link(gene)
     link_to(
       'View drug interactions on DGIdb',
-      "http://dgidb.genome.wustl.edu/interaction_search_results?genes=#{gene.name}"
+      "http://dgidb.genome.wustl.edu/interaction_search_results?genes=#{gene.name}",
+       target: '_blank'
     )
   end
-
 end
