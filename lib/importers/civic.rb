@@ -16,6 +16,9 @@ module Importers
           populate_vep_fields(docm_record, vep_response)
           populate_civic_fields(docm_record, civic_variant)
           docm_variant = ::Variant.find_or_create_by(docm_record)
+          docm_variant.meta ||= {}
+          docm_variant.meta['civic_variant_url'] = civic_variant_url_from_civic_variant(civic_variant)
+          docm_variant.save
           civic_variant['diseases'].each do |civic_disease|
             create_disease_source_variant_links(civic_disease, docm_variant)
           end
@@ -67,8 +70,11 @@ module Importers
       DiseaseSourceVariant.where(
         disease: ::Disease.where(doid: civic_disease['disease']['doid']).first_or_create,
         source: ::Source.where(pubmed_id: civic_disease['source']['pubmed_id']).first_or_create,
-        variant: docm_variant
-      ).first_or_create
+        variant: docm_variant,
+      ).first_or_create.tap do |dsv|
+        dsv.civic_url = civic_evidence_item_url_from_civic_disease(docm_variant, civic_disease)
+        dsv.save
+      end
     end
 
     def variant_type_from_civic_variant(civic_variant)
@@ -86,6 +92,14 @@ module Importers
       else
         'unknown'
       end
+    end
+
+    def civic_evidence_item_url_from_civic_disease(docm_variant, civic_disease)
+      docm_variant.meta['civic_variant_url'].sub(/#variant$/, '') +  "/evidence/#{civic_disease['evidence_item_id']}/summary#evidence"
+    end
+
+    def civic_variant_url_from_civic_variant(civic_variant)
+      "https://civic.genome.wustl.edu/#/events/genes/#{civic_variant['gene_id']}/summary/variants/#{civic_variant['id']}/summary#variant"
     end
   end
 end
