@@ -5,6 +5,7 @@ module DataFetchers
     def self.run
       ActiveRecord::Base.transaction do
         ::Source.all.each do |item|
+          next if item.citation.present?
           item.citation = get_citation_from_pubmed_id(item.pubmed_id)
           item.save
         end
