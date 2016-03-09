@@ -19,6 +19,14 @@ class VariantOverviewPresenter < SimpleDelegator
     @view_context.content_tag(:span, dgidb_link(gene))
   end
 
+  def civic_row
+    if (link = civic_variant_link(@variant)).present?
+      "(#{@view_context.content_tag(:span, link)})".html_safe
+    else
+      ''
+    end
+  end
+
   def transcript_name
     transcript.name
   end
@@ -32,7 +40,7 @@ class VariantOverviewPresenter < SimpleDelegator
       DiseaseRow.new(
         dsv.disease.name,
         source_link(dsv.source),
-        my_cancer_genome_link(dsv)
+        [my_cancer_genome_link(dsv), civic_evidence_item_link(dsv)].compact.join(', ').html_safe
       )
     end
   end
@@ -65,6 +73,6 @@ class VariantOverviewPresenter < SimpleDelegator
   end
 end
 
-DiseaseRow = Struct.new(:disease, :source, :my_cancer_genome_link)
+DiseaseRow = Struct.new(:disease, :source, :external_links)
 PermutationRow = Struct.new(:hgvs, :chromosome, :start, :stop, :reference, :variant)
 InteractionRow = Struct.new(:effect, :pathway, :association, :drug, :status, :evidence_type, :source)
