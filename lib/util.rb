@@ -24,6 +24,10 @@ module Util
           new_dsv_link.variant = new_variant
           new_dsv_link.save
         end
+        old_variant.drug_interactions.map(&:dup).each do |new_di|
+          new_di.variant = new_variant
+          new_di.save
+        end
         new_variant.version = new_version
         new_variant.save
       end

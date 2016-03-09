@@ -62,7 +62,7 @@ module DataFetchers
     end
 
     def cdna_change
-      "c.#{variant_consequence['cds_start']}'"
+      "c.#{variant_consequence['cds_start']}"
     end
 
     def amino_acid_change

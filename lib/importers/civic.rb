@@ -51,7 +51,6 @@ module Importers
 
       docm_record[:gene] = ::Gene.where(
         name: vep_response.gene_symbol,
-        ensembl_id: vep_response.ensembl_gene_id
       ).first_or_create
 
       docm_record[:mutation_type] = ::MutationType.where(
