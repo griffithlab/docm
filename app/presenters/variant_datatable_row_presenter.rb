@@ -30,9 +30,21 @@ class VariantDatatableRowPresenter < SimpleDelegator
   end
 
   def source_list
-    disease_sources
+    links = disease_sources
       .sort_by { |s| s.pubmed_id }
+      .take(number_of_links_to_show)
       .map { |s| source_link(s) }.join(', ')
+
+      remaining = disease_sources.count - number_of_links_to_show
+
+      if remaining > 0
+        links + ", and #{remaining} more."
+      else
+        links
+      end
   end
 
+  def number_of_links_to_show
+    5
+  end
 end
