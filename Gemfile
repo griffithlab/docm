@@ -18,6 +18,7 @@ gem 'jquery-datatables-rails', '~> 2.2.3'
 gem 'lodash-rails'
 gem 'yajl-ruby', require: 'yajl'
 gem 'multi_json'
+gem 'carrierwave', '~> 0.11.0'
 
 group :test, :development do
   gem 'rspec-rails'
