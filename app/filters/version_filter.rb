@@ -11,7 +11,10 @@ class VersionFilter
 
   def self.valid_values
     current_version_name = Version.where(is_current: true).pluck(:name).first
-    ["Current (#{current_version_name})"] + Version.order(name: :asc).pluck(:name)
+    ["Current (#{current_version_name})"] +
+      Version.where(is_current: false)
+        .order(name: :desc)
+        .pluck(:name)
   end
 
   def self.param_name
