@@ -1,6 +1,8 @@
 class VariantOverviewPresenter < SimpleDelegator
   include LinkHelpers
 
+  attr_reader :view_context, :variant
+
   def initialize(variant, view_context)
     @variant = variant
     @view_context = view_context
@@ -12,16 +14,16 @@ class VariantOverviewPresenter < SimpleDelegator
   end
 
   def my_cancer_genome_row
-    @view_context.content_tag(:li, my_cancer_genome_link(@variant))
+    view_context.content_tag(:li, my_cancer_genome_link(variant))
   end
 
   def dgidb_row
-    @view_context.content_tag(:span, dgidb_link(gene))
+    view_context.content_tag(:span, dgidb_link(gene))
   end
 
   def civic_row
-    if (link = civic_variant_link(@variant)).present?
-      "(#{@view_context.content_tag(:span, link)})".html_safe
+    if (link = civic_variant_link(variant)).present?
+      "(#{view_context.content_tag(:span, link)})".html_safe
     else
       ''
     end

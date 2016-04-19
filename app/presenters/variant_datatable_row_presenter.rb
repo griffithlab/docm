@@ -1,5 +1,6 @@
 class VariantDatatableRowPresenter < SimpleDelegator
   include LinkHelpers
+  attr_reader :view_context, :variant
 
   def initialize(variant, view_context)
     @variant = variant
@@ -9,7 +10,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
 
   def as_json
     [
-      variant_link(@variant, truncate: true),
+      variant_link(variant, truncate: true),
       location.chromosome,
       location.start,
       location.stop,
@@ -17,7 +18,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
       variant,
       location.reference_sequence_version,
       gene_link(gene),
-      @view_context.truncate(amino_acid.name, length: 9),
+      view_context.truncate(amino_acid.name, length: 9),
       mutation_type.name,
       disease_list,
       source_list

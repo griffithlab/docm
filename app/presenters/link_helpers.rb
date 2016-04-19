@@ -1,7 +1,7 @@
 module LinkHelpers
-  delegate :link_to, to: :@view_context
-  delegate :variant_path, to: :@view_context
-  delegate :truncate, to: :@view_context
+  delegate :link_to, to: :view_context
+  delegate :variant_path, to: :view_context
+  delegate :truncate, to: :view_context
 
   def source_link(source)
     link_to(source.citation, "http://www.ncbi.nlm.nih.gov/pubmed/#{source.pubmed_id}", target: '_blank')
