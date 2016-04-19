@@ -23,16 +23,6 @@ class Variant < ActiveRecord::Base
     eager_load(:location, :gene, :variant_type, :amino_acid, :mutation_type, :drug_interactions, :transcript, :version, disease_source_variants: [:disease, :source], drug_interactions: [:source])
   end
 
-  def self.permutation_scope
-    eager_load(:location)
-  end
-
-  def related_variants
-    Variant.permutation_scope
-      .where(amino_acid: self.amino_acid)
-      .where('variants.id != ?', self.id)
-  end
-
   def is_indel?
     ['INS', 'DEL'].include?(variant_type.name)
   end

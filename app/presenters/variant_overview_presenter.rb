@@ -45,19 +45,6 @@ class VariantOverviewPresenter < SimpleDelegator
     end
   end
 
-  def permutation_rows
-    related_variants.map do |v|
-      PermutationRow.new(
-        variant_link(v),
-        v.location.chromosome,
-        v.location.start,
-        v.location.stop,
-        v.location.reference_read,
-        v.variant
-      )
-    end
-  end
-
   def interaction_rows
     drug_interactions.map do |di|
       InteractionRow.new(
@@ -74,5 +61,4 @@ class VariantOverviewPresenter < SimpleDelegator
 end
 
 DiseaseRow = Struct.new(:disease, :source, :external_links)
-PermutationRow = Struct.new(:hgvs, :chromosome, :start, :stop, :reference, :variant)
 InteractionRow = Struct.new(:effect, :pathway, :association, :drug, :status, :evidence_type, :source)
