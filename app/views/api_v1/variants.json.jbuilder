@@ -14,5 +14,6 @@ else
     json.amino_acid variant.amino_acid.name
     json.diseases variant.diseases.map(&:name)
     json.pubmed_sources variant.disease_sources.map(&:pubmed_id)
+    json.tags variant.tags.map(&:name)
   end
 end

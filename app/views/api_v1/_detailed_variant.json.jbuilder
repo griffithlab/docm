@@ -16,6 +16,7 @@ json.amino_acid variant.amino_acid.name
 json.variant_type variant.variant_type.name
 json.mutation_type variant.mutation_type.name
 json.cdna_change variant.cdna_change
+json.tags variant.tags.map(&:name)
 
 json.diseases variant.disease_source_variants do |dsv|
   json.disease dsv.disease.name
