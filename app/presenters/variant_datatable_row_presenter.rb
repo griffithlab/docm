@@ -35,7 +35,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
       .take(number_of_links_to_show)
       .map { |s| source_link(s) }.join(', ')
 
-      remaining = disease_sources.count - number_of_links_to_show
+      remaining = disease_sources.size - number_of_links_to_show
 
       if remaining > 0
         links + ", and #{remaining} more."
