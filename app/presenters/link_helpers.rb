@@ -52,4 +52,9 @@ module LinkHelpers
        target: '_blank'
     )
   end
+
+  def tag_link(variant, tag)
+    query_string = URI.encode_www_form({tags: tag.name, version: variant.version.name})
+    link_to(block_given? ? yield : tag.name, "/?#{query_string}")
+  end
 end

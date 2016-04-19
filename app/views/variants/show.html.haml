@@ -63,6 +63,10 @@
               %li
                 %strong cDNA Change:
                 = @variant.cdna_change
+              %li
+                %strong Tags:
+                - @variant.tag_links.each do |tag_link|
+                  = tag_link
 
     .row
       .col-md-10.col-md-offset-1

@@ -29,6 +29,18 @@ class VariantOverviewPresenter < SimpleDelegator
     end
   end
 
+  def tag_links
+    variant.tags.map do |tag|
+      tag_link(variant, tag) do
+        view_context.content_tag(
+          :span,
+          tag.name,
+          class: 'label label-default'
+        )
+      end
+    end
+  end
+
   def transcript_name
     transcript.name
   end
