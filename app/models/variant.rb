@@ -11,6 +11,7 @@ class Variant < ActiveRecord::Base
   has_many :diseases, through: :disease_source_variants
   has_many :drug_interactions
   has_many :drug_sources, through: :drug_interactions, source: :source
+  has_and_belongs_to_many :tags
 
   serialize :meta, JSON
 

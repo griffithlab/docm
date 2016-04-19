@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160309160747) do
+ActiveRecord::Schema.define(version: 20160419175927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -90,6 +90,19 @@ ActiveRecord::Schema.define(version: 20160309160747) do
 
   add_index "sources", ["pubmed_id"], name: "index_sources_on_pubmed_id", using: :btree
 
+  create_table "tags", force: :cascade do |t|
+    t.text     "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags_variants", id: false, force: :cascade do |t|
+    t.integer "tag_id",     null: false
+    t.integer "variant_id", null: false
+  end
+
+  add_index "tags_variants", ["tag_id", "variant_id"], name: "index_tags_variants_on_tag_id_and_variant_id", using: :btree
+
   create_table "transcripts", force: :cascade do |t|
     t.string "name"
     t.string "source"
@@ -132,6 +145,8 @@ ActiveRecord::Schema.define(version: 20160309160747) do
   add_foreign_key "disease_source_variants", "variants"
   add_foreign_key "drug_interactions", "sources"
   add_foreign_key "drug_interactions", "variants"
+  add_foreign_key "tags_variants", "tags"
+  add_foreign_key "tags_variants", "variants"
   add_foreign_key "variants", "amino_acids"
   add_foreign_key "variants", "genes"
   add_foreign_key "variants", "locations"
