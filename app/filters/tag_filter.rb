@@ -2,7 +2,7 @@ class TagFilter
   include Filter
 
   def self.filter(relation, values)
-    relation.where('tags.name' => values)
+    relation.where('tags.name' => values.map(&:downcase))
   end
 
   def self.valid_values
