@@ -16,11 +16,11 @@ class Variant < ActiveRecord::Base
   serialize :meta, JSON
 
   def self.index_scope
-    eager_load(:location, :gene, :amino_acid, :diseases, :disease_sources, :mutation_type, :variant_type, :version)
+    eager_load(:location, :gene, :amino_acid, :diseases, :disease_sources, :mutation_type, :variant_type, :tags, :version)
   end
 
   def self.show_scope
-    eager_load(:location, :gene, :variant_type, :amino_acid, :mutation_type, :drug_interactions, :transcript, :version, disease_source_variants: [:disease, :source], drug_interactions: [:source])
+    eager_load(:location, :gene, :variant_type, :amino_acid, :mutation_type, :drug_interactions, :transcript, :version, :tags, disease_source_variants: [:disease, :source], drug_interactions: [:source])
   end
 
   def is_indel?

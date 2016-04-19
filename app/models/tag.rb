@@ -2,7 +2,7 @@ class Tag < ActiveRecord::Base
   has_and_belongs_to_many :variants
   validates :name, uniqueness: { case_sensitive: false }
   validate :word_count
-  before_save -> (t) { t.name.downcase! }
+  before_save -> (t) { t.name.strip!; t.name.downcase! }
 
   private
   def word_count
