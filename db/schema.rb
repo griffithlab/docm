@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160419191118) do
+ActiveRecord::Schema.define(version: 20160419212717) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,20 @@ ActiveRecord::Schema.define(version: 20160419191118) do
   end
 
   add_index "amino_acids", ["name"], name: "index_amino_acids_on_name", using: :btree
+
+  create_table "batches", force: :cascade do |t|
+    t.text     "name"
+    t.text     "submitter_name"
+    t.text     "submitter_email"
+    t.text     "submitter_affiliation"
+    t.text     "reason_for_inclusion"
+    t.text     "file"
+    t.text     "url_slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "batches", ["name"], name: "index_batches_on_name", using: :btree
 
   create_table "data_versions", force: :cascade do |t|
     t.integer "version", default: 0
@@ -130,8 +144,10 @@ ActiveRecord::Schema.define(version: 20160419191118) do
     t.integer "transcript_id"
     t.integer "version_id"
     t.text    "meta"
+    t.integer "batch_id"
   end
 
+  add_index "variants", ["batch_id"], name: "index_variants_on_batch_id", using: :btree
   add_index "variants", ["hgvs"], name: "index_variants_on_hgvs", using: :btree
   add_index "variants", ["variant"], name: "index_variants_on_variant", using: :btree
 
@@ -150,6 +166,7 @@ ActiveRecord::Schema.define(version: 20160419191118) do
   add_foreign_key "tags_variants", "tags"
   add_foreign_key "tags_variants", "variants"
   add_foreign_key "variants", "amino_acids"
+  add_foreign_key "variants", "batches"
   add_foreign_key "variants", "genes"
   add_foreign_key "variants", "locations"
   add_foreign_key "variants", "mutation_types"
