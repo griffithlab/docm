@@ -16,7 +16,8 @@ Docm::Application.routes.draw do
   get 'genes/:name' => 'genes#variant_index'
   get ':action' => 'static#:action'
 
-  resources :batches
+  get '/batches/private/:url_slug' => 'batches#show_private', as: :private_batch
+  resources :batches, except: [:index, :update]
 
   # Example of regular route:
   #
