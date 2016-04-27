@@ -7,8 +7,10 @@ class BatchesController < ApplicationController
     @batch = Batch.new(batch_params['batch'])
 
     if @batch.save
+      #SubmissionMailer.submission(@batch).deliver_now
+      ProcessBatchSubmission.new.perform(@batch)
       flash[:success] = 'Thank you! Your variants have been submitted successfully and we will be in touch shortly.'
-      redirect_to :show
+      redirect_to private_batch_url(@batch.url_slug)
     else
       flash[:error] = 'There appears to be a problem with your submission'
       render :new
