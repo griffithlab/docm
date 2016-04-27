@@ -19,6 +19,7 @@ gem 'lodash-rails'
 gem 'yajl-ruby', require: 'yajl'
 gem 'multi_json'
 gem 'carrierwave', '~> 0.11.0'
+gem 'delayed_job_active_record', '~> 4.1.0'
 
 group :test, :development do
   gem 'rspec-rails'
