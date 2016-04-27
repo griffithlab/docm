@@ -24,7 +24,7 @@
                 = f.text_area :reason_for_inclusion, placeholder: 'Reason For Inclusion', rows: 10, class: ['form-control']
               .form-group
                 = f.label :reference_sequence_version
-                = f.text_area :reference_sequence_version, placeholder: 'Reference Sequence Version (ie: GRCh37)', rows: 10, class: ['form-control']
+                = f.text_field :reference_sequence_version, placeholder: 'Reference Sequence Version (ie: GRCh37)', rows: 10, class: ['form-control']
               .form-group
                 = f.label :file
                 = f.file_field :file, placeholder: 'Variant TSV', class: ['form-control']
