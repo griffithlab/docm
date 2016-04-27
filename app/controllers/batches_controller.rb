@@ -4,7 +4,6 @@ class BatchesController < ApplicationController
   end
 
   def create
-    binding.pry
     @batch = Batch.new(batch_params['batch'])
 
     if @batch.save
@@ -17,11 +16,15 @@ class BatchesController < ApplicationController
   end
 
   def show
-    @batch = Batch.find_by(url_slug: params[:id])
+    @batch = Batch.find_by(id: params[:id])
+  end
+
+  def show_private
+    @batch = Batch.find_by(url_slug: params[:url_slug])
   end
 
   private
   def batch_params
-    params.permit(batch: [:name, :submitter_name, :submitter_email, :submitter_affiliation, :reason_for_inclusion, :file, :file_cache])
+    params.permit(batch: [:name, :submitter_name, :submitter_email, :submitter_affiliation, :reason_for_inclusion, :file, :file_cache, :reference_sequence_version])
   end
 end

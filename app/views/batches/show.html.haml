@@ -1,0 +1,38 @@
+.container-fluid
+  .page-background
+    .row
+      .col-md-10.col-md-offset-1
+        %h1.page-header
+          =@batch.name
+    .row
+      .col-md-10.col-md-offset-1
+        %h4 Batch Information
+        .well.col-md-12
+          .col-md-6
+            %ul.list-unstyled
+              %li
+                %strong Sumitted By:
+                = @batch.submitter_name
+              %li
+                %strong Submitter Affiliation:
+                = @batch.submitter_affiliation
+              %li
+                %strong Submission Date:
+                = @batch.created_at.strftime('%v')
+          .col-md-6
+            %ul.list-unstyled
+              %li
+                %strong Last Review Date:
+                = @batch.updated_at.strftime('%v')
+              %li
+                %strong Total Variants:
+                = @batch.variants.count
+              %li
+                %strong View Variants:
+                = link_to(@batch.name, "/?batches=#{@batch.name}")
+
+    .row
+      .col-md-10.col-md-offset-1
+        %h4 Justification for Inclusion
+        .well.col-md-12
+          %p= @batch.reason_for_inclusion

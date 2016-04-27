@@ -1,0 +1,80 @@
+.container-fluid
+  .page-background
+    .row
+      .col-md-10.col-md-offset-1
+        %h1.page-header
+          =@batch.name
+        .alert.alert-info
+          %strong Retain this private batch URL
+          It was generated just for you and will allow you to return and view the status of your submission!
+          %br
+          = link_to private_batch_url(@batch.url_slug), private_batch_url(@batch.url_slug)
+    .row
+      .col-md-10.col-md-offset-1
+        %h4 Batch Information
+        .well.col-md-12
+          .col-md-6
+            %ul.list-unstyled
+              %li
+                %strong Sumitted By:
+                = @batch.submitter_name
+              %li
+                %strong Submitter Affiliation:
+                = @batch.submitter_affiliation
+              %li
+                %strong Submitter Email:
+                = @batch.submitter_email
+              %li
+                %strong Submission Date:
+                = @batch.created_at.strftime('%v')
+              %li
+                %strong Submitted File:
+                = link_to('Download', @batch.file.url)
+          .col-md-6
+            %ul.list-unstyled
+              %li
+                %strong Last Review Date:
+                = @batch.updated_at.strftime('%v')
+              %li
+                %strong Accepted Variants:
+                = @batch.variants.count
+              %li
+                %strong Submitted Variants:
+                = @batch.submitted_variants.count
+              %li
+                %strong View Accepted Variants:
+                = link_to(@batch.name, "/?batches=#{@batch.name}")
+
+    .row
+      .col-md-10.col-md-offset-1
+        %h4 Justification for Inclusion
+        .well.col-md-12
+          %p= @batch.reason_for_inclusion
+
+    .row
+      .col-md-10.col-md-offset-1
+        %h4 Submission Status
+        .col-md-12
+          %table.table.table-striped.table-bordered.table-condensed
+            %tr
+              %th Chr
+              %th Start
+              %th Stop
+              %th Ref
+              %th Var
+              %th DOID
+              %th Pubmed Id
+              %th Status
+              %th Message
+            - @batch.submitted_variants.each do |variant|
+              %tr
+                %td= variant.chromosome
+                %td= variant.start
+                %td= variant.stop
+                %td= variant.reference
+                %td= variant.variant
+                %td= variant.doid
+                %td= variant.pubmed_id
+                %td= variant.status
+                %td= variant.message
+
