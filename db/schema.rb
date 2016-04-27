@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160419212717) do
+ActiveRecord::Schema.define(version: 20160427160413) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,9 +32,11 @@ ActiveRecord::Schema.define(version: 20160419212717) do
     t.text     "url_slug"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "reference_sequence_version"
   end
 
   add_index "batches", ["name"], name: "index_batches_on_name", using: :btree
+  add_index "batches", ["url_slug"], name: "index_batches_on_url_slug", using: :btree
 
   create_table "data_versions", force: :cascade do |t|
     t.integer "version", default: 0
@@ -104,6 +106,28 @@ ActiveRecord::Schema.define(version: 20160419212717) do
 
   add_index "sources", ["pubmed_id"], name: "index_sources_on_pubmed_id", using: :btree
 
+  create_table "submitted_variants", force: :cascade do |t|
+    t.text     "meta"
+    t.text     "tags"
+    t.text     "message"
+    t.text     "chromosome"
+    t.integer  "start"
+    t.integer  "stop"
+    t.text     "reference"
+    t.text     "variant"
+    t.text     "doid"
+    t.text     "pubmed_id"
+    t.text     "status"
+    t.text     "transcript"
+    t.text     "amino_acid_change"
+    t.text     "gene_symbol"
+    t.text     "strand"
+    t.text     "cdna_change"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "batch_id"
+  end
+
   create_table "tags", force: :cascade do |t|
     t.text     "name"
     t.datetime "created_at"
@@ -163,6 +187,7 @@ ActiveRecord::Schema.define(version: 20160419212717) do
   add_foreign_key "disease_source_variants", "variants"
   add_foreign_key "drug_interactions", "sources"
   add_foreign_key "drug_interactions", "variants"
+  add_foreign_key "submitted_variants", "batches"
   add_foreign_key "tags_variants", "tags"
   add_foreign_key "tags_variants", "variants"
   add_foreign_key "variants", "amino_acids"
