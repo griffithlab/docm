@@ -1,0 +1,41 @@
+.container-fluid
+  .page-background
+    .row
+      .col-md-8.main.col-md-offset-2
+        .col-md-12
+          %h1.page-header Submit a batch of variants to DoCM
+          - if @batch.errors.any?
+            .alert.alert-danger
+              %h4
+                = pluralize(@batch.errors.count, 'error')
+                kept this from being submitted
+              %ul
+                -@batch.errors.full_messages.each do |error|
+                  %li= error
+          .well
+            = form_for @batch, url: {action: 'create'}, html: {role: 'form'} do |f|
+              %h4
+                %small Batch Information:
+              .form-group
+                = f.label :name
+                = f.text_field :name, placeholder: 'Batch Name', class: ['form-control']
+              .form-group
+                = f.label :reason_for_inclusion
+                = f.text_area :reason_for_inclusion, placeholder: 'Reason For Inclusion', rows: 10, class: ['form-control']
+              .form-group
+                = f.label :file
+                = f.file_field :file, placeholder: 'Variant TSV', class: ['form-control']
+                = f.hidden_field :file_cache
+              %h4
+                %small Contact Information:
+              .form-group
+                = f.label :submiter_name
+                = f.text_field :submitter_name, placeholder: 'Submitter Name', class: ['form-control']
+              .form-group
+                = f.label :submiter_email
+                = f.text_field :submitter_email, placeholder: 'Submitter Email', class: ['form-control']
+              .form-group
+                = f.label :submiter_affiliation
+                = f.text_field :submitter_affiliation, placeholder: 'Submitter Affiliation', class: ['form-control']
+              = text_field_tag :not_a_bot, nil, class: 'bot-form-field'
+              = f.submit 'Submit', class: ['btn', 'btn-primary']

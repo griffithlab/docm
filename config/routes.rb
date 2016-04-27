@@ -16,6 +16,8 @@ Docm::Application.routes.draw do
   get 'genes/:name' => 'genes#variant_index'
   get ':action' => 'static#:action'
 
+  resources :batches
+
   # Example of regular route:
   #
   # get 'variants' => 'variants#index', as: 'variants'
