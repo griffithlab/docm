@@ -1,14 +1,8 @@
 DoCM - New Variant Submission
 =============================
 
-Submitted by: <%= @submission.name %> <<%= @submission.email %>>
+Submitted by: <%= @batch.submitter_name %> <<%= @batch.submitter_email %>>
 
-Position: <%= @submission.chromosome %>: <%= @submission.start %>-<%= @submission.stop %>
+Batch Name: <%= @batch.name %>
 
-Reference: <%= @submission.reference_read %>
-
-Variant: <%= @submission.variant %>
-
-Source: <%= @submission.source %>
-
-Comments: <%= @submission.comments %>
+Background processing is now taking place. An additional email will be sent when it has completed.

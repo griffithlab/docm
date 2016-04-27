@@ -1,10 +1,10 @@
 class SubmissionMailer < ActionMailer::Base
-  def submission(message)
-    @submission = message
+  def submission(batch)
+    @batch = batch
 
     mail(
-      to: 'docm-alerts@genome.wustl.edu',
-      subject: 'New variant submitted on DoCM',
+      to: 'acoffman@wustl.edu',
+      subject: 'New batch submitted on DoCM',
       from: 'docm-submissions@genome.wustl.edu',
     )
   end
