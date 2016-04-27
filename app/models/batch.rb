@@ -8,6 +8,7 @@ class Batch < ActiveRecord::Base
   validates :submitter_affiliation, presence: true
   validates :reason_for_inclusion, presence: true
   validates :reference_sequence_version, presence: true
+  validates_with BatchUploadValidator, on: :create
 
   before_save :generate_url_slug
   mount_uploader :file, VariantFileUploader
