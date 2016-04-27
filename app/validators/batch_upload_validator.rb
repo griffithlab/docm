@@ -17,7 +17,7 @@ class BatchUploadValidator < ActiveModel::Validator
 
   def headers
     %w(
-      chr
+      chromosome
       start
       stop
       reference
