@@ -6,6 +6,7 @@ class Variant < ActiveRecord::Base
   belongs_to :mutation_type, inverse_of: :variants
   belongs_to :transcript, inverse_of: :variants
   belongs_to :version, inverse_of: :variants
+  belongs_to :batch, inverse_of: :variants
   has_many :disease_source_variants
   has_many :disease_sources, through: :disease_source_variants, source: :source
   has_many :diseases, through: :disease_source_variants
@@ -16,11 +17,11 @@ class Variant < ActiveRecord::Base
   serialize :meta, JSON
 
   def self.index_scope
-    eager_load(:location, :gene, :amino_acid, :diseases, :disease_sources, :mutation_type, :variant_type, :tags, :version)
+    eager_load(:location, :gene, :amino_acid, :diseases, :disease_sources, :mutation_type, :variant_type, :tags, :version, :batch)
   end
 
   def self.show_scope
-    eager_load(:location, :gene, :variant_type, :amino_acid, :mutation_type, :drug_interactions, :transcript, :version, :tags, disease_source_variants: [:disease, :source], drug_interactions: [:source])
+    eager_load(:location, :gene, :variant_type, :amino_acid, :mutation_type, :drug_interactions, :transcript, :version, :batch, :tags, disease_source_variants: [:disease, :source], drug_interactions: [:source])
   end
 
   def is_indel?
@@ -30,5 +31,4 @@ class Variant < ActiveRecord::Base
   def from_tim_ley?
     !tim_ley_annotation.blank?
   end
-
 end
