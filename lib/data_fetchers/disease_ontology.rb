@@ -6,8 +6,7 @@ module DataFetchers
       ActiveRecord::Base.transaction do
         Disease.all.each do |disease|
           begin
-            disease.name = get_name_from_doid(disease.doid)
-            disease.save
+            populate_name_and_xref(disease)
           rescue => e
             puts e.message
           end
@@ -15,9 +14,34 @@ module DataFetchers
       end
     end
 
-    def self.get_name_from_doid(doid)
-      metadata = call_disease_ontology_api(doid)
+    def self.populate_name_and_xref(disease)
+      resp = call_disease_ontology_api(disease.doid)
+      disease.name = get_name_from_doid(disease.doid, resp)
+      (source, id) = get_xref_from_doid(disease.doid, resp)
+      disease.external_id = id
+      disease.external_name = source
+      disease.save
+    end
+
+    def self.get_name_from_doid(doid, existing_response = nil)
+      metadata = existing_response || call_disease_ontology_api(doid)
       metadata["name"]
+    end
+
+    def self.get_xref_from_doid(doid, existing_response = nil)
+      metadata = existing_response || call_disease_ontology_api(doid)
+      if metadata['xrefs']
+        extract_references(metadata['xrefs'])
+      else
+       get_xref_from_doid(['parents'][0][2])
+      end
+    end
+
+    def self.extract_references(xrefs)
+      (source, id) = xrefs.select { |ref| ref =~ /^MSH|OMIM|UMLS_CUI:/ }.first.split(':')
+      source.gsub!('_CUI', '')
+      source.gsub!('MSH', 'MeSH')
+      [source, id]
     end
 
     def self.call_disease_ontology_api(doid)

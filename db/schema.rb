@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160427171018) do
+ActiveRecord::Schema.define(version: 20160504202856) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -69,6 +69,8 @@ ActiveRecord::Schema.define(version: 20160427171018) do
   create_table "diseases", force: :cascade do |t|
     t.string "name"
     t.string "doid"
+    t.text   "external_id"
+    t.text   "external_name"
   end
 
   add_index "diseases", ["doid"], name: "index_diseases_on_doid", using: :btree
