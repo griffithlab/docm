@@ -17,6 +17,10 @@ Docm::Application.routes.draw do
   get ':action' => 'static#:action'
 
   get '/batches/private/:url_slug' => 'batches#show_private', as: :private_batch
+  get '/moderation/batches/:id' => 'batches#show_moderation', as: :moderation_batch
+  get '/moderation/batches' => 'batches#moderation_index', as: :moderation_batch_index
+  post '/moderation/batches' => 'batches#create_version', as: :version_creation
+  post '/moderation/batches/:id' => 'batches#update', as: :update_batch
   resources :batches, except: [:index, :update]
 
   # Example of regular route:

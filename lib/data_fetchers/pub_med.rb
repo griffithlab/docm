@@ -16,7 +16,7 @@ module DataFetchers
       url = url_for_pubmed_id(pubmed_id)
       req = Net::HTTP::Get.new(url.request_uri)
       res = Net::HTTP.start(url.host, url.port) { |http| http.request(req) }
-      raise res unless res.code == '200'
+      raise StandardError.new(res.code) unless res.code == '200'
       extract_citation_from_page_text(res.body)
     end
 

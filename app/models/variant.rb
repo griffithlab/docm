@@ -5,19 +5,17 @@ class Variant < ActiveRecord::Base
   belongs_to :variant_type, inverse_of: :variants
   belongs_to :mutation_type, inverse_of: :variants
   belongs_to :transcript, inverse_of: :variants
-  belongs_to :version, inverse_of: :variants
   belongs_to :batch, inverse_of: :variants
   has_many :disease_source_variants
   has_many :disease_sources, through: :disease_source_variants, source: :source
   has_many :diseases, through: :disease_source_variants
+  has_many :versions, through: :disease_source_variants
   has_many :drug_interactions
   has_many :drug_sources, through: :drug_interactions, source: :source
-  has_and_belongs_to_many :tags
-
-  serialize :meta, JSON
+  has_many :tags, through: :disease_source_variants
 
   def self.index_scope
-    eager_load(:location, :gene, :amino_acid, :diseases, :disease_sources, :mutation_type, :variant_type, :tags, :version, :batch)
+    eager_load(:location, :gene, :amino_acid, :diseases, :disease_sources, :mutation_type, :variant_type, :tags, :versions)
   end
 
   def self.show_scope
@@ -26,9 +24,5 @@ class Variant < ActiveRecord::Base
 
   def is_indel?
     ['INS', 'DEL'].include?(variant_type.name)
-  end
-
-  def from_tim_ley?
-    !tim_ley_annotation.blank?
   end
 end

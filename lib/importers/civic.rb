@@ -10,17 +10,16 @@ module Importers
       civic_data = DataFetchers::Civic.new
       ActiveRecord::Base.transaction do
         civic_data.variants.each do |civic_variant|
-          docm_record = { version: version }
+          docm_record = {}
           vep_response = DataFetchers::Vep.call_vep_api(civic_variant)
           next unless vep_response.complete_record?
           populate_vep_fields(docm_record, vep_response)
           populate_civic_fields(docm_record, civic_variant)
           docm_variant = ::Variant.find_or_create_by(docm_record)
-          docm_variant.meta ||= {}
-          docm_variant.meta['civic_variant_url'] = civic_variant_url_from_civic_variant(civic_variant)
+          docm_variant.civic_url = civic_variant_url_from_civic_variant(civic_variant)
           docm_variant.save
           civic_variant['diseases'].each do |civic_disease|
-            create_disease_source_variant_links(civic_disease, docm_variant)
+            create_disease_source_variant_links(civic_disease, docm_variant, version)
           end
         end
       end
@@ -65,11 +64,12 @@ module Importers
       docm_record[:cdna_change] = vep_response.cdna_change
     end
 
-    def create_disease_source_variant_links(civic_disease, docm_variant)
+    def create_disease_source_variant_links(civic_disease, docm_variant, version)
       DiseaseSourceVariant.where(
         disease: ::Disease.where(doid: civic_disease['disease']['doid']).first_or_create,
         source: ::Source.where(pubmed_id: civic_disease['source']['pubmed_id']).first_or_create,
         variant: docm_variant,
+        version: version,
       ).first_or_create.tap do |dsv|
         dsv.civic_url = civic_evidence_item_url_from_civic_disease(docm_variant, civic_disease)
         dsv.save
@@ -94,7 +94,7 @@ module Importers
     end
 
     def civic_evidence_item_url_from_civic_disease(docm_variant, civic_disease)
-      docm_variant.meta['civic_variant_url'].sub(/#variant$/, '') +  "/evidence/#{civic_disease['evidence_item_id']}/summary#evidence"
+      docm_variant.civic_url.sub(/#variant$/, '') +  "/evidence/#{civic_disease['evidence_item_id']}/summary#evidence"
     end
 
     def civic_variant_url_from_civic_variant(civic_variant)

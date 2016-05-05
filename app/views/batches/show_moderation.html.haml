@@ -1,0 +1,102 @@
+.container-fluid
+  .page-background
+    .row
+      .col-md-10.col-md-offset-1
+        %small
+          = link_to '< Back to submitted batches', moderation_batch_index_path
+        %h1.page-header
+          =@batch.name
+    .row
+      .col-md-10.col-md-offset-1
+        %h4 Batch Information
+        .well.col-md-12
+          .col-md-6
+            %ul.list-unstyled
+              %li
+                %strong Sumitted By:
+                = @batch.submitter_name
+              %li
+                %strong Submitter Affiliation:
+                = @batch.submitter_affiliation
+              %li
+                %strong Submitter Email:
+                = @batch.submitter_email
+              %li
+                %strong Submission Date:
+                = @batch.created_at.strftime('%v')
+              %li
+                %strong Submitted File:
+                = link_to('Download', @batch.file.url)
+          .col-md-6
+            %ul.list-unstyled
+              %li
+                %strong Last Review Date:
+                = @batch.updated_at.strftime('%v')
+              %li
+                %strong Accepted Variants:
+                = @batch.variants.count
+              %li
+                %strong Submitted Variants:
+                = @batch.submitted_variants.count
+              %li
+                %strong View Accepted Variants:
+                = link_to(@batch.name, "/?batches=#{@batch.name}")
+    .row
+      .col-md-10.col-md-offset-1
+        %h4 Justification for Inclusion
+        .well.col-md-12
+          %p= @batch.reason_for_inclusion
+    .row
+      .col-md-10.col-md-offset-1
+        = form_tag do
+          .well
+            = text_field :message, nil, placeholder: 'Message', size: 50
+            .pull-right
+              %label.radio-inline
+                Accept
+                = radio_button_tag(:variant_action, 'accept')
+              %label.radio-inline
+                Reject
+                = radio_button_tag(:variant_action, 'reject')
+              %label.radio-inline
+                Update Message
+                = radio_button_tag(:variant_action, 'update')
+              = button_tag type: 'submit', class: 'btn btn-primary btn-small' do
+                Submit
+          %table.table.table-striped.table-bordered.table-condensed
+            %tr
+              %th
+              %th Chr
+              %th Start
+              %th Stop
+              %th Ref
+              %th Var
+              %th DOID
+              %th Pubmed Id
+              %th Transcript
+              %th AA Change
+              %th Gene
+              %th Strand
+              %th cDNA Change
+              %th Status
+              %th Message
+            - @batch.submitted_variants.each do |variant|
+              %tr
+                - if variant.status == 'accepted'
+                  %td
+                - else
+                  %td= check_box_tag 'variant_ids[]', variant.id
+                %td= variant.chromosome
+                %td= variant.start
+                %td= variant.stop
+                %td= variant.reference
+                %td= variant.variant
+                %td= variant.doid
+                %td= variant.pubmed_id
+                %td= variant.transcript
+                %td= variant.amino_acid_change
+                %td= variant.gene_symbol
+                %td= variant.strand
+                %td= variant.cdna_change
+                %td= variant.status
+                %td= variant.message

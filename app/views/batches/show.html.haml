@@ -36,3 +36,29 @@
         %h4 Justification for Inclusion
         .well.col-md-12
           %p= @batch.reason_for_inclusion
+    .row
+      .col-md-10.col-md-offset-1
+        %h4 Submission Status
+        %table.table.table-striped.table-bordered.table-condensed
+          %tr
+            %th Chr
+            %th Start
+            %th Stop
+            %th Ref
+            %th Var
+            %th DOID
+            %th Pubmed Id
+            %th Status
+            %th Message
+          - @batch.submitted_variants.each do |variant|
+            %tr
+              %td= variant.chromosome
+              %td= variant.start
+              %td= variant.stop
+              %td= variant.reference
+              %td= variant.variant
+              %td= variant.doid
+              %td= variant.pubmed_id
+              %td= variant.status
+              %td= variant.message
+

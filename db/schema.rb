@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20160504202856) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "reference_sequence_version"
+    t.text     "tags"
   end
 
   add_index "batches", ["name"], name: "index_batches_on_name", using: :btree
@@ -64,7 +65,16 @@ ActiveRecord::Schema.define(version: 20160504202856) do
     t.integer "variant_id"
     t.text    "my_cancer_genome_url"
     t.text    "civic_url"
+    t.integer "version_id"
+    t.text    "meta"
   end
+
+  create_table "disease_source_variants_tags", id: false, force: :cascade do |t|
+    t.integer "tag_id",                    null: false
+    t.integer "disease_source_variant_id", null: false
+  end
+
+  add_index "disease_source_variants_tags", ["tag_id", "disease_source_variant_id"], name: "idx_dsv_tags", using: :btree
 
   create_table "diseases", force: :cascade do |t|
     t.string "name"
@@ -144,6 +154,7 @@ ActiveRecord::Schema.define(version: 20160504202856) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "batch_id"
+    t.text     "ensembl_gene_id"
   end
 
   create_table "tags", force: :cascade do |t|
@@ -153,13 +164,6 @@ ActiveRecord::Schema.define(version: 20160504202856) do
   end
 
   add_index "tags", ["name"], name: "index_tags_on_name", using: :btree
-
-  create_table "tags_variants", id: false, force: :cascade do |t|
-    t.integer "tag_id",     null: false
-    t.integer "variant_id", null: false
-  end
-
-  add_index "tags_variants", ["tag_id", "variant_id"], name: "index_tags_variants_on_tag_id_and_variant_id", using: :btree
 
   create_table "transcripts", force: :cascade do |t|
     t.string "name"
@@ -180,13 +184,10 @@ ActiveRecord::Schema.define(version: 20160504202856) do
     t.integer "amino_acid_id"
     t.integer "gene_id"
     t.integer "mutation_type_id"
-    t.integer "primary_variant_id"
     t.string  "hgvs"
-    t.string  "tim_ley_annotation"
     t.integer "transcript_id"
-    t.integer "version_id"
-    t.text    "meta"
     t.integer "batch_id"
+    t.text    "civic_url"
   end
 
   add_index "variants", ["batch_id"], name: "index_variants_on_batch_id", using: :btree
@@ -203,11 +204,12 @@ ActiveRecord::Schema.define(version: 20160504202856) do
   add_foreign_key "disease_source_variants", "diseases"
   add_foreign_key "disease_source_variants", "sources"
   add_foreign_key "disease_source_variants", "variants"
+  add_foreign_key "disease_source_variants", "versions"
+  add_foreign_key "disease_source_variants_tags", "disease_source_variants"
+  add_foreign_key "disease_source_variants_tags", "tags"
   add_foreign_key "drug_interactions", "sources"
   add_foreign_key "drug_interactions", "variants"
   add_foreign_key "submitted_variants", "batches"
-  add_foreign_key "tags_variants", "tags"
-  add_foreign_key "tags_variants", "variants"
   add_foreign_key "variants", "amino_acids"
   add_foreign_key "variants", "batches"
   add_foreign_key "variants", "genes"
@@ -215,6 +217,4 @@ ActiveRecord::Schema.define(version: 20160504202856) do
   add_foreign_key "variants", "mutation_types"
   add_foreign_key "variants", "transcripts"
   add_foreign_key "variants", "variant_types"
-  add_foreign_key "variants", "variants", column: "primary_variant_id"
-  add_foreign_key "variants", "versions"
 end

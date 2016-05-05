@@ -30,7 +30,7 @@ class VariantOverviewPresenter < SimpleDelegator
   end
 
   def tag_links
-    variant.tags.map do |tag|
+    variant.tags.uniq.map do |tag|
       tag_link(variant, tag) do
         view_context.content_tag(
           :span,
@@ -38,6 +38,14 @@ class VariantOverviewPresenter < SimpleDelegator
           class: 'label label-default'
         )
       end
+    end
+  end
+
+  def batch_name
+    if batch
+      batch.name
+    else
+      ''
     end
   end
 

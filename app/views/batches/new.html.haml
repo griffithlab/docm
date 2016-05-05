@@ -23,8 +23,8 @@
                 = f.label :reason_for_inclusion
                 = f.text_area :reason_for_inclusion, placeholder: 'Reason For Inclusion', rows: 10, class: ['form-control']
               .form-group
-                = f.label :reference_sequence_version
-                = f.text_field :reference_sequence_version, placeholder: 'Reference Sequence Version (ie: GRCh37)', rows: 10, class: ['form-control']
+                = f.label :tags
+                = f.text_field :tags, placeholder: 'Comma delimited list of tags to apply to this entire batch', class: ['form-control']
               .form-group
                 = f.label :file
                 = f.file_field :file, placeholder: 'Variant TSV', class: ['form-control']

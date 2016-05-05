@@ -6,16 +6,22 @@ class BatchUploadValidator < ActiveModel::Validator
     line_count = 0
     csv.each { |_| line_count += 1 }
 
-    unless line_count < 200
-      batch.errors[:file] << 'contins over 200 variants'
+    #unless line_count < 200
+      #batch.errors[:file] << 'contains over 200 variants'
+    #end
+
+    submitted_headers = csv.headers.map(&:downcase)
+
+    unless (required_headers - submitted_headers).blank?
+      batch.errors[:file] << 'does not contain the correct headers'
     end
 
-    unless csv.headers.map(&:downcase).sort == headers.sort
-      batch.errors[:file] << 'does not contain the correct headers'
+    unless (submitted_headers - (required_headers + optional_headers)).blank?
+      batch.errors[:file] << 'contains extra fields'
     end
   end
 
-  def headers
+  def required_headers
     %w(
       chromosome
       start
@@ -24,6 +30,12 @@ class BatchUploadValidator < ActiveModel::Validator
       variant
       doid
       pubmed_id
+      transcript
+    )
+  end
+
+  def optional_headers
+    %w(
       tags
       meta
     )

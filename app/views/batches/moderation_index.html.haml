@@ -1,0 +1,33 @@
+.container-fluid
+  .page-background
+    .row
+      .col-md-10.col-md-offset-1
+        %h1.page-header Submitted Batches
+    .row
+      .col-md-10.col-md-offset-1
+        %table.table.table-striped.table-bordered.table-condensed
+          %tr
+            %th Name
+            %th Submitter
+            %th Email
+            %th Affiliation
+            %th File
+          - @batches.each do |batch|
+            %tr
+              %td= link_to(batch.name, moderation_batch_path(batch))
+              %td= batch.submitter_name
+              %td= batch.submitter_email
+              %td= batch.submitter_affiliation
+              %td= link_to('Download', batch.file.url)
+
+    .row
+      .col-md-10.col-md-offset-1
+        = form_tag do
+          .well
+            %label
+              There are currently
+              = @accepted_variant_count
+              accepted variants pending inclusion in DoCM
+            .pull-right
+              = button_tag type: 'submit', class: 'btn btn-primary btn-small' do
+                Create new version
