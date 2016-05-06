@@ -11,14 +11,14 @@ module LinkHelpers
     link_to(gene.name, "http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=#{gene.name}", target: '_blank')
   end
 
-  def variant_link(variant, opts = {})
+  def variant_link(variant, version, opts = {})
     link_text = if opts[:truncate]
                   truncate(variant.hgvs, length: 30)
                 else
                   variant.hgvs
                 end
 
-    link_to(link_text, variant_path(variant.hgvs, version: variant.version.name))
+    link_to(link_text, variant_path(variant.hgvs, version: version.name))
   end
 
   def my_cancer_genome_link(dsv)
