@@ -19,7 +19,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
       location.start,
       location.stop,
       location.reference_read,
-      variant,
+      variant.variant,
       location.reference_sequence_version,
       gene_link(gene),
       view_context.truncate(amino_acid.name, length: 9),
