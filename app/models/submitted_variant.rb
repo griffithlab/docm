@@ -11,6 +11,8 @@ class SubmittedVariant < ActiveRecord::Base
 
   before_save :set_default_status
 
+  serialize :meta, JSON
+
   private
   def set_default_status
     unless self.status.present?
