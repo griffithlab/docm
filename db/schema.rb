@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< Updated upstream
-ActiveRecord::Schema.define(version: 20160504202856) do
-=======
-ActiveRecord::Schema.define(version: 20160506150717) do
->>>>>>> Stashed changes
+ActiveRecord::Schema.define(version: 20160506200403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,14 +61,16 @@ ActiveRecord::Schema.define(version: 20160506150717) do
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
   create_table "disease_source_variants", force: :cascade do |t|
-    t.integer "disease_id"
-    t.integer "source_id"
-    t.integer "variant_id"
-    t.text    "my_cancer_genome_url"
-    t.text    "civic_url"
-    t.integer "version_id"
-    t.text    "meta"
-    t.integer "batch_id"
+    t.integer  "disease_id"
+    t.integer  "source_id"
+    t.integer  "variant_id"
+    t.text     "my_cancer_genome_url"
+    t.text     "civic_url"
+    t.integer  "version_id"
+    t.text     "meta"
+    t.integer  "batch_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "disease_source_variants", ["batch_id"], name: "index_disease_source_variants_on_batch_id", using: :btree
@@ -204,10 +202,12 @@ ActiveRecord::Schema.define(version: 20160506150717) do
   add_index "variants", ["variant"], name: "index_variants_on_variant", using: :btree
 
   create_table "versions", force: :cascade do |t|
-    t.string  "name"
-    t.string  "sort_order"
-    t.boolean "is_current",  default: false
-    t.string  "import_date"
+    t.string   "name"
+    t.string   "sort_order"
+    t.boolean  "is_current",  default: false
+    t.string   "import_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_foreign_key "disease_source_variants", "batches"
