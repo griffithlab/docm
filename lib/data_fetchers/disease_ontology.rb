@@ -48,7 +48,7 @@ module DataFetchers
       url = url_for_doid(doid)
       req = Net::HTTP::Get.new(url.path)
       res = Net::HTTP.start(url.host, url.port) { |http| http.request(req) }
-      raise "Request failed! No disease found for DOID: #{doid}" unless res.code == "200"
+      raise StandardError.new("Request failed! No disease found for DOID: #{doid}") unless res.code == "200"
       JSON.parse(res.body)
     end
 
