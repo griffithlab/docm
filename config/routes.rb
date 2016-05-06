@@ -9,7 +9,7 @@ Docm::Application.routes.draw do
   get 'variants' => 'variants#index', as: :variants
   post 'variants' => 'variants#index'
   get 'variants/:hgvs' => 'variants#show', as: :variant, hgvs: /[^\/]+/
-  get 'api/v1/variants' => 'api_v1#variants'
+  get 'api/v1/variants' => 'api_v1#variants', as: :variants_api_index
   get 'api/v1/variants/:hgvs' => 'api_v1#variant', hgvs: /[^\/\.]+\.{1}[^\/\.]+/
   get 'variant_submission' => 'variant_submissions#new', as: :variant_submission
   post 'variant_submission' => 'variant_submissions#create'
@@ -22,6 +22,8 @@ Docm::Application.routes.draw do
   post '/moderation/batches' => 'batches#create_version', as: :version_creation
   post '/moderation/batches/:id' => 'batches#update', as: :update_batch
   resources :batches, except: [:index, :update]
+
+  get '/downloads/clinvar/:version' => 'clinvar_export#variants', as: :clinvar_export
 
   # Example of regular route:
   #

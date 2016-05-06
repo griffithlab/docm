@@ -12,4 +12,8 @@ class StaticController < ApplicationController
   def about
     @versions = Version.all.map { |v| VersionPresenter.new(v) }
   end
+
+  def downloads
+    @versions = Version.order(created_at: :asc)
+  end
 end

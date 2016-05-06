@@ -1,0 +1,24 @@
+<%= [ 'HGVS',
+'Chromosome',
+'Start',
+'Stop',
+'Reference allele',
+'Alternate allele',
+'URL',
+'Condition ID type',
+'Condition ID value',
+'Clinical significance',
+'Clinical significance citations',
+'Collection method',
+'Allele origin',
+'Affected status',
+'Mode of inheritance',
+'Assertion method',
+'Assertion method citation',
+'Date last evaluated'
+].join("\t") %>
+<% @variants.find_each do |variant| %>
+  <% VariantClinvarRowPresenter.new(variant).rows.each do |row| %>
+<%= row %>
+  <% end %>
+<% end %>

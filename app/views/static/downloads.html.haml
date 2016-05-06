@@ -5,9 +5,12 @@
         .col-md-12
           %h1.page-header
             Downloads
-          %p.lead Download DoCM entries by pressing the VCF or TSV buttons on the main page
           %dt #{link_to 'Source code to the DoCM web application.', 'https://github.com/genome/docm'}
           %dd This is the full source code of the DoCM web application. It runs Ruby on Rails and Postgres.
+          %h4 DoCM versions as flat files
+          - @versions.each do |version|
+            %dt= link_to "DoCM version #{version.name}", variants_api_index_path(versions: version.name, format: 'tsv')
+          %h4 DoCM versions as ClinVar spreadsheets
+          - @versions.each do |version|
+            %dt= link_to "DoCM version #{version.name}", clinvar_export_path(version.name, format: 'tsv')
           %hr
-          
-          
