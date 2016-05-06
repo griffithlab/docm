@@ -53,6 +53,12 @@ module LinkHelpers
     )
   end
 
+
+  def batch_link(batch, tag)
+    query_string = URI.encode_www_form({batches: batch.name, version: version.name})
+    link_to(block_given? ? yield : 'View variants', "/?#{query_string}")
+  end
+
   def tag_link(version, tag)
     query_string = URI.encode_www_form({tags: tag.name, version: version.name})
     link_to(block_given? ? yield : tag.name, "/?#{query_string}")

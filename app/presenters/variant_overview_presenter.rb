@@ -42,12 +42,8 @@ class VariantOverviewPresenter < SimpleDelegator
     end
   end
 
-  def batch_name
-    if batch
-      batch.name
-    else
-      ''
-    end
+  def batch_row
+    "#{link_to(batch.name, view_context.batch_path(batch))} (#{batch_link(batch, version)})".html_safe
   end
 
   def transcript_name
