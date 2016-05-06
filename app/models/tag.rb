@@ -1,5 +1,5 @@
 class Tag < ActiveRecord::Base
-  has_and_belongs_to_many :variants
+  has_and_belongs_to_many :disease_source_variants
   validates :name, uniqueness: { case_sensitive: false }
   validate :word_count
   before_save -> (t) { t.name.strip!; t.name.downcase! }
