@@ -13,7 +13,7 @@ class Variant < ActiveRecord::Base
   has_many :drug_sources, through: :drug_interactions, source: :source
 
   def self.index_scope
-    eager_load(:location, :gene, :amino_acid, :mutation_type, :variant_type, disease_source_variants: [:version, :tags, :source, :disease])
+    eager_load(:location, :gene, :amino_acid, :mutation_type, :variant_type, disease_source_variants: [:version, :tags, :source, :disease, :batch])
   end
 
   def self.show_scope
