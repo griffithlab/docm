@@ -12,8 +12,8 @@
     variant.gene.name,
     variant.mutation_type.name,
     variant.amino_acid.name,
-    variant.diseases.map(&:name),
-    variant.disease_sources.map(&:pubmed_id)
+    variant.disease_source_variants.map(&:disease).map(&:name).uniq.join(','),
+    variant.disease_source_variants.map(&:source).map(&:pubmed_id).uniq.join(',')
   ].join("\t").html_safe
 %>
 <% end %>
