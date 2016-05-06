@@ -34,6 +34,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
     disease_source_variants
       .map(&:disease)
       .map(&:name)
+      .uniq
       .join(', ')
   end
 
