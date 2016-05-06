@@ -19,7 +19,7 @@ class VariantsController < ApplicationController
               else
                 Version.current_version
               end
-    variant = Variant.show_scope.where(hgvs: params[:hgvs], version: version ).first!
-    @variant = VariantOverviewPresenter.new(variant, view_context)
+    variant = Variant.show_scope.where(hgvs: params[:hgvs], disease_source_variants: { version: version}).first!
+    @variant = VariantOverviewPresenter.new(variant, version, view_context)
   end
 end

@@ -17,7 +17,7 @@ class Variant < ActiveRecord::Base
   end
 
   def self.show_scope
-    eager_load(:location, :gene, :variant_type, :amino_acid, :mutation_type, :drug_interactions, :transcript, :version, :batch, :tags, disease_source_variants: [:disease, :source], drug_interactions: [:source])
+    eager_load(:location, :gene, :variant_type, :amino_acid, :mutation_type, :drug_interactions, :transcript, disease_source_variants: [:version, :disease, :source, :batch, :tags], drug_interactions: [:source])
   end
 
   def is_indel?

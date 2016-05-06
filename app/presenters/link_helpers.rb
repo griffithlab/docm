@@ -30,8 +30,8 @@ module LinkHelpers
   end
 
   def civic_variant_link(variant)
-    if variant.meta && civic_url = variant.meta['civic_variant_url']
-      link_to('View variant in CIViC', civic_url, target: '_blank')
+    if variant.civic_url.present?
+      link_to('View variant in CIViC', variant.civic_url, target: '_blank')
     else
       nil
     end
@@ -53,8 +53,8 @@ module LinkHelpers
     )
   end
 
-  def tag_link(variant, tag)
-    query_string = URI.encode_www_form({tags: tag.name, version: variant.version.name})
+  def tag_link(version, tag)
+    query_string = URI.encode_www_form({tags: tag.name, version: version.name})
     link_to(block_given? ? yield : tag.name, "/?#{query_string}")
   end
 end

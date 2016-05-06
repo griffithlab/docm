@@ -1,11 +1,12 @@
 class VariantOverviewPresenter < SimpleDelegator
   include LinkHelpers
 
-  attr_reader :view_context, :variant
+  attr_reader :view_context, :variant, :version
 
-  def initialize(variant, view_context)
+  def initialize(variant, version, view_context)
     @variant = variant
     @view_context = view_context
+    @version = version
     super(variant)
   end
 
@@ -30,14 +31,22 @@ class VariantOverviewPresenter < SimpleDelegator
   end
 
   def tag_links
-    variant.tags.map do |tag|
-      tag_link(variant, tag) do
+    variant.disease_source_variants.flat_map(&:tags).uniq.map do |tag|
+      tag_link(version, tag) do
         view_context.content_tag(
           :span,
           tag.name,
           class: 'label label-default'
         )
       end
+    end
+  end
+
+  def batch_name
+    if batch
+      batch.name
+    else
+      ''
     end
   end
 
