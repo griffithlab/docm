@@ -79,12 +79,16 @@
             %thead
               %th Disease
               %th Source
+              %th Batch
+              %th Tags
               %th External Links
             %tbody
               - @variant.disease_rows.each do |row|
                 %tr
                   %td= row.disease
                   %td= row.source
+                  %td= row.batch
+                  %td= row.tags
                   %td= row.external_links
     - if @variant.drug_interactions.any?
       .row

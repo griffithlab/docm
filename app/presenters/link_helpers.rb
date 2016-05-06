@@ -2,6 +2,7 @@ module LinkHelpers
   delegate :link_to, to: :view_context
   delegate :variant_path, to: :view_context
   delegate :truncate, to: :view_context
+  delegate :content_tag, to: :view_context
 
   def source_link(source)
     link_to(source.citation, "http://www.ncbi.nlm.nih.gov/pubmed/#{source.pubmed_id}", target: '_blank')
@@ -61,6 +62,8 @@ module LinkHelpers
 
   def tag_link(version, tag)
     query_string = URI.encode_www_form({tags: tag.name, version: version.name})
-    link_to(block_given? ? yield : tag.name, "/?#{query_string}")
+    link_to("/?#{query_string}") do
+      content_tag(:span, tag.name, class: 'label label-default')
+    end
   end
 end

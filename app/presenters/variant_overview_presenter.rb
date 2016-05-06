@@ -32,18 +32,15 @@ class VariantOverviewPresenter < SimpleDelegator
 
   def tag_links
     variant.disease_source_variants.flat_map(&:tags).uniq.map do |tag|
-      tag_link(version, tag) do
-        view_context.content_tag(
-          :span,
-          tag.name,
-          class: 'label label-default'
-        )
-      end
+      tag_link(version, tag)
     end
   end
 
-  def batch_row
-    "#{link_to(batch.name, view_context.batch_path(batch))} (#{batch_link(batch, version)})".html_safe
+  def batch_row(b = nil)
+    if b.blank?
+      b = batch
+    end
+    "#{link_to(b.name, view_context.batch_path(b))} (#{batch_link(b, version)})".html_safe
   end
 
   def transcript_name
@@ -59,6 +56,8 @@ class VariantOverviewPresenter < SimpleDelegator
       DiseaseRow.new(
         dsv.disease.name,
         source_link(dsv.source),
+        batch_row(dsv.batch),
+        dsv.tags.map { |tag| tag_link(version, tag) }.join.html_safe,
         [my_cancer_genome_link(dsv), civic_evidence_item_link(dsv)].compact.join(', ').html_safe
       )
     end
@@ -79,5 +78,5 @@ class VariantOverviewPresenter < SimpleDelegator
   end
 end
 
-DiseaseRow = Struct.new(:disease, :source, :external_links)
+DiseaseRow = Struct.new(:disease, :source, :batch, :tags, :external_links)
 InteractionRow = Struct.new(:effect, :pathway, :association, :drug, :status, :evidence_type, :source)
