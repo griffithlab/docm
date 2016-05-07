@@ -17,7 +17,7 @@ class ProcessBatchSubmission < ActiveJob::Base
 
   private
   def create_submitted_variants
-    csv = CSV.new(File.open(batch.file.path, 'r'), col_sep: "\t", headers: true)
+    csv = CSV.new(File.open(batch.file.path, 'r'), col_sep: "\t", headers: true, quote_char: "'")
     csv.each.map do |line|
       SubmittedVariant.where(line.to_h.merge({batch: batch})).first_or_create
     end
