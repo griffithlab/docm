@@ -40,7 +40,9 @@ class VariantOverviewPresenter < SimpleDelegator
     if b.blank?
       b = batch
     end
-    "#{link_to(b.name, view_context.batch_path(b))} (#{batch_link(b, version)})".html_safe
+    content_tag(:span, data: { toggle: 'tooltip', placement: 'right', title: b.reason_for_inclusion}) do
+      "#{link_to(b.name, view_context.batch_path(b))} (#{batch_link(b, version)})".html_safe
+    end
   end
 
   def transcript_name

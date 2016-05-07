@@ -39,9 +39,6 @@
                 (
                 = @variant.dgidb_row
                 )
-              %li
-                %strong Introduced in Batch:
-                = @variant.batch_row
           .col-md-6
             %h4
               .small
@@ -79,7 +76,9 @@
             %thead
               %th Disease
               %th Source
-              %th Batch
+              %th
+                Batch
+                %span{class: 'glyphicon glyphicon-question-sign', data: { toggle: 'tooltip', placement: 'top', title: 'Mouse over a batch to see why its variants were included in DoCM'}}
               %th Tags
               %th External Links
             %tbody
@@ -118,3 +117,7 @@
                     %td= row.status
                     %td= row.evidence_type
                     %td= row.source
+:javascript
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
