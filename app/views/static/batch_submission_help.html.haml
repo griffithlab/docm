@@ -10,7 +10,63 @@
           %hr
           %h4 Formatting and required fields
           %p
+            Before submitting a batch of variants to DoCM, please review 
+            =link_to('our criteria for inclusion', '/sources')
+            to ensure your batch is suitable.
+          %p
+            In order to submit your batch of variants, please use the 
+            =link_to('submission form', '/batches/new')
+            to upload a tab delimited file.
+            The file should include the following columns:
+            %table.table.table-striped.table-bordered
+              %tr
+                %td
+                  chromosome
+                %td
+                  start
+                %td
+                  stop
+                %td
+                  reference
+                %td
+                  variant
+                %td
+                  doid
+                %td
+                  pubmed_id
+                %td
+                  transcript
+                %td
+                  tags
+            %p
+            Please note that while the order of the columns is not important, the headers are case sensitive. You can download a template TSV file
+            =link_to('here.', '/docm_import_template.tsv')
           %hr
           %h4 Submission process
           %p
+            After you submit your batch file, your variants will move through several phases of approval. They are detailed below.
+          %table.table.table-striped.table-bordered
+            %tr
+              %th Status
+              %th Description
+            %tr
+              %td
+                submitted
+              %td
+                We have received your batch file, parsed it successfully, and are preparing to process your submission.
+            %tr
+              %td
+                processed
+              %td
+                This variant has been through our automated validation process which includes annotation with VEP and validation of the DOID and PMID.
+            %tr
+              %td
+                accepted
+              %td
+                This variant has been accepted for inclusion and will be in the next version of DoCM
+            %tr
+              %td
+                included
+              %td
+                This variant is now in the live version of DoCM
           %hr

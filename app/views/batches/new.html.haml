@@ -12,6 +12,10 @@
               %ul
                 -@batch.errors.full_messages.each do |error|
                   %li= error
+          %p
+            Please review our 
+            =link_to('batch submission help', '/batch_submission_help')
+            before uploading your file.
           .well
             = form_for @batch, url: {action: 'create'}, html: {role: 'form'} do |f|
               %h4
