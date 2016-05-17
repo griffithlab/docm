@@ -2,7 +2,7 @@ require 'csv'
 
 class BatchUploadValidator < ActiveModel::Validator
   def validate(batch)
-    csv = CSV.new(File.open(batch.file.path, 'r'), col_sep: "\t", headers: true)
+    csv = CSV.new(File.open(batch.file.path, 'r'), col_sep: "\t", headers: true, quote_char: "'")
     line_count = 0
     csv.each { |_| line_count += 1 }
 
