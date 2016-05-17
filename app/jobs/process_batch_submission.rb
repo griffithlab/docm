@@ -49,19 +49,23 @@ class ProcessBatchSubmission < ActiveJob::Base
   def validate_doid(variant)
     begin
       doid = variant.doid.gsub('DOID:','')
-      disease_name = DataFetchers::DiseaseOntology.get_name_from_doid(doid)
-      disease = Disease.where(name: disease_name, doid: doid).first_or_create
-      DataFetchers::DiseaseOntology.populate_name_and_xref(disease)
+      unless Disease.where(doid: doid).where.not(name: nil, external_id: nil, external_name: nil).exists?
+        disease_name = DataFetchers::DiseaseOntology.get_name_from_doid(doid)
+        disease = Disease.where(name: disease_name, doid: doid).first_or_create
+        DataFetchers::DiseaseOntology.populate_name_and_xref(disease)
+      end
     rescue StandardError
       variant.status = 'invalid'
-      variant.message = "Unable to fetch disease name for DOID #{doid}."
+      variant.message = "Unable to fetch disease name or xrefs for DOID #{doid}."
     end
   end
 
   def validate_pubmed_id(variant)
     begin
-      citation = DataFetchers::PubMed.get_citation_from_pubmed_id(variant.pubmed_id)
-      Source.where(pubmed_id: variant.pubmed_id, citation: citation).first_or_create
+      unless Source.where(pubmed_id: variant.pubmed_id).where.not(citation: nil).exists?
+        citation = DataFetchers::PubMed.get_citation_from_pubmed_id(variant.pubmed_id)
+        Source.where(pubmed_id: variant.pubmed_id, citation: citation).first_or_create
+      end
     rescue StandardError
       variant.status = 'invalid'
       variant.message = "Unable to fetch citation for PubMed id #{variant.pubmed_id}."
