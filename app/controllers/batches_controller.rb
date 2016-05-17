@@ -58,7 +58,7 @@ class BatchesController < ApplicationController
       variant.message = message
       if action == 'reject'
         variant.status = 'rejected'
-      elsif action == 'accept'
+      elsif action == 'accept' && variant.status == 'processed'
         variant.status = 'accepted'
       end
       variant.save
