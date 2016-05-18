@@ -89,34 +89,21 @@
                   %td= row.batch
                   %td= row.tags
                   %td= row.external_links
-    - if @variant.drug_interactions.any?
-      .row
-        .col-md-10.col-md-offset-1
-          %h4
-            Drug Interaction Data
-            %small
-              supplied by the
-              = link_to 'Dienstman Knowledge Database', 'https://www.synapse.org/#!Synapse:syn2370773'
-          .well.col-md-12
-            %table.table.table-striped
-              %thead
-                %th Drug
-                %th Pathway
-                %th Effect
-                %th Association
-                %th Status
-                %th Evidence
-                %th Source
-              %tbody
-                - @variant.interaction_rows.each do |row|
-                  %tr
-                    %td= row.drug
-                    %td= row.pathway
-                    %td= row.effect
-                    %td= row.association
-                    %td= row.status
-                    %td= row.evidence_type
-                    %td= row.source
+    - if @variant.meta_tables.any?
+      - @variant.meta_tables.each do |table|
+        .row
+          .col-md-10.col-md-offset-1
+            %h4= table.name
+            .well.col-md-12
+              %table.table.table-striped
+                %thead
+                  - table.columns.each do |col|
+                    %th=col
+                %tbody
+                  - table.rows.each do |row|
+                    %tr
+                      - row.each do |cell|
+                        %td= cell
 :javascript
   $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip()
