@@ -13,6 +13,7 @@ class CreateNewVersion < ActiveJob::Base
     old_version.disease_source_variants.find_each do |old_dsv|
       new_dsv = old_dsv.dup
       new_dsv.version = new_version
+      new_dsv.tags = old_dsv.tags
       new_dsv.save
     end
   end
