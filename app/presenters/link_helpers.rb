@@ -22,9 +22,12 @@ module LinkHelpers
     link_to(link_text, variant_path(variant.hgvs, version: version.name))
   end
 
-  def my_cancer_genome_link(dsv)
-    if dsv.my_cancer_genome_url
-      link_to('My Cancer Genome', dsv.my_cancer_genome_url, target: '_blank')
+  def additional_links(dsv)
+    urls = (dsv.meta || {}).values.map { |v| v['urls'] }.compact.flatten
+    if urls.present?
+      urls.map do |url|
+        link_to(url['name'], url['path'], target: '_blank')
+      end
     else
       nil
     end
