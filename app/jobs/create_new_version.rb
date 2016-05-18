@@ -38,7 +38,10 @@ class CreateNewVersion < ActiveJob::Base
       dsv.tags = (current_tags + all_tags).uniq
       if submitted_variant.meta.present?
         current_meta = dsv.meta || {}
-        dsv.meta = current_meta.merge(JSON.parse(submitted_variant.meta) || {})
+        new_meta = JSON.parse(submitted_variant.meta) || {}
+        unless new_meta.empty?
+          dsv.meta = current_meta.merge({ dsv.batch.name => new_meta })
+        end
       end
       dsv.save
       submitted_variant.status = 'included'
