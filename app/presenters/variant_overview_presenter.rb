@@ -60,7 +60,7 @@ class VariantOverviewPresenter < SimpleDelegator
         source_link(dsv.source),
         batch_row(dsv.batch),
         dsv.tags.map { |tag| tag_link(version, tag) }.join.html_safe,
-        [my_cancer_genome_link(dsv), civic_evidence_item_link(dsv)].compact.join(', ').html_safe
+        [additional_links(dsv), civic_evidence_item_link(dsv)].compact.flatten.join(', ').html_safe
       )
     end
   end
