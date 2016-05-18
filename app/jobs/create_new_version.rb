@@ -51,6 +51,7 @@ class CreateNewVersion < ActiveJob::Base
       string.split(',')
         .map(&:downcase)
         .map(&:strip)
+        .reject(&:blank?)
     else
       []
     end
