@@ -17,27 +17,72 @@
             In order to submit your batch of variants, please use the 
             =link_to('submission form', '/batches/new')
             to upload a tab delimited file.
-            The file should include the following columns:
+            The file should contain the following columns and include headers.
             %table.table.table-striped.table-bordered
               %tr
+                %td Column Name
+                %td Description
+              %tr
+                %td chromosome
                 %td
-                  chromosome
+                  Chromosome on which the variant can be found
+                  %small (required)
+              %tr
+                %td start
                 %td
-                  start
-                %td
-                  stop
-                %td
-                  reference
-                %td
-                  variant
-                %td
-                  doid
-                %td
-                  pubmed_id
-                %td
-                  transcript
-                %td
-                  tags
+                  Starting position of the variant
+                  %small (required)
+                %tr
+                  %td
+                    stop
+                  %td
+                    End position of the variant
+                    %small (required)
+                %tr
+                  %td
+                    reference
+                  %td
+                    Reference bases. "None" should be represented with a "-" character
+                    %small (required)
+                %tr
+                  %td
+                    variant
+                  %td
+                    Variant bases. "None" should be represented with a "-" character
+                    %small (required)
+                %tr
+                  %td
+                    doid
+                  %td
+                    =link_to('Disease Ontology', 'http://disease-ontology.org/') 
+                    id. Formatted either as "DOID:123" or "123"
+                    %small (required)
+                %tr
+                  %td
+                    pubmed_id
+                  %td
+                    PubMed id for the publication containing the disease-variant relationship
+                    %small (required)
+                %tr
+                  %td
+                    transcript
+                  %td
+                    Ensembl transcript id containing the variant
+                    %small (required)
+                %tr
+                  %td
+                    tags
+                  %td
+                    A comma delimited list of tags to apply to this specific disease-source-variant relationship
+                    %small (optional)
+                %tr
+                  %td
+                    meta
+                  %td
+                    A JSON data structure of metadata to be displayed on the DoCM website. Please
+                    =link_to('see below', '#meta-instructions')
+                    for details
+                    %small (optional)
             %p
             Please note that while the order of the columns is not important, the headers are case sensitive. You can download a template TSV file
             =link_to('here.', '/docm_import_template.tsv')
@@ -70,3 +115,42 @@
               %td
                 This variant is now in the live version of DoCM
           %hr
+          %h4#meta-instructions Meta Instructions
+          %p
+            The meta field allows you to optionally supply external links or metadata to be displayed
+            on the DoCM site. It is a JSON data structure that allows for two top level keys, 'urls', and 'tables'.
+            You may supply either key, both keys or nothing at all. The column is entirely optional.
+          %p
+            The 'urls' field should be structured as follows:
+            %pre
+              :preserve
+                {
+                  "urls": [{
+                    "path": "http://www.mycancergenome.org/content/disease/melanoma/gna11/101",
+                    "name": "My Cancer Genome"
+                  }]
+                }
+            and will result in a link appearing in the 'External Links` section of the variant overview page as
+            =link_to('seen here.', '/variants/ENST00000078429:c.626A%3EC?version=2')
+          %p
+            The 'tables' field should be structured as follows:
+            %pre
+              :preserve
+                {
+                  "tables": [{
+                    "name": "Drug Interaction Data",
+                    "columns": ["Therapeutic Context", "Pathway", "Effect", "Association", "Status", "Evidence", "Source"],
+                    "rows": [{
+                      "Therapeutic Context": "selumetinib",
+                      "Pathway": "activation",
+                      "Effect": "gain-of-function",
+                      "Association": "response",
+                      "Status": "early trials",
+                      "Evidence": "emerging",
+                      "Source": "J Clin Oncol 2013;31: (suppl; abstr CRA9003)"
+                    }]
+                  }]
+                }
+            and will result in a table appearing towards the bottom of the variant overview page as
+            =link_to('seen here.', '/variants/ENST00000078429:c.626A%3EC?version=2')
+
