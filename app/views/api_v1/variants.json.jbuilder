@@ -12,8 +12,8 @@ else
     json.gene variant.gene.name
     json.mutation_type variant.mutation_type.name
     json.amino_acid variant.amino_acid.name
-    json.diseases variant.diseases.map(&:name)
-    json.pubmed_sources variant.disease_sources.map(&:pubmed_id)
-    json.tags variant.tags.map(&:name)
+    json.diseases variant.disease_source_variants.map(&:disease).map(&:name).uniq
+    json.pubmed_sources variant.disease_source_variants.map(&:source).map(&:pubmed_id).uniq
+    json.tags variant.disease_source_variants.flat_map(&:tags).map(&:name).uniq
   end
 end
