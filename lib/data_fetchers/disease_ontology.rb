@@ -33,7 +33,7 @@ module DataFetchers
       if metadata['xrefs']
         extract_references(metadata['xrefs'])
       else
-       get_xref_from_doid(['parents'][0][2])
+       get_xref_from_doid(metadata['parents'][0][2].gsub('DOID:', ''))
       end
     end
 
