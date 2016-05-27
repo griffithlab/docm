@@ -8,8 +8,8 @@ class BatchFilter
   def self.valid_values
     Batch.uniq
       .order(name: :asc)
-      .pluck(:name)
       .select { |b| b.variants.any? }
+      .map(&:name)
   end
 
   def self.param_name
