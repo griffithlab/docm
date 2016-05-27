@@ -9,6 +9,7 @@ class BatchFilter
     Batch.uniq
       .order(name: :asc)
       .pluck(:name)
+      .select { |b| b.variants.any? }
   end
 
   def self.param_name
