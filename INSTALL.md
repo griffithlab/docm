@@ -1,6 +1,6 @@
 Prerequisites
 ----
-* Ruby (>= 1.9.3)
+* Ruby (= 2.1.0)
 * Postgres (>= 9)
 * Bundler
 
@@ -30,8 +30,7 @@ Note: if nokogiri fails to build, after "cd docm", run this command:
     bundle exec rake db:drop
     bundle exec rake db:create
     bundle exec rake db:migrate
-    bundle exec rake docm:import['/path/to/data.tsv']
-    rails s
+    bundle exec rake docm:load
 
 
 The application will be reachable at `http://localhost:3000`

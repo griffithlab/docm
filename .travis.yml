@@ -5,6 +5,10 @@ script:
   - bundle exec rake spec
 rvm:
   - "2.1.0"
+  - "1.9.3"
+  - "2.0.0"
+  - "2.2.0"
+  - "2.3.0"
 env:
   - RAILS_ENV=test TRAVIS_BUILD=true
 notifications:
