@@ -31,6 +31,7 @@ Note: if nokogiri fails to build, after "cd docm", run this command:
     bundle exec rake db:create
     bundle exec rake db:migrate
     bundle exec rake docm:load
+    rails s
 
 
 The application will be reachable at `http://localhost:3000`
