@@ -4,6 +4,7 @@ module Importers
 
     def initialize(version)
       @version = ::Version.find_by!(name: version)
+      @civic_batch = Batch.find_by!(name: 'CIViC Knowledgebase')
     end
 
     def import!
@@ -16,6 +17,9 @@ module Importers
           populate_vep_fields(docm_record, vep_response)
           populate_civic_fields(docm_record, civic_variant)
           docm_variant = ::Variant.find_or_create_by(docm_record)
+          if docm_variant.batch.nil?
+            docm_variant.batch = @civic_batch
+          end
           docm_variant.civic_url = civic_variant_url_from_civic_variant(civic_variant)
           docm_variant.save
           civic_variant['diseases'].each do |civic_disease|
@@ -71,6 +75,9 @@ module Importers
         variant: docm_variant,
         version: version,
       ).first_or_create.tap do |dsv|
+        if dsv.batch.nil?
+          dsv.batch = @civic_batch
+        end
         dsv.civic_url = civic_evidence_item_url_from_civic_disease(docm_variant, civic_disease)
         dsv.save
       end
