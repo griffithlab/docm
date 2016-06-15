@@ -51,8 +51,8 @@ namespace :docm do
     ActiveRecord::Base.transaction do
       puts 'Updating CIViC'
       current_version = Version.current_version
-      new_version = Util.get_new_version(current_version)
-      Util.copy_variants_between_versions(current_version, new_version)
+      new_version = Version.create_new_version
+      CreateNewVersion.new.process_existing_dsvs(current_version, new_version)
       Importers::Civic.new(new_version.name).import!
     end
     puts 'Generating HGVS strings.'
