@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160506200403) do
+ActiveRecord::Schema.define(version: 20160610164824) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -195,6 +195,7 @@ ActiveRecord::Schema.define(version: 20160506200403) do
     t.integer "transcript_id"
     t.integer "batch_id"
     t.text    "civic_url"
+    t.text    "sequence_ontology_term"
   end
 
   add_index "variants", ["batch_id"], name: "index_variants_on_batch_id", using: :btree
