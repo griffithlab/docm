@@ -1,5 +1,6 @@
 module LinkHelpers
   delegate :link_to, to: :view_context
+  delegate :image_tag, to: :view_context
   delegate :variant_path, to: :view_context
   delegate :truncate, to: :view_context
   delegate :content_tag, to: :view_context
@@ -22,6 +23,11 @@ module LinkHelpers
     link_to(link_text, variant_path(variant.hgvs, version: version.name))
   end
 
+  def sequence_ontology_link(variant)
+    soid = variant.variant_type.soid
+    link_to(soid, "http://www.sequenceontology.org/browser/current_svn/term/#{soid}")
+  end
+
   def additional_links(dsv)
     urls = (dsv.meta || {}).values.map { |v| v['urls'] }.compact.flatten
     if urls.present?
@@ -35,7 +41,7 @@ module LinkHelpers
 
   def civic_variant_link(variant)
     if variant.civic_url.present?
-      link_to('View variant in CIViC', variant.civic_url, target: '_blank')
+      link_to("#{image_tag('civic_logo.png')} View in CIViC".html_safe, variant.civic_url, target: '_blank')
     else
       nil
     end
@@ -43,7 +49,7 @@ module LinkHelpers
 
   def civic_evidence_item_link(dsv)
     if dsv.civic_url
-      link_to('CIViC', dsv.civic_url, target: '_blank')
+      link_to("#{image_tag('civic_logo.png')} CIViC".html_safe, dsv.civic_url, target: '_blank')
     else
       nil
     end

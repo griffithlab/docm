@@ -30,6 +30,10 @@ class VariantOverviewPresenter < SimpleDelegator
     end
   end
 
+  def sequence_ontology_row
+    "#{variant.variant_type.name} (#{sequence_ontology_link(variant)})".html_safe
+  end
+
   def tag_links
     variant.disease_source_variants.flat_map(&:tags).uniq.map do |tag|
       tag_link(version, tag)

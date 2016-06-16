@@ -44,6 +44,9 @@ class ProcessBatchSubmission < ActiveJob::Base
       variant.status = 'invalid'
       variant.message = 'Unable to fetch complete VEP information.'
     end
+  rescue StandardError => e
+    variant.status = 'invalid'
+    variant.message = e.message
   end
 
   def validate_doid(variant)

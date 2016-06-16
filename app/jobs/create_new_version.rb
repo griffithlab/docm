@@ -8,7 +8,6 @@ class CreateNewVersion < ActiveJob::Base
     end
   end
 
-  private
   def process_existing_dsvs(old_version, new_version)
     old_version.disease_source_variants.find_each do |old_dsv|
       new_dsv = old_dsv.dup
@@ -18,6 +17,7 @@ class CreateNewVersion < ActiveJob::Base
     end
   end
 
+  private
   def process_new_dsvs(new_version)
     SubmittedVariant.where(status: 'accepted').find_each do |submitted_variant|
       dsv_tags = extract_tags(submitted_variant.tags)
@@ -40,7 +40,7 @@ class CreateNewVersion < ActiveJob::Base
         current_meta = dsv.meta || {}
         new_meta = JSON.parse(submitted_variant.meta) || {}
         unless new_meta.empty?
-          dsv.meta = current_meta.merge({ dsv.batch.name => new_meta })
+          dsv.meta = current_meta.merge({ submitted_variant.batch.name => new_meta })
         end
       end
       dsv.save

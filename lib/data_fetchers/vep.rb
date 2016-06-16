@@ -5,7 +5,10 @@ module DataFetchers
     def self.call_vep_api(variant)
       uri = url_for_variant(variant)
       res = Net::HTTP.get_response(uri)
-      raise StandardError.new('Request Failed!')  unless res.code == '200'
+      unless res.code == '200'
+        error = JSON.parse(res.body)['error']
+        raise StandardError.new("Request Failed: #{error}")
+      end
       VepResponse.new(res.body, variant)
     rescue URI::InvalidURIError
       puts "Bad request for variant #{variant.to_s}"
