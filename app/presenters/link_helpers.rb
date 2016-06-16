@@ -23,6 +23,11 @@ module LinkHelpers
     link_to(link_text, variant_path(variant.hgvs, version: version.name))
   end
 
+  def sequence_ontology_link(variant)
+    soid = variant.variant_type.soid
+    link_to(soid, "http://www.sequenceontology.org/browser/current_svn/term/#{soid}")
+  end
+
   def additional_links(dsv)
     urls = (dsv.meta || {}).values.map { |v| v['urls'] }.compact.flatten
     if urls.present?

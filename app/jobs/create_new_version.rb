@@ -40,7 +40,7 @@ class CreateNewVersion < ActiveJob::Base
         current_meta = dsv.meta || {}
         new_meta = JSON.parse(submitted_variant.meta) || {}
         unless new_meta.empty?
-          dsv.meta = current_meta.merge({ dsv.batch.name => new_meta })
+          dsv.meta = current_meta.merge({ submitted_variant.batch.name => new_meta })
         end
       end
       dsv.save
