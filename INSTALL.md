@@ -1,6 +1,6 @@
 Prerequisites
 ----
-* Ruby (>= 1.9.3)
+* Ruby (>= 2.0.0)
 * Postgres (>= 9)
 * Bundler
 
@@ -30,7 +30,7 @@ Note: if nokogiri fails to build, after "cd docm", run this command:
     bundle exec rake db:drop
     bundle exec rake db:create
     bundle exec rake db:migrate
-    bundle exec rake docm:import['/path/to/data.tsv']
+    bundle exec rake docm:load
     rails s
 
 
