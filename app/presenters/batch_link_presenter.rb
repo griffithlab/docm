@@ -6,11 +6,7 @@ class BatchLinkPresenter
   end
 
   def link_path
-    if batch.reference_url.present?
-      batch.reference_url
-    else
-      "/batches/#{batch.id}"
-    end
+    "/batches/#{batch.id}"
   end
 
   def name
