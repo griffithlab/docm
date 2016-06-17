@@ -3,7 +3,7 @@
     .row
       .col-md-10.col-md-offset-1
         %h1.page-header
-          =@variant.hgvs
+          = "#{@variant.gene.name} (#{@variant.amino_acid.name})"
     .row
       .col-md-10.col-md-offset-1
         %h4 Variant Data
@@ -13,6 +13,9 @@
               .small
                 %strong Location
             %ul.list-unstyled
+              %li
+                %strong HGVS:
+                = @variant.hgvs
               %li
                 %strong Reference Version:
                 = @variant.location.reference_sequence_version
