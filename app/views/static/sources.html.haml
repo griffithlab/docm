@@ -68,10 +68,8 @@
           %hr
           %h3 Datasets that were curated and included in DoCM
           %ul
-            %li #{link_to 'CIViC: Clinical Interpretations of Variants in Cancer', 'https://civic.genome.wustl.edu'}
-            %li #{link_to 'My Cancer Genome', 'http://www.mycancergenome.org'}
-            %li #{link_to 'Knowledge database', 'http://www.ncbi.nlm.nih.gov/pubmed/24768039'}
-            %li #{link_to 'OncoMap', 'http://www.ncbi.nlm.nih.gov/pubmed/25157968'}
+            - @batches.each do |batch|
+              %li= link_to(batch.name, batch.link_path)
           %hr
           %h3 Papers citing http://docm.info
           %ul

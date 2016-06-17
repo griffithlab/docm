@@ -7,6 +7,9 @@ class StaticController < ApplicationController
 
   def sources
     @source_count = Source.count
+    @batches = Batch.joins(:disease_source_variants)
+      .uniq
+      .map { |b| BatchLinkPresenter.new(b) }
   end
 
   def about
