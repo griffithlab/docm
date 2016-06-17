@@ -31,21 +31,29 @@ class VariantDatatableRowPresenter < SimpleDelegator
 
   private
   def disease_list
-    disease_source_variants
+    all_names = disease_source_variants
       .map(&:disease)
       .map(&:name)
       .uniq
-      .join(', ')
+      .sort
+
+    remaining = all_names.size - number_of_items_to_show
+
+    if remaining > 0
+      all_names.take(number_of_items_to_show).join(', ') + ", and #{remaining} more."
+    else
+      all_names.join(', ')
+    end
   end
 
   def source_list
     links = disease_source_variants.map(&:source)
       .uniq
       .sort_by { |s| s.pubmed_id }
-      .take(number_of_links_to_show)
+      .take(number_of_items_to_show)
       .map { |s| source_link(s) }.join(', ')
 
-      remaining = disease_source_variants.map(&:source).uniq.size - number_of_links_to_show
+      remaining = disease_source_variants.map(&:source).uniq.size - number_of_items_to_show
 
       if remaining > 0
         links + ", and #{remaining} more."
@@ -54,7 +62,7 @@ class VariantDatatableRowPresenter < SimpleDelegator
       end
   end
 
-  def number_of_links_to_show
+  def number_of_items_to_show
     5
   end
 end
