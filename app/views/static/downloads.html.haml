@@ -11,6 +11,6 @@
           - @versions.each do |version|
             %dt= link_to "DoCM version #{version.name}", variants_api_index_path(versions: version.name, format: 'tsv')
           %h4 DoCM versions as ClinVar spreadsheets
-          - @versions.each do |version|
+          - @versions.reject { |v| v.is_minor? }.each do |version|
             %dt= link_to "DoCM version #{version.name}", clinvar_export_path(version.name, format: 'tsv')
           %hr
