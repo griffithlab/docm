@@ -11,6 +11,7 @@ class StaticController < ApplicationController
 
   def about
     @versions = Version.all.map { |v| VersionPresenter.new(v) }
+    @summary_table = SummaryTablePresenter.new(Version.current_version)
   end
 
   def downloads
