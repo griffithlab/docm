@@ -19,22 +19,8 @@
           %p
             Publications are identified for curation by disease experts and through review of published lists and resources
             that outline important cancer mutations. Mutations outlined in the literature are included in DoCM if they
-            satisfy the criteria listed below. Using context clues of the citing literature, useful metadata is obtained
-            from public datasets to uniquely identify a mutation (such as genomic position and cDNA position), map the mutation to a
-            disease (using the #{link_to 'disease ontology', 'http://disease-ontology.org'}), and catalogue other useful information.
-          %p
-            The following is an anecdotal example of the curation involved for the variant BRAF V600E. Typically the
-            literature only lists the gene and amino acid change, requiring extensive curation to uniquely identify
-            the variant. Correct genomic coordinates on a consistent genome build need to be identified, with
-            accompanying nucleotide and strand information. Occassionaly there are multiple nucleotide changes
-            that are synonymous with a particular amino acid change. A representative transcript that correctly models
-            the mutation described in the literature also needs to be specified. Cancer subtypes are specified using the
-            disease ontology nomenclature.
-          %p
-            = image_tag("curation.png")
-
-          %hr
-          %h3
+            satisfy the criteria listed below.
+          %h5
             Criteria for inclusion into DoCM
           %p Clinical evidence
           %ul
@@ -45,13 +31,45 @@
             %li Disease function described in cell lines
             %li Disease function described in animal models
             %li Extremely recurrent mutation coupled with expert opinion of the significance of the mutation
+          %p
+            Using context clues of the citing literature, useful metadata is obtained
+            from public datasets to uniquely identify a mutation (such as genomic position and transcript), map the mutation to a
+            disease (using the #{link_to 'disease ontology', 'http://disease-ontology.org'}), and catalogue other useful information.
+          %p
+            The following is an anecdotal example of the curation involved for the variant BRAF V600E. Typically the
+            literature only lists the gene and amino acid change, requiring extensive curation to uniquely identify
+            the variant. Correct genomic coordinates on a consistent genome build need to be identified, with
+            accompanying nucleotide information. Occassionaly there are multiple nucleotide changes
+            that are synonymous with a particular amino acid change. A representative transcript that correctly models
+            the mutation described in the literature also needs to be specified. Cancer subtypes are specified using the
+            disease ontology nomenclature. Tags can be added to an individual variant to provide useful metadata, examples
+            include "pathogenic", "functional mouse model", "prognostic", and/or "activating".
+          %p
+            = image_tag("curation.png")
+          %p
+            Variants should be grouped into batches by commonalities like disease or mutation type if curated directly
+            from the literature. Batches can also be created based on a publically available listing of variants that is
+            in scope, like My Cancer Genome or the Drug Gene Knowledge Database. Batches can be submitted, following
+            the #{link_to 'batch submission instructions',  '/batch_submission_help'}, on
+            the #{link_to 'batch submission page', '/batches/new'}. Curators should annotate their curation process and
+            explain the reasoning for including a batch into DoCM in the batch rationale statement on the submission form.
+            This statement allows more transparency to the curation process and allows DoCM users to better understand
+            why variants were included.
+          %p
+            Following submission of a batch, the DoCM web app automatically annotates the variant using #{link_to'VEP', 'http://rest.ensembl.org/#Variation'},
+            validates the the publications pubmed ids using PubMed, and validates the disease ontology ids using
+            the #{link_to 'disease ontology API', 'http://www.disease-ontology.org'}. After annotation and validation, the variants are reviewed by the
+            moderators listed on #{link_to 'DoCM’s about page', 'http://docm.genome.wustl.edu/about'}. DoCM moderators
+            ensure that the a submitted batch contains no errors in annotation and validation, that the batch is in
+            scope of the resource, and that the variants appear to be referenced in the listed literature. The moderator
+            will start a dialogue with the submitter via email to correct any errors/discrepancies and then accept or
+            reject the variants in the batch. These variants are then staged for inclusion in DoCM and upon submission
+            of multiple batches the moderator can create a new version of the database.
           %hr
           %h3 Datasets that were curated and included in DoCM
           %ul
-            %li #{link_to 'CIViC: Clinical Interpretations of Variants in Cancer', 'https://civic.genome.wustl.edu'}
-            %li #{link_to 'My Cancer Genome', 'http://www.mycancergenome.org'}
-            %li #{link_to 'Knowledge database', 'http://www.ncbi.nlm.nih.gov/pubmed/24768039'}
-            %li #{link_to 'OncoMap', 'http://www.ncbi.nlm.nih.gov/pubmed/25157968'}
+            - @batches.each do |batch|
+              %li= link_to(batch.name, batch.link_path)
           %hr
           %h3 Papers citing http://docm.info
           %ul

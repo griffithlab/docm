@@ -1,6 +1,14 @@
 class Version < ActiveRecord::Base
   has_many :disease_source_variants
 
+  def is_minor?
+    name.include?('.')
+  end
+
+  def is_major?
+    !is_minor?
+  end
+
   def self.current_version
     self.where(is_current: true).first || self.create(name: '0', is_current: true)
   end

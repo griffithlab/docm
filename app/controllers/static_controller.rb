@@ -7,10 +7,14 @@ class StaticController < ApplicationController
 
   def sources
     @source_count = Source.count
+    @batches = Batch.joins(:disease_source_variants)
+      .uniq
+      .map { |b| BatchLinkPresenter.new(b) }
   end
 
   def about
     @versions = Version.all.map { |v| VersionPresenter.new(v) }
+    @summary_table = SummaryTablePresenter.new(Version.current_version)
   end
 
   def downloads

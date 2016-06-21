@@ -92,9 +92,9 @@ module Importers
       elsif var == '-'
         'DEL'
       elsif ref.size == 1 && var.size == 1
-        'SNP'
+        'SNV'
       elsif ref.size == 2 && var.size == 2
-        'DNP'
+        'DNV'
       else
         'unknown'
       end

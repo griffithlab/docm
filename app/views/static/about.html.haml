@@ -50,7 +50,21 @@
                 %td= version.name
                 %td= version.variant_count
                 %td= version.cancer_type_count
-
+          %br
+          %h4
+            Database Summary (current version)
+          %table.table.table-striped.table-bordered
+            %thead
+              %tr
+                %th DoCM Feature
+                %th Type
+                %th Count
+            %tbody
+              - @summary_table.table_rows.each do |(col1, col2, col3)|
+                %tr
+                  %td= col1
+                  %td= col2
+                  %td= col3
           %br
           %h4
             Moderators
