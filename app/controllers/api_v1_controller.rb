@@ -29,7 +29,7 @@ class ApiV1Controller < ApplicationController
     end
 
     @variant = Variant.show_scope
-      .where(hgvs: hgvs, version: version)
+      .where(hgvs: hgvs, disease_source_variants: { version: version })
       .first
 
     unless @variant
