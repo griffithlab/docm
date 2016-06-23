@@ -1,5 +1,7 @@
 if @display_detailed_view
-  json.array! @variants, partial: 'api_v1/detailed_variant', as: :variant
+  json.array! @variants do |v|
+    json.partial! 'api_v1/detailed_variant', variant: v, meta: MetaPresenter.new(v.disease_source_variants), version: @version
+  end
 else
   json.array! @variants do |variant|
     json.hgvs variant.hgvs
