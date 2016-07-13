@@ -29,7 +29,8 @@ class VariantClinvarRowPresenter < SimpleDelegator
       'Somatic mutation',
       'DoCM Curation',
       'http://docm.genome.wustl.edu/sources',
-      dsvs.map(&:batch).map(&:created_at).max.strftime('%Y-%m-%d')
+      dsvs.map(&:batch).map(&:created_at).max.strftime('%Y-%m-%d'),
+      variant.hgvs
     ].join("\t").html_safe
   end
 
