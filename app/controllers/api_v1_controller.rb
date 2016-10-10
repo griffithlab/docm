@@ -1,4 +1,6 @@
 class ApiV1Controller < ApplicationController
+  include ApiCors
+
   def variants
     pick_version
 
