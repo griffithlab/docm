@@ -43,3 +43,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
+group :production do
+  gem 'dalli', '~> 2.7.6'
+end
