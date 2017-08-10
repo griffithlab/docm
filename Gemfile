@@ -37,12 +37,15 @@ group :development do
   gem 'pry-remote'
   gem 'pry-nav'
   gem 'rack-mini-profiler'
+  gem 'capistrano', '~> 3.9.0'
+  gem 'capistrano-rails', '~> 1.3'
+  gem 'capistrano-rbenv', '~> 2.0'
+  gem 'capistrano-passenger', '~> 0.2.0'
 end
 
 group :doc do
   gem 'sdoc', require: false
 end
-
 
 group :production do
   gem 'dalli', '~> 2.7.6'
