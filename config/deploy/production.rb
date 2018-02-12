@@ -1,4 +1,4 @@
-server "ec2-35-162-137-203.us-east-2.compute.amazonaws.com", user: 'ubuntu', roles: %w{web}
+server "ec2-35-162-137-203.us-west-2.compute.amazonaws.com", user: 'ubuntu', roles: %w{web}
 
 set :rbenv_ruby, '2.3.4'
 
