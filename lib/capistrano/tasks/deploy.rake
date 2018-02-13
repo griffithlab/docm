@@ -6,4 +6,13 @@ namespace :deploy do
     end
   end
   after "deploy:published", "flush_memcached"
+
+  desc 'restart apache'
+  task :restart_apache do
+    on roles(:all) do
+      execute sudo :service, :apache2, :stop
+      execute sudo :service, :apache2, :start
+    end
+  end
+  after "deploy:published", "restart_apache"
 end
