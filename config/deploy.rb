@@ -1,6 +1,8 @@
 set :application, 'docm'
 set :repo_url, 'https://github.com/genome/docm.git'
 
+set :rails_env, 'production'
+
 set :deploy_to, '/var/www/docm/'
 
 set :rbenv_type, :user
