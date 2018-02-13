@@ -18,7 +18,7 @@ namespace :db do
             execute :rake, 'db:migrate'
           end
         end
-        execute :psql, ustring, hstring, dstring, "-f #{current_path}/db/data.sql", "-v ON_ERROR_STOP=1"
+        execute :psql, ustring, hstring, dstring, "-f #{current_path}/db/data.sql"
       ensure
         execute sudo :service, :apache2, :start
       end
